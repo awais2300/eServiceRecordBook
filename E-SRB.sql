@@ -2772,7 +2772,7 @@ ALTER TABLE `branch_allocations`
 alter table security_info
 add COLUMN unit varchar(100) null;
 
-Update `security_info` set unit = 'PNS Rahbar (Pakistan Naval Academy)' WHERE unit is null;
+Update `security_info` set unit = 'WEAPON ENGINEERING SCHOOL' WHERE unit is null;
 
 alter table security_info
 add COLUMN branch varchar(100) null;
@@ -2781,14 +2781,5 @@ INSERT INTO `branch_preference_list`( `branch_name`) VALUES ('ME');
 
 alter table pn_form1s
 add COLUMN branch_id int(11) null;
-
-/* Update S/LT in db xisting records */
-UPDATE `pn_form1s` SET `phase`='Sub-Lieutenant' WHERE `phase`='Sub-Leutinent';
-
-/* Update units in db existing records */
-UPDATE `navy_units` SET `unit_name`='PNS Aslat' WHERE `unit_name`='PNS Aslar';
-
-UPDATE `navy_units` SET `unit_name`='PNS Nasr' WHERE `unit_name`='PNS Nasab';
-
 
 COMMIT;

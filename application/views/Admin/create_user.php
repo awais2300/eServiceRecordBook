@@ -61,16 +61,8 @@
                                             <option value="sqc">SENIOR DIVISIONAL OFFICER</option>
                                             <option value="do">DIVISIONAL OFFICER</option>
                                             <option value="smo">SENIOR MEDICAL OFFICER</option>
-                                            <option value="chief/r">REGULTING OFFICER</option>
-                                            <option value="sporto">SPORTS OFFICEeR</option>
-
-                                          <!--  <option value="joto">JOTO</option>
-                                            
-                                            <option value="cao_sec">CAO-SEC</option>
-                                          
-                                            <option value="dean">DEAN</option>
-                                            <option value="ctmwt">Captain MWT</option>
-                                            <option value="hougp">HOUGP</option>  -->
+                                            <option value="chiefr">REGULTING OFFICER</option>
+                                            <option value="sporto">SPORTS OFFICER</option>
 
                                         </select>
                                     </div>
@@ -147,7 +139,7 @@
 
     $("#status").on('change', function() {
         var account = $(this).val();
-        // alert(account);
+        alert(account);
 
         if (account == 'do') {
             $('#div_list').show();

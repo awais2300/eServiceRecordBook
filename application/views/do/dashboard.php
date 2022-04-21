@@ -30,28 +30,12 @@
         <div class="col-lg-6">
             <h1 class="h3 mb-0 text-black-800"><strong>WELCOME DIVISIONAL OFFICER</strong></h1>
         </div>
-        <div class="col-lg-4">
-            <?php if ($this->session->userdata('unit_id') == 1) { ?>
-                <h1 class="h3 mb-0 text-black-800" style="text-align:center;text-decoration:underline"><strong>      </strong></h1>
-
-            <?php } else if ($this->session->userdata('unit_id') == 2) { ?> 
-                <h1 class="h3 mb-0 text-black-800" style="text-align:center;text-decoration:underline"><strong>PHASE-IV</strong></h1>
-            <?php } else if (($this->session->userdata('unit_id') == 3) || ($this->session->userdata('unit_id') == 17)) { ?>
-                <h1 class="h3 mb-0 text-black-800" style="text-align:center;text-decoration:underline"><strong>PHASE-III</strong></h1>
-            <?php } else { ?>
-                <h1 class="h3 mb-0 text-black-800" style="text-align:center;text-decoration:underline"><strong></strong></h1>
-            <?php } ?>  
-        </div>
-        <?php if ($this->session->userdata('unit_id') == 1) { ?>
-            <div class="col-lg-4" style="text-align:right">
-                <h1 class="h3 mb-0 text-black-800"><strong><?= $this->session->userdata('division') ?></strong></h1>
-            </div>
-        <?php } else { ?>
-            <div class="col-lg-4" style="text-align:right">
-                <h1 class="h3 mb-0 text-black-800"><strong><?= $this->session->userdata('unit_name') ?></strong></h1>
-            </div>
-        <?php } ?>
+        
     </div>
+    <hr>
+    <h1 class="h3 mb-0 text-black-800"><strong>SCHOOL: <?= $this->session->userdata('unit_name');?> </strong></h1>
+    <hr>
+    <h1 class="h3 mb-0 text-black-800"><strong>CLASS: <?= $this->session->userdata('division') ?></strong></h1>
 
 </div>
 <div style="margin-top:50px;margin-bottom: 50px;">
