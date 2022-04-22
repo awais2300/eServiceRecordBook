@@ -71,7 +71,7 @@
                             </div>
 
                             <div class="col-sm-4">
-                                <h6>&nbsp;DIVISION:</h6>
+                                <h6>&nbsp;CLASS:</h6>
                             </div>
 
                         </div>
@@ -91,7 +91,7 @@
                                 <input type="text" class="form-control form-control-user" value="<?= $edit_records['term'] ?>" name="term" id="term_1" style="font-weight: bold; font-size:large" placeholder="TERM" readonly>
                             </div>
                             <div class="col-sm-4 mb-1">
-                                <input type="text" class="form-control form-control-user" name="division" value="<?= $edit_records['divison_name'] ?>" id="division_1" style="font-weight: bold; font-size:large" placeholder="DIVISION" readonly>
+                                <input type="text" class="form-control form-control-user" name="division" value="<?= $edit_records['divison_name'] ?>" id="division_1" style="font-weight: bold; font-size:large" placeholder="CLASS" readonly>
                             </div>
 
                         </div>

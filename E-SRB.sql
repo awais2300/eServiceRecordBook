@@ -984,14 +984,6 @@ CREATE TABLE `officer_qualities` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `officer_qualities`
---
-
-INSERT INTO `officer_qualities` (`id`, `p_id`, `term`, `truthfulness_mid`, `truthfulness_terminal`, `integrity_mid`, `integrity_terminal`, `pride_mid`, `pride_terminal`, `courage_mid`, `courage_terminal`, `confidence_mid`, `confidence_terminal`, `initiative_mid`, `inititative_terminal`, `command_mid`, `command_terminal`, `discipline_mid`, `discipline_terminal`, `duty_mid`, `duty_terminal`, `reliability_mid`, `reliability_terminal`, `appearance_mid`, `appearance_terminal`, `fitness_mid`, `fitness_terminal`, `conduct_mid`, `conduct_terminal`, `cs_mid`, `cs_terminal`, `teamwork_mid`, `teamwork_terminal`, `expression_mid`, `expression_terminal`, `total_mid`, `total_terminal`, `mid_marks`, `terminal_marks`, `mid_marks_date`, `terminal_marks_date`, `do_name`, `form_type`, `do_id`, `phase`, `phase3_type`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Term-I', 19, 18, 18, 17, 10, 10, 7, 5, 10, 6, 5, 8, 9, 9, 10, 7, 4, 7, 8, 5, 9, 9, 6, 8, 9, 8, 5, 5, 5, 8, 15, 15, 149, 145, '74.5%', '72.5%', '2018-11-29', '2015-04-03', 'lt cdr hamza pn', 'S 1-27', 3, 'Phase 1', NULL, '2020-06-03 20:12:32', '2020-06-03 20:12:32'),
-(2, 1, 'Term-II', 13, 12, 14, 18, 10, 10, 5, 9, 11, 12, 10, 8, 10, 10, 10, 4, 5, 6, 5, 8, 9, 8, 8, 7, 5, 8, 10, 7, 9, 7, 8, 9, 142, 143, '71%', '71.5%', '2017-11-30', '2017-10-29', 'lt cdr hamza pn', 'S 1-28', 3, 'Phase 1', NULL, '2020-06-03 20:15:06', '2020-06-03 20:15:06');
-
 -- --------------------------------------------------------
 
 --

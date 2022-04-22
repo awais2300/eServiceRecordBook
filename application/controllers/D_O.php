@@ -88,7 +88,7 @@ class D_O extends CI_Controller
             }
 
             if (!empty($update) && !empty($insert)) {
-                $this->session->set_flashdata('SUCCESS', 'UT HS BEEN ADDED SUCCESSFULLY');
+                $this->session->set_flashdata('success', 'UT HS BEEN ADDED SUCCESSFULLY');
                 redirect('D_O/add_club');
             } else {
                 $this->session->set_flashdata('FAILURE', 'SOMETHING WENT WRONG.TRY AGAIN.');
@@ -166,7 +166,7 @@ class D_O extends CI_Controller
             }
 
             if (!empty($insert)) {
-                $this->session->set_flashdata('SUCCESS', 'UT CLUB UPDATED SUCCESSFULLY');
+                $this->session->set_flashdata('success', 'UT CLUB UPDATED SUCCESSFULLY');
                 redirect('D_O/view_dossier');
             } else {
                 $this->session->set_flashdata('FAILURE', 'SOMETHING WENT WRONG TRY AGAIN.');
@@ -235,7 +235,7 @@ class D_O extends CI_Controller
             }
 
             if (!empty($insert)) {
-                $this->session->set_flashdata('SUCCESS', 'DATA SUBMITTED SUCCESSFULLY');
+                $this->session->set_flashdata('success', 'DATA SUBMITTED SUCCESSFULLY');
                 redirect('D_O/PN_Form');
             } else {
                 $this->session->set_flashdata('FAILURE', 'SOMETHING WENT WRONG TRY AGAIN.');
@@ -323,7 +323,7 @@ class D_O extends CI_Controller
             }
 
             if (!empty($insert)) {
-                $this->session->set_flashdata('SUCCESS', 'DATA SUBMITTED SUCCESSFULLY');
+                $this->session->set_flashdata('success', 'DATA SUBMITTED SUCCESSFULLY');
                 redirect('D_O/Inspection_record');
             } else {
                 $this->session->set_flashdata('FAILURE', 'SOMETHING WENT WRONG, TRY GAIN.');
@@ -380,7 +380,7 @@ class D_O extends CI_Controller
             }
 
             if (!empty($insert)) {
-                $this->session->set_flashdata('SUCCESS', 'DATA UPDATED SUCCESSFULLY');
+                $this->session->set_flashdata('success', 'DATA UPDATED SUCCESSFULLY');
                 redirect('D_O/view_dossier_folder');
             } else {
                 $this->session->set_flashdata('FAILURE', 'SOMETHING WENT WRONG, TRY AGAIN.');
@@ -525,7 +525,7 @@ class D_O extends CI_Controller
             }
 
             if (!empty($insert)) {
-                $this->session->set_flashdata('SUCCESS', 'DATA SUBMITTED SUCCESSSFULLY');
+                $this->session->set_flashdata('success', 'DATA SUBMITTED SUCCESSSFULLY');
                 redirect('D_O/personal_data');
             } else {
                 $this->session->set_flashdata('FAILURE', 'SOMETHING WENT WRONG, TRY AGAIN.');
@@ -642,7 +642,7 @@ class D_O extends CI_Controller
             }
 
             if (!empty($insert)) {
-                $this->session->set_flashdata('SUCCESS', 'DATA SUBMITTED SUCCESSFULLY');
+                $this->session->set_flashdata('success', 'DATA SUBMITTED SUCCESSFULLY');
                 redirect('D_O/view_dossier_folder');
             } else {
                 $this->session->set_flashdata('FAILURE', 'SOMETHING WENT WRONG, TRY AGAIN.');
@@ -716,10 +716,10 @@ class D_O extends CI_Controller
             }
 
             if (!empty($insert)) {
-                $this->session->set_flashdata('SUCCESS', 'PUNISHMENT ADDED SUCCESSFULLY');
+                $this->session->set_flashdata('success', 'PUNISHMENT ADDED SUCCESSFULLY');
                 redirect('D_O/add_punishment');
             } else {
-                $this->session->set_flashdata('FAILURE', 'SOMETHING WENT WRONG, TRY AGAIN.');
+                $this->session->set_flashdata('failure', 'SOMETHING WENT WRONG, TRY AGAIN.');
                 redirect('D_O/add_punishment');
             }
         }
@@ -800,10 +800,10 @@ class D_O extends CI_Controller
 
             if (!empty($insert)) {
                 if ($result_type == 'Result') {
-                    $this->session->set_flashdata('SUCCESS', 'RESULT ADDED SUCCESSFULLY');
+                    $this->session->set_flashdata('success', 'RESULT ADDED SUCCESSFULLY');
                     redirect('D_O/view_result');
                 } else if ($result_type == 'SeaTraining') {
-                    $this->session->set_flashdata('SUCCESS', 'RESULT ADDED SUCCESSFULLY');
+                    $this->session->set_flashdata('success', 'RESULT ADDED SUCCESSFULLY');
                     redirect('D_O/view_training_report');
                 }
             } else {
@@ -893,7 +893,7 @@ class D_O extends CI_Controller
             }
 
             if (!empty($update)) {
-                $this->session->set_flashdata('SUCCESS', 'PUNISHMENT UPDATED SUCCESSFULLY');
+                $this->session->set_flashdata('success', 'PUNISHMENT UPDATED SUCCESSFULLY');
 
                 if ($page == 'daily_module' || $page == 'update_punishment') {
                     redirect('D_O/view_punishment_list');
@@ -993,7 +993,7 @@ class D_O extends CI_Controller
             }
 
             if (!empty($insert)) {
-                $this->session->set_flashdata('SUCCESS', 'EXCUSE ADDED SUCCESSFULLY');
+                $this->session->set_flashdata('success', 'EXCUSE ADDED SUCCESSFULLY');
                 redirect('D_O/add_excuse');
             } else {
                 $this->session->set_flashdata('FAILURE', 'SOMETHING WENT WRONG, TRY AGAIN.');
@@ -1057,7 +1057,7 @@ class D_O extends CI_Controller
             }
 
             if (!empty($insert)) {
-                $this->session->set_flashdata('SUCCESS', 'OBSERVATION ADDED SUCCESSFULLY');
+                $this->session->set_flashdata('success', 'OBSERVATION ADDED SUCCESSFULLY');
                 redirect('D_O/add_observation');
             } else {
                 $this->session->set_flashdata('FAILURE', 'SOMETHING WENT WRONG, TRY AGAIN.');
@@ -1152,6 +1152,7 @@ class D_O extends CI_Controller
         if ($this->input->post()) {
             $postData = $this->security->xss_clean($this->input->post());
             //print_r($_FILES['file']['name'][0] != NULL);
+            // print_r($_FILES['file']['name'])    ; exit;
             if ($_FILES['file']['name'][0] != NULL) {
                 $upload1 = $this->upload_warning($_FILES['file']);
                 if (count($upload1) > 1) {
@@ -3072,7 +3073,7 @@ class D_O extends CI_Controller
             $_FILES['file']['size']     = $_FILES['report']['size'][$i];
 
             $config['upload_path'] = 'uploads/documents';
-            $config['allowed_types']        = 'gif|jpg|png|doc|xls|pdf|xlsx|docx|ppt|pptx|jpeg';
+            $config['allowed_types'] = 'gif|jpg|png|doc|xls|pdf|xlsx|docx|ppt|pptx|jpeg|txt';
 
             $this->load->library('upload', $config);
             $this->upload->initialize($config);
@@ -3089,6 +3090,7 @@ class D_O extends CI_Controller
 
     public function upload_warning($fieldname)
     {
+        $count[]='';
         $filesCount = count($_FILES['file']['name']);
         for ($i = 0; $i < $filesCount; $i++) {
             $_FILES['file']['name']     = $_FILES['file']['name'][$i];
@@ -3098,7 +3100,7 @@ class D_O extends CI_Controller
             $_FILES['file']['size']     = $_FILES['file']['size'][$i];
 
             $config['upload_path'] = 'uploads/warning';
-            $config['allowed_types']        = 'gif|jpg|png|doc|xls|pdf|xlsx|docx|ppt|pptx|txt|jpeg|PNG';
+            $config['allowed_types'] = 'gif|jpg|png|doc|xls|pdf|xlsx|docx|ppt|pptx|jpeg|txt';
 
             $this->load->library('upload', $config);
             $this->upload->initialize($config);

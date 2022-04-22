@@ -280,7 +280,7 @@
                                 </div>
 
                                 <div class="col-sm-4">
-                                    <h6>&nbsp;DIVISION:</h6>
+                                    <h6>&nbsp;CLASS:</h6>
                                 </div>
 
                             </div>

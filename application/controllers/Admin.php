@@ -31,6 +31,12 @@ class Admin extends CI_Controller
         $this->load->view('Admin/user_list', $data);
     }
 
+    public function show_new_class()
+    {
+        $data['class_list'] = $this->db->get('divisions')->result_array();
+        $this->load->view('Admin/create_new_class', $data);
+    }
+
     public function show_edit_user()
     {
         $data['users_list'] = $this->db->where('is_active', 'yes')->where_not_in('acct_type', 'admin')->get('security_info')->result_array();
@@ -194,6 +200,29 @@ class Admin extends CI_Controller
         } else {
             $this->session->set_flashdata('failure', 'Something went wrong, Try again.');
             redirect('Admin/add_users');
+        }
+    }
+
+    public function insert_new_class()
+    {
+        if ($this->input->post()) {
+            $postData = $this->security->xss_clean($this->input->post());
+
+            $class_name = $postData['class_name'];
+
+            $insert_array = array(
+                'division_name' => $class_name
+            );
+
+            $insert = $this->db->insert('divisions', $insert_array);
+
+            if (!empty($insert)) {
+                $this->session->set_flashdata('success', 'Class Created successfully');
+                redirect('Admin/show_new_class');
+            } else {
+                $this->session->set_flashdata('failure', 'Something went wrong, try again.');
+                redirect('Admin/show_new_class');
+            }
         }
     }
 }

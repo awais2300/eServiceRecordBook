@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>E-DOSSIER</title>
+    <title>E-SERVICE RECORD BOOK</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?php echo base_url(); ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -49,7 +49,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <!-- <i class="fas fa-laugh-wink"></i> -->
                 </div>
-                <div class="sidebar-brand-text mx-3">E-DOSSIER</div>
+                <div class="sidebar-brand-text mx-3">E-SERVICE RECORD BOOK</div>
             </a>
 
             <!-- Divider -->
@@ -84,10 +84,16 @@
                     <span>EDIT USER</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?= base_url(); ?>Admin/show_new_class" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"> 
+                    <i class="fas fa-address-card"></i>
+                    <span>CREATE NEW CLASS</span>
+                </a>
+            </li>
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="<?php echo base_url(); ?>Admin/view_activity_log" aria-expanded="true">
-                    <i style="font-size:20px" class="far fa-list-alt"></i>
+                    <i class="far fa-list-alt"></i>
                     <span> VIEW ACTIVITY LOG</span>
                 </a>
             </li>

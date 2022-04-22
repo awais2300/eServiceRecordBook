@@ -51,7 +51,9 @@
 
   .img-bg {
     background-image: url('<?= base_url() ?>assets/img/bg-image.jpg');
-    background-position: center;
+    background-position: absolute ;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #303030 !important;
     background-size: cover;
     width: 100%;
@@ -59,26 +61,26 @@
 </style>
 
 <body class="row bg-custom1 img-bg" style="overflow: hidden;">
-  <div></div>
+  <!-- <div></div> -->
   <div class="container">
 
     <!--  </div>
  -->
     <!-- Outer Row -->
     <div class="row justify-content-center">
-      <h1 class="h1 text-grey-900 " style="margin-top:35px; padding:0%; margin-bottom:0px;color:black; text-align:center;text-decoration:underline;font-family:'Apple Chancery';color:navy;font-size:50px"><strong> E-SERVICE RECORD BOOK </strong></h1>
-      <div class="col-xl-10 col-lg-12 col-md-9">
+      <!-- <h1 class="h1 text-grey-900 " style="margin-top:35px; padding:0%; margin-bottom:0px;color:black; text-align:center;text-decoration:underline;font-family:'Apple Chancery';color:navy;font-size:50px"><strong> E-SERVICE RECORD BOOK </strong></h1> -->
+      <div class="col-xl-10 col-lg-6 col-md-6">
 
         <div class="card bg-custom3 o-hidden border-0 shadow-lg my-5" style="background: transparent !important;">
           <!-- <div class="card-body p-0" style=""> -->
           <!-- Nested Row within Card Body -->
           <div class="row justify-content-center">
-            <div class="img-logo"></div>
+            <!-- <div class="img-logo"></div> -->
           </div>
           <div class="row">
             <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
-            <div class="col-lg-2"></div>
-            <div class="col-lg-7">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-7 my-5" s>
               <div class="p-5">
                 <div class="text-center">
                   <h1 class="h2 mb-4" style="color:black"><strong> </strong></h1>
@@ -157,7 +159,7 @@
 
               </div>
             </div>
-            <div class="col-lg-2"></div>
+            <!-- <div class="col-lg-2"></div> -->
           </div>
 
           <!-- till here -->

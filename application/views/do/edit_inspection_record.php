@@ -78,7 +78,7 @@
                                 </div>
 
                                 <div class="col-sm-4">
-                                    <h6>&nbsp;DIVISION:</h6>
+                                    <h6>&nbsp;CLASS:</h6>
                                 </div>
 
                             </div>
@@ -98,7 +98,7 @@
                                     <input type="text" class="form-control form-control-user" value="<?= $pn_inspection_data['term'] ?>" name="term" id="term" style="font-weight: bold; font-size:large" placeholder="TERM" readonly>
                                 </div>
                                 <div class="col-sm-4 mb-1">
-                                    <input type="text" class="form-control form-control-user" name="division" value="<?= $pn_inspection_data['divison_name'] ?>" id="division" style="font-weight: bold; font-size:large" placeholder="DIVISION" readonly>
+                                    <input type="text" class="form-control form-control-user" name="division" value="<?= $pn_inspection_data['divison_name'] ?>" id="division" style="font-weight: bold; font-size:large" placeholder="CLASS" readonly>
                                 </div>
                             </div>
 

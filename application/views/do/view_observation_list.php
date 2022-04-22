@@ -61,7 +61,7 @@
                                                 </div>
 
                                                 <div class="col-sm-4">
-                                                    <h6>&nbsp;DIVISION:</h6>
+                                                    <h6>&nbsp;CLASS:</h6>
                                                 </div>
 
                                             </div>
@@ -83,7 +83,7 @@
                                                     <input type="text" class="form-control form-control-user" name="term" id="term_eo" style="font-weight: bold; font-size:large" placeholder="TERM" readonly>
                                                 </div>
                                                 <div class="col-sm-4 mb-1">
-                                                    <input type="text" class="form-control form-control-user" name="division" id="division_eo" style="font-weight: bold; font-size:large" placeholder="DIVISION" readonly>
+                                                    <input type="text" class="form-control form-control-user" name="division" id="division_eo" style="font-weight: bold; font-size:large" placeholder="CLASS" readonly>
                                                 </div>
                                                 <input type="hidden" id="observation_id" name="observation_id">
                                             </div>

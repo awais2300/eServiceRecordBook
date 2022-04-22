@@ -11,12 +11,10 @@
 <?php !isset($olq_t5['terminal_marks']) ? $olq_t5['terminal_marks'] = 0 : $olq_t5['terminal_marks']; ?>
 <?php !isset($olq_t6['mid_marks']) ? $olq_t6['mid_marks'] = 0 : $olq_t6['mid_marks']; ?>
 <?php !isset($olq_t6['terminal_marks']) ? $olq_t6['terminal_marks'] = 0 : $olq_t6['terminal_marks']; ?>
-<?php !isset($olq_t7['mid_marks']) ? $olq_t7['mid_marks'] = 0 : $olq_t7['mid_marks']; ?>
-<?php !isset($olq_t7['terminal_marks']) ? $olq_t7['terminal_marks'] = 0 : $olq_t7['terminal_marks']; ?>
-<?php !isset($olq_t8['mid_marks']) ? $olq_t8['mid_marks'] = 0 : $olq_t8['mid_marks']; ?>
-<?php !isset($olq_t8['terminal_marks']) ? $olq_t8['terminal_marks'] = 0 : $olq_t8['terminal_marks']; ?>
-
-
+<!-- <?php //!isset($olq_t7['mid_marks']) ? $olq_t7['mid_marks'] = 0 : $olq_t7['mid_marks']; ?> -->
+<!-- <?php //!isset($olq_t7['terminal_marks']) ? $olq_t7['terminal_marks'] = 0 : $olq_t7['terminal_marks']; ?> -->
+<!-- <?php //!isset($olq_t8['mid_marks']) ? $olq_t8['mid_marks'] = 0 : $olq_t8['mid_marks']; ?> -->
+<!-- <?php //!isset($olq_t8['terminal_marks']) ? $olq_t8['terminal_marks'] = 0 : $olq_t8['terminal_marks']; ?> -->
 
 <style>
     .red-border {
@@ -171,8 +169,7 @@
         array("label" => "Term-III", "y" => (($olq_t3['mid_marks'] + $olq_t3['terminal_marks'])/2)),
         array("label" => "Term-IV", "y" => (($olq_t4['mid_marks'] + $olq_t4['terminal_marks'])/2)),
         array("label" => "Term-V", "y" => (($olq_t5['mid_marks'] + $olq_t5['terminal_marks'])/2)),
-        array("label" => "Term-VI", "y" => (($olq_t6['mid_marks'] + $olq_t6['terminal_marks'])/2)),
-        
+        array("label" => "Term-VI", "y" => (($olq_t6['mid_marks'] + $olq_t6['terminal_marks'])/2))
     );
     ?>
 

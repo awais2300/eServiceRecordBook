@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>E-DOSSIER FOR PNS KARSAZ</title>
+    <title>E-SERVICE RECORD BOOK</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?php echo base_url(); ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -49,7 +49,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <!-- <i class="fas fa-laugh-wink"></i> -->
                 </div>
-                <div class="sidebar-brand-text mx-3">E-DOSSIER FOR PNS KARSAZ</div>
+                <div class="sidebar-brand-text mx-3">E-SERVICE RECORD BOOK</div>
             </a>
 
             <!-- Divider -->
@@ -95,12 +95,12 @@
             </li>   -->
 
             <!-- Divider -->
-            <hr class="sidebar-divider">
+            <!-- <hr class="sidebar-divider"> -->
 
             <!-- Heading -->
-            <div class="sidebar-heading">
+            <!-- <div class="sidebar-heading">
                 PHASE II (TECHNICAL QUALIFICATION)
-            </div>
+            </div> -->
 
          <!--   <li class="nav-item">
                 <a id="general" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_general" aria-expanded="true">
@@ -119,7 +119,7 @@
                 </div>
             </li> -->
 
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_discipline" aria-expanded="true">
                     <i class="fas fa-running"></i>
                     <span> DISCIPLINE</span>
@@ -135,14 +135,13 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_warning" aria-expanded="true">
                     <i class="fas fa-exclamation-circle"></i>
                     <span> WARNINGS</span>
-                    <!-- <span>Components</span> -->
                 </a>
                 <div id="collapse_warning" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?php echo base_url(); ?>CO/add_warning">ADD WARNING</a>
                     </div>
                 </div>
-            </li>
+            </li> -->
 
         <!--    <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_academic" aria-expanded="true">
@@ -152,31 +151,24 @@
                 </a>
                 <div id="collapse_academic" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?= base_url(); ?>CO/view_semester_result"><?php if ($this->session->userdata('unit_id') != '1') { ?>Results (Terms VI - VIII)<?php } else { ?> Results (Terms I - III) <?php } ?></a>
-                        <?php if ($this->session->userdata('unit_id') == '1') { ?>
+                        <a class="collapse-item" href="<?= base_url(); ?>CO/view_semester_result"><?php //if ($this->session->userdata('unit_id') != '1') { ?>Results (Terms VI - VIII)<?php //} else { ?> Results (Terms I - III) <?php //} ?></a>
+                        <?php //if ($this->session->userdata('unit_id') == '1') { ?>
                             <a class="collapse-item" href="<?= base_url(); ?>CO/view_training_report">Sea Training Report Term II</a>
-                        <?php } ?>
+                        <?php //} ?>
                     </div>
                 </div>
             </li> -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_assesment" aria-expanded="true">
                     <i class="fas fa-chart-bar"></i>
                     <span> ASSESSMENT</span>
-                    <!-- <span>Components</span> -->
                 </a>
                 <div id="collapse_assesment" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?= base_url(); ?>CO/view_general_remarks">GENERAL REMARKS</a>
-
-                     <!--   <a class="collapse-item" href="<?= base_url(); ?>CO/view_progress_chart">Progress Chart</a>
-                        <a class="collapse-item" href="<?= base_url(); ?>CO/view_distinction_records">Distictions</a>
-                        <a class="collapse-item" href="<?= base_url(); ?>CO/view_seniority_records">Seniority</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/add_branch_allocation">Branch Allocation</a>
-                        <a class="collapse-item" href="#">Degree Complete</a>  -->
                     </div>
                 </div>
-            </li>
+            </li> -->
          <!--   <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>CO/add_officer_qualities" aria-expanded="true">
                     <i class="fas fa-medal"></i>
@@ -203,7 +195,6 @@
                     <span> CHANGE PASSWORD</span>
                 </a>
             </li>
-
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">

@@ -169,7 +169,7 @@
 
                                     <div class="form-group row">
                                         <div class="col-sm-6">
-                                            <h6>&nbsp;DIVISION NAME:</h6>
+                                            <h6>&nbsp;CLASS NAME:</h6>
                                         </div>
                                         <div class="col-sm-6">
                                             <h6>&nbsp;TERM:</h6>

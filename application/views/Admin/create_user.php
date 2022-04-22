@@ -69,7 +69,7 @@
 
                                     <div class="col-sm-6 mb-1" style="display:none" id="div_list">
                                         <select class="form-control rounded-pill" name="div" id="div" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
-                                            <option class="form-control form-control-user" value="">SELECT DIVISION</option>
+                                            <option class="form-control form-control-user" value="">SELECT CLASS</option>
                                             <?php foreach ($divisions as $data) { ?>
                                                 <option class="form-control form-control-user" value="<?= $data['division_name'] ?>"><?= $data['division_name'] ?></option>
                                             <?php } ?>

@@ -112,7 +112,7 @@
                                 </div>
 
                                 <div class="col-sm-4">
-                                    <h6>&nbsp;DIVISION:</h6>
+                                    <h6>&nbsp;CLASS:</h6>
                                 </div>
 
                             </div>
@@ -132,7 +132,7 @@
                                     <input type="text" class="form-control form-control-user" name="term" id="term" style="font-weight: bold; font-size:large" placeholder="TERM" readonly>
                                 </div>
                                 <div class="col-sm-4 mb-1">
-                                    <input type="text" class="form-control form-control-user" name="division" id="division" style="font-weight: bold; font-size:large" placeholder="DIVISION" readonly>
+                                    <input type="text" class="form-control form-control-user" name="division" id="division" style="font-weight: bold; font-size:large" placeholder="CLASS" readonly>
                                 </div>
 
                             </div>
@@ -184,11 +184,13 @@
                                 <div class="col-sm-3 mb-1">
                                 </div>
                                 <div class="col-sm-3 mb-1 my-3">
+                                </div>
+                                <div class="col-sm-3 mb-1 my-3">
                                     <h6 style="text-align:right">&nbsp;PERCENTAGE OF MARKS:</h6>
                                 </div>
-                                <div class="col-sm-3 mb-1">
+                                <!-- <div class="col-sm-3 mb-1">
                                     <input type="text" class="form-control form-control-user" name="mid_percentage" id="mid_percentage" placeholder="MID MARKS %">
-                                </div>
+                                </div> -->
                                 <div class="col-sm-3 mb-1">
                                     <input type="text" class="form-control form-control-user" name="final_percentage" id="final_percentage" placeholder="FINAL MARKS %">
                                 </div>
@@ -198,11 +200,13 @@
                                 <div class="col-sm-3 mb-1">
                                 </div>
                                 <div class="col-sm-3 mb-1 my-3">
+                                </div>
+                                <div class="col-sm-3 mb-1 my-3">
                                     <h6 style="text-align:right">&nbsp;DATE OF ASSESSMENT:</h6>
                                 </div>
-                                <div class="col-sm-3 mb-1">
+                                <!-- <div class="col-sm-3 mb-1">
                                     <input type="date" class="form-control form-control-user" name="mid_exam_date" id="mid_exam_date" placeholder="MID MARKS %">
-                                </div>
+                                </div> -->
                                 <div class="col-sm-3 mb-1">
                                     <input type="date" class="form-control form-control-user" name="final_exam_date" id="final_exam_date" placeholder="FINAL MARKS %">
                                 </div>

@@ -149,7 +149,7 @@
                                 </div>
 
                                 <div class="col-sm-3">
-                                    <h6>&nbsp;DIVISION:</h6>
+                                    <h6>&nbsp;CLASS:</h6>
                                 </div>
 
                                 <div class="col-sm-3">

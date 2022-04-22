@@ -353,7 +353,7 @@
     $('#overall').on('click', function() {
 
         $.ajax({
-            url: '<?= base_url(); ?>CT/get_graph_overall',
+            url: '<?= base_url(); ?>CAO/get_graph_overall',
             method: 'POST',
             data: {
                 'type': 'OVERALL'
@@ -374,7 +374,7 @@
     $('#termwise').on('click', function() {
 
         $.ajax({
-            url: '<?= base_url(); ?>CT/get_graph_termwise',
+            url: '<?= base_url(); ?>CAO/get_graph_termwise',
             method: 'POST',
             data: {
                 'type': 'TERMWISE'
@@ -402,7 +402,7 @@
         var selectedValue = $(this).val();
         // alert(selectedValue);
         $.ajax({
-            url: '<?= base_url(); ?>CT/get_graph_divisionwise',
+            url: '<?= base_url(); ?>CAO/get_graph_divisionwise',
             method: 'POST',
             data: {
                 'selected_division': selectedValue

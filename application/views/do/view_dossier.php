@@ -28,10 +28,13 @@
     .red-border {
         border: 1px solid red !important;
     }
+
+    .content{
+        
+    }
 </style>
 
 <div class="container-fluid my-2">
-
 
     <div class="modal fade" id="punishments">
         <!-- <div class="row"> -->
@@ -132,7 +135,7 @@
                                             </div>
 
                                             <div class="col-sm-4">
-                                                <h6>&nbsp;DIVISION:</h6>
+                                                <h6>&nbsp;CLASS:</h6>
                                             </div>
 
                                         </div>
@@ -154,7 +157,7 @@
                                                 <input type="text" class="form-control form-control-user" name="term" id="term" style="font-weight: bold; font-size:large" placeholder="TERM" readonly>
                                             </div>
                                             <div class="col-sm-4 mb-1">
-                                                <input type="text" class="form-control form-control-user" name="division" id="division" style="font-weight: bold; font-size:large" placeholder="DIVISION" readonly>
+                                                <input type="text" class="form-control form-control-user" name="division" id="division" style="font-weight: bold; font-size:large" placeholder="CLASS" readonly>
                                             </div>
 
                                         </div>
@@ -397,7 +400,7 @@
                                                 </div>
 
                                                 <div class="col-sm-4">
-                                                    <h6>&nbsp;DIVISION:</h6>
+                                                    <h6>&nbsp;CLASS:</h6>
                                                 </div>
 
                                             </div>
@@ -418,7 +421,7 @@
                                                     <input type="text" class="form-control form-control-user" name="term" id="term_eo" style="font-weight: bold; font-size:large" placeholder="TERM" readonly>
                                                 </div>
                                                 <div class="col-sm-4 mb-1">
-                                                    <input type="text" class="form-control form-control-user" name="division" id="division_eo" style="font-weight: bold; font-size:large" placeholder="DIVISION" readonly>
+                                                    <input type="text" class="form-control form-control-user" name="division" id="division_eo" style="font-weight: bold; font-size:large" placeholder="CLASS" readonly>
                                                 </div>
                                                 <input type="hidden" id="observation_id" name="observation_id">
                                             </div>
@@ -492,7 +495,7 @@
                                         </div>
 
                                         <div class="card-body" id="milestone_details">
-                                             <div id="table_div">
+                                            <div id="table_div">
                                                 <table id="datatable" class="table table-striped" style="color:black">
                                                     <thead>
                                                         <tr>
@@ -511,7 +514,7 @@
                                                             <th scope="col">PET-IV Attempt</th>
                                                             <th scope="col">PARADE RESULT</th>
                                                             <th scope="col">PARADE Attempt</th>
-                                                            
+
 
 
                                                         </tr>
@@ -521,7 +524,7 @@
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                            </div> 
+                                            </div>
                                         </div>
 
                                     </form>
@@ -609,83 +612,83 @@
             </div>
         </div>
     </div>
-   <div class="modal fade" id="branches">
+    <div class="modal fade" id="branches">
         < !-- <div class="row"> -- >
-        <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
-            <div class="modal-content bg-custom3" style="width:1200px;">
-                <div class="modal-header" style="width:1200px;">
-                </div>
-                <div class="card-body bg-custom3">
-                    < !-- Nested Row within Card Body -- >
-                    <div class="row">
-                        <div class="col-lg-12">
-
-                            <div class="card">
-                                <div class="card-header bg-custom1">
-                                    <h1 class="h4">Branches Record</h1>
-                                </div>
-
-                                <div class="card-body bg-custom3">
-                                    <form class="user" role="form" method="post" id="add_form" action="">
-                                        <div class="form-group row">
-                                            <div class="col-sm-4">
-                                                <h3 id="cadet_name_heading_b"></h3>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <h3 id="cadet_oc_no_b"></h3>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <h3 id="cadet_term_b"></h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-body">
-                                            <div id="table_div">
-                                                <table id="datatable" class="table table-striped" style="color:black">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">No.</th>
-                                                            <th scope="col">1st Preference</th>
-                                                            <th scope="col">2nd Preference</th>
-                                                            <th scope="col">3rd Preference</th>
-                                                            <th scope="col">Branch Allocated</th>
-                                                            <th scope="col">Branch Recommendation</th>
-                                                            <th scope="col">Edit</th>
-
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody id="table_rows_branches">
-                                                        <tr>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                    </form>
-                                </div>
-                            </div>  
-
-                        </div>
+            <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
+                <div class="modal-content bg-custom3" style="width:1200px;">
+                    <div class="modal-header" style="width:1200px;">
                     </div>
-                </div> 
-                <div class="modal-footer">
-                     <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> 
+                    <div class="card-body bg-custom3">
+                        < !-- Nested Row within Card Body -->
+                            <div class="row">
+                                <div class="col-lg-12">
 
+                                    <div class="card">
+                                        <div class="card-header bg-custom1">
+                                            <h1 class="h4">Branches Record</h1>
+                                        </div>
+
+                                        <div class="card-body bg-custom3">
+                                            <form class="user" role="form" method="post" id="add_form" action="">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-4">
+                                                        <h3 id="cadet_name_heading_b"></h3>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <h3 id="cadet_oc_no_b"></h3>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <h3 id="cadet_term_b"></h3>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-body">
+                                                    <div id="table_div">
+                                                        <table id="datatable" class="table table-striped" style="color:black">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col">No.</th>
+                                                                    <th scope="col">1st Preference</th>
+                                                                    <th scope="col">2nd Preference</th>
+                                                                    <th scope="col">3rd Preference</th>
+                                                                    <th scope="col">Branch Allocated</th>
+                                                                    <th scope="col">Branch Recommendation</th>
+                                                                    <th scope="col">Edit</th>
+
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="table_rows_branches">
+                                                                <tr>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button>
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>  
+    </div>
 
     <div class="modal fade" id="edit_branches">
         < !-- <div class="row"> -- >
-       <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
-            <div class="modal-content bg-custom3" style="width:1200px;">
-                <div class="modal-header" style="width:1200px;">
-                </div>
-                <div class="card-body bg-custom3">
-                    < !-- Nested Row within Card Body -- >
-                 <!--   <div class="row">
+            <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
+                <div class="modal-content bg-custom3" style="width:1200px;">
+                    <div class="modal-header" style="width:1200px;">
+                    </div>
+                    <div class="card-body bg-custom3">
+                        < !-- Nested Row within Card Body -->
+                            <!--   <div class="row">
                         <div class="col-lg-12">
 
                             <div class="card">
@@ -803,51 +806,51 @@
                                             </div>
                                         </div>  -->
 
-                                        <div class="form-group row justify-content-center">
-                                            <div class="col-sm-4">
-                                                <button type="button" class="btn btn-primary btn-user btn-block" id="save_btn_branches">
-                                                    <!-- <i class="fab fa-google fa-fw"></i>   -->
-                                                    SAVE
-                                                </button>
-                                                <span id="show_error_save" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;PLEASE CHECK THE ERRORS*</span>
-                                            </div>
-                                        </div>
-
-                                    </form>
+                            <div class="form-group row justify-content-center">
+                                <div class="col-sm-4">
+                                    <button type="button" class="btn btn-primary btn-user btn-block" id="save_btn_branches">
+                                        <!-- <i class="fab fa-google fa-fw"></i>   -->
+                                        SAVE
+                                    </button>
+                                    <span id="show_error_save" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;PLEASE CHECK THE ERRORS*</span>
                                 </div>
                             </div>
 
-
-                        </div>
+                            </form>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
-                </div> 
-            </div> 
-        </div>
-    </div>  
 
 
-    <div class="modal fade" id="edit_warning" style="z-index: 2100">
-        <!-- <div class="row"> -->
-        <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
-            <div class="modal-content bg-custom3" style="width:1200px;">
-                <div class="modal-header" style="width:1200px;">
-                </div>
-                <div class="card-body bg-custom3">
-                    <!-- Nested Row within Card Body -->
-                    <div class="row">
-                        <div class="col-lg-12">
+            </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
+</div>
+</div>
+</div>
+</div>
 
-                            <div class="card">
-                                <div class="card-header bg-custom1">
-                                    <h1 class="h4">UPDATE WARNINGS RECORD</h1>
-                                </div>
 
-                                <div class="card-body bg-custom3">
-                                    <!--     <form class="user" role="form" method="post" id="add_form" action="<?= base_url(); ?>Project_Officer/insert_project"> -->
-                                    <!--  <div class="form-group row">
+<div class="modal fade" id="edit_warning" style="z-index: 2100">
+    <!-- <div class="row"> -->
+    <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
+        <div class="modal-content bg-custom3" style="width:1200px;">
+            <div class="modal-header" style="width:1200px;">
+            </div>
+            <div class="card-body bg-custom3">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="card">
+                            <div class="card-header bg-custom1">
+                                <h1 class="h4">UPDATE WARNINGS RECORD</h1>
+                            </div>
+
+                            <div class="card-body bg-custom3">
+                                <!--     <form class="user" role="form" method="post" id="add_form" action="<?= base_url(); ?>Project_Officer/insert_project"> -->
+                                <!--  <div class="form-group row">
                                             <div class="col-sm-4">
                                                 <h3 id="cadet_name_heading_ew"></h3>
                                             </div>
@@ -859,566 +862,562 @@
                                             </div>
                                         </div> -->
 
-                                    <div class="card-body">
-                                        <form class="user" role="form" method="post" enctype="multipart/form-data" id="save_form" action="<?= base_url(); ?>D_O/update_cadet_warning">
-                                            <div class="form-group row">
-                                                <div class="col-sm-4">
-                                                    <h6>&nbsp;NAME:</h6>
-                                                </div>
-
-                                                <div class="col-sm-4">
-                                                    <h6>&nbsp;TERM:</h6>
-                                                </div>
-
-                                                <div class="col-sm-4">
-                                                    <h6>&nbsp;DIVISION:</h6>
-                                                </div>
-
-                                            </div>
-                                            <div class="form-group row">
-
-                                                <div class="col-sm-4 mb-1" style="display:none">
-                                                    <input type="text" class="" name="oc_num" id="oc_num_ew">
-                                                </div>
-                                                <div class="col-sm-4 mb-1" style="display:none">
-                                                    <input type="text" class="" name="id" id="id_ew">
-                                                </div>
-
-                                                <div class="col-sm-4 mb-1">
-                                                    <input type="text" class="form-control form-control-user" name="name" id="name" style="font-weight: bold; font-size:large" placeholder="NAME" readonly>
-                                                </div>
-                                                <div class="col-sm-4 mb-1">
-                                                    <input type="text" class="form-control form-control-user" name="term" id="term" style="font-weight: bold; font-size:large" placeholder="TERM" readonly>
-                                                </div>
-                                                <div class="col-sm-4 mb-1">
-                                                    <input type="text" class="form-control form-control-user" name="division" id="division" style="font-weight: bold; font-size:large" placeholder="DIVISION" readonly>
-                                                </div>
-
+                                <div class="card-body">
+                                    <form class="user" role="form" method="post" enctype="multipart/form-data" id="save_form" action="<?= base_url(); ?>D_O/update_cadet_warning">
+                                        <div class="form-group row">
+                                            <div class="col-sm-4">
+                                                <h6>&nbsp;NAME:</h6>
                                             </div>
 
-                                            <div class="form-group row">
-                                                <div class="col-sm-4">
-                                                    <h6>&nbsp;DATE:</h6>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h6>&nbsp;ISSUED BY:</h6>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <h6>&nbsp;WARNING TYPE:</h6>
-                                                </div>
-
+                                            <div class="col-sm-4">
+                                                <h6>&nbsp;TERM:</h6>
                                             </div>
 
-                                            <div class="form-group row">
-                                                <div class="col-sm-4 mb-1">
-                                                    <input type="date" class="form-control form-control-user" name="date" id="date">
-                                                </div>
-                                                <div class="col-sm-4 mb-1">
-                                                    <input type="text" class="form-control form-control-user" name="issued_by" id="issued_by" placeholder="Issue by">
-                                                    <span id="error_end_date" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;END DATE CANNOT BE LESS THSN THE START DATE.</span>
-                                                </div>
-                                                <div class="col-sm-4 mb-1">
-                                                    <select class="form-control rounded-pill" name="warning_type" id="warning_type" data-placeholder="Warning Type" style="font-size: 0.8rem; height:50px;">
-                                                        <option class="form-control form-control-user" value="">SELECT WARNING TYPE</option>
-                                                        <option class="form-control form-control-user" value="red">COMMANDANT</option>
-                                                        <option class="form-control form-control-user" value="orange">OFFICER INCHARGE</option>
-                                                        <option class="form-control form-control-user" value="yellow">SENIOR DIVISIONAL OFFICER</option>
-                                                        <option class="form-control form-control-user" value="white">DIVISIONAL OFFICER</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col-sm-12">
-                                                    <h6>&nbsp;REASONS:</h6>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col-sm-12 mb-1">
-                                                    <textarea class="form-control form-control-user" name="reason" id="reason" style="border-radius:10px" placeholder="ADD WARNING REASONS "></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col-sm-12">
-                                                    <h6>&nbsp;UPLOAD  WARNING LETTER:</h6>
-                                                </div>
+                                            <div class="col-sm-4">
+                                                <h6>&nbsp;CLASS:</h6>
                                             </div>
 
-                                            <div class="form-group row custom-file-upload">
-                                                <div class="col-sm-12 mb-1">
-                                                    <input type="file" style="height: 50px; padding:10px !important;" multiple="multiple" class="form-control form-control-user" placeholder="UPLOAD DOCUMENT" name="file[]" x-model="fileName">
-                                                    <label style="color: black;font-weight: bold;" id="file_name"></label>
-                                                </div>
+                                        </div>
+                                        <div class="form-group row">
+
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="oc_num" id="oc_num_ew">
                                             </div>
-                                            <input type="hidden" name="old_file" id="old_file">
-                                            <div class="form-group row justify-content-center">
-                                                <div class="col-sm-4">
-                                                    <button type="button" class="btn btn-primary btn-user btn-block" id="save_btn">
-                                                        <!-- <i class="fab fa-google fa-fw"></i>   -->
-                                                        UPDATE
-                                                    </button>
-                                                    <span id="show_error_save" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;PLEASE CHECK ERRORS*</span>
-                                                </div>
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="id" id="id_ew">
                                             </div>
 
-                                        </form>
+                                            <div class="col-sm-4 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="name" id="name" style="font-weight: bold; font-size:large" placeholder="NAME" readonly>
+                                            </div>
+                                            <div class="col-sm-4 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="term" id="term" style="font-weight: bold; font-size:large" placeholder="TERM" readonly>
+                                            </div>
+                                            <div class="col-sm-4 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="division" id="division" style="font-weight: bold; font-size:large" placeholder="CLASS" readonly>
+                                            </div>
 
-                                    </div>
+                                        </div>
 
-                                    </form>
-                                </div>
-                            </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-4">
+                                                <h6>&nbsp;DATE:</h6>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <h6>&nbsp;ISSUED BY:</h6>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <h6>&nbsp;WARNING TYPE:</h6>
+                                            </div>
 
+                                        </div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="PET_I">
-        <!-- <div class="row"> -->
-        <div class="modal-dialog modal-dialog-centered " style="margin-left: 370px;" role="document">
-            <div class="modal-content bg-custom3" style="width:1000px;">
-                <div class="modal-header" style="width:1000px;">
-                </div>
-                <div class="card-body bg-custom3">
-                    <!-- Nested Row within Card Body -->
-                    <div class="row">
-                        <div class="col-lg-12">
-
-                            <div class="card">
-                                <div class="card-header bg-custom1">
-                                    <h1 class="h4">PET-I DETAILS</h1>
-                                </div>
-
-                                <div class="card-body bg-custom3">
-                                    <form class="user" role="form" method="post" id="add_form" action="">
+                                        <div class="form-group row">
+                                            <div class="col-sm-4 mb-1">
+                                                <input type="date" class="form-control form-control-user" name="date" id="date">
+                                            </div>
+                                            <div class="col-sm-4 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="issued_by" id="issued_by" placeholder="Issue by">
+                                                <span id="error_end_date" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;END DATE CANNOT BE LESS THSN THE START DATE.</span>
+                                            </div>
+                                            <div class="col-sm-4 mb-1">
+                                                <select class="form-control rounded-pill" name="warning_type" id="warning_type" data-placeholder="Warning Type" style="font-size: 0.8rem; height:50px;">
+                                                    <option class="form-control form-control-user" value="">SELECT WARNING TYPE</option>
+                                                    <option class="form-control form-control-user" value="red">COMMANDANT</option>
+                                                    <option class="form-control form-control-user" value="orange">OFFICER INCHARGE</option>
+                                                    <option class="form-control form-control-user" value="yellow">SENIOR DIVISIONAL OFFICER</option>
+                                                    <option class="form-control form-control-user" value="white">DIVISIONAL OFFICER</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                         <div class="form-group row">
                                             <div class="col-sm-12">
-                                                <h3 id="cadet_name_heading"></h3>
+                                                <h6>&nbsp;REASONS:</h6>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>MILE TIME:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <h6 id="mile_time1_detail"></h6>
+                                            <div class="col-sm-12 mb-1">
+                                                <textarea class="form-control form-control-user" name="reason" id="reason" style="border-radius:10px" placeholder="ADD WARNING REASONS "></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>CHIN UPS:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <h6 id="chinups1_detail"></h6>
+                                            <div class="col-sm-12">
+                                                <h6>&nbsp;UPLOAD WARNING LETTER:</h6>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>PUSH UPS:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <h6 id="pushup1_detail"></h6>
+
+                                        <div class="form-group row custom-file-upload">
+                                            <div class="col-sm-12 mb-1">
+                                                <input type="file" style="height: 50px; padding:10px !important;" multiple="multiple" class="form-control form-control-user" placeholder="UPLOAD DOCUMENT" name="file[]" x-model="fileName">
+                                                <label style="color: black;font-weight: bold;" id="file_name"></label>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>ROPE:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <h6 id="rope1_detail"></h6>
+                                        <input type="hidden" name="old_file" id="old_file">
+                                        <div class="form-group row justify-content-center">
+                                            <div class="col-sm-4">
+                                                <button type="button" class="btn btn-primary btn-user btn-block" id="save_btn">
+                                                    <!-- <i class="fab fa-google fa-fw"></i>   -->
+                                                    UPDATE
+                                                </button>
+                                                <span id="show_error_save" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;PLEASE CHECK ERRORS*</span>
                                             </div>
                                         </div>
 
                                     </form>
+
                                 </div>
+
+                                </form>
                             </div>
-
-
                         </div>
+
+
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
-                </div>
+            </div>
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
             </div>
         </div>
     </div>
+</div>
 
-    <div class="modal fade" id="PET_II">
-        <!-- <div class="row"> -->
-        <div class="modal-dialog modal-dialog-centered " style="margin-left: 370px;" role="document">
-            <div class="modal-content bg-custom3" style="width:1000px;">
-                <div class="modal-header" style="width:1000px;">
-                </div>
-                <div class="card-body bg-custom3">
-                    <!-- Nested Row within Card Body -->
-                    <div class="row">
-                        <div class="col-lg-12">
-
-                            <div class="card">
-                                <div class="card-header bg-custom1">
-                                    <h1 class="h4">PET-II DETAILS</h1>
-                                </div>
-
-                                <div class="card-body bg-custom3">
-                                    <form class="user" role="form" method="post" id="add_form" action="">
-                                        <div class="form-group row">
-                                            <div class="col-sm-12">
-                                                <h3 id="cadet_name_heading"></h3>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>MILE TIME:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <h6 id="mile_time2_detail"></h6>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>CHIN UPS:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <h6 id="chinups2_detail"></h6>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>PUSH UPS:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <h6 id="pushup2_detail"></h6>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>ROPE:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <h6 id="rope2_detail"></h6>
-                                            </div>
-                                        </div>
-
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
-                </div>
+<div class="modal fade" id="PET_I">
+    <!-- <div class="row"> -->
+    <div class="modal-dialog modal-dialog-centered " style="margin-left: 370px;" role="document">
+        <div class="modal-content bg-custom3" style="width:1000px;">
+            <div class="modal-header" style="width:1000px;">
             </div>
-        </div>
-    </div>
+            <div class="card-body bg-custom3">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-12">
 
-    <div class="modal fade" id="clubs">
-        <!-- <div class="row"> -->
-        <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
-            <div class="modal-content bg-custom3" style="width:1200px;">
-                <div class="modal-header" style="width:1200px;">
-                </div>
-                <div class="card-body bg-custom3">
-                    <!-- Nested Row within Card Body -->
-                    <div class="row">
-                        <div class="col-lg-12">
-
-                            <div class="card">
-                                <div class="card-header bg-custom1">
-                                    <h1 class="h4">CLUB RECORD</h1>
-                                </div>
-
-                                <div class="card-body bg-custom3">
-                                    <form class="user" role="form" method="post" id="add_form" action="">
-                                        <div class="form-group row">
-                                            <div class="col-sm-4">
-                                                <h3 id="cadet_name_heading_club"></h3>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <h3 id="cadet_oc_no_club"></h3>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <h3 id="cadet_term_club"></h3>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-body">
-                                            <div id="table_div">
-                                                <table id="datatable" class="table table-striped" style="color:black">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">S NO.</th>
-                                                            <th scope="col">TERM</th>
-                                                            <th scope="col">ASSIGNED CLUB</th>
-                                                            <th scope="col">CREATED DATE</th>
-                                                            <th>EDIT</th>
-                                                            <th>DELETE</th>
-
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody id="table_rows_club">
-                                                        <tr>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                    </form>
-                                </div>
+                        <div class="card">
+                            <div class="card-header bg-custom1">
+                                <h1 class="h4">PET-I DETAILS</h1>
                             </div>
 
-
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="edit_clubs">
-        <!-- <div class="row"> -->
-        <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
-            <div class="modal-content bg-custom3" style="width:1200px;">
-                <div class="modal-header" style="width:1200px;">
-                </div>
-                <div class="card-body bg-custom3">
-                    <!-- Nested Row within Card Body -->
-                    <div class="row">
-                        <div class="col-lg-12">
-
-                            <div class="card">
-                                <div class="card-header bg-custom1">
-                                    <h1 class="h4">EDIT CLUB RECORD</h1>
-                                </div>
-
-                                <div class="card-body bg-custom3">
-
-                                    <div class="card-body">
-                                        <form class="user" role="form" method="post" id="save_form_club" action="<?= base_url(); ?>D_O/update_cadet_club">
-                                            <div class="form-group row">
-                                                <div class="col-sm-3">
-                                                    <h6>&nbsp;NAME:</h6>
-                                                </div>
-
-                                                <div class="col-sm-3">
-                                                    <h6>&nbsp;TERM:</h6>
-                                                </div>
-
-                                                <div class="col-sm-3">
-                                                    <h6>&nbsp;DIVISION:</h6>
-                                                </div>
-
-                                                <div class="col-sm-3">
-                                                    <h6>&nbsp;CLUB:</h6>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="form-group row">
-
-                                                <div class="col-sm-3 mb-1" style="display:none">
-                                                    <input type="text" class="" name="oc_num_ec" id="oc_num_ec">
-                                                </div>
-                                                <div class="col-sm-3 mb-1" style="display:none">
-                                                    <input type="text" class="" name="p_id_ec" id="p_id_ec">
-                                                </div>
-
-                                                <div class="col-sm-3 mb-1">
-                                                    <input type="text" class="form-control form-control-user" name="name" id="name_ec" style="font-weight: bold; font-size:large" placeholder="NAME" readonly>
-                                                </div>
-                                                <div class="col-sm-3 mb-1">
-                                                    <input type="text" class="form-control form-control-user" name="term" id="term_ec" style="font-weight: bold; font-size:large" placeholder="TERM" readonly>
-                                                </div>
-                                                <input type="hidden" name="club_id" id="club_id">
-                                                <div class="col-sm-3 mb-1">
-                                                    <input type="text" class="form-control form-control-user" name="division" id="division_ec" style="font-weight: bold; font-size:large" placeholder="DIVISION" readonly>
-                                                </div>
-                                                <div class="col-sm-3 mb-1">
-                                                    <select class="form-control rounded-pill" name="club" id="club_ec" data-placeholder="Select Club" style="font-size: 0.8rem; height:50px; font-weight: bold; font-size:large">
-                                                        <option class="form-control form-control-user" value="">SELECT CLUB</option>
-                                                        <?php $club_data = $this->db->get('cadet_club')->result_array(); ?>
-                                                        <?php foreach ($club_data as $club) { ?>
-                                                            <option class="form-control form-control-user" value="<?= $club['name'] ?>"><?= $club['name'] ?></option>
-                                                        <?php } ?>
-                                                    </select>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="form-group row justify-content-center">
-                                                <div class="col-sm-4">
-                                                    <button type="button" class="btn btn-primary btn-user btn-block" id="save_btn_club">
-                                                        <!-- <i class="fab fa-google fa-fw"></i>   -->
-                                                        SAVE
-                                                    </button>
-                                                    <span id="show_error_save" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;PLEASE CHECK ERRORS*</span>
-                                                </div>
-                                            </div>
-
-                                        </form>
+                            <div class="card-body bg-custom3">
+                                <form class="user" role="form" method="post" id="add_form" action="">
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <h3 id="cadet_name_heading"></h3>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;<strong>MILE TIME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h6 id="mile_time1_detail"></h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;<strong>CHIN UPS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h6 id="chinups1_detail"></h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;<strong>PUSH UPS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h6 id="pushup1_detail"></h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;<strong>ROPE:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h6 id="rope1_detail"></h6>
+                                        </div>
                                     </div>
 
-                                    </form>
-                                </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="PET_II">
+    <!-- <div class="row"> -->
+    <div class="modal-dialog modal-dialog-centered " style="margin-left: 370px;" role="document">
+        <div class="modal-content bg-custom3" style="width:1000px;">
+            <div class="modal-header" style="width:1000px;">
+            </div>
+            <div class="card-body bg-custom3">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="card">
+                            <div class="card-header bg-custom1">
+                                <h1 class="h4">PET-II DETAILS</h1>
                             </div>
 
+                            <div class="card-body bg-custom3">
+                                <form class="user" role="form" method="post" id="add_form" action="">
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <h3 id="cadet_name_heading"></h3>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;<strong>MILE TIME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h6 id="mile_time2_detail"></h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;<strong>CHIN UPS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h6 id="chinups2_detail"></h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;<strong>PUSH UPS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h6 id="pushup2_detail"></h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;<strong>ROPE:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h6 id="rope2_detail"></h6>
+                                        </div>
+                                    </div>
 
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
+            </div>
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="clubs">
+    <!-- <div class="row"> -->
+    <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
+        <div class="modal-content bg-custom3" style="width:1200px;">
+            <div class="modal-header" style="width:1200px;">
+            </div>
+            <div class="card-body bg-custom3">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="card">
+                            <div class="card-header bg-custom1">
+                                <h1 class="h4">CLUB RECORD</h1>
+                            </div>
+
+                            <div class="card-body bg-custom3">
+                                <form class="user" role="form" method="post" id="add_form" action="">
+                                    <div class="form-group row">
+                                        <div class="col-sm-4">
+                                            <h3 id="cadet_name_heading_club"></h3>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <h3 id="cadet_oc_no_club"></h3>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <h3 id="cadet_term_club"></h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div id="table_div">
+                                            <table id="datatable" class="table table-striped" style="color:black">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">S NO.</th>
+                                                        <th scope="col">TERM</th>
+                                                        <th scope="col">ASSIGNED CLUB</th>
+                                                        <th scope="col">CREATED DATE</th>
+                                                        <th>EDIT</th>
+                                                        <th>DELETE</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="table_rows_club">
+                                                    <tr>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-
-
-    <!-- Page Heading -->
-    <div class="card-body" style="padding:10px">
-        <div class="row my-2">
-            <img src='<?= base_url() ?>assets/img/navy_logo-new.png' style="height: 130px; width:100px;">
-            <div class="card-body">
-                <h1 style="text-align:center"><strong>UT's DIVISIONAL ANALYTICS</strong></h1>
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
             </div>
         </div>
     </div>
+</div>
 
-    <div class="card-body bg-custom3">
-        <!-- Nested Row within Card Body -->
+<div class="modal fade" id="edit_clubs">
+    <!-- <div class="row"> -->
+    <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
+        <div class="modal-content bg-custom3" style="width:1200px;">
+            <div class="modal-header" style="width:1200px;">
+            </div>
+            <div class="card-body bg-custom3">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-12">
 
-        <div class="row">
+                        <div class="card">
+                            <div class="card-header bg-custom1">
+                                <h1 class="h4">EDIT CLUB RECORD</h1>
+                            </div>
+
+                            <div class="card-body bg-custom3">
+
+                                <div class="card-body">
+                                    <form class="user" role="form" method="post" id="save_form_club" action="<?= base_url(); ?>D_O/update_cadet_club">
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;NAME:</h6>
+                                            </div>
+
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;TERM:</h6>
+                                            </div>
+
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;CLASS:</h6>
+                                            </div>
+
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;CLUB:</h6>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+
+                                            <div class="col-sm-3 mb-1" style="display:none">
+                                                <input type="text" class="" name="oc_num_ec" id="oc_num_ec">
+                                            </div>
+                                            <div class="col-sm-3 mb-1" style="display:none">
+                                                <input type="text" class="" name="p_id_ec" id="p_id_ec">
+                                            </div>
+
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="name" id="name_ec" style="font-weight: bold; font-size:large" placeholder="NAME" readonly>
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="term" id="term_ec" style="font-weight: bold; font-size:large" placeholder="TERM" readonly>
+                                            </div>
+                                            <input type="hidden" name="club_id" id="club_id">
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="division" id="division_ec" style="font-weight: bold; font-size:large" placeholder="CLASS" readonly>
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <select class="form-control rounded-pill" name="club" id="club_ec" data-placeholder="Select Club" style="font-size: 0.8rem; height:50px; font-weight: bold; font-size:large">
+                                                    <option class="form-control form-control-user" value="">SELECT CLUB</option>
+                                                    <?php $club_data = $this->db->get('cadet_club')->result_array(); ?>
+                                                    <?php foreach ($club_data as $club) { ?>
+                                                        <option class="form-control form-control-user" value="<?= $club['name'] ?>"><?= $club['name'] ?></option>
+                                                    <?php } ?>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group row justify-content-center">
+                                            <div class="col-sm-4">
+                                                <button type="button" class="btn btn-primary btn-user btn-block" id="save_btn_club">
+                                                    <!-- <i class="fab fa-google fa-fw"></i>   -->
+                                                    SAVE
+                                                </button>
+                                                <span id="show_error_save" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;PLEASE CHECK ERRORS*</span>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Page Heading -->
+<div class="card-body" style="padding:10px">
+    <img src='<?= base_url() ?>assets/img/navy_logo-new.png' style="height: 130px; width:100px;">
+    <div class="card-body" style="margin-bottom:20px;float:right; padding:30px; margin-right:500px">
+        <h1 style="text-align:center"><strong>UT's DIVISIONAL ANALYTIS</strong></h1>
+    </div>
+</div>
+
+<div class="card-body bg-custom3">
+    <!-- Nested Row within Card Body -->
+
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="card">
+                <div class="card-header bg-custom1">
+                    <h1 class="h4">SEARCH UT</h1>
+                </div>
+
+                <div class="card-body bg-custom3">
+                    <form class="user" role="form" method="post" id="add_form" action="">
+                        <div class="form-group row">
+                            <div class="col-sm-2" style="margin-top:15px">
+                                <h6>&nbsp;O NO:</h6>
+                            </div>
+
+                            <div class="col-sm-3 mb-1">
+                                <input type="text" class="form-control form-control-user" name="oc_no" id="oc_no" placeholder="ENTER O NO" value="<?= $oc_no_entered ?>">
+                                <span id="error_search" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;PLEASE ENTER O NO</span>
+                            </div>
+
+                            <div class="col-sm-2 mb-1">
+                                <button type="button" class="btn btn-primary btn-user btn-block" id="search_btn">
+                                    SEARCH
+                                </button>
+                            </div>
+                            <div class="col-sm-2 mb-1">
+                                <button type="button" class="btn btn-primary btn-user btn-block" id="show_all_btn">
+                                    SHOW ALL UTs
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="no_data" class="row my-2" style="display:none">
+        <div class="col-lg-12 my-5">
+
+            <h4 style="color:red">NO UT FOUND . PLEASE CHECK THE O NO ENTERED</h4>
+
+        </div>
+    </div>
+
+    <?php if (count($pn_data) > 0) { ?>
+        <div id="cadet_dossier" class="row">
             <div class="col-lg-12">
 
                 <div class="card">
                     <div class="card-header bg-custom1">
-                        <h1 class="h4">SEARCH UT</h1>
+                        <h1 class="h4">UT's RECORDS</h1>
                     </div>
 
-                    <div class="card-body bg-custom3">
-                        <form class="user" role="form" method="post" id="add_form" action="">
-                            <div class="form-group row">
-                                <div class="col-sm-2" style="margin-top:15px">
-                                    <h6>&nbsp;O NO:</h6>
-                                </div>
 
-                                <div class="col-sm-3 mb-1">
-                                    <input type="text" class="form-control form-control-user" name="oc_no" id="oc_no" placeholder="ENTER O NO" value="<?= $oc_no_entered ?>">
-                                    <span id="error_search" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;PLEASE ENTER O NO</span>
-                                </div>
+                    <div class="card-body">
+                        <div id="table_div">
 
-                                <div class="col-sm-2 mb-1">
-                                    <button type="button" class="btn btn-primary btn-user btn-block" id="search_btn">
-                                        SEARCH
-                                    </button>
-                                </div>
-                                <div class="col-sm-2 mb-1">
-                                    <button type="button" class="btn btn-primary btn-user btn-block" id="show_all_btn">
-                                        SHOW ALL UTs
-                                    </button>
-                                </div> 
+                            <table id="datatable" class="table table-striped" style="color:black; font-size:smaller">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" style='white-space: nowrap;'>ID</th>
+                                        <th scope="col" style='white-space: nowrap;'>UT's NAME</th>
+                                        <th scope="col" style='white-space: nowrap;'>O NO</th>
+                                        <th scope="col" style='white-space: nowrap;'>TERM</th>
+                                        <th scope="col" style="text-align:center">PHYSICAL MILESTONES</th>
+                                        <th scope="col" style="text-align:center">PUNISHMENTS</th>
+                                        <th scope="col" style="text-align:center">EXCUSES</th>
+                                        <th scope="col" style="text-align:center">OBSERVATIONS</th>
+                                        <th scope="col" style="text-align:center">CLUBS</th>
 
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                                        <!--<th scope="col" style="text-align:center">Branches</th>  -->
 
-            </div>
-        </div>
+                                        <th scope="col" style="text-align:center">WARNINGS</th>
 
-        <div id="no_data" class="row my-2" style="display:none">
-            <div class="col-lg-12 my-5">
-
-                <h4 style="color:red">NO UT FOUND . PLEASE CHECK THE O NO ENTERED</h4>
-
-            </div>
-        </div>
-
-        <?php if (count($pn_data) > 0) { ?>
-            <div id="cadet_dossier" class="row">
-                <div class="col-lg-12">
-
-                    <div class="card">
-                        <div class="card-header bg-custom1">
-                            <h1 class="h4">UT's RECORDS</h1>
-                        </div>
-
-
-                        <div class="card-body">
-                            <div id="table_div">
-
-                                <table id="datatable" class="table table-striped" style="color:black; font-size:smaller">
-                                    <thead>
+                                    </tr>
+                                </thead>
+                                <tbody id="table_rows">
+                                    <?php $count = 0;
+                                    foreach ($pn_data as $data) { ?>
                                         <tr>
-                                            <th scope="col" style='white-space: nowrap;'>ID</th>
-                                            <th scope="col" style='white-space: nowrap;'>UT's NAME</th>
-                                            <th scope="col" style='white-space: nowrap;'>O NO</th>
-                                            <th scope="col" style='white-space: nowrap;'>TERM</th>
-                                            <th scope="col" style="text-align:center">PHYSICAL MILESTONES</th>
-                                            <th scope="col" style="text-align:center">PUNISHMENTS</th>
-                                            <th scope="col" style="text-align:center">EXCUSES</th>
-                                            <th scope="col" style="text-align:center">OBSERVATIONS</th>
-                                            <th scope="col" style="text-align:center">CLUBS</th>
 
-                                           <!--<th scope="col" style="text-align:center">Branches</th>  -->
+                                            <td scope="row"><?= ++$count; ?></td>
+                                            <td scope="row" style='white-space: nowrap;'><?= $data['name']; ?></td>
+                                            <td scope="row" style='white-space: nowrap;'><?= $data['oc_no']; ?></td>
+                                            <td scope="row" style='white-space: nowrap;'><?= $data['term']; ?></td>
+                                            <td scope="row" style="display: none" style='white-space: nowrap;'><?= $data['p_id']; ?></td>
 
-                                            <th scope="col" style="text-align:center">WARNINGS</th>
+                                            <td scope="row" style="text-align:center"><button type="button" onclick="view_physical_milestone(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#milestone">PHYSICAL MILESTONES</button></td>
+                                            <td scope="row" style="text-align:center"><button type="button" onclick="view_punishments(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#punishments">PUNISHMENTS</button></td>
+                                            <td scope="row" style="text-align:center"><button type="button" onclick="view_excuses(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#excuses">EXCUSES</button></td>
+                                            <td scope="row" style="text-align:center"><button type="button" onclick="view_observations(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#observations">OBSERVATION</button></td>
+                                            <td scope="row" style="text-align:center"><button type="button" onclick="view_club(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#clubs">CLUBS</button></td>
+
+                                            <!-- <td scope="row" style="text-align:center"><button type="button" onclick="view_branches(<?= $data['p_id'] ?>)" data-toggle="modal" data-target="#branches" class="btn btn-primary btn-user rounded-pill">Branches</button></td>   -->
+
+                                            <td scope="row" style="text-align:center" onclick="view_warning(<?= $data['p_id'] ?>)" data-toggle="modal" data-target="#warning"><button type="button" class="btn btn-primary btn-user rounded-pill">WARNINGS</button></td>
+                                            <td scope="row" style="display:none"><?= $data['p_id']; ?></td>
 
                                         </tr>
-                                    </thead>
-                                    <tbody id="table_rows">
-                                        <?php $count = 0;
-                                        foreach ($pn_data as $data) { ?>
-                                            <tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
 
-                                                <td scope="row"><?= ++$count; ?></td>
-                                                <td scope="row" style='white-space: nowrap;'><?= $data['name']; ?></td>
-                                                <td scope="row" style='white-space: nowrap;'><?= $data['oc_no']; ?></td>
-                                                <td scope="row" style='white-space: nowrap;'><?= $data['term']; ?></td>
-                                                <td scope="row" style="display: none" style='white-space: nowrap;'><?= $data['p_id']; ?></td>
+                            <!-- <a> No Data found </a> -->
 
-                                                <td scope="row" style="text-align:center"><button type="button" onclick="view_physical_milestone(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#milestone">PHYSICAL MILESTONES</button></td>
-                                                <td scope="row" style="text-align:center"><button type="button" onclick="view_punishments(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#punishments">PUNISHMENTS</button></td>
-                                                <td scope="row" style="text-align:center"><button type="button" onclick="view_excuses(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#excuses">EXCUSES</button></td>
-                                                <td scope="row" style="text-align:center"><button type="button" onclick="view_observations(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#observations">OBSERVATION</button></td>
-                                                <td scope="row" style="text-align:center"><button type="button" onclick="view_club(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#clubs">CLUBS</button></td>
-
-                                                <!-- <td scope="row" style="text-align:center"><button type="button" onclick="view_branches(<?= $data['p_id'] ?>)" data-toggle="modal" data-target="#branches" class="btn btn-primary btn-user rounded-pill">Branches</button></td>   -->
-                                                
-                                                <td scope="row" style="text-align:center" onclick="view_warning(<?= $data['p_id'] ?>)" data-toggle="modal" data-target="#warning"><button type="button" class="btn btn-primary btn-user rounded-pill">WARNINGS</button></td>
-                                                <td scope="row" style="display:none"><?= $data['p_id']; ?></td>
-
-                                            </tr>
-                                        <?php } ?>
-                                    </tbody>
-                                </table>
-
-                                <!-- <a> No Data found </a> -->
-
-                            </div>
                         </div>
-
-
                     </div>
 
+
                 </div>
+
             </div>
+        </div>
 
-        <?php } ?>
+    <?php } ?>
 
-    </div>
+</div>
 
 </div>
 
@@ -1427,7 +1426,7 @@
 <?php $this->load->view('common/footer'); ?>
 <script>
     function view_physical_milestone(id) {
-        
+
         $.ajax({
             url: '<?= base_url(); ?>D_O/view_milestone_in_dossier',
             method: 'POST',
@@ -1438,86 +1437,86 @@
                 var result = jQuery.parseJSON(data);
                 var len = result.length;
 
-                if (len > 0 ) {
-                $("#table_rows_milestone").empty();
+                if (len > 0) {
+                    $("#table_rows_milestone").empty();
 
-                for (var i = 0; i < len; i++) {
+                    for (var i = 0; i < len; i++) {
 
-                    if (result[i]['PST_result'] == 'qualified') {
-                        color_pst = 'green';
-                        value_pst = 'Qualified';
-                    } else if (result[i]['PST_result'] == 'disqualified') {
-                        color_pst = 'red';
-                        value_pst = 'Disqualified';
-                    }
+                        if (result[i]['PST_result'] == 'qualified') {
+                            color_pst = 'green';
+                            value_pst = 'Qualified';
+                        } else if (result[i]['PST_result'] == 'disqualified') {
+                            color_pst = 'red';
+                            value_pst = 'Disqualified';
+                        }
 
-                    if (result[i]['SST_result'] == 'qualified') {
-                        color_sst = 'green';
-                        value_sst = 'Qualified';
-                    } else if (result[i]['SST_result'] == 'disqualified') {
-                        color_sst = 'red';
-                        value_sst = 'Disqualified';
-                    }
+                        if (result[i]['SST_result'] == 'qualified') {
+                            color_sst = 'green';
+                            value_sst = 'Qualified';
+                        } else if (result[i]['SST_result'] == 'disqualified') {
+                            color_sst = 'red';
+                            value_sst = 'Disqualified';
+                        }
 
-                    if (result[i]['PET_I_result'] == 'qualified') {
-                        color_pet1 = 'green';
-                        value_pet1 = 'Qualified';
-                    } else if (result[i]['PET_I_result'] == 'disqualified') {
-                        color_pet1 = 'red';
-                        value_pet1 = 'Disqualified';
-                    }
+                        if (result[i]['PET_I_result'] == 'qualified') {
+                            color_pet1 = 'green';
+                            value_pet1 = 'Qualified';
+                        } else if (result[i]['PET_I_result'] == 'disqualified') {
+                            color_pet1 = 'red';
+                            value_pet1 = 'Disqualified';
+                        }
 
-                    if (result[i]['PET_II_result'] == 'qualified') {
-                        color_pet2 = 'green';
-                        value_pet2 = 'Qualified';
-                    } else if (result[i]['PET_II_result'] == 'disqualified') {
-                        color_pet2 = 'red';
-                        value_pet2 = 'Disqualified';
-                    }
+                        if (result[i]['PET_II_result'] == 'qualified') {
+                            color_pet2 = 'green';
+                            value_pet2 = 'Qualified';
+                        } else if (result[i]['PET_II_result'] == 'disqualified') {
+                            color_pet2 = 'red';
+                            value_pet2 = 'Disqualified';
+                        }
 
-                    if (result[i]['assault_result'] == 'qualified') {
-                        color_assault = 'green';
-                        value_assault = 'Qualified';
-                    } else if (result[i]['assault_result'] == 'disqualified') {
-                        color_assault = 'red';
-                        value_assault = 'Disqualified';
-                    }
+                        if (result[i]['assault_result'] == 'qualified') {
+                            color_assault = 'green';
+                            value_assault = 'Qualified';
+                        } else if (result[i]['assault_result'] == 'disqualified') {
+                            color_assault = 'red';
+                            value_assault = 'Disqualified';
+                        }
 
-                    if (result[i]['saluting_result'] == 'qualified') {
-                        color_saluting = 'green';
-                        value_saluting = 'Qualified';
-                    } else if (result[i]['saluting_result'] == 'disqualified') {
-                        color_saluting = 'red';
-                        value_saluting = 'Disqualified';
-                    }
+                        if (result[i]['saluting_result'] == 'qualified') {
+                            color_saluting = 'green';
+                            value_saluting = 'Qualified';
+                        } else if (result[i]['saluting_result'] == 'disqualified') {
+                            color_saluting = 'red';
+                            value_saluting = 'Disqualified';
+                        }
 
-                    if (result[i]['PLX_result'] == 'qualified') {
-                        color_plx = 'green';
-                        value_plx = 'Qualified';
-                    } else if (result[i]['PLX_result'] == 'disqualified') {
-                        color_plx = 'red';
-                        value_plx = 'Disqualified';
-                    }
+                        if (result[i]['PLX_result'] == 'qualified') {
+                            color_plx = 'green';
+                            value_plx = 'Qualified';
+                        } else if (result[i]['PLX_result'] == 'disqualified') {
+                            color_plx = 'red';
+                            value_plx = 'Disqualified';
+                        }
 
-                    if (result[i]['long_cross_result'] == 'qualified') {
-                        color_long_cross = 'green';
-                        value_long_cross = 'Qualified';
-                    } else if (result[i]['long_cross_result'] == 'disqualified') {
-                        color_long_cross = 'red';
-                        value_long_cross = 'Disqualified';
-                    }
+                        if (result[i]['long_cross_result'] == 'qualified') {
+                            color_long_cross = 'green';
+                            value_long_cross = 'Qualified';
+                        } else if (result[i]['long_cross_result'] == 'disqualified') {
+                            color_long_cross = 'red';
+                            value_long_cross = 'Disqualified';
+                        }
 
-                    if (result[i]['mini_cross_result'] == 'qualified') {
-                        color_mini_cross = 'green';
-                        value_mini_cross = 'Qualified';
-                    } else if (result[i]['mini_cross_result'] == 'disqualified') {
-                        color_mini_cross = 'red';
-                        value_mini_cross = 'Disqualified';
-                    }
+                        if (result[i]['mini_cross_result'] == 'qualified') {
+                            color_mini_cross = 'green';
+                            value_mini_cross = 'Qualified';
+                        } else if (result[i]['mini_cross_result'] == 'disqualified') {
+                            color_mini_cross = 'red';
+                            value_mini_cross = 'Disqualified';
+                        }
 
-                    $("#milestone_details").empty();
+                        $("#milestone_details").empty();
 
-                    $("#milestone_details").html(`<form class="user" role="form" method="post" id="add_form" action="">
+                        $("#milestone_details").html(`<form class="user" role="form" method="post" id="add_form" action="">
                                         <div class="form-group row">
                                             <div class="col-sm-12">
                                                 <h4 id="cadet_name_heading"></h4>
@@ -1650,10 +1649,10 @@
                                         </div>
 
                                     </form>`);
+                    }
+                } else {
+                    $("#milestone_details").html(`<strong>NO RESULT FOUND</strong>`);
                 }
-            } else {
-                $("#milestone_details").html(`<strong>NO RESULT FOUND</strong>`);
-            }
             },
 
             async: true
