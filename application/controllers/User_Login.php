@@ -75,7 +75,7 @@ class User_Login extends CI_Controller
 					$this->session->set_userdata('branch_name', $query['branch']); //Added by Awais Ahmad
 					$unit_id = $this->db->where('unit_name', $query['unit'])->get('navy_units')->row_array(); //Added by Awais Dated: 12 Dec 21
 					$branch_id = $this->db->where('branch_name',$query['branch'])->get('branch_preference_list')->row_array();
-					//echo $unit_id['id'];exit;
+					// echo $unit_id['id'];exit;
 					$this->session->set_userdata('unit_id', $unit_id['id']); 	//added by Awais dated:12 Dec 2021
 					$this->session->set_userdata('branch_id', $branch_id['id']); 	//added by Awais dated:12 Dec 2021
 					$this->session->set_flashdata('success', 'Login successfully');

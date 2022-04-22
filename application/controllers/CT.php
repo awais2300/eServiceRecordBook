@@ -483,17 +483,7 @@ class CT extends CI_Controller
     {
         if ($this->input->post()) {
             $oc_no = $_POST['oc_no'];
-            $units_list = array('2', '3', '17');
-            if ($this->session->userdata('unit_id') != 1) {  //All other Units than Navy Academy
-                $query = $this->db->where('oc_no', $oc_no)->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->row_array();
-            } else { //Search in Pak Navy Academy 
-                if ($this->session->userdata('acct_type') == 'do') {
-                    $query = $this->db->where('oc_no', $oc_no)->where('divison_name', $this->session->userdata('division'))->where_not_in('unit_id', $units_list)->get('pn_form1s')->row_array();
-                } else {
-                    $query = $this->db->where('oc_no', $oc_no)->where_not_in('unit_id', $units_list)->get('pn_form1s')->row_array();
-                }
-            }
-            // echo $this->db->last_query(); exit;
+            $query = $this->db->where('oc_no', $oc_no)->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->row_array();
             echo json_encode($query);
         }
     }
@@ -619,17 +609,8 @@ class CT extends CI_Controller
         if ($this->session->has_userdata('user_id')) {
 
             $oc_no = $_POST['oc_no'];
-            $units_list = array('2', '3', '17');
-
-            if (($this->session->userdata('unit_id')) != 1) {
-                $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->result_array();
-            } else {
-                if ($this->session->userdata('acct_type') == 'do') {
-                    $data['pn_data'] = $this->db->where('divison_name', $this->session->userdata('division'))->where_not_in('unit_id', $units_list)->where('oc_no', $oc_no)->get('pn_form1s')->result_array();
-                } else {
-                    $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where_not_in('unit_id', $units_list)->get('pn_form1s')->result_array();
-                }
-            }
+            $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->row_array();
+            
             $data['oc_no_entered'] = $oc_no;
             if (count($data['pn_data']) > 0) {
                 $view_page = $this->load->view('ct/view_dossier', $data, TRUE);
@@ -727,18 +708,7 @@ class CT extends CI_Controller
     {
         if ($this->session->has_userdata('user_id')) {
             $oc_no = $_POST['oc_no'];
-
-            $units_list = array('2', '3', '17');
-
-            if (($this->session->userdata('unit_id')) != 1) {
-                $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->row_array();
-            } else {
-                if ($this->session->userdata('acct_type') == 'do') {
-                    $data['pn_data'] = $this->db->where('divison_name', $this->session->userdata('division'))->where_not_in('unit_id', $units_list)->where('oc_no', $oc_no)->get('pn_form1s')->row_array();
-                } else {
-                    $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where_not_in('unit_id', $units_list)->get('pn_form1s')->row_array();
-                }
-            }
+            $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->row_array();
 
             if (!isset($oc_no)) {
                 $data['pn_personal_data'] = $this->db->where('p_id', $data['pn_data']['p_id'])->get('personal_datas')->row_array();
@@ -3957,7 +3927,7 @@ class CT extends CI_Controller
             $this->db->join('physical_milestone or', 'f.p_id = or.p_id', 'left');
             $this->db->join('term_i_details', 'term_i_details.p_id = or.p_id', 'left');
             $this->db->join('term_ii_details', 'term_ii_details.p_id = or.p_id', 'left');
-            // $this->db->where('f.do_id', $this->session->userdata('user_id'));
+            $this->db->where('f.unit_id', $this->session->userdata('unit_id'));
             // $this->db->where('f.divison_name', $this->session->userdata('division'));
             $this->db->where('f.oc_no', $oc_no);
             $data['milestone_records'] = $this->db->get()->row_array();
