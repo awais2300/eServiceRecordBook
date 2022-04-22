@@ -26,7 +26,7 @@
                                             <th scope="col">S NO</th>
                                             <th scope="col">USER NAME</th>
                                             <th scope="col">ACCOUNT TYPE</th>
-                                            <th scope="col">DIVISION</th>
+                                            <th scope="col">CLASS</th>
                                             <th scope="col">SCHOOL</th>
                                             <th scope="col">OFFICER's NAME</th>
                                             <th scope="col">CONTACT NO</th>

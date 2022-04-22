@@ -51,42 +51,28 @@
 
   .img-bg {
     background-image: url('<?= base_url() ?>assets/img/bg-image.jpg');
-    background-position: absolute ;
-    background-size: cover;
+    /* background-position: top ; */
+    /* background-size: cover; */
     background-repeat: no-repeat;
-    background-color: #303030 !important;
-    background-size: cover;
+    /* background-color: #303030 !important; */
+    /* background-size: cover; */
     width: 100%;
   }
 </style>
 
 <body class="row bg-custom1 img-bg" style="overflow: hidden;">
-  <!-- <div></div> -->
+  
   <div class="container">
-
-    <!--  </div>
- -->
-    <!-- Outer Row -->
     <div class="row justify-content-center">
       <!-- <h1 class="h1 text-grey-900 " style="margin-top:35px; padding:0%; margin-bottom:0px;color:black; text-align:center;text-decoration:underline;font-family:'Apple Chancery';color:navy;font-size:50px"><strong> E-SERVICE RECORD BOOK </strong></h1> -->
       <div class="col-xl-10 col-lg-6 col-md-6">
-
         <div class="card bg-custom3 o-hidden border-0 shadow-lg my-5" style="background: transparent !important;">
-          <!-- <div class="card-body p-0" style=""> -->
-          <!-- Nested Row within Card Body -->
-          <div class="row justify-content-center">
-            <!-- <div class="img-logo"></div> -->
-          </div>
           <div class="row">
-            <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
-            <div class="col-lg-3"></div>
-            <div class="col-lg-7 my-5" s>
-              <div class="p-5">
-                <div class="text-center">
-                  <h1 class="h2 mb-4" style="color:black"><strong> </strong></h1>
-                </div>
-                <form class="user" role="form" id="login_form" method="post" action="<?php echo base_url(); ?>User_Login/login_process">
-                  <div class="form-group">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-7">
+              <div class="p-5" style="margin-top:225px">
+                <form class="user" role="form" id="login_form" method="post" action="<?php echo base_url(); ?>User_Login/login_process" style="margin-left:35px">  
+                <div class="form-group">
                     <input type="text" class="form-control form-control-user" name="username" id="username" placeholder="ENTER USERNAME">
                   </div>
                   <div class="form-group">
@@ -146,8 +132,6 @@
                   <span style="color: red; display: none;font-size: 12px" id="Account_error">
                     *PLEASE SELECT ACCOUNT TYPE
                   </span>
-
-                  <hr>
                   <button type="button" class="btn btn-primary btn-user btn-block" id="login_btn">
                     <!--   <i class="fab fa-google fa-fw"></i>  -->
                     LOGIN
@@ -159,7 +143,7 @@
 
               </div>
             </div>
-            <!-- <div class="col-lg-2"></div> -->
+            <div class="col-lg-2"></div>
           </div>
 
           <!-- till here -->

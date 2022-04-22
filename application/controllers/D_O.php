@@ -1447,7 +1447,7 @@ class D_O extends CI_Controller
     {
         if ($this->input->post()) {
             $oc_no = $_POST['oc_no'];
-            $query = $this->db->where('oc_no', $oc_no)->where('divison_name', $this->session->userdata('division'))->get('pn_form1s')->row_array();
+            $query = $this->db->where('oc_no', $oc_no)->where('divison_name', $this->session->userdata('division'))->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->row_array();
             echo json_encode($query);
         }
     }
@@ -1456,7 +1456,7 @@ class D_O extends CI_Controller
     {
         if ($this->input->post()) {
             $term = $_POST['term'];
-            $query = $this->db->where('term', $term)->where('divison_name', $this->session->userdata('division'))->get('pn_form1s')->result_array();
+            $query = $this->db->where('term', $term)->where('divison_name', $this->session->userdata('division'))->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->result_array();
             echo json_encode($query);
         }
     }

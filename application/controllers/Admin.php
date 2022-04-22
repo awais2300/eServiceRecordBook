@@ -165,10 +165,10 @@ class Admin extends CI_Controller
             }
             $branch = $postData['branch'];
             $unit = $postData['unit'];
-
+// echo $unit; exit;
             $row_exist = 0;
             if ($status == 'do') {
-                $row_exist = $this->db->select('count(*) as count')->where('acct_type', 'do')->where('division', $division)->where('is_active', 'yes')->get('security_info')->row_array();
+                $row_exist = $this->db->select('count(*) as count')->where('acct_type', 'do')->where('division', $division)->where('unit', $unit)->where('is_active', 'yes')->get('security_info')->row_array();
             } else {
                 $row_exist = 0;
             }
@@ -194,7 +194,7 @@ class Admin extends CI_Controller
                     redirect('Admin/add_users');
                 }
             } else {
-                $this->session->set_flashdata('failure', 'DO Account already exisit for ' . $division);
+                $this->session->set_flashdata('failure', 'DO Account already exisit for class" ' . $division . 'and school: '. $unit);
                 redirect('Admin/add_users');
             }
         } else {

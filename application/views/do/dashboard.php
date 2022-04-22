@@ -36,29 +36,8 @@
     <h1 class="h3 mb-0 text-black-800"><strong>SCHOOL: <?= $this->session->userdata('unit_name');?> </strong></h1>
     <hr>
     <h1 class="h3 mb-0 text-black-800"><strong>CLASS: <?= $this->session->userdata('division') ?></strong></h1>
-
 </div>
-<div style="margin-top:50px;margin-bottom: 50px;">
-    <div class="row col-md-12">
-        <!-- <div class="col-md-12">
-            <img src="<?= base_url(); ?>assets/img/img3.jpg" alt="Snow" style="width:100%; height:100%">
-        </div> -->
-        <!-- <div class="col-md-6">
-    <img src="<?= base_url(); ?>assets/img/Russian1.jpg" alt="Forest" style="width:100%;height:100%"> -->
-    </div>
 
-
-    <!-- </div> -->
-    <!-- <div class="row col-md-12" style="margin-top:10px;">
-
-        <div class="col-md-6">
-            <img src="<?= base_url(); ?>assets/img/compak1.jpg" alt="Mountains" style="width:100%;height:100%">
-        </div>
-        <div class="col-md-6">
-            <img src="<?= base_url(); ?>assets/img/compak2.jpg" alt="Mountains" style="width:100%;height:100%">
-        </div>
-    </div> -->
-</div>
 </div>
 
 <?php $this->load->view('common/footer'); ?>

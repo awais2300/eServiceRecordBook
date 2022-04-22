@@ -24,12 +24,13 @@
     .img-cheif {
         background: url('<?= base_url() ?>assets/img/pk_prd.jpg');
         background-position: center;
+        /* background-position: absolute; */
         /* background-position: top; */
         /* background-size: cover; */
         background-repeat: no-repeat;
         max-width: 100%;
-        max-height: 100%;
-        background-color: #486285 ;
+        max-height: 120%;
+        background-color: #486285;
         /* opacity: 0.9; */
         /* display: block; */
         /* remove extra space below image */
@@ -78,12 +79,12 @@
 
             </li>
 
-           <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>D_O/view_dossier" aria-expanded="true">
                     <i class="fas fa-th-list"></i>
-                    <span>  ANALYTICS</span>
+                    <span> ANALYTICS</span>
                     <!-- <span>Components</span> -->
-                </a> 
+                </a>
 
             </li>
 
@@ -101,7 +102,7 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                PHASE II (TECHNICAL QUALIFICATION) 
+                PHASE II (TECHNICAL QUALIFICATION)
             </div>
 
             <li class="nav-item">
@@ -122,32 +123,19 @@
                 </div>
             </li>
             <li class="nav-item">
-                <!-- <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_discipline" aria-expanded="true"> -->
                 <a class="nav-link collapsed" href="<?php echo base_url(); ?>D_O/daily_module" aria-expanded="true">
                     <i class="fas fa-running"></i>
                     <span> DAILY MODULE </span>
-                    <!-- <span>Components</span> -->
                 </a>
-                <!-- <div id="collapse_discipline" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?php echo base_url(); ?>D_O/daily_module">Daily Module</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>D_O/add_observation">Observation Record</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>D_O/add_punishment">Punishment Record</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>D_O/add_observation_slip">Observation Slips</a> 
-                    </div>
-                </div> -->
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_warning" aria-expanded="true">
                     <i class="fas fa-exclamation-circle"></i>
                     <span> WARNINGS </span>
-                    <!-- <span>Components</span> -->
                 </a>
                 <div id="collapse_warning" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?php echo base_url(); ?>D_O/add_warning">ADD WARNING</a>
-                        <!-- <a class="collapse-item" href="<?php echo base_url(); ?>D_O/view_warning_attachment">Add Warning Attachment</a> -->
-                        <!-- <a class="collapse-item" href="#">Record Attachments</a> -->
                     </div>
                 </div>
             </li>
@@ -155,17 +143,31 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_academic" aria-expanded="true">
                     <i class="fas fa-book"></i>
                     <span>ACADEMICS </span>
-                    <!-- <span>Components</span> -->
                 </a>
                 <div id="collapse_academic" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?= base_url(); ?>D_O/view_semester_result">RESULTS (Terms I - VI)</a>
                         <a class="collapse-item" href="<?= base_url(); ?>D_O/view_training_report">BCT/ELC/NBCD/WHT</a>
-                      <!--  <?php if ($this->session->userdata('unit_id') == '1') {?>
-                            <a class="collapse-item" href="<?= base_url(); ?>D_O/view_training_report">BCT/ELC/NBCD/WHT</a>
-                        <?php } ?> -->
                     </div>
                 </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" aria-expanded="true">
+                    <i class="fas fa-ruler-combined"></i>
+                    <span> PROFESSION </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" aria-expanded="true">
+                    <i class="fas fa-pen-fancy"></i>
+                    <span> LEAVE </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" aria-expanded="true">
+                    <i class="fas fa-tshirt"></i>
+                    <span> UNIFORM & KIT </span>
+                </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_assesment" aria-expanded="true">
@@ -179,8 +181,8 @@
                         <!-- <a class="collapse-item" href="#">Performance Report</a> -->
                         <a class="collapse-item" href="<?= base_url(); ?>D_O/view_progress_chart">PROGRESS CHART</a>
                         <a class="collapse-item" href="<?= base_url(); ?>D_O/view_distinction_records">HONOURS & AWARDS</a>
-                        <a class="collapse-item" href="<?= base_url(); ?>D_O/view_seniority_records">SENIORITY RECORD</a>                     <!-- <a class="collapse-item" href="<?php echo base_url(); ?>D_O/add_branch_allocation">BRANCH ALLOCATION</a> -->
-                       <!-- <a class="collapse-item" href="#">Degree Complete</a> -->
+                        <a class="collapse-item" href="<?= base_url(); ?>D_O/view_seniority_records">SENIORITY RECORD</a> <!-- <a class="collapse-item" href="<?php echo base_url(); ?>D_O/add_branch_allocation">BRANCH ALLOCATION</a> -->
+                        <!-- <a class="collapse-item" href="#">Degree Complete</a> -->
 
                     </div>
                 </div>
@@ -198,7 +200,7 @@
                     <span>PROMOTION/RELEGATION </span>
                 </a>
             </li>
-         <!--   <li class="nav-item">
+            <!--   <li class="nav-item">
                 <a class="nav-link collapsed" href="<?php echo base_url(); ?>D_O/view_activity_log" aria-expanded="true">
                     <i class="far fa-list-alt"></i>
                     <span> ACTIVITY LOG </span>
@@ -207,7 +209,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="<?php echo base_url(); ?>User_Login/change_password" aria-expanded="true">
                     <i class="fas fa-unlock-alt"></i>
-                    <span> CHANGE PASSWORD  </span>
+                    <span> CHANGE PASSWORD </span>
                 </a>
             </li>
 

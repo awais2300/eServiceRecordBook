@@ -139,8 +139,6 @@
 
     $("#status").on('change', function() {
         var account = $(this).val();
-        alert(account);
-
         if (account == 'do') {
             $('#div_list').show();
             $('#div_list_label').show();
