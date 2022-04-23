@@ -166,13 +166,12 @@
     <?php
 
     $dataPoints1 = array(
-        array("label" => "Term-I", "y" => (($olq_t1['mid_marks'] + $olq_t1['terminal_marks'])/2)),
-        array("label" => "Term-II", "y" => (($olq_t2['mid_marks'] + $olq_t2['terminal_marks'])/2)),
-        array("label" => "Term-III", "y" => (($olq_t3['mid_marks'] + $olq_t3['terminal_marks'])/2)),
-        array("label" => "Term-IV", "y" => (($olq_t4['mid_marks'] + $olq_t4['terminal_marks'])/2)),
-        array("label" => "Term-V", "y" => (($olq_t5['mid_marks'] + $olq_t5['terminal_marks'])/2)),
-        array("label" => "Term-VI", "y" => (($olq_t6['mid_marks'] + $olq_t6['terminal_marks'])/2)),
-      
+        array("label" => "Term-I", "y" => ($olq_t1['terminal_marks'])),
+        array("label" => "Term-II", "y" => ($olq_t2['terminal_marks'])),
+        array("label" => "Term-III", "y" => ($olq_t3['terminal_marks'])),
+        array("label" => "Term-IV", "y" => ($olq_t4['terminal_marks'])),
+        array("label" => "Term-V", "y" => ($olq_t5['terminal_marks'])),
+        array("label" => "Term-VI", "y" => ($olq_t6['terminal_marks']))
     );
     ?>
 

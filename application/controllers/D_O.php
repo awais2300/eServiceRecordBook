@@ -2579,6 +2579,29 @@ class D_O extends CI_Controller
         }
     }
 
+    public function search_cadet_OLQs() //Dossier Continue
+    {
+        if ($this->input->post()) {
+
+            $oc_no = $_POST['oc_no'];
+
+            $curr_term = $this->db->select('term,p_id')->where('oc_no', $oc_no)->get('pn_form1s')->row_array(); //Dossier Continue
+            $olq_term_exist = $this->db->select('term')->where('p_id', $curr_term['p_id'])->where('term', $curr_term['term'])->get('officer_qualities')->num_rows(); //Dossier Continue
+
+            $this->db->select('f.term as pn_term, f.p_id as pn_p_id,f.*, olq.*');
+            $this->db->from('pn_form1s f');
+            $this->db->join('officer_qualities olq', 'f.p_id = olq.p_id AND f.term = olq.term', 'left');
+            $this->db->where('f.divison_name', $this->session->userdata('division'));
+            $this->db->where('f.unit_id', $this->session->userdata('unit_id'));
+            $this->db->where('f.oc_no', $oc_no);
+            if ($olq_term_exist > 0) {
+                $this->db->where('olq.term', $curr_term['term']); //Dossier Continue
+            }
+            $data['olq_records'] = $this->db->get()->row_array();
+            echo json_encode($data['olq_records']);
+        }
+    }
+
     public function search_cadet_for_dossier_folder()
     {
         if ($this->session->has_userdata('user_id')) {

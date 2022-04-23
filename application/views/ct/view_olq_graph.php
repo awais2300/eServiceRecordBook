@@ -11,10 +11,14 @@
 <?php !isset($olq_t5['terminal_marks']) ? $olq_t5['terminal_marks'] = 0 : $olq_t5['terminal_marks']; ?>
 <?php !isset($olq_t6['mid_marks']) ? $olq_t6['mid_marks'] = 0 : $olq_t6['mid_marks']; ?>
 <?php !isset($olq_t6['terminal_marks']) ? $olq_t6['terminal_marks'] = 0 : $olq_t6['terminal_marks']; ?>
-<!-- <?php //!isset($olq_t7['mid_marks']) ? $olq_t7['mid_marks'] = 0 : $olq_t7['mid_marks']; ?> -->
-<!-- <?php //!isset($olq_t7['terminal_marks']) ? $olq_t7['terminal_marks'] = 0 : $olq_t7['terminal_marks']; ?> -->
-<!-- <?php //!isset($olq_t8['mid_marks']) ? $olq_t8['mid_marks'] = 0 : $olq_t8['mid_marks']; ?> -->
-<!-- <?php //!isset($olq_t8['terminal_marks']) ? $olq_t8['terminal_marks'] = 0 : $olq_t8['terminal_marks']; ?> -->
+<!-- <?php //!isset($olq_t7['mid_marks']) ? $olq_t7['mid_marks'] = 0 : $olq_t7['mid_marks']; 
+        ?> -->
+<!-- <?php //!isset($olq_t7['terminal_marks']) ? $olq_t7['terminal_marks'] = 0 : $olq_t7['terminal_marks']; 
+        ?> -->
+<!-- <?php //!isset($olq_t8['mid_marks']) ? $olq_t8['mid_marks'] = 0 : $olq_t8['mid_marks']; 
+        ?> -->
+<!-- <?php //!isset($olq_t8['terminal_marks']) ? $olq_t8['terminal_marks'] = 0 : $olq_t8['terminal_marks']; 
+        ?> -->
 
 <style>
     .red-border {
@@ -45,8 +49,12 @@
         </div>
 
         <div class="row" style="height:20px">
-            <input type="text" class="form-control form-control-user" name="cadet_name" id="cadet_name" value="<?php if(isset($cadet_data['name'])) { echo $cadet_data['name']; }; ?>" style="display:none">
-            <input type="text" class="form-control form-control-user" name="cadet_term" id="cadet_term" value="<?php if(isset($cadet_data['term'])) { echo $cadet_data['term']; }; ?>" style="display:none">
+            <input type="text" class="form-control form-control-user" name="cadet_name" id="cadet_name" value="<?php if (isset($cadet_data['name'])) {
+                                                                                                                    echo $cadet_data['name'];
+                                                                                                                }; ?>" style="display:none">
+            <input type="text" class="form-control form-control-user" name="cadet_term" id="cadet_term" value="<?php if (isset($cadet_data['term'])) {
+                                                                                                                    echo $cadet_data['term'];
+                                                                                                                }; ?>" style="display:none">
         </div>
 
     </div>
@@ -164,12 +172,12 @@
     <?php
 
     $dataPoints1 = array(
-        array("label" => "Term-I", "y" => (($olq_t1['mid_marks'] + $olq_t1['terminal_marks'])/2)),
-        array("label" => "Term-II", "y" => (($olq_t2['mid_marks'] + $olq_t2['terminal_marks'])/2)),
-        array("label" => "Term-III", "y" => (($olq_t3['mid_marks'] + $olq_t3['terminal_marks'])/2)),
-        array("label" => "Term-IV", "y" => (($olq_t4['mid_marks'] + $olq_t4['terminal_marks'])/2)),
-        array("label" => "Term-V", "y" => (($olq_t5['mid_marks'] + $olq_t5['terminal_marks'])/2)),
-        array("label" => "Term-VI", "y" => (($olq_t6['mid_marks'] + $olq_t6['terminal_marks'])/2))
+        array("label" => "Term-I", "y" => ($olq_t1['terminal_marks'])),
+        array("label" => "Term-II", "y" => ($olq_t2['terminal_marks'])),
+        array("label" => "Term-III", "y" => ($olq_t3['terminal_marks'])),
+        array("label" => "Term-IV", "y" => ($olq_t4['terminal_marks'])),
+        array("label" => "Term-V", "y" => ($olq_t5['terminal_marks'])),
+        array("label" => "Term-VI", "y" => ($olq_t6['terminal_marks']))
     );
     ?>
 
@@ -185,7 +193,7 @@
         var cadet_term = $('#cadet_term').val();
 
         CanvasJS.addColorSet("blueShades",
-                ["rgb(0, 1, 84)"]);
+            ["rgb(0, 1, 84)"]);
 
         var chart1 = new CanvasJS.Chart("chartContainer2", {
             animationEnabled: true,
@@ -203,7 +211,7 @@
             axisY: {
                 title: "PERSONALITY TRAITS (MID + FINAL)",
                 maximum: 100,
-                color:'blue'
+                color: 'blue'
             },
             data: [{
                 type: "area",
