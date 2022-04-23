@@ -1078,13 +1078,6 @@ CREATE TABLE `personal_datas` (
   `upload_file` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `personal_datas`
---
-
-INSERT INTO `personal_datas` (`id`, `p_id`, `p_no`, `course`, `religion`, `emergency_contact`, `telephone_no`, `ex_army`, `ex_army_from`, `ex_army_to`, `father_name`, `father_occupation`, `next_of_kin`, `siblings`, `near_relatives`, `identification_marks`, `height`, `weight`, `navy_joining_date`, `entry_mode`, `service_id`, `nic`, `blood_group`, `address`, `karachi_address`, `matric_school`, `matric_division`, `matric_subjects`, `intermediate_college`, `intermediate_division`, `diploma`, `phase`, `do_id`, `created_at`, `updated_at`, `joto_id`) VALUES
-(1, 1, '9686', '16A', 'islam', '24456', '23456', 'nil', 'nil', 'nil', 'khan', 'teacher', 'father       skardu', 'a\r\na\r\ns\r\nd', 'nil', 'nil', '173', '65', '2020-01-31', 'regular', '12455', '3234 34234 4322', 'a+', 'skardu', 'nil', 'govt school', '1st divison', 'maths physics chemistry  english', 'govt college tanduu allahyar', 'a', 'nill', 'Phase 1', 3, '2020-06-03 19:43:40', '2020-06-03 19:43:40', NULL);
-
 -- --------------------------------------------------------
 
 --

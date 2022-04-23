@@ -37,7 +37,7 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
+                                <div class="form-group row" id="school_name_label">
                                     <div class="col-sm-6 mb-1">
                                         <h6>&nbsp;SCHOOL:</h6>
                                     </div>
@@ -141,6 +141,14 @@
             $('#div_list').hide();
             $('#div_list_label').hide();
         }
+        if (account == 'co') {
+            $('#unit').hide();
+            $('#school_name_label').hide();
+            $('#unit').val('');
+        } else {
+            $('#unit').show();
+            $('#school_name_label').show();
+        }
 
         if (account == 'dean' || account == 'hougp') {
             $('#branch_list').show();
@@ -168,8 +176,8 @@
                 $("#div").empty();
                 $("#div").append(`<option value=''>SELECT CLASS</option>`);
                 if (len > 0) {
-                    
-                    for (var i = 0; i < len; i++) { 
+
+                    for (var i = 0; i < len; i++) {
                         $("#div").append(`<option value=" ${result[i]['division_name']}">${result[i]['division_name']}</option>`);
                     }
                 }
@@ -205,9 +213,11 @@
             validate = 1;
             $('#status').addClass('red-border');
         }
-        if (unit == '') {
-            validate = 1;
-            $('#unit').addClass('red-border');
+        if (status != 'co') {
+            if (unit == '') {
+                validate = 1;
+                $('#unit').addClass('red-border');
+            }
         }
         if (div == '' && status == 'do') {
             validate = 1;

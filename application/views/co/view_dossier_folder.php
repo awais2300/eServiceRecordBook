@@ -75,10 +75,16 @@
                                     echo $pn_data['divison_name'];
                                 } ?></h4>
                         </div>
+                        <div class="col-lg-6 mx-2">
+                            <h4><?php if (isset($school_name['unit_name'])) {
+                                    echo $school_name['unit_name'];
+                                } ?></h4>
+                        </div>
                     </div>
                     <div class="col-lg-2">
                         <?php if (isset($pn_data['name'])) { ?>
-                            <img src='<?= base_url() ?>uploads/documents/<?php echo $pn_personal_data['upload_file'] ?>' style="height:130px; width:100px; border:1px solid black;">
+                            <img src='<?= base_url() ?>uploads/documents/<?php echo $pn_personal_data['upload_file']; ?>' style="height:130px; width:100px; border:1px solid black;">
+                            <!-- <img src='<?= base_url() ?>uploads/documents/IMG_8212.jpg' style="height:130px; width:100px; border:1px solid black;"> -->
                         <?php } ?>
                     </div>
                 </div>

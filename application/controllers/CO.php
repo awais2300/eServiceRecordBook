@@ -708,8 +708,9 @@ class CO extends CI_Controller
     {
         if ($this->session->has_userdata('user_id')) {
             $oc_no = $_POST['oc_no'];
-            $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->row_array();
-
+            $data['pn_data'] = $this->db->where('oc_no', $oc_no)->get('pn_form1s')->row_array();
+            $data['school_name'] = $this->db->select('unit_name')->where('id', $data['pn_data']['unit_id'])->get('navy_units')->row_array();
+            
             if (!isset($oc_no)) {
                 $data['pn_personal_data'] = $this->db->where('p_id', $data['pn_data']['p_id'])->get('personal_datas')->row_array();
             }
