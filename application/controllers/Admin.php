@@ -34,6 +34,7 @@ class Admin extends CI_Controller
     public function show_new_class()
     {
         $data['class_list'] = $this->db->get('divisions')->result_array();
+        $data['units'] = $this->db->get('navy_units')->result_array();
         $this->load->view('Admin/create_new_class', $data);
     }
 
@@ -107,6 +108,15 @@ class Admin extends CI_Controller
         } else {
             $this->session->set_flashdata('failure', 'Error');
             redirect('Admin/show_edit_user');
+        }
+    }
+
+    public function get_classes()
+    {
+        if ($this->input->post()) {
+            $school = $_POST['school'];
+            $query['school_list'] = $this->db->where('status', $school)->get('divisions')->result_array();
+            echo json_encode($query['school_list']);
         }
     }
 
@@ -209,9 +219,11 @@ class Admin extends CI_Controller
             $postData = $this->security->xss_clean($this->input->post());
 
             $class_name = $postData['class_name'];
+            $unit = $postData['unit'];
 
             $insert_array = array(
-                'division_name' => $class_name
+                'division_name' => $class_name,
+                'status' => $unit
             );
 
             $insert = $this->db->insert('divisions', $insert_array);

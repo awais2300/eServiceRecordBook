@@ -36,13 +36,28 @@
                                         <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="PASSWORD*">
                                     </div>
                                 </div>
-                                <hr>
+
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-1">
+                                        <h6>&nbsp;SCHOOL:</h6>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-12 mb-1">
+                                        <select class="form-control" name="unit" id="unit" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
+                                            <option class="form-control form-control-user" value="">SELECT SCHOOL</option>
+                                            <?php foreach ($units as $data) { ?>
+                                                <option class="form-control form-control-user" value="<?= $data['unit_name'] ?>"><?= $data['unit_name'] ?></option>
+                                            <?php } ?>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-1">
                                         <h6>&nbsp;LOGIN ACCOUNT TYPE:</h6>
                                     </div>
                                     <div class="col-sm-6 mb-1" style="display:none" id="div_list_label">
-                                        <h6>&nbsp;DIVISION:</h6>
+                                        <h6>&nbsp;CLASS:</h6>
                                     </div>
                                     <div class="col-sm-6 mb-1" style="display:none" id="branch_list_label">
                                         <h6>&nbsp;BRANCH:</h6>
@@ -51,9 +66,8 @@
 
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-1">
-                                        <select class="form-control rounded-pill" name="status" id="status" data-placeholder="Select Controller" style="font-size: 0.8rem; height:50px;">\
+                                        <select class="form-control" name="status" id="status" data-placeholder="Select Controller" style="font-size: 0.8rem; height:50px;">\
                                             <option class="form-control form-control-user" value="">SELECT APPOINTMENT</option>
-
                                             <option value="co">COMMANDANT</option>
                                             <option value="exo">EXECUTIVE OFFICER</option>
                                             <option value="ct">DIRECTOR OF STUDIES</option>
@@ -63,12 +77,11 @@
                                             <option value="smo">SENIOR MEDICAL OFFICER</option>
                                             <option value="chiefr">REGULTING OFFICER</option>
                                             <option value="sporto">SPORTS OFFICER</option>
-
                                         </select>
                                     </div>
 
                                     <div class="col-sm-6 mb-1" style="display:none" id="div_list">
-                                        <select class="form-control rounded-pill" name="div" id="div" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
+                                        <select class="form-control" name="div" id="div" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
                                             <option class="form-control form-control-user" value="">SELECT CLASS</option>
                                             <?php foreach ($divisions as $data) { ?>
                                                 <option class="form-control form-control-user" value="<?= $data['division_name'] ?>"><?= $data['division_name'] ?></option>
@@ -77,7 +90,7 @@
                                     </div>
 
                                     <div class="col-sm-6 mb-1" style="display:none" id="branch_list">
-                                        <select class="form-control rounded-pill" name="branch" id="branch" data-placeholder="Select Controller" style="font-size: 0.8rem; height:50px;">
+                                        <select class="form-control" name="branch" id="branch" data-placeholder="Select Controller" style="font-size: 0.8rem; height:50px;">
                                             <option class="form-control form-control-user" value="">SELECT BRANCH</option>
                                             <?php foreach ($branches as $data) { ?>
                                                 <option class="form-control form-control-user" value="<?= $data['branch_name'] ?>"><?= $data['branch_name'] ?></option>
@@ -86,25 +99,6 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-1">
-                                        <h6>&nbsp;SCHOOLS:</h6>
-                                    </div>
-                                   
-
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-12 mb-1">
-                                        <select class="form-control rounded-pill" name="unit" id="unit" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
-                                            <option class="form-control form-control-user" value="">SELECT SCHOOL</option>
-                                            <?php foreach ($units as $data) { ?>
-                                                <option class="form-control form-control-user" value="<?= $data['unit_name'] ?>"><?= $data['unit_name'] ?></option>
-                                            <?php } ?>
-                                        </select>
-                                    </div>
-                                   
-                                </div>
-                                <hr>
                                 <div class="form-group row justify-content-center">
                                     <div class="col-sm-4">
                                         <button type="button" class="btn btn-primary btn-user btn-block" id="add_btni">
@@ -113,6 +107,7 @@
                                         </button>
                                     </div>
                                 </div>
+
                             </form>
                         </div>
                     </div>
@@ -157,6 +152,35 @@
 
     });
 
+    $("#unit").on('change', function() {
+        var school = $(this).val();
+
+        $.ajax({
+            url: '<?= base_url(); ?>Admin/get_classes',
+            method: 'POST',
+            data: {
+                'school': school
+            },
+            success: function(data) {
+                var result = jQuery.parseJSON(data);
+                var len = result.length;
+
+                $("#div").empty();
+                $("#div").append(`<option value=''>SELECT CLASS</option>`);
+                if (len > 0) {
+                    
+                    for (var i = 0; i < len; i++) { 
+                        $("#div").append(`<option value=" ${result[i]['division_name']}">${result[i]['division_name']}</option>`);
+                    }
+                }
+
+            },
+            async: true
+        });
+
+
+    });
+
     $('#add_btni').on('click', function() {
         //alert('javascript working');
         $('#add_btn').attr('disabled', true);
@@ -181,7 +205,7 @@
             validate = 1;
             $('#status').addClass('red-border');
         }
-          if (unit == '') {
+        if (unit == '') {
             validate = 1;
             $('#unit').addClass('red-border');
         }
@@ -193,7 +217,7 @@
             validate = 1;
             $('#branch').addClass('red-border');
         }
-       if (branch == '' && status == 'dean') {
+        if (branch == '' && status == 'dean') {
             validate = 1;
             $('#branch').addClass('red-border');
         }

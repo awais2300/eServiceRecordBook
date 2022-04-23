@@ -33,14 +33,25 @@
                                     <div class="card-body bg-custom3">
                                         <form class="user" role="form" method="post" id="add_form" action="<?= base_url(); ?>Admin/insert_new_class">
                                             <div class="form-group row">
-                                                <div class="col-sm-12">
+                                                <div class="col-sm-6">
                                                     <h6>&nbsp;CLASS NAME:</h6>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <h6>&nbsp;SELECT SCHOOL:</h6>
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
-                                                <div class="col-sm-12 mb-1">
+                                                <div class="col-sm-6 mb-1">
                                                     <input type="text" class="form-control form-control-user" name="class_name" id="class_name" placeholder="Class Name">
+                                                </div>
+                                                <div class="col-sm-6 mb-1">
+                                                    <select class="form-control" name="unit" id="unit" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
+                                                        <option class="form-control form-control-user" value="">SELECT SCHOOL</option>
+                                                        <?php foreach ($units as $data) { ?>
+                                                            <option class="form-control form-control-user" value="<?= $data['unit_name'] ?>"><?= $data['unit_name'] ?></option>
+                                                        <?php } ?>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <br>
@@ -89,9 +100,10 @@
                                     <table id="datatable" class="table table-striped" style="color:black">
                                         <thead>
                                             <tr>
-                                                <th scope="col">S.No</th>
-                                                <th scope="col">Class Name</th>
-                                                <th scope="col">Edit Record</th>
+                                                <th scope="col">S.NO.</th>
+                                                <th scope="col">CLASS NAME</th>
+                                                <th scope="col">SCHOOL NAME</th>
+                                                <th scope="col">EDIT</th>
                                             </tr>
                                         </thead>
                                         <tbody id="table_rows_cont">
@@ -100,7 +112,8 @@
                                                 <tr>
                                                     <td scope="row" id="cont<?= $count; ?>"><?= ++$count; ?></td>
                                                     <td scope="row"><?= $data['division_name']; ?></td>
-                                                    <td type="button" id="edit<?= $data['id']; ?>" class="edit" scope="row" data-toggle="modal" data-target="#edit_material"><i style="margin-left: 40px;" class="fas fa-edit"></i></td>
+                                                    <td scope="row"><?= $data['status']; ?></td>
+                                                    <td type="button" id="edit<?= $data['id']; ?>" class="edit" scope="row" data-toggle="modal" data-target="#edit_material"><i style="margin-left: 10px;" class="fas fa-edit"></i></td>
                                                 </tr>
                                             <?php
                                             } ?>
@@ -189,7 +202,7 @@
             validate = 1;
             $('#status').addClass('red-border');
         }
-          if (unit == '') {
+        if (unit == '') {
             validate = 1;
             $('#unit').addClass('red-border');
         }
@@ -201,7 +214,7 @@
             validate = 1;
             $('#branch').addClass('red-border');
         }
-       if (branch == '' && status == 'dean') {
+        if (branch == '' && status == 'dean') {
             validate = 1;
             $('#branch').addClass('red-border');
         }
@@ -217,12 +230,17 @@
         $('#add_btn').attr('disabled', true);
         var validate = 0;
         var class_name = $('#class_name').val();
+        var unit = $('#unit').val();
 
         if (class_name == '') {
             validate = 1;
             $('#class_name').addClass('red-border');
         }
-    
+        if (unit == '') {
+            validate = 1;
+            $('#unit').addClass('red-border');
+        }
+
         if (validate == 0) {
             $('#add_form')[0].submit();
         } else {
@@ -230,11 +248,7 @@
         }
     });
 
-
     function seen(data) {
-        // alert('in');
-        // alert(data);
-        // var receiver_id=$(this).attr('id');
         $.ajax({
             url: '<?= base_url(); ?>ChatController/seen',
             method: 'POST',
