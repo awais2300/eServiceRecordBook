@@ -1,24 +1,10 @@
 <?php $this->load->view('ct/common/header'); ?>
-<?php !isset($olq_t1['mid_marks']) ? $olq_t1['mid_marks'] = 0 : $olq_t1['mid_marks']; ?>
 <?php !isset($olq_t1['terminal_marks']) ? $olq_t1['terminal_marks'] = 0 : $olq_t1['terminal_marks']; ?>
-<?php !isset($olq_t2['mid_marks']) ? $olq_t2['mid_marks'] = 0 : $olq_t2['mid_marks']; ?>
 <?php !isset($olq_t2['terminal_marks']) ? $olq_t2['terminal_marks'] = 0 : $olq_t2['terminal_marks']; ?>
-<?php !isset($olq_t3['mid_marks']) ? $olq_t3['mid_marks'] = 0 : $olq_t3['mid_marks']; ?>
 <?php !isset($olq_t3['terminal_marks']) ? $olq_t3['terminal_marks'] = 0 : $olq_t3['terminal_marks']; ?>
-<?php !isset($olq_t4['mid_marks']) ? $olq_t4['mid_marks'] = 0 : $olq_t4['mid_marks']; ?>
 <?php !isset($olq_t4['terminal_marks']) ? $olq_t4['terminal_marks'] = 0 : $olq_t4['terminal_marks']; ?>
-<?php !isset($olq_t5['mid_marks']) ? $olq_t5['mid_marks'] = 0 : $olq_t5['mid_marks']; ?>
 <?php !isset($olq_t5['terminal_marks']) ? $olq_t5['terminal_marks'] = 0 : $olq_t5['terminal_marks']; ?>
-<?php !isset($olq_t6['mid_marks']) ? $olq_t6['mid_marks'] = 0 : $olq_t6['mid_marks']; ?>
 <?php !isset($olq_t6['terminal_marks']) ? $olq_t6['terminal_marks'] = 0 : $olq_t6['terminal_marks']; ?>
-<!-- <?php //!isset($olq_t7['mid_marks']) ? $olq_t7['mid_marks'] = 0 : $olq_t7['mid_marks']; 
-        ?> -->
-<!-- <?php //!isset($olq_t7['terminal_marks']) ? $olq_t7['terminal_marks'] = 0 : $olq_t7['terminal_marks']; 
-        ?> -->
-<!-- <?php //!isset($olq_t8['mid_marks']) ? $olq_t8['mid_marks'] = 0 : $olq_t8['mid_marks']; 
-        ?> -->
-<!-- <?php //!isset($olq_t8['terminal_marks']) ? $olq_t8['terminal_marks'] = 0 : $olq_t8['terminal_marks']; 
-        ?> -->
 
 <style>
     .red-border {

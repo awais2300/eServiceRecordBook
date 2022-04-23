@@ -122,7 +122,7 @@
                                     <input type="text" class="" name="oc_num" id="oc_num">
                                 </div>
                                 <div class="col-sm-4 mb-1" style="display:none">
-                                    <input type="text" class="" name="id" id="id">
+                                    <input type="text" class="" name="pid" id="pid">
                                 </div>
 
                                 <div class="col-sm-4 mb-1">
@@ -155,20 +155,19 @@
                                                 <?php $count = 0;
                                                 foreach ($quality_list as $data) { ?>
                                                     <tr>
-                                                        <td scope="row" style="padding:25px"><?= $data['id']; ?></td>
+                                                        <td scope="row" style="padding:25px"><?= ++$count; ?></td>
                                                         <td scope="row" style="padding:25px"><?= $data['quality_name']; ?></td>
                                                         <td scope="row" style="padding:25px"><?= $data['max_marks']; ?></td>
                                                         <!--  <td scope="row"><input type="text" class="form-control form-control-user" name="mid_marks[]" id="mid_marks[]" placeholder="MARKS"></td> -->
-                                                        <td scope="row"><input type="text" class="form-control form-control-user" name="final_marks[]" id="final_marks" placeholder="MARKS"></td>
+                                                        <td scope="row"><input type="text" class="form-control form-control-user" name="final_marks[]" id="final_marks<?= $count; ?>" placeholder="MARKS"></td>
 
                                                     </tr>
                                                 <?php
-                                                    $count++;
                                                 } ?>
                                                 <tr>
                                                     <td scope="row"><button type="button" class="btn btn-primary btn-user btn-block" id="calculate_btn">Auto Calculate</button></td>
                                                     <td scope="row" style="padding:25px; text-align:right"><strong>TOTAL MARKS</strong></td>
-                                                    <td scope="row" style="padding:25px"><strong>140</strong></td>
+                                                    <td scope="row" style="padding:25px"><strong>200</strong></td>
                                                     <!--  <td scope="row"><input type="text" class="form-control form-control-user" name="total_mid_marks" id="total_mid_marks" placeholder="TOTAL MARKS"></td> -->
                                                     <td scope="row"><input type="text" class="form-control form-control-user" name="total_final_marks" id="total_final_marks" placeholder="TOTAL MARKS"></td>
 
@@ -309,10 +308,10 @@
                         $('#no_data').hide();
 
                         $('#name').val(result['name']);
-                        $('#term').val(result['term']);
+                        $('#term').val(result['pn_term']);
                         $('#division').val(result['divison_name']);
                         $('#oc_num').val(result['oc_no']);
-                        $('#id').val(result['p_id']);
+                        $('#pid').val(result['pn_p_id']);
 
                         // $('#mid_marks1').val(result['truthfulness_mid']);
                         $('#final_marks1').val(result['truthfulness_terminal']);
@@ -346,7 +345,7 @@
                         $('#final_marks15').val(result['teamwork_terminal']);
                         // $('#mid_marks16').val(result['expression_mid']);
                         $('#final_marks16').val(result['expression_terminal']);
-// 
+                        // 
                         // $('#total_mid_marks').val(result['total_mid']);
                         $('#total_final_marks').val(result['total_terminal']);
                         // $('#mid_percentage').val(result['mid_marks']);
@@ -431,15 +430,29 @@
         }
     });
 
-    $('#total_mid_marks').on('click', function() {
-        alert('dsfsdf');
-        var sum = 0;
-        var inps = document.getElementsByName('mid_marks[]');
-        for (var i = 0; i < inps.length; i++) {
-            //sum=sum+i;
+    $('#calculate_btn').on('click', function() {
+        var mid_sum = 0;
+        var final_sum = 0;
+
+        var mid_marks = document.getElementsByName('mid_marks[]');
+        var final_marks = document.getElementsByName('final_marks[]');
+
+        for (var i = 0; i < mid_marks.length; i++) {
+            if (mid_marks[i].value != '') {
+                mid_sum = mid_sum + parseInt(mid_marks[i].value);
+            }
         }
-        //alert(sum);
-        $('#total_mid_marks').val(sum);
-        // alert(a);
+
+        for (var i = 0; i < final_marks.length; i++) {
+            if (final_marks[i].value != '') {
+                final_sum = final_sum + parseInt(final_marks[i].value);
+            }
+        }
+        $('#total_mid_marks').val(mid_sum);
+        $('#total_final_marks').val(final_sum);
+
+        $('#mid_percentage').val((mid_sum / 200) * 100);
+        $('#final_percentage').val((final_sum / 200) * 100);
+
     });
 </script>

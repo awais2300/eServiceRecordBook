@@ -83,27 +83,19 @@
                                         } ?></strong></h4>
                         </div>
 
-                        <div class="col-lg-6">
-                            <h4><?php if (isset($pn_data['phase'])) {
-                                    if ($pn_data['phase'] != 'Phase-I') {
-                                        echo $pn_data['phase'];
-                                    }
-                                } ?></h4>
-                        </div>
-
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mx-2">
                             <h4><?php if (isset($pn_data['term'])) {
                                     echo $pn_data['term'];
                                 } ?></h4>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mx-2">
                             <h4><?php if (isset($pn_data['oc_no'])) {
                                     echo $pn_data['oc_no'];
                                 } ?></h4>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mx-2">
                             <h4><?php if (isset($pn_data['divison_name'])) {
                                     echo $pn_data['divison_name'];
                                 } ?></h4>

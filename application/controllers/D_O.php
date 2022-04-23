@@ -3373,7 +3373,7 @@ class D_O extends CI_Controller
             // print_r($postData);exit;
 
             // $oc_no = $postData['oc_num'];
-            $p_id = $postData['id'];
+            $p_id = $postData['pid'];
             $term = $postData['term'];
 
             $insert_array = array(
@@ -3383,45 +3383,33 @@ class D_O extends CI_Controller
                 'term' => $term,
 
                 'truthfulness_terminal' => $postData['final_marks'][0],
-
                 'integrity_terminal' => $postData['final_marks'][1],
-
                 'pride_terminal' => $postData['final_marks'][2],
-
-
                 'courage_terminal' => $postData['final_marks'][3],
-
                 'confidence_terminal' => $postData['final_marks'][4],
-
                 'inititative_terminal' => $postData['final_marks'][5],
-
                 'command_terminal' => $postData['final_marks'][6],
-
                 'discipline_terminal' => $postData['final_marks'][7],
-
                 'duty_terminal' => $postData['final_marks'][8],
-
                 'reliability_terminal' => $postData['final_marks'][9],
-
                 'appearance_terminal' => $postData['final_marks'][10],
-
                 'fitness_terminal' => $postData['final_marks'][11],
-
                 'conduct_terminal' => $postData['final_marks'][12],
-
                 'cs_terminal' => $postData['final_marks'][13],
-
                 'teamwork_terminal' => $postData['final_marks'][14],
-
                 'expression_terminal' => $postData['final_marks'][15],
-
                 'total_terminal' => $postData['total_final_marks'],
-
                 'terminal_marks' => $postData['final_percentage'],
-
                 'terminal_marks_date' => $postData['final_exam_date'],
                 'created_at' => date('Y-m-d')
             );
+
+            $if_row_exist = $this->db->select('term')->where('p_id', $p_id)->where('term', $term)->get('officer_qualities')->row_array(); //Dossier Continue
+
+            if ($if_row_exist['term'] == $term) {
+                $this->db->where('p_id', $p_id)->where('p_id', $p_id)->where('term', $term)->delete('officer_qualities');
+            }
+
             $insert = $this->db->insert('officer_qualities', $insert_array);
         }
 

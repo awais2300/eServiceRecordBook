@@ -83,27 +83,20 @@
                                         } ?></strong></h4>
                         </div>
 
-                        <div class="col-lg-6">
-                            <h4><?php if (isset($pn_data['phase'])) {
-                                    if ($pn_data['phase'] != 'Phase-I') {
-                                        echo $pn_data['phase'];
-                                    }
-                                } ?></h4>
-                        </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mx-2">
                             <h4><?php if (isset($pn_data['term'])) {
                                     echo $pn_data['term'];
                                 } ?></h4>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mx-2">
                             <h4><?php if (isset($pn_data['oc_no'])) {
                                     echo $pn_data['oc_no'];
                                 } ?></h4>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mx-2">
                             <h4><?php if (isset($pn_data['divison_name'])) {
                                     echo $pn_data['divison_name'];
                                 } ?></h4>
@@ -273,7 +266,7 @@
                                             <li class="list-group-item bg-custom3 custom_list">RECORD OF PARADE TRAINING AND SWIMMING</li>
                                         </a>
                                         <a href="#" style="color:black" id="btn_physical_record">
-                                            <li class="list-group-item bg-custom3 custom_list">RECORD  OF PHYSICAL EFFICIENCY</li>
+                                            <li class="list-group-item bg-custom3 custom_list">RECORD OF PHYSICAL EFFICIENCY</li>
                                         </a>
                                         <a href="#" style="color:black">
                                             <li class="list-group-item bg-custom3 custom_list">PROFICIENCY IN GAMES</li>
@@ -291,7 +284,7 @@
                                         <a href="#" style="color:black" id="btn_result_t1">
                                             <li class="list-group-item bg-custom3 custom_list">RESULT (TERM-I)</li>
                                         </a>
-                                        
+
                                         <a href="#" style="color:black" id="btn_result_t2">
                                             <li class="list-group-item bg-custom3 custom_list">RESULT (TERM-II)</li>
                                         </a>
@@ -301,7 +294,7 @@
                                         <a href="#" style="color:black" id="btn_result_t1">
                                             <li class="list-group-item bg-custom3 custom_list">RESULT (TERM-IV)</li>
                                         </a>
-                                        
+
                                         <a href="#" style="color:black" id="btn_result_t2">
                                             <li class="list-group-item bg-custom3 custom_list">RESULT (TERM-V)</li>
                                         </a>
@@ -364,7 +357,7 @@
                                         <a href="#" style="color:black" id="btn_seniority_record">
                                             <li class="list-group-item bg-custom3 custom_list">SENIORITY RECORD</li>
                                         </a>
-                                    <!--    <a href="#" style="color:black" id="btn_branch_allocation">
+                                        <!--    <a href="#" style="color:black" id="btn_branch_allocation">
                                             <li class="list-group-item bg-custom3 custom_list">ALLOCAITON OF BRANCH/SPECIALISATION </li>
                                         </a> -->
 
@@ -404,7 +397,7 @@
                                 </div>
                                 <div id="general_remarks_mid_final_term1" class="col-lg-3" style="text-align:left;font-weight: bold;display:none">
                                     <ul class="list-group">
-                                      <!--  <a href="#" style="color:black" id="btn_general_remarks_term1_mid">
+                                        <!--  <a href="#" style="color:black" id="btn_general_remarks_term1_mid">
                                             <li class="list-group-item bg-custom3 custom_list">MID TERM ASSESSMENT</li>
                                         </a> -->
                                         <a href="#" style="color:black" id="btn_general_remarks_term1_final">
@@ -414,7 +407,7 @@
                                 </div>
                                 <div id="general_remarks_mid_final_term2" class="col-lg-3" style="text-align:left;font-weight: bold;display:none">
                                     <ul class="list-group">
-                                      <!--  <a href="#" style="color:black" id="btn_general_remarks_term2_mid">
+                                        <!--  <a href="#" style="color:black" id="btn_general_remarks_term2_mid">
                                             <li class="list-group-item bg-custom3 custom_list">MID TERM ASSESSMENT</li>
                                         </a> -->
                                         <a href="#" style="color:black" id="btn_general_remarks_term2_final">
@@ -424,7 +417,7 @@
                                 </div>
                                 <div id="general_remarks_mid_final_term3" class="col-lg-3" style="text-align:left;font-weight: bold;display:none">
                                     <ul class="list-group">
-                                      <!--  <a href="#" style="color:black" id="btn_general_remarks_term3_mid">
+                                        <!--  <a href="#" style="color:black" id="btn_general_remarks_term3_mid">
                                             <li class="list-group-item bg-custom3 custom_list">MID TERM ASSESSMENT</li>
                                         </a> -->
                                         <a href="#" style="color:black" id="btn_general_remarks_term3_final">
@@ -460,7 +453,7 @@
 
     <div class="card-body bg-custom3" id="container-2">
         <?php if (!isset($pn_data['name'])) { ?>
-         <!--   <div class="row">
+            <!--   <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
 
@@ -723,7 +716,7 @@
         </div>
 
     </div>
-<div class="card-body bg-custom3" style="display:none" id="punish_term2">
+    <div class="card-body bg-custom3" style="display:none" id="punish_term2">
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
@@ -1743,7 +1736,7 @@
                                             <td scope="" style="border-bottom:1px solid black;"></td>
                                             <td scope="" style="border-bottom:1px solid black; border-left:1px; border-right:1px solid black;"></td>
                                         </tr>
-                                    <!--       <?php foreach ($pn_physical_tests_data as $data) { ?>
+                                        <!--       <?php foreach ($pn_physical_tests_data as $data) { ?>
                                             <tr>
                                                 <td scope="" style="height:80px"><?= ++$count; ?></td>
                                                 <td scope="">MINI CROSS COUNTRY ____ KM</td>
@@ -2144,7 +2137,7 @@
                                             <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
                                             <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
                                         </tr>
-                                      <!--  <tr>
+                                        <!--  <tr>
                                             <td scope="" style="height:80px"><?= ++$count; ?></td>
                                             <td scope="">ADAPTABILITY</td>
                                             <td scope="" style="text-align:center">10</td>
@@ -2513,7 +2506,7 @@
                                             <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
                                             <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
                                         </tr>
-                                      <!--  <tr>
+                                        <!--  <tr>
                                             <td scope="" style="height:80px"><?= ++$count; ?></td>
                                             <td scope="">ADAPABILITY</td>
                                             <td scope="" style="text-align:center">10</td>
@@ -2882,21 +2875,21 @@
                                             <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
                                             <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
                                         </tr>
-                                   <!-     <tr>
+                                        <!- <tr>
                                             <td scope="" style="height:80px"><?= ++$count; ?></td>
                                             <td scope="">ADAPTABILITY</td>
                                             <td scope="" style="text-align:center">10</td>
                                             <td scope="" style="text-align:center"><?= $pn_officer_qualities_data_t3['teamwork_mid']; ?></td>
                                             <td scope="" style="border-right:1px solid black;text-align:center"><?= $pn_officer_qualities_data_t3['teamwork_terminal']; ?></td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
-                                        </tr>
-                                       <!-- <tr>
+                                            </tr>
+                                            <tr>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
+                                            </tr>
+                                            <!-- <tr>
                                             <td scope="" style="height:80px"><?= ++$count; ?></td>
                                             <td scope="">Power of Expression (Oral & Written)</td>
                                             <td scope="" style="text-align:center">10</td>
@@ -2910,97 +2903,97 @@
                                             <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
                                             <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
                                         </tr>  -->
-                                        <tr>
-                                            <td scope="" style="height:80px"></td>
-                                            <td scope=""> <strong>TOTAL MARKS: </strong> </td>
-                                            <td scope="" style="text-align:center">140</td>
-                                            <td scope="" style="text-align:center"><?= $pn_officer_qualities_data_t3['total_mid']; ?></td>
-                                            <td scope="" style="border-right:1px solid black;text-align:center"><?= $pn_officer_qualities_data_t3['total_terminal']; ?></td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
-                                        </tr>
-                                        <tr style="border-left: none;">
-                                            <td scope="" style="height:80px; border-left:none"></td>
-                                            <td scope="" style="height:80px; border-left:none"></td>
-                                            <td scope="" colspan="" style="border-right:1px solid black;"> MARKS FOR TERM </td>
-                                            <td scope="" style="text-align:center"><?= $pn_officer_qualities_data_t3['mid_marks']; ?></td>
-                                            <td scope="" style="border-right:1px solid black;text-align:center"><?= $pn_officer_qualities_data_t3['terminal_marks']; ?></td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="" style="border-left:none"></td>
-                                            <td scope="" style="border-left:none"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
-                                        </tr>
-                                        <tr style="border-left: none;">
-                                            <td scope="" style="height:80px; border-left:none"></td>
-                                            <td scope="" style="height:80px; border-left:none"></td>
-                                            <td scope="" colspan="" style="border-right:1px solid black;"> DATE OF ASSESSMENT</td>
-                                            <td scope="" style="text-align:center"><?= $pn_officer_qualities_data_t3['mid_marks_date']; ?></td>
-                                            <td scope="" style="border-right:1px solid black;text-align:center"><?= $pn_officer_qualities_data_t3['terminal_marks_date']; ?></td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="" style="border-left:none"></td>
-                                            <td scope="" style="border-left:none"></td>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
-                                        </tr>
-                                        <tr style="border-left: none;">
-                                            <td scope="" style="height:80px; border-left:none"></td>
-                                            <td scope="" style="height:80px; border-left:none"></td>
-                                            <td scope="" colspan="3" style="border-right:1px solid black;"> DO's SIGN </td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="" style="border-left:none"></td>
-                                            <td scope="" style="border-left:none"></td>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
-                                        </tr>
-                                        </tr>
-                                        <tr style="border-left: none;">
-                                            <td scope="" style="height:80px; border-left:none"></td>
-                                            <td scope="" style="height:80px; border-left:none"></td>
-                                            <td scope="" colspan="3" style="border-right:1px solid black;"> SDO's SIGN </td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="" style="border-left:none"></td>
-                                            <td scope="" style="border-left:none"></td>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
-                                        </tr>
-                                        <tr style="border-left: none;">
-                                            <td scope="" style="height:80px; border-left:none"></td>
-                                            <td scope="" style="height:80px; border-left:none"></td>
-                                            <td scope="" colspan="3" style="border-right:1px solid black;"> OIC's SIGN </td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="" style="border-left:none"></td>
-                                            <td scope="" style="border-left:none"></td>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
-                                        </tr>
-                                        <tr style="border-left: none;">
-                                            <td scope="" style="height:80px; border-left:none"></td>
-                                            <td scope="" style="height:80px; border-left:none"></td>
-                                            <td scope="" colspan="3" style="border-right:1px solid black;"> COMMANDANT's SIGN </td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="" style="border-left:none"></td>
-                                            <td scope="" style="border-left:none"></td>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;"></td>
-                                            <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
-                                        </tr>
+                                            <tr>
+                                                <td scope="" style="height:80px"></td>
+                                                <td scope=""> <strong>TOTAL MARKS: </strong> </td>
+                                                <td scope="" style="text-align:center">140</td>
+                                                <td scope="" style="text-align:center"><?= $pn_officer_qualities_data_t3['total_mid']; ?></td>
+                                                <td scope="" style="border-right:1px solid black;text-align:center"><?= $pn_officer_qualities_data_t3['total_terminal']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
+                                            </tr>
+                                            <tr style="border-left: none;">
+                                                <td scope="" style="height:80px; border-left:none"></td>
+                                                <td scope="" style="height:80px; border-left:none"></td>
+                                                <td scope="" colspan="" style="border-right:1px solid black;"> MARKS FOR TERM </td>
+                                                <td scope="" style="text-align:center"><?= $pn_officer_qualities_data_t3['mid_marks']; ?></td>
+                                                <td scope="" style="border-right:1px solid black;text-align:center"><?= $pn_officer_qualities_data_t3['terminal_marks']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="" style="border-left:none"></td>
+                                                <td scope="" style="border-left:none"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
+                                            </tr>
+                                            <tr style="border-left: none;">
+                                                <td scope="" style="height:80px; border-left:none"></td>
+                                                <td scope="" style="height:80px; border-left:none"></td>
+                                                <td scope="" colspan="" style="border-right:1px solid black;"> DATE OF ASSESSMENT</td>
+                                                <td scope="" style="text-align:center"><?= $pn_officer_qualities_data_t3['mid_marks_date']; ?></td>
+                                                <td scope="" style="border-right:1px solid black;text-align:center"><?= $pn_officer_qualities_data_t3['terminal_marks_date']; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="" style="border-left:none"></td>
+                                                <td scope="" style="border-left:none"></td>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-left:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
+                                            </tr>
+                                            <tr style="border-left: none;">
+                                                <td scope="" style="height:80px; border-left:none"></td>
+                                                <td scope="" style="height:80px; border-left:none"></td>
+                                                <td scope="" colspan="3" style="border-right:1px solid black;"> DO's SIGN </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="" style="border-left:none"></td>
+                                                <td scope="" style="border-left:none"></td>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
+                                            </tr>
+                                            </tr>
+                                            <tr style="border-left: none;">
+                                                <td scope="" style="height:80px; border-left:none"></td>
+                                                <td scope="" style="height:80px; border-left:none"></td>
+                                                <td scope="" colspan="3" style="border-right:1px solid black;"> SDO's SIGN </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="" style="border-left:none"></td>
+                                                <td scope="" style="border-left:none"></td>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
+                                            </tr>
+                                            <tr style="border-left: none;">
+                                                <td scope="" style="height:80px; border-left:none"></td>
+                                                <td scope="" style="height:80px; border-left:none"></td>
+                                                <td scope="" colspan="3" style="border-right:1px solid black;"> OIC's SIGN </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="" style="border-left:none"></td>
+                                                <td scope="" style="border-left:none"></td>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
+                                            </tr>
+                                            <tr style="border-left: none;">
+                                                <td scope="" style="height:80px; border-left:none"></td>
+                                                <td scope="" style="height:80px; border-left:none"></td>
+                                                <td scope="" colspan="3" style="border-right:1px solid black;"> COMMANDANT's SIGN </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="" style="border-left:none"></td>
+                                                <td scope="" style="border-left:none"></td>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;"></td>
+                                                <td scope="" style="border-bottom:1px solid black;border-right:1px solid black;"></td>
+                                            </tr>
                                     </tbody>
                                 </table>
                             <?php } else { ?>
@@ -4518,7 +4511,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="container my-3">
-                           <div style="text-align:center">
+                            <div style="text-align:center">
                                 <h4 style="text-decoration:underline"><strong>RECORD OF SENIORITY</strong></h4>
                             </div>
                         </div>
@@ -4646,13 +4639,13 @@
 
     </div>
 
-   <div class="card-body bg-custom3" style="display:none" id="branch_allocation_record">
+    <div class="card-body bg-custom3" style="display:none" id="branch_allocation_record">
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
                 <a onclick="location.href='<?php echo base_url() ?>/D_O/branch_allocation_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
-          <!--  <div class="row">
+            <!--  <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="container my-3">
@@ -4770,461 +4763,461 @@
 </div>
 
 </div>   -->
-                        
-<?php $this->load->view('common/footer'); ?>
-<script>
-    $('#search_btn').on('click', function() {
-        var validate = 0;
-        var oc_no = $('#oc_no').val();
 
-        if (oc_no == '') {
-            validate = 1;
-            $('#oc_no').addClass('red-border');
-        }
+            <?php $this->load->view('common/footer'); ?>
+            <script>
+                $('#search_btn').on('click', function() {
+                    var validate = 0;
+                    var oc_no = $('#oc_no').val();
 
-        if (validate == 0) {
-            $('#error_search').hide();
-
-            $.ajax({
-                url: '<?= base_url(); ?>D_O/search_cadet_for_dossier_folder',
-                method: 'POST',
-                data: {
-                    'oc_no': oc_no
-                },
-                success: function(data) {
-                    if (data != '0') {
-                        var newDoc = document.open("text/html", "replace");
-                        newDoc.write(data);
-                        newDoc.close();
-                        $('#cadet_dossier').show();
-                    } else {
-                        $('#no_data').show();
-                        $('#cadet_dossier').hide();
+                    if (oc_no == '') {
+                        validate = 1;
+                        $('#oc_no').addClass('red-border');
                     }
-                },
-                async: true
-            });
 
-        } else {
-            $('#error_search').show();
-        }
+                    if (validate == 0) {
+                        $('#error_search').hide();
 
-    });
+                        $.ajax({
+                            url: '<?= base_url(); ?>D_O/search_cadet_for_dossier_folder',
+                            method: 'POST',
+                            data: {
+                                'oc_no': oc_no
+                            },
+                            success: function(data) {
+                                if (data != '0') {
+                                    var newDoc = document.open("text/html", "replace");
+                                    newDoc.write(data);
+                                    newDoc.close();
+                                    $('#cadet_dossier').show();
+                                } else {
+                                    $('#no_data').show();
+                                    $('#cadet_dossier').hide();
+                                }
+                            },
+                            async: true
+                        });
 
-    function seen(data) {
-        $.ajax({
-            url: '<?= base_url(); ?>ChatController/seen',
-            method: 'POST',
-            data: {
-                'id': data
-            },
-            success: function(data) {
-                $('#notification').html(data);
-            },
-            async: true
-        });
-    }
+                    } else {
+                        $('#error_search').show();
+                    }
 
-    $('#notifications').focusout(function() {
-        $.ajax({
-            url: '<?= base_url(); ?>ChatController/activity_seen',
-            success: function(data) {
-                $('#notifications').html(data);
-            },
-            async: true
-        });
-    });
+                });
 
-    $('#gen').on('click', function() {
-        $('#cadet_dossier').hide();
-        $('#gen_list').show();
-        $('#back_btn').show();
-        $('#back_btn_main').hide();
-        $('#header_title').html('<h4>GENERAL</h4>');
-    });
-
-    $('#disp').on('click', function() {
-        $('#cadet_dossier').hide();
-        $('#disp_list').show();
-        $('#back_btn').show();
-        $('#header_title').html('<h4>DISCIPLINE</h4>');
-        $('#back_btn_main').hide();
-    });
-
-    $('#warn').on('click', function() {
-        $('#cadet_dossier').hide();
-        $('#warn_list').show();
-        $('#back_btn').show();
-        $('#header_title').html('<h4>WARNING</h4>');
-        $('#back_btn_main').hide();
-    });
-
-    $('#phy').on('click', function() {
-        $('#cadet_dossier').hide();
-        $('#phy_list').show();
-        $('#back_btn').show();
-        $('#header_title').html('<h4>PHYSICAL EFFICIENCY</h4>');
-        $('#back_btn_main').hide();
-    });
-
-    $('#acad').on('click', function() {
-        $('#cadet_dossier').hide();
-        $('#acad_list').show();
-        $('#back_btn').show();
-        $('#header_title').html('<h4>ACADEMIC RECORDS</h4>');
-        $('#back_btn_main').hide();
-    });
-
-    $('#olq').on('click', function() {
-        $('#cadet_dossier').hide();
-        $('#olq_list').show();
-        $('#back_btn').show();
-        $('#header_title').html('<h4>PERSONALITY TRAITS</h4>');
-        $('#back_btn_main').hide();
-    });
-
-    $('#assess').on('click', function() {
-        $('#cadet_dossier').hide();
-        $('#assess_list').show();
-        $('#back_btn').show();
-        $('#header_title').html('<h4>ASSESSMENT</h4>');
-        $('#back_btn_main').hide();
-    });
-
-    $('#back_btn').on('click', function() {
-        $('#cadet_dossier').show();
-        $('#gen_list').hide();
-        $('#phy_list').hide();
-        $('#warn_list').hide();
-        $('#acad_list').hide();
-        $('#olq_list').hide();
-        $('#disp_list').hide();
-        $('#assess_list').hide();
-        $('#general_remarks_list').hide();
-        $('#back_btn').hide();
-        $('#header_title').html('<h4>CONTENTS</h4>');
-        $('#back_btn_main').show();
-    });
-
-    $('#btn_punish_term1').on('click', function() {
-        $('#main-container').hide();
-        $('#container-2').hide();
-        $('#punish_term1').show();
-        $('#punish_term2').hide();
-        $('#punish_term3').hide();
-        $('#back_btn_punish').show();
-    });
-
-    $('#btn_punish_term2').on('click', function() {
-        $('#main-container').hide();
-        $('#container-2').hide();
-        $('#punish_term2').show();
-        $('#punish_term1').hide();
-        $('#punish_term3').hide();
-        $('#back_btn_punish').show();
-    });
-
-    $('#btn_punish_term3').on('click', function() {
-        $('#main-container').hide();
-        $('#container-2').hide();
-        $('#punish_term3').show();
-        $('#punish_term1').hide();
-        $('#punish_term2').hide();
-        $('#back_btn_punish').show();
-    });
-
-    $('#btn_obs_term1').on('click', function() {
-        $('#main-container').hide();
-        $('#container-2').hide();
-        $('#obs_term1').show();
-        $('#obs_term2').hide();
-        $('#obs_term3').hide();
-        $('#back_btn_punish').show();
-    });
-    $('#btn_obs_term2').on('click', function() {
-        $('#main-container').hide();
-        $('#container-2').hide();
-        $('#obs_term2').show();
-        $('#obs_term1').hide();
-        $('#obs_term3').hide();
-        $('#back_btn_punish').show();
-    });
-    $('#btn_obs_term3').on('click', function() {
-        $('#main-container').hide();
-        $('#container-2').hide();
-        $('#obs_term3').show();
-        $('#obs_term1').hide();
-        $('#obs_term2').hide();
-        $('#back_btn_punish').show();
-    });
-
-    $('#back_btn_punish_term1, #back_btn_punish_term2, #back_btn_punish_term3').on('click', function() {
-        $('#main-container').show();
-        $('#punish_term1').hide();
-        $('#punish_term2').hide();
-        $('#punish_term3').hide();
-        $('#terms_list_punish').hide();
-        $('#terms_list_obs').hide();
-    });
-
-    $('#back_btn_obs_term1, #back_btn_obs_term2, #back_btn_obs_term3, #back_btn_warning, #back_btn_inspection, #back_btn_medical, #back_btn_saluting_swimming, #back_btn_physical_efficiency, #back_btn_olq_term1, #back_btn_olq_term2, #back_btn_olq_term3, #back_btn_personal_record, #back_btn_divisional_officer, #back_btn_autobiography, #back_btn_psychologhy, #back_btn_general_remarks_term1_mid, #back_btn_general_remarks_term1_final, #back_btn_general_remarks_term2_mid, #back_btn_general_remarks_term2_final, #back_btn_general_remarks_term3_mid, #back_btn_general_remarks_term3_final, #back_btn_distinction_achieved, #back_btn_progress_chart, #back_btn_seniority_record, #back_btn_branch_allocation, #back_btn_warning_insert, #back_btn_result_t1, #back_btn_result_t2, #back_btn_result_t3, #back_btn_sea_training').on('click', function() {
-        $('#main-container').show();
-        $('#obs_term1').hide();
-        $('#obs_term2').hide();
-        $('#obs_term3').hide();
-        $('#terms_list_punish').hide();
-        $('#terms_list_obs').hide();
-        $('#warning_record').hide();
-        $('#inspection_record').hide();
-        $('#medical_record').hide();
-        $('#saluting_swimming_record').hide();
-        $('#officer_qualities_record_term1').hide();
-        $('#officer_qualities_record_term2').hide();
-        $('#officer_qualities_record_term3').hide();
-        $('#personal_data_record').hide();
-        $('#divisional_officer_record').hide();
-        $('#autobiography_record').hide();
-        $('#psychology_record').hide();
-        $('#general_remarks_term1_mid').hide();
-        $('#general_remarks_term1_final').hide();
-        $('#general_remarks_term2_mid').hide();
-        $('#general_remarks_term2_final').hide();
-        $('#general_remarks_term3_mid').hide();
-        $('#general_remarks_term3_final').hide();
-        $('#general_remarks_mid_final_term1').hide();
-        $('#general_remarks_mid_final_term2').hide();
-        $('#general_remarks_mid_final_term3').hide();
-        $('#distinction_achieved_record').hide();
-        $('#progress_chart_record').hide();
-        $('#seniority_record').hide();
-        $('#branch_allocation_record').hide();
-        $('#physical_efficiency_record').hide();
-        $('#warning_record_insert').hide();
-        $('#result_record_t1').hide();
-        $('#result_record_t2').hide();
-        $('#result_record_t3').hide();
-        $('#sea_training_record').hide();
-
-    });
-
-    $('#obs_record').on('click', function() {
-        $('#terms_list_punish').hide();
-        $('#terms_list_obs').show();
-    });
-
-    $('#punish_record').on('click', function() {
-        $('#terms_list_obs').hide();
-        $('#terms_list_punish').show();
-    });
-    $('#btn_olq_record').on('click', function() {
-        $('#terms_olq_record').show();
-    });
-
-    $('#btn_warning').on('click', function() {
-        $('#warning_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_inspection_record').on('click', function() {
-        $('#inspection_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_medical_record').on('click', function() {
-        $('#medical_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_saluting_swimming_record').on('click', function() {
-        $('#saluting_swimming_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_physical_record').on('click', function() {
-        $('#physical_efficiency_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_olq_term1').on('click', function() {
-        $('#officer_qualities_record_term1').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_olq_term2').on('click', function() {
-        $('#officer_qualities_record_term2').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_olq_term3').on('click', function() {
-        $('#officer_qualities_record_term3').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_personal_record').on('click', function() {
-        $('#personal_data_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_divisional_officer_record').on('click', function() {
-        $('#divisional_officer_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_autobiography').on('click', function() {
-        $('#autobiography_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_psychology').on('click', function() {
-        $('#psychology_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-
-    $('#btn_general_remarks').on('click', function() {
-        $('#general_remarks_list').show();
-        $('#assess_list').hide();
-    });
-
-    $('#btn_general_remarks_term1').on('click', function() {
-        $('#general_remarks_mid_final_term1').show();
-        $('#general_remarks_mid_final_term2').hide();
-        $('#general_remarks_mid_final_term3').hide();
-        $('#assess_list').hide();
-    });
-
-    $('#btn_general_remarks_term2').on('click', function() {
-        $('#general_remarks_mid_final_term2').show();
-        $('#general_remarks_mid_final_term1').hide();
-        $('#general_remarks_mid_final_term3').hide();
-        $('#assess_list').hide();
-    });
-    $('#btn_general_remarks_term3').on('click', function() {
-        $('#general_remarks_mid_final_term3').show();
-        $('#general_remarks_mid_final_term1').hide();
-        $('#general_remarks_mid_final_term2').hide();
-        $('#assess_list').hide();
-    });
-
-    $('#btn_general_remarks_term1_mid').on('click', function() {
-        $('#general_remarks_term1_mid').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_general_remarks_term1_final').on('click', function() {
-        $('#general_remarks_term1_final').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-    $('#btn_general_remarks_term2_mid').on('click', function() {
-        $('#general_remarks_term2_mid').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_general_remarks_term2_final').on('click', function() {
-        $('#general_remarks_term2_final').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-    $('#btn_general_remarks_term3_mid').on('click', function() {
-        $('#general_remarks_term3_mid').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_general_remarks_term3_final').on('click', function() {
-        $('#general_remarks_term3_final').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_progress_chart').on('click', function() {
-        $('#progress_chart_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_distinction_achieved').on('click', function() {
-        $('#distinction_achieved_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_seniority_record').on('click', function() {
-        $('#seniority_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_branch_allocation').on('click', function() {
-        $('#branch_allocation_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_warning_attach').on('click', function() {
-        $('#warning_record_insert').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_result_t1').on('click', function() {
-        $('#result_record_t1').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_result_t2').on('click', function() {
-        $('#result_record_t2').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#btn_result_t3').on('click', function() {
-        $('#result_record_t3').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-    $('#btn_sea_training_report').on('click', function() {
-        $('#sea_training_record').show();
-        $('#main-container').hide();
-        $('#container-2').hide();
-    });
-
-    $('#back_btn_main').on('click', function() {
-        var oc_no = '0';
-        $.ajax({
-            url: '<?= base_url(); ?>D_O/search_cadet_for_dossier_folder',
-            method: 'POST',
-            data: {
-                'oc_no': oc_no,
-                'back_press': 'Yes'
-            },
-            success: function(data) {
-                if (data != '0') {
-                    var newDoc = document.open("text/html", "replace");
-                    newDoc.write(data);
-                    newDoc.close();
-                } else {
-                    $('#no_data').show();
-                    $('#cadet_dossier').hide();
+                function seen(data) {
+                    $.ajax({
+                        url: '<?= base_url(); ?>ChatController/seen',
+                        method: 'POST',
+                        data: {
+                            'id': data
+                        },
+                        success: function(data) {
+                            $('#notification').html(data);
+                        },
+                        async: true
+                    });
                 }
-            },
-            async: true
-        });
-    });
-</script>
+
+                $('#notifications').focusout(function() {
+                    $.ajax({
+                        url: '<?= base_url(); ?>ChatController/activity_seen',
+                        success: function(data) {
+                            $('#notifications').html(data);
+                        },
+                        async: true
+                    });
+                });
+
+                $('#gen').on('click', function() {
+                    $('#cadet_dossier').hide();
+                    $('#gen_list').show();
+                    $('#back_btn').show();
+                    $('#back_btn_main').hide();
+                    $('#header_title').html('<h4>GENERAL</h4>');
+                });
+
+                $('#disp').on('click', function() {
+                    $('#cadet_dossier').hide();
+                    $('#disp_list').show();
+                    $('#back_btn').show();
+                    $('#header_title').html('<h4>DISCIPLINE</h4>');
+                    $('#back_btn_main').hide();
+                });
+
+                $('#warn').on('click', function() {
+                    $('#cadet_dossier').hide();
+                    $('#warn_list').show();
+                    $('#back_btn').show();
+                    $('#header_title').html('<h4>WARNING</h4>');
+                    $('#back_btn_main').hide();
+                });
+
+                $('#phy').on('click', function() {
+                    $('#cadet_dossier').hide();
+                    $('#phy_list').show();
+                    $('#back_btn').show();
+                    $('#header_title').html('<h4>PHYSICAL EFFICIENCY</h4>');
+                    $('#back_btn_main').hide();
+                });
+
+                $('#acad').on('click', function() {
+                    $('#cadet_dossier').hide();
+                    $('#acad_list').show();
+                    $('#back_btn').show();
+                    $('#header_title').html('<h4>ACADEMIC RECORDS</h4>');
+                    $('#back_btn_main').hide();
+                });
+
+                $('#olq').on('click', function() {
+                    $('#cadet_dossier').hide();
+                    $('#olq_list').show();
+                    $('#back_btn').show();
+                    $('#header_title').html('<h4>PERSONALITY TRAITS</h4>');
+                    $('#back_btn_main').hide();
+                });
+
+                $('#assess').on('click', function() {
+                    $('#cadet_dossier').hide();
+                    $('#assess_list').show();
+                    $('#back_btn').show();
+                    $('#header_title').html('<h4>ASSESSMENT</h4>');
+                    $('#back_btn_main').hide();
+                });
+
+                $('#back_btn').on('click', function() {
+                    $('#cadet_dossier').show();
+                    $('#gen_list').hide();
+                    $('#phy_list').hide();
+                    $('#warn_list').hide();
+                    $('#acad_list').hide();
+                    $('#olq_list').hide();
+                    $('#disp_list').hide();
+                    $('#assess_list').hide();
+                    $('#general_remarks_list').hide();
+                    $('#back_btn').hide();
+                    $('#header_title').html('<h4>CONTENTS</h4>');
+                    $('#back_btn_main').show();
+                });
+
+                $('#btn_punish_term1').on('click', function() {
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                    $('#punish_term1').show();
+                    $('#punish_term2').hide();
+                    $('#punish_term3').hide();
+                    $('#back_btn_punish').show();
+                });
+
+                $('#btn_punish_term2').on('click', function() {
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                    $('#punish_term2').show();
+                    $('#punish_term1').hide();
+                    $('#punish_term3').hide();
+                    $('#back_btn_punish').show();
+                });
+
+                $('#btn_punish_term3').on('click', function() {
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                    $('#punish_term3').show();
+                    $('#punish_term1').hide();
+                    $('#punish_term2').hide();
+                    $('#back_btn_punish').show();
+                });
+
+                $('#btn_obs_term1').on('click', function() {
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                    $('#obs_term1').show();
+                    $('#obs_term2').hide();
+                    $('#obs_term3').hide();
+                    $('#back_btn_punish').show();
+                });
+                $('#btn_obs_term2').on('click', function() {
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                    $('#obs_term2').show();
+                    $('#obs_term1').hide();
+                    $('#obs_term3').hide();
+                    $('#back_btn_punish').show();
+                });
+                $('#btn_obs_term3').on('click', function() {
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                    $('#obs_term3').show();
+                    $('#obs_term1').hide();
+                    $('#obs_term2').hide();
+                    $('#back_btn_punish').show();
+                });
+
+                $('#back_btn_punish_term1, #back_btn_punish_term2, #back_btn_punish_term3').on('click', function() {
+                    $('#main-container').show();
+                    $('#punish_term1').hide();
+                    $('#punish_term2').hide();
+                    $('#punish_term3').hide();
+                    $('#terms_list_punish').hide();
+                    $('#terms_list_obs').hide();
+                });
+
+                $('#back_btn_obs_term1, #back_btn_obs_term2, #back_btn_obs_term3, #back_btn_warning, #back_btn_inspection, #back_btn_medical, #back_btn_saluting_swimming, #back_btn_physical_efficiency, #back_btn_olq_term1, #back_btn_olq_term2, #back_btn_olq_term3, #back_btn_personal_record, #back_btn_divisional_officer, #back_btn_autobiography, #back_btn_psychologhy, #back_btn_general_remarks_term1_mid, #back_btn_general_remarks_term1_final, #back_btn_general_remarks_term2_mid, #back_btn_general_remarks_term2_final, #back_btn_general_remarks_term3_mid, #back_btn_general_remarks_term3_final, #back_btn_distinction_achieved, #back_btn_progress_chart, #back_btn_seniority_record, #back_btn_branch_allocation, #back_btn_warning_insert, #back_btn_result_t1, #back_btn_result_t2, #back_btn_result_t3, #back_btn_sea_training').on('click', function() {
+                    $('#main-container').show();
+                    $('#obs_term1').hide();
+                    $('#obs_term2').hide();
+                    $('#obs_term3').hide();
+                    $('#terms_list_punish').hide();
+                    $('#terms_list_obs').hide();
+                    $('#warning_record').hide();
+                    $('#inspection_record').hide();
+                    $('#medical_record').hide();
+                    $('#saluting_swimming_record').hide();
+                    $('#officer_qualities_record_term1').hide();
+                    $('#officer_qualities_record_term2').hide();
+                    $('#officer_qualities_record_term3').hide();
+                    $('#personal_data_record').hide();
+                    $('#divisional_officer_record').hide();
+                    $('#autobiography_record').hide();
+                    $('#psychology_record').hide();
+                    $('#general_remarks_term1_mid').hide();
+                    $('#general_remarks_term1_final').hide();
+                    $('#general_remarks_term2_mid').hide();
+                    $('#general_remarks_term2_final').hide();
+                    $('#general_remarks_term3_mid').hide();
+                    $('#general_remarks_term3_final').hide();
+                    $('#general_remarks_mid_final_term1').hide();
+                    $('#general_remarks_mid_final_term2').hide();
+                    $('#general_remarks_mid_final_term3').hide();
+                    $('#distinction_achieved_record').hide();
+                    $('#progress_chart_record').hide();
+                    $('#seniority_record').hide();
+                    $('#branch_allocation_record').hide();
+                    $('#physical_efficiency_record').hide();
+                    $('#warning_record_insert').hide();
+                    $('#result_record_t1').hide();
+                    $('#result_record_t2').hide();
+                    $('#result_record_t3').hide();
+                    $('#sea_training_record').hide();
+
+                });
+
+                $('#obs_record').on('click', function() {
+                    $('#terms_list_punish').hide();
+                    $('#terms_list_obs').show();
+                });
+
+                $('#punish_record').on('click', function() {
+                    $('#terms_list_obs').hide();
+                    $('#terms_list_punish').show();
+                });
+                $('#btn_olq_record').on('click', function() {
+                    $('#terms_olq_record').show();
+                });
+
+                $('#btn_warning').on('click', function() {
+                    $('#warning_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_inspection_record').on('click', function() {
+                    $('#inspection_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_medical_record').on('click', function() {
+                    $('#medical_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_saluting_swimming_record').on('click', function() {
+                    $('#saluting_swimming_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_physical_record').on('click', function() {
+                    $('#physical_efficiency_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_olq_term1').on('click', function() {
+                    $('#officer_qualities_record_term1').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_olq_term2').on('click', function() {
+                    $('#officer_qualities_record_term2').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_olq_term3').on('click', function() {
+                    $('#officer_qualities_record_term3').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_personal_record').on('click', function() {
+                    $('#personal_data_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_divisional_officer_record').on('click', function() {
+                    $('#divisional_officer_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_autobiography').on('click', function() {
+                    $('#autobiography_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_psychology').on('click', function() {
+                    $('#psychology_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+
+                $('#btn_general_remarks').on('click', function() {
+                    $('#general_remarks_list').show();
+                    $('#assess_list').hide();
+                });
+
+                $('#btn_general_remarks_term1').on('click', function() {
+                    $('#general_remarks_mid_final_term1').show();
+                    $('#general_remarks_mid_final_term2').hide();
+                    $('#general_remarks_mid_final_term3').hide();
+                    $('#assess_list').hide();
+                });
+
+                $('#btn_general_remarks_term2').on('click', function() {
+                    $('#general_remarks_mid_final_term2').show();
+                    $('#general_remarks_mid_final_term1').hide();
+                    $('#general_remarks_mid_final_term3').hide();
+                    $('#assess_list').hide();
+                });
+                $('#btn_general_remarks_term3').on('click', function() {
+                    $('#general_remarks_mid_final_term3').show();
+                    $('#general_remarks_mid_final_term1').hide();
+                    $('#general_remarks_mid_final_term2').hide();
+                    $('#assess_list').hide();
+                });
+
+                $('#btn_general_remarks_term1_mid').on('click', function() {
+                    $('#general_remarks_term1_mid').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_general_remarks_term1_final').on('click', function() {
+                    $('#general_remarks_term1_final').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+                $('#btn_general_remarks_term2_mid').on('click', function() {
+                    $('#general_remarks_term2_mid').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_general_remarks_term2_final').on('click', function() {
+                    $('#general_remarks_term2_final').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+                $('#btn_general_remarks_term3_mid').on('click', function() {
+                    $('#general_remarks_term3_mid').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_general_remarks_term3_final').on('click', function() {
+                    $('#general_remarks_term3_final').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_progress_chart').on('click', function() {
+                    $('#progress_chart_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_distinction_achieved').on('click', function() {
+                    $('#distinction_achieved_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_seniority_record').on('click', function() {
+                    $('#seniority_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_branch_allocation').on('click', function() {
+                    $('#branch_allocation_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_warning_attach').on('click', function() {
+                    $('#warning_record_insert').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_result_t1').on('click', function() {
+                    $('#result_record_t1').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_result_t2').on('click', function() {
+                    $('#result_record_t2').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#btn_result_t3').on('click', function() {
+                    $('#result_record_t3').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+                $('#btn_sea_training_report').on('click', function() {
+                    $('#sea_training_record').show();
+                    $('#main-container').hide();
+                    $('#container-2').hide();
+                });
+
+                $('#back_btn_main').on('click', function() {
+                    var oc_no = '0';
+                    $.ajax({
+                        url: '<?= base_url(); ?>D_O/search_cadet_for_dossier_folder',
+                        method: 'POST',
+                        data: {
+                            'oc_no': oc_no,
+                            'back_press': 'Yes'
+                        },
+                        success: function(data) {
+                            if (data != '0') {
+                                var newDoc = document.open("text/html", "replace");
+                                newDoc.write(data);
+                                newDoc.close();
+                            } else {
+                                $('#no_data').show();
+                                $('#cadet_dossier').hide();
+                            }
+                        },
+                        async: true
+                    });
+                });
+            </script>
