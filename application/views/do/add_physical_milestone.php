@@ -444,14 +444,6 @@
                                 </div>
                                <div class="col-sm-2 mb-1">
                                      <input type="number" class="form-control rounded-pill" name="assault_attempt" id="assault_attempt" placeholder="Attempt No" style="font-size: 0.8rem; height:50px;" >
-                                   <!--  <select class="form-control rounded-pill" name="assault_attempt" id="assault_attempt" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
-                                        <option class="form-control form-control-user" value="">Attempt</option>
-                                        <option class="form-control form-control-user" value="1">1st</option>
-                                        <option class="form-control form-control-user" value="2">2nd</option>
-                                        <option class="form-control form-control-user" value="3">3rd</option>
-                                        <option class="form-control form-control-user" value="4">4th</option>
-                                        <option class="form-control form-control-user" value="5">5th</option>
-                                    </select> -->
                                 </div> 
                                 <div class="col-sm-3 mb-1">
                                     <button type="button" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#term-I">ADD DETAILS</button>
@@ -470,14 +462,6 @@
                                 </div>
                                 <div class="col-sm-2 mb-1">
                                      <input type="number" class="form-control rounded-pill"name="saluting_attempt" id="saluting_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
-                                   <!--  <select class="form-control rounded-pill" name="saluting_attempt" id="saluting_attempt" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
-                                        <option class="form-control form-control-user" value="">Attempt</option>
-                                        <option class="form-control form-control-user" value="1">1st</option>
-                                        <option class="form-control form-control-user" value="2">2nd</option>
-                                        <option class="form-control form-control-user" value="3">3rd</option>
-                                        <option class="form-control form-control-user" value="4">4th</option>
-                                        <option class="form-control form-control-user" value="5">5th</option>
-                                    </select> -->
                                 </div>
                                 <div class="col-sm-3 mb-1">
                                     <button type="button" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#term-I">ADD DETAILS</button>
