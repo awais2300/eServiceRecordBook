@@ -1,53 +1,74 @@
 <?php $this->load->view('cao/common/header'); ?>
-<?php !isset($PST_result['count']) ? $PST_result['count'] = 0 : $PST_result['count']; ?>
-<?php !isset($SST_result['count']) ? $SST_result['count'] = 0 : $SST_result['count']; ?>
-<?php !isset($PET_I_result['count']) ? $PET_I_result['count'] = 0 : $PET_I_result['count']; ?>
-<?php !isset($PET_II_result['count']) ? $PET_II_result['count'] = 0 : $PET_II_result['count']; ?>
-<?php !isset($assault_result['count']) ? $assault_result['count'] = 0 : $assault_result['count']; ?>
-<?php !isset($saluting_result['count']) ? $saluting_result['count'] = 0 : $saluting_result['count']; ?>
-<?php !isset($PLX_result['count']) ? $PLX_result['count'] = 0 : $PLX_result['count']; ?>
-<?php !isset($long_cross_result['count']) ? $long_cross_result['count'] = 0 : $long_cross_result['count']; ?>
-<?php !isset($mini_cross_result['count']) ? $mini_cross_result['count'] = 0 : $mini_cross_result['count']; ?>
-
-<?php !isset($PST_result_tp['count']) ? $PST_result_tp['count'] = 0 : $PST_result_tp['count']; ?>
-<?php !isset($SST_result_tp['count']) ? $SST_result_tp['count'] = 0 : $SST_result_tp['count']; ?>
-<?php !isset($PET_I_result_tp['count']) ? $PET_I_result_tp['count'] = 0 : $PET_I_result_tp['count']; ?>
-<?php !isset($PET_II_result_tp['count']) ? $PET_II_result_tp['count'] = 0 : $PET_II_result_tp['count']; ?>
-<?php !isset($assault_result_tp['count']) ? $assault_result_tp['count'] = 0 : $assault_result_tp['count']; ?>
-<?php !isset($saluting_result_tp['count']) ? $saluting_result_tp['count'] = 0 : $saluting_result_tp['count']; ?>
-<?php !isset($PLX_result_tp['count']) ? $PLX_result_tp['count'] = 0 : $PLX_result_tp['count']; ?>
-<?php !isset($long_cross_result_tp['count']) ? $long_cross_result_tp['count'] = 0 : $long_cross_result_tp['count']; ?>
-<?php !isset($mini_cross_result_tp['count']) ? $mini_cross_result_tp['count'] = 0 : $mini_cross_result_tp['count']; ?>
+<?php !isset($PST_result_overall['count']) ? $PST_result_overall['count'] = 0 : $PST_result_overall['count']; ?>
+<?php !isset($SST_result_overall['count']) ? $SST_result_overall['count'] = 0 : $SST_result_overall['count']; ?>
+<?php !isset($PET_I_result_overall['count']) ? $PET_I_result_overall['count'] = 0 : $PET_I_result_overall['count']; ?>
+<?php !isset($PET_II_result_overall['count']) ? $PET_II_result_overall['count'] = 0 : $PET_II_result_overall['count']; ?>
+<?php !isset($PET_III_result_overall['count']) ? $PET_III_result_overall['count'] = 0 : $PET_III_result_overall['count']; ?>
+<?php !isset($PET_IV_result_overall['count']) ? $PET_IV_result_overall['count'] = 0 : $PET_IV_result_overall['count']; ?>
+<?php !isset($PET_V_result_overall['count']) ? $PET_V_result_overall['count'] = 0 : $PET_V_result_overall['count']; ?>
+<?php !isset($PET_VI_result_overall['count']) ? $PET_VI_result_overall['count'] = 0 : $PET_VI_result_overall['count']; ?>
+<?php !isset($Prade_training_result_overall['count']) ? $Prade_training_result_overall['count'] = 0 : $Prade_training_result_overall['count']; ?>
 
 <?php !isset($PST_result_t1['count']) ? $PST_result_t1['count'] = 0 : $PST_result_t1['count']; ?>
 <?php !isset($SST_result_t1['count']) ? $SST_result_t1['count'] = 0 : $SST_result_t1['count']; ?>
 <?php !isset($PET_I_result_t1['count']) ? $PET_I_result_t1['count'] = 0 : $PET_I_result_t1['count']; ?>
 <?php !isset($PET_II_result_t1['count']) ? $PET_II_result_t1['count'] = 0 : $PET_II_result_t1['count']; ?>
-<?php !isset($assault_result_t1['count']) ? $assault_result_t1['count'] = 0 : $assault_result_t1['count']; ?>
-<?php !isset($saluting_result_t1['count']) ? $saluting_result_t1['count'] = 0 : $saluting_result_t1['count']; ?>
-<?php !isset($PLX_result_t1['count']) ? $PLX_result_t1['count'] = 0 : $PLX_result_t1['count']; ?>
-<?php !isset($long_cross_result_t1['count']) ? $long_cross_result_t1['count'] = 0 : $long_cross_result_t1['count']; ?>
-<?php !isset($mini_cross_result_t1['count']) ? $mini_cross_result_t1['count'] = 0 : $mini_cross_result_t1['count']; ?>
+<?php !isset($PET_III_result_t1['count']) ? $PET_III_result_t1['count'] = 0 : $PET_III_result_t1['count']; ?>
+<?php !isset($PET_IV_result_t1['count']) ? $PET_IV_result_t1['count'] = 0 : $PET_IV_result_t1['count']; ?>
+<?php !isset($PET_V_result_t1['count']) ? $PET_V_result_t1['count'] = 0 : $PET_V_result_t1['count']; ?>
+<?php !isset($PET_VI_result_t1['count']) ? $PET_VI_result_t1['count'] = 0 : $PET_VI_result_t1['count']; ?>
+<?php !isset($Prade_training_t1['count']) ? $Prade_training_t1['count'] = 0 : $Prade_training_t1['count']; ?>
 
 <?php !isset($PST_result_t2['count']) ? $PST_result_t2['count'] = 0 : $PST_result_t2['count']; ?>
 <?php !isset($SST_result_t2['count']) ? $SST_result_t2['count'] = 0 : $SST_result_t2['count']; ?>
 <?php !isset($PET_I_result_t2['count']) ? $PET_I_result_t2['count'] = 0 : $PET_I_result_t2['count']; ?>
 <?php !isset($PET_II_result_t2['count']) ? $PET_II_result_t2['count'] = 0 : $PET_II_result_t2['count']; ?>
-<?php !isset($assault_result_t2['count']) ? $assault_result_t2['count'] = 0 : $assault_result_t2['count']; ?>
-<?php !isset($saluting_result_t2['count']) ? $saluting_result_t2['count'] = 0 : $saluting_result_t2['count']; ?>
-<?php !isset($PLX_result_t2['count']) ? $PLX_result_t2['count'] = 0 : $PLX_result_t2['count']; ?>
-<?php !isset($long_cross_result_t2['count']) ? $long_cross_result_t2['count'] = 0 : $long_cross_result_t2['count']; ?>
-<?php !isset($mini_cross_result_t2['count']) ? $mini_cross_result_t2['count'] = 0 : $mini_cross_result_t2['count']; ?>
+<?php !isset($PET_III_result_t2['count']) ? $PET_III_result_t2['count'] = 0 : $PET_III_result_t2['count']; ?>
+<?php !isset($PET_IV_result_t2['count']) ? $PET_IV_result_t2['count'] = 0 : $PET_IV_result_t2['count']; ?>
+<?php !isset($PET_V_result_t2['count']) ? $PET_V_result_t2['count'] = 0 : $PET_V_result_t2['count']; ?>
+<?php !isset($PET_VI_result_t2['count']) ? $PET_VI_result_t2['count'] = 0 : $PET_VI_result_t2['count']; ?>
+<?php !isset($Prade_training_t2['count']) ? $Prade_training_t2['count'] = 0 : $Prade_training_t2['count']; ?>
 
 <?php !isset($PST_result_t3['count']) ? $PST_result_t3['count'] = 0 : $PST_result_t3['count']; ?>
 <?php !isset($SST_result_t3['count']) ? $SST_result_t3['count'] = 0 : $SST_result_t3['count']; ?>
 <?php !isset($PET_I_result_t3['count']) ? $PET_I_result_t3['count'] = 0 : $PET_I_result_t3['count']; ?>
 <?php !isset($PET_II_result_t3['count']) ? $PET_II_result_t3['count'] = 0 : $PET_II_result_t3['count']; ?>
-<?php !isset($assault_result_t3['count']) ? $assault_result_t3['count'] = 0 : $assault_result_t3['count']; ?>
-<?php !isset($saluting_result_t3['count']) ? $saluting_result_t3['count'] = 0 : $saluting_result_t3['count']; ?>
-<?php !isset($PLX_result_t3['count']) ? $PLX_result_t3['count'] = 0 : $PLX_result_t3['count']; ?>
-<?php !isset($long_cross_result_t3['count']) ? $long_cross_result_t3['count'] = 0 : $long_cross_result_t3['count']; ?>
-<?php !isset($mini_cross_result_t3['count']) ? $mini_cross_result_t3['count'] = 0 : $mini_cross_result_t3['count']; ?>
+<?php !isset($PET_III_result_t3['count']) ? $PET_III_result_t3['count'] = 0 : $PET_III_result_t3['count']; ?>
+<?php !isset($PET_IV_result_t3['count']) ? $PET_IV_result_t3['count'] = 0 : $PET_IV_result_t3['count']; ?>
+<?php !isset($PET_V_result_t3['count']) ? $PET_V_result_t3['count'] = 0 : $PET_V_result_t3['count']; ?>
+<?php !isset($PET_VI_result_t3['count']) ? $PET_VI_result_t3['count'] = 0 : $PET_VI_result_t3['count']; ?>
+<?php !isset($Prade_training_t3['count']) ? $Prade_training_t3['count'] = 0 : $Prade_training_t3['count']; ?>
+
+<?php !isset($PST_result_t4['count']) ? $PST_result_t4['count'] = 0 : $PST_result_t4['count']; ?>
+<?php !isset($SST_result_t4['count']) ? $SST_result_t4['count'] = 0 : $SST_result_t4['count']; ?>
+<?php !isset($PET_I_result_t4['count']) ? $PET_I_result_t4['count'] = 0 : $PET_I_result_t4['count']; ?>
+<?php !isset($PET_II_result_t4['count']) ? $PET_II_result_t4['count'] = 0 : $PET_II_result_t4['count']; ?>
+<?php !isset($PET_III_result_t4['count']) ? $PET_III_result_t4['count'] = 0 : $PET_III_result_t4['count']; ?>
+<?php !isset($PET_IV_result_t4['count']) ? $PET_IV_result_t4['count'] = 0 : $PET_IV_result_t4['count']; ?>
+<?php !isset($PET_V_result_t4['count']) ? $PET_V_result_t4['count'] = 0 : $PET_V_result_t4['count']; ?>
+<?php !isset($PET_VI_result_t4['count']) ? $PET_VI_result_t4['count'] = 0 : $PET_VI_result_t4['count']; ?>
+<?php !isset($Prade_training_t4['count']) ? $Prade_training_t4['count'] = 0 : $Prade_training_t4['count']; ?>
+
+<?php !isset($PST_result_t5['count']) ? $PST_result_t5['count'] = 0 : $PST_result_t5['count']; ?>
+<?php !isset($SST_result_t5['count']) ? $SST_result_t5['count'] = 0 : $SST_result_t5['count']; ?>
+<?php !isset($PET_I_result_t5['count']) ? $PET_I_result_t5['count'] = 0 : $PET_I_result_t5['count']; ?>
+<?php !isset($PET_II_result_t5['count']) ? $PET_II_result_t5['count'] = 0 : $PET_II_result_t5['count']; ?>
+<?php !isset($PET_III_result_t5['count']) ? $PET_III_result_t5['count'] = 0 : $PET_III_result_t5['count']; ?>
+<?php !isset($PET_IV_result_t5['count']) ? $PET_IV_result_t5['count'] = 0 : $PET_IV_result_t5['count']; ?>
+<?php !isset($PET_V_result_t5['count']) ? $PET_V_result_t5['count'] = 0 : $PET_V_result_t5['count']; ?>
+<?php !isset($PET_VI_result_t5['count']) ? $PET_VI_result_t5['count'] = 0 : $PET_VI_result_t5['count']; ?>
+<?php !isset($Prade_training_t5['count']) ? $Prade_training_t5['count'] = 0 : $Prade_training_t5['count']; ?>
+
+<?php !isset($PST_result_t6['count']) ? $PST_result_t6['count'] = 0 : $PST_result_t6['count']; ?>
+<?php !isset($SST_result_t6['count']) ? $SST_result_t6['count'] = 0 : $SST_result_t6['count']; ?>
+<?php !isset($PET_I_result_t6['count']) ? $PET_I_result_t6['count'] = 0 : $PET_I_result_t6['count']; ?>
+<?php !isset($PET_II_result_t6['count']) ? $PET_II_result_t6['count'] = 0 : $PET_II_result_t6['count']; ?>
+<?php !isset($PET_III_result_t6['count']) ? $PET_III_result_t6['count'] = 0 : $PET_III_result_t6['count']; ?>
+<?php !isset($PET_IV_result_t6['count']) ? $PET_IV_result_t6['count'] = 0 : $PET_IV_result_t6['count']; ?>
+<?php !isset($PET_V_result_t6['count']) ? $PET_V_result_t6['count'] = 0 : $PET_V_result_t6['count']; ?>
+<?php !isset($PET_VI_result_t6['count']) ? $PET_VI_result_t6['count'] = 0 : $PET_VI_result_t6['count']; ?>
+<?php !isset($Prade_training_t6['count']) ? $Prade_training_t6['count'] = 0 : $Prade_training_t6['count']; ?>
+
 <?php !isset($division_set) ? $division_set = "ooo" : $division_set; ?>
 
 
@@ -74,7 +95,7 @@
         </div>
         <div class="col-sm-3 mb-1">
             <select id="div_select" class="form-control rounded-pill" name="div" id="div" data-placeholder="Select ship" style="font-size: 0.8rem; height:100%; display:none">
-                <option class="form-control form-control-user" value="">SELECT DIVISION</option>
+                <option class="form-control form-control-user" value="">SELECT CLASS</option>
                 <?php foreach ($divisions as $data) { ?>
                     <option class="form-control form-control-user" value="<?= $data['division_name'] ?>"><?= $data['division_name'] ?></option>
                 <?php } ?>
@@ -93,26 +114,31 @@
     <div class="card-body bg-custom3" id="termwise_graph" style="display:none">
         <div class="form-group row" style="margin-top:50px;">
             <div class="col-sm-6">
-                <div id="chartContainer_tp" style="height: 370px; width: 100%;"></div>
+                <div id="chartContainer_t1" style="height: 370px; width: 100%;"></div>
             </div>
             <div class="col-sm-6">
-                <div id="chartContainer_t1" style="height: 370px; width: 100%;"></div>
+                <div id="chartContainer_t2" style="height: 370px; width: 100%;"></div>
             </div>
         </div>
         <div class="form-group row" style="margin-top:50px;">
             <div class="col-sm-6">
-                <div id="chartContainer_t2" style="height: 370px; width: 100%;"></div>
+                <div id="chartContainer_t3" style="height: 370px; width: 100%;"></div>
             </div>
             <div class="col-sm-6">
-                <div id="chartContainer_t3" style="height: 370px; width: 100%;"></div>
+                <div id="chartContainer_t4" style="height: 370px; width: 100%;"></div>
+            </div>
+        </div>
+        <div class="form-group row" style="margin-top:50px;">
+            <div class="col-sm-6">
+                <div id="chartContainer_t5" style="height: 370px; width: 100%;"></div>
+            </div>
+            <div class="col-sm-6">
+                <div id="chartContainer_t6" style="height: 370px; width: 100%;"></div>
             </div>
         </div>
     </div>
 
     <?php
-    if (!isset($Total_cadet_tp['count']) || $Total_cadet_tp['count'] == 0) {
-        $Total_cadet_tp['count'] = 1;
-    }
     if (!isset($Total_cadet_t1['count']) || $Total_cadet_t1['count'] == 0) {
         $Total_cadet_t1['count'] = 1;
     }
@@ -122,68 +148,103 @@
     if (!isset($Total_cadet_t3['count']) || $Total_cadet_t3['count'] == 0) {
         $Total_cadet_t3['count'] = 1;
     }
-    if (!isset($Total_cadet['count']) || $Total_cadet['count'] == 0) {
-        $Total_cadet['count'] = 1;
+    if (!isset($Total_cadet_t4['count']) || $Total_cadet_t4['count'] == 0) {
+        $Total_cadet_t4['count'] = 1;
     }
-    
+    if (!isset($Total_cadet_t5['count']) || $Total_cadet_t5['count'] == 0) {
+        $Total_cadet_t5['count'] = 1;
+    }
+    if (!isset($Total_cadet_t6['count']) || $Total_cadet_t6['count'] == 0) {
+        $Total_cadet_t6['count'] = 1;
+    }
+    if (!isset($Total_cadet_overall['count']) || $Total_cadet_overall['count'] == 0) {
+        $Total_cadet_overall['count'] = 1;
+    }
 
-    $dataPoints2 = array(
-        array("label" => "PST QUALIFIED", "y" => ($PST_result['count'] / $Total_cadet['count']) * 100),
-        array("label" => "SST QUALIFIED", "y" => ($SST_result['count'] / $Total_cadet['count']) * 100),
-        array("label" => "PET-I QUALIFIED", "y" => ($PET_I_result['count'] / $Total_cadet['count']) * 100),
-        array("label" => "PET-II QUALIFIED", "y" => ($PET_II_result['count'] / $Total_cadet['count']) * 100),
-        array("label" => "PET-III QUALIFIED", "y" => ($assault_result['count'] / $Total_cadet['count']) * 100),
-        array("label" => "PET-IV QUALIFIED", "y" => ($saluting_result['count'] / $Total_cadet['count']) * 100),
-        array("label" => "PET V QUALIFIED", "y" => ($PLX_result['count'] / $Total_cadet['count']) * 100),
-        array("label" => "PET-VI QUALIFIED", "y" => ($long_cross_result['count'] / $Total_cadet['count']) * 100),
-        array("label" => "PARADE QUALIFIED", "y" => ($mini_cross_result['count'] / $Total_cadet['count']) * 100)
+    $dataPoints_overall = array(
+        array("label" => "PST", "y" => ($PST_result_overall['count'] / $Total_cadet_overall['count']) * 100),
+        array("label" => "SST", "y" => ($SST_result_overall['count'] / $Total_cadet_overall['count']) * 100),
+        array("label" => "PET-I", "y" => ($PET_I_result_overall['count'] / $Total_cadet_overall['count']) * 100),
+        array("label" => "PET-II", "y" => ($PET_II_result_overall['count'] / $Total_cadet_overall['count']) * 100),
+        array("label" => "PET-III", "y" => ($PET_III_result_overall['count'] / $Total_cadet_overall['count']) * 100),
+        array("label" => "PET-IV", "y" => ($PET_IV_result_overall['count'] / $Total_cadet_overall['count']) * 100),
+        array("label" => "PET-V", "y" => ($PET_V_result_overall['count'] / $Total_cadet_overall['count']) * 100),
+        array("label" => "PET-VI ", "y" => ($PET_VI_result_overall['count'] / $Total_cadet_overall['count']) * 100),
+        array("label" => "PARADE TRAINING ", "y" => ($Prade_training_result_overall['count'] / $Total_cadet_overall['count']) * 100)
     );
 
-    $dataPoints_tp = array(
-        array("label" => "PST", "y" => ($PST_result_tp['count'] / $Total_cadet_tp['count']) * 100),
-        array("label" => "SST", "y" => ($SST_result_tp['count'] / $Total_cadet_tp['count']) * 100),
-        array("label" => "PET-I", "y" => ($PET_I_result_tp['count'] / $Total_cadet_tp['count']) * 100),
-        array("label" => "PET-II", "y" => ($PET_II_result_tp['count'] / $Total_cadet_tp['count']) * 100),
-        array("label" => "PET-III", "y" => ($assault_result_tp['count'] / $Total_cadet_tp['count']) * 100),
-        array("label" => "PET-IV", "y" => ($saluting_result_tp['count'] / $Total_cadet_tp['count']) * 100),
-        array("label" => "PET-V", "y" => ($PLX_result_tp['count'] / $Total_cadet_tp['count']) * 100),
-        array("label" => "PET-VI ", "y" => ($long_cross_result_tp['count'] / $Total_cadet_tp['count']) * 100),
-        array("label" => "PARADE TRAINING ", "y" => ($mini_cross_result_tp['count'] / $Total_cadet_tp['count']) * 100)
-    );
-    
     $dataPoints_t1 = array(
         array("label" => "PST", "y" => ($PST_result_t1['count'] / $Total_cadet_t1['count']) * 100),
         array("label" => "SST", "y" => ($SST_result_t1['count'] / $Total_cadet_t1['count']) * 100),
         array("label" => "PET-I", "y" => ($PET_I_result_t1['count'] / $Total_cadet_t1['count']) * 100),
         array("label" => "PET-II", "y" => ($PET_II_result_t1['count'] / $Total_cadet_t1['count']) * 100),
-        array("label" => "PET-III", "y" => ($assault_result_t1['count'] / $Total_cadet_t1['count']) * 100),
-        array("label" => "PET-IV", "y" => ($saluting_result_t1['count'] / $Total_cadet_t1['count']) * 100),
-        array("label" => "PET-V", "y" => ($PLX_result_t1['count'] / $Total_cadet_t1['count']) * 100),
-        array("label" => "PET-VI ", "y" => ($long_cross_result_t1['count'] / $Total_cadet_t1['count']) * 100),
-        array("label" => "PARADE TRAINING ", "y" => ($mini_cross_result_t1['count'] / $Total_cadet_t1['count']) * 100)
+        array("label" => "PET-III", "y" => ($PET_III_result_t1['count'] / $Total_cadet_t1['count']) * 100),
+        array("label" => "PET-IV", "y" => ($PET_IV_result_t1['count'] / $Total_cadet_t1['count']) * 100),
+        array("label" => "PET-V", "y" => ($PET_V_result_t1['count'] / $Total_cadet_t1['count']) * 100),
+        array("label" => "PET-VI ", "y" => ($PET_VI_result_t1['count'] / $Total_cadet_t1['count']) * 100),
+        array("label" => "PARADE TRAINING ", "y" => ($Prade_training_t1['count'] / $Total_cadet_t1['count']) * 100)
     );
+
     $dataPoints_t2 = array(
         array("label" => "PST", "y" => ($PST_result_t2['count'] / $Total_cadet_t2['count']) * 100),
         array("label" => "SST", "y" => ($SST_result_t2['count'] / $Total_cadet_t2['count']) * 100),
         array("label" => "PET-I", "y" => ($PET_I_result_t2['count'] / $Total_cadet_t2['count']) * 100),
         array("label" => "PET-II", "y" => ($PET_II_result_t2['count'] / $Total_cadet_t2['count']) * 100),
-        array("label" => "PET-III", "y" => ($assault_result_t2['count'] / $Total_cadet_t2['count']) * 100),
-        array("label" => "PET-IV", "y" => ($saluting_result_t2['count'] / $Total_cadet_t2['count']) * 100),
-        array("label" => "PET-V", "y" => ($PLX_result_t2['count'] / $Total_cadet_t2['count']) * 100),
-        array("label" => "PET-VI ", "y" => ($long_cross_result_t2['count'] / $Total_cadet_t2['count']) * 100),
-        array("label" => "PARADE TRAINING ", "y" => ($mini_cross_result_t2['count'] / $Total_cadet_t2['count']) * 100)
+        array("label" => "PET-III", "y" => ($PET_III_result_t2['count'] / $Total_cadet_t2['count']) * 100),
+        array("label" => "PET-IV", "y" => ($PET_IV_result_t2['count'] / $Total_cadet_t2['count']) * 100),
+        array("label" => "PET-V", "y" => ($PET_V_result_t2['count'] / $Total_cadet_t2['count']) * 100),
+        array("label" => "PET-VI ", "y" => ($PET_VI_result_t2['count'] / $Total_cadet_t2['count']) * 100),
+        array("label" => "PARADE TRAINING ", "y" => ($Prade_training_t2['count'] / $Total_cadet_t2['count']) * 100)
     );
+
     $dataPoints_t3 = array(
         array("label" => "PST", "y" => ($PST_result_t3['count'] / $Total_cadet_t3['count']) * 100),
         array("label" => "SST", "y" => ($SST_result_t3['count'] / $Total_cadet_t3['count']) * 100),
         array("label" => "PET-I", "y" => ($PET_I_result_t3['count'] / $Total_cadet_t3['count']) * 100),
         array("label" => "PET-II", "y" => ($PET_II_result_t3['count'] / $Total_cadet_t3['count']) * 100),
-        array("label" => "PET-III", "y" => ($assault_result_t3['count'] / $Total_cadet_t3['count']) * 100),
-        array("label" => "PET-IV", "y" => ($saluting_result_t3['count'] / $Total_cadet_t3['count']) * 100),
-        array("label" => "PET-V", "y" => ($PLX_result_t3['count'] / $Total_cadet_t3['count']) * 100),
-        array("label" => "PET-VI ", "y" => ($long_cross_result_t3['count'] / $Total_cadet_t3['count']) * 100),
-        array("label" => "PARADE TRAINING ", "y" => ($mini_cross_result_t3['count'] / $Total_cadet_t3['count']) * 100)
+        array("label" => "PET-III", "y" => ($PET_III_result_t3['count'] / $Total_cadet_t3['count']) * 100),
+        array("label" => "PET-IV", "y" => ($PET_IV_result_t3['count'] / $Total_cadet_t3['count']) * 100),
+        array("label" => "PET-V", "y" => ($PET_V_result_t3['count'] / $Total_cadet_t3['count']) * 100),
+        array("label" => "PET-VI ", "y" => ($PET_VI_result_t3['count'] / $Total_cadet_t3['count']) * 100),
+        array("label" => "PARADE TRAINING ", "y" => ($Prade_training_t3['count'] / $Total_cadet_t3['count']) * 100)
     );
+
+    $dataPoints_t4 = array(
+        array("label" => "PST", "y" => ($PST_result_t4['count'] / $Total_cadet_t4['count']) * 100),
+        array("label" => "SST", "y" => ($SST_result_t4['count'] / $Total_cadet_t4['count']) * 100),
+        array("label" => "PET-I", "y" => ($PET_I_result_t4['count'] / $Total_cadet_t4['count']) * 100),
+        array("label" => "PET-II", "y" => ($PET_II_result_t4['count'] / $Total_cadet_t4['count']) * 100),
+        array("label" => "PET-III", "y" => ($PET_III_result_t4['count'] / $Total_cadet_t4['count']) * 100),
+        array("label" => "PET-IV", "y" => ($PET_IV_result_t4['count'] / $Total_cadet_t4['count']) * 100),
+        array("label" => "PET-V", "y" => ($PET_V_result_t4['count'] / $Total_cadet_t4['count']) * 100),
+        array("label" => "PET-VI ", "y" => ($PET_VI_result_t4['count'] / $Total_cadet_t4['count']) * 100),
+        array("label" => "PARADE TRAINING ", "y" => ($Prade_training_t4['count'] / $Total_cadet_t4['count']) * 100)
+    );
+
+    $dataPoints_t5 = array(
+        array("label" => "PST", "y" => ($PST_result_t5['count'] / $Total_cadet_t5['count']) * 100),
+        array("label" => "SST", "y" => ($SST_result_t5['count'] / $Total_cadet_t5['count']) * 100),
+        array("label" => "PET-I", "y" => ($PET_I_result_t5['count'] / $Total_cadet_t5['count']) * 100),
+        array("label" => "PET-II", "y" => ($PET_II_result_t5['count'] / $Total_cadet_t5['count']) * 100),
+        array("label" => "PET-III", "y" => ($PET_III_result_t5['count'] / $Total_cadet_t5['count']) * 100),
+        array("label" => "PET-IV", "y" => ($PET_IV_result_t5['count'] / $Total_cadet_t5['count']) * 100),
+        array("label" => "PET-V", "y" => ($PET_V_result_t5['count'] / $Total_cadet_t5['count']) * 100),
+        array("label" => "PET-VI ", "y" => ($PET_VI_result_t5['count'] / $Total_cadet_t5['count']) * 100),
+        array("label" => "PARADE TRAINING ", "y" => ($Prade_training_t5['count'] / $Total_cadet_t5['count']) * 100)
+    );
+
+    $dataPoints_t6 = array(
+        array("label" => "PST", "y" => ($PST_result_t6['count'] / $Total_cadet_t6['count']) * 100),
+        array("label" => "SST", "y" => ($SST_result_t6['count'] / $Total_cadet_t6['count']) * 100),
+        array("label" => "PET-I", "y" => ($PET_I_result_t6['count'] / $Total_cadet_t6['count']) * 100),
+        array("label" => "PET-II", "y" => ($PET_II_result_t6['count'] / $Total_cadet_t6['count']) * 100),
+        array("label" => "PET-III", "y" => ($PET_III_result_t6['count'] / $Total_cadet_t6['count']) * 100),
+        array("label" => "PET-IV", "y" => ($PET_IV_result_t6['count'] / $Total_cadet_t6['count']) * 100),
+        array("label" => "PET-V", "y" => ($PET_V_result_t6['count'] / $Total_cadet_t6['count']) * 100),
+        array("label" => "PET-VI ", "y" => ($PET_VI_result_t6['count'] / $Total_cadet_t6['count']) * 100),
+        array("label" => "PARADE TRAINING ", "y" => ($Prade_training_t6['count'] / $Total_cadet_t6['count']) * 100)
+    );
+
     ?>
 </div>
 
@@ -215,7 +276,7 @@
                         showInLegend: true,
                         legendMarkerColor: "grey",
                         legendText: "TOTAL AGGREGATE",
-                        dataPoints: <?php echo json_encode($dataPoints2, JSON_NUMERIC_CHECK); ?>
+                        dataPoints: <?php echo json_encode($dataPoints_overall, JSON_NUMERIC_CHECK); ?>
                     }]
                 });
                 chart1.render();
@@ -224,7 +285,8 @@
 
             $('#overall_graph').show();
 
-        } else if (division == 'OVERALL') {
+        } else if (division == 'Overall') {
+
             setTimeout(function() {
                 var chart1 = new CanvasJS.Chart("chartContainer2", {
                     animationEnabled: true,
@@ -244,16 +306,17 @@
                         showInLegend: true,
                         legendMarkerColor: "grey",
                         legendText: "TOTAL AGGREGATE",
-                        dataPoints: <?php echo json_encode($dataPoints2, JSON_NUMERIC_CHECK); ?>
+                        dataPoints: <?php echo json_encode($dataPoints_overall, JSON_NUMERIC_CHECK); ?>
                     }]
                 });
                 chart1.render();
 
             }, 1000);
 
-        } else if (division == 'TERMWISE') {
+        } else if (division == 'termwise') {
+
             setTimeout(function() {
-                var chartp = new CanvasJS.Chart("chartContainer_tp", {
+                var chartp = new CanvasJS.Chart("chartContainer_t1", {
                     animationEnabled: true,
                     theme: "light2", // "light1", "light2", "dark1", "dark2"
                     title: {
@@ -271,12 +334,12 @@
                         showInLegend: true,
                         legendMarkerColor: "grey",
                         legendText: "TOTAL AGGREGATE",
-                        dataPoints: <?php echo json_encode($dataPoints_tp, JSON_NUMERIC_CHECK); ?>
+                        dataPoints: <?php echo json_encode($dataPoints_t1, JSON_NUMERIC_CHECK); ?>
                     }]
                 });
                 chartp.render();
 
-                var chart2 = new CanvasJS.Chart("chartContainer_t1", {
+                var chart2 = new CanvasJS.Chart("chartContainer_t2", {
                     animationEnabled: true,
                     theme: "light2", // "light1", "light2", "dark1", "dark2"
                     title: {
@@ -293,13 +356,13 @@
                         type: "column",
                         showInLegend: true,
                         legendMarkerColor: "grey",
-                        legendText: "TOTAL AGGREGTE",
-                        dataPoints: <?php echo json_encode($dataPoints_t1, JSON_NUMERIC_CHECK); ?>
+                        legendText: "TOTAL AGGREGATE",
+                        dataPoints: <?php echo json_encode($dataPoints_t2, JSON_NUMERIC_CHECK); ?>
                     }]
                 });
                 chart2.render();
 
-                var chart3 = new CanvasJS.Chart("chartContainer_t2", {
+                var chart3 = new CanvasJS.Chart("chartContainer_t3", {
                     animationEnabled: true,
                     theme: "light2", // "light1", "light2", "dark1", "dark2"
                     title: {
@@ -317,12 +380,12 @@
                         showInLegend: true,
                         legendMarkerColor: "grey",
                         legendText: "TOTAL AGGREGATE",
-                        dataPoints: <?php echo json_encode($dataPoints_t2, JSON_NUMERIC_CHECK); ?>
+                        dataPoints: <?php echo json_encode($dataPoints_t3, JSON_NUMERIC_CHECK); ?>
                     }]
                 });
                 chart3.render();
 
-                var chart4 = new CanvasJS.Chart("chartContainer_t3", {
+                var chart4 = new CanvasJS.Chart("chartContainer_t4", {
                     animationEnabled: true,
                     theme: "light2", // "light1", "light2", "dark1", "dark2"
                     title: {
@@ -340,10 +403,56 @@
                         showInLegend: true,
                         legendMarkerColor: "grey",
                         legendText: "TOTAL AGGREGATE",
-                        dataPoints: <?php echo json_encode($dataPoints_t3, JSON_NUMERIC_CHECK); ?>
+                        dataPoints: <?php echo json_encode($dataPoints_t4, JSON_NUMERIC_CHECK); ?>
                     }]
                 });
                 chart4.render();
+
+                var chart5 = new CanvasJS.Chart("chartContainer_t5", {
+                    animationEnabled: true,
+                    theme: "light2", // "light1", "light2", "dark1", "dark2"
+                    title: {
+                        text: "TERM-V"
+                    },
+                    subtitles: [{
+                        text: "PERCENTAGE (%)"
+                    }],
+                    axisY: {
+                        title: "AGGREGATE",
+                        maximum: 100,
+                    },
+                    data: [{
+                        type: "column",
+                        showInLegend: true,
+                        legendMarkerColor: "grey",
+                        legendText: "TOTAL AGGREGATE",
+                        dataPoints: <?php echo json_encode($dataPoints_t5, JSON_NUMERIC_CHECK); ?>
+                    }]
+                });
+                chart5.render();
+
+                var chart6 = new CanvasJS.Chart("chartContainer_t6", {
+                    animationEnabled: true,
+                    theme: "light2", // "light1", "light2", "dark1", "dark2"
+                    title: {
+                        text: "TERM-VI"
+                    },
+                    subtitles: [{
+                        text: "PERCENTAGE (%)"
+                    }],
+                    axisY: {
+                        title: "AGGREGATE",
+                        maximum: 100,
+                    },
+                    data: [{
+                        type: "column",
+                        showInLegend: true,
+                        legendMarkerColor: "grey",
+                        legendText: "TOTAL AGGREGATE",
+                        dataPoints: <?php echo json_encode($dataPoints_t6, JSON_NUMERIC_CHECK); ?>
+                    }]
+                });
+                chart6.render();
             }, 1000);
         } else {
             $('#overall_graph').hide();

@@ -1,4 +1,4 @@
-<?php $this->load->view('co/common/header'); ?>
+<?php $this->load->view('cao/common/header'); ?>
 <?php !isset($gpa['gpa_t1']) ? $gpa['gpa_t1'] = 0 : $gpa['gpa_t1']; ?>
 <?php !isset($gpa['gpa_t2']) ? $gpa['gpa_t2'] = 0 : $gpa['gpa_t2']; ?>
 <?php !isset($gpa['gpa_t3']) ? $gpa['gpa_t3'] = 0 : $gpa['gpa_t3']; ?>

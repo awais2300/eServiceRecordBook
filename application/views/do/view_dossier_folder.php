@@ -39,14 +39,14 @@
     .list-group-item:hover {
         color: white !important;
         background-color: #c5c6cc !important;
-        border-radius: 20px;
+        /* border-radius: 20px; */
     }
 
     .custom_list {
         /* height: 45px; */
         /* padding: 8px; */
         /* border: none !important; */
-        border-radius: 10rem !important;
+        /* border-radius: 10rem !important; */
     }
 
     th,

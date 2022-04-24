@@ -56,23 +56,23 @@
 
                             <div class="card">
                                 <div class="card-header bg-custom1">
-                                    <h1 class="h4">TERM-I DETAILS</h1>
+                                    <h1 class="h4">PET-I DETAILS</h1>
                                 </div>
 
                                 <div class="card-body bg-custom3">
                                     <form class="user" role="form" method="post" id="add_form" action="<?= base_url(); ?>D_O/add_termI_details">
                                         <div class="form-group row">
                                             <div class="col-sm-3">
-                                                <h3 id="">MILE TIME</h3>
+                                                <h5 id="">MILE TIME</h5>
                                             </div>
                                             <div class="col-sm-3">
-                                                <h3 id="">CHINUPS</h3>
+                                                <h5 id="">CHINUPS</h5>
                                             </div>
                                             <div class="col-sm-3">
-                                                <h3 id="">PUSHUPS</h3>
+                                                <h5 id="">PUSHUPS</h5>
                                             </div>
                                             <div class="col-sm-3">
-                                                <h3 id="">ROPE</h3>
+                                                <h5 id="">ROPE</h5>
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -97,7 +97,7 @@
                                                 <input type="text" class="form-control form-control-user" name="Pushups_I" id="Pushups_I" placeholder="Pushups">
                                             </div>
                                             <div class="col-sm-3 mb-1">
-                                                <select class="form-control rounded-pill" name="Rope_I" id="Rope_I" data-placeholder="Select Grade" style="font-size: 0.8rem; height:50px;">
+                                                <select class="form-control  " name="Rope_I" id="Rope_I" data-placeholder="Select Grade" style="font-size: 0.8rem; height:50px;">
                                                     <option class="form-control form-control-user" value="">Select Grade</option>
                                                     <option class="form-control form-control-user" value="Alpha">Alpha</option>
                                                     <option class="form-control form-control-user" value="Bravo">Bravo</option>
@@ -108,7 +108,7 @@
 
                                         </div>
                                         <div class="form-group row">
-                                            <button type="button" class="btn btn-primary btn-user rounded-pill col-md-5" id="add_btn_termI" style="margin-left: 300px;">Save</button>
+                                            <button type="button" class="btn btn-primary btn-user   col-md-5" id="add_btn_termI" style="margin-left: 300px;">Save</button>
                                         </div>
                                         <div class="card-body">
 
@@ -123,7 +123,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
+                    <!-- <button type="button" class="btn btn-primary  " data-dismiss="modal">Close</button> -->
                 </div>
             </div>
         </div>
@@ -144,24 +144,23 @@
 
                             <div class="card">
                                 <div class="card-header bg-custom1">
-                                    <h1 class="h4">TERM-II DETAILS</h1>
+                                    <h1 class="h4">PET-II DETAILS</h1>
                                 </div>
 
                                 <div class="card-body bg-custom3">
                                     <form class="user" role="form" method="post" id="add_form2" action="<?= base_url(); ?>D_O/add_termII_details">
-
                                         <div class="form-group row">
                                             <div class="col-sm-3">
-                                                <h3 id="">MILE TIME</h3>
+                                                <h5 id="">MILE TIME</h5>
                                             </div>
                                             <div class="col-sm-3">
-                                                <h3 id="">CHINUPS</h3>
+                                                <h5 id="">CHINUPS</h5>
                                             </div>
                                             <div class="col-sm-3">
-                                                <h3 id="">PUSHUPS</h3>
+                                                <h5 id="">PUSHUPS</h5>
                                             </div>
                                             <div class="col-sm-3">
-                                                <h3 id="">ROPE</h3>
+                                                <h5 id="">ROPE</h5>
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -186,7 +185,7 @@
                                                 <input type="text" class="form-control form-control-user" name="Pushups_II" id="Pushups_II" placeholder="Pushups">
                                             </div>
                                             <div class="col-sm-3 mb-1">
-                                                <select class="form-control rounded-pill" name="Rope_II" id="Rope_II" data-placeholder="Select Grade" style="font-size: 0.8rem; height:50px;">
+                                                <select class="form-control  " name="Rope_II" id="Rope_II" data-placeholder="Select Grade" style="font-size: 0.8rem; height:50px;">
                                                     <option class="form-control form-control-user" value="">Select Grade</option>
                                                     <option class="form-control form-control-user" value="Alpha">Alpha</option>
                                                     <option class="form-control form-control-user" value="Bravo">Bravo</option>
@@ -195,7 +194,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <button type="button" class="btn btn-primary btn-user rounded-pill col-md-5" id="add_btn_termII" style="margin-left: 300px;">Save</button>
+                                            <button type="button" class="btn btn-primary btn-user   col-md-5" id="add_btn_termII" style="margin-left: 300px;">Save</button>
                                         </div>
                                     </form>
                                 </div>
@@ -206,11 +205,337 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-primary rounded-pill" data-dismiss="modal">Close</button> -->
+                    <!-- <button type="button" class="btn btn-primary  " data-dismiss="modal">Close</button> -->
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="term-III">
+        <!-- <div class="row"> -->
+        <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
+            <div class="modal-content bg-custom3" style="width:1200px;">
+                <div class="modal-header" style="width:1200px;">
+                </div>
+                <div class="card-body bg-custom3">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="card">
+                                <div class="card-header bg-custom1">
+                                    <h1 class="h4">PET-III DETAILS</h1>
+                                </div>
+
+                                <div class="card-body bg-custom3">
+                                    <form class="user" role="form" method="post" id="add_form3" action="<?= base_url(); ?>D_O/add_termIII_details">
+
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h5 id="">MILE TIME</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">CHINUPS</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">PUSHUPS</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">ROPE</h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="oc_num3" id="oc_num3">
+                                            </div>
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="id3" id="id3">
+                                            </div>
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="term_pet3" id="term_pet3">
+                                            </div>
+
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="mile_time_III" id="mile_time_III" placeholder="mile time">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="Chinups_III" id="Chinups_III" placeholder="Chinups">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="Pushups_III" id="Pushups_III" placeholder="Pushups">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <select class="form-control  " name="Rope_III" id="Rope_III" data-placeholder="Select Grade" style="font-size: 0.8rem; height:50px;">
+                                                    <option class="form-control form-control-user" value="">Select Grade</option>
+                                                    <option class="form-control form-control-user" value="Alpha">Alpha</option>
+                                                    <option class="form-control form-control-user" value="Bravo">Bravo</option>
+                                                    <option class="form-control form-control-user" value="Charlie">Charlie</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <button type="button" class="btn btn-primary btn-user   col-md-5" id="add_btn_termIII" style="margin-left: 300px;">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary  " data-dismiss="modal">Close</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="term-IV">
+        <!-- <div class="row"> -->
+        <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
+            <div class="modal-content bg-custom3" style="width:1200px;">
+                <div class="modal-header" style="width:1200px;">
+                </div>
+                <div class="card-body bg-custom3">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="card">
+                                <div class="card-header bg-custom1">
+                                    <h1 class="h4">PET-IV DETAILS</h1>
+                                </div>
+
+                                <div class="card-body bg-custom3">
+                                    <form class="user" role="form" method="post" id="add_form3" action="<?= base_url(); ?>D_O/add_termIV_details">
+
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h5 id="">MILE TIME</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">CHINUPS</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">PUSHUPS</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">ROPE</h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="oc_num4" id="oc_num4">
+                                            </div>
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="id4" id="id4">
+                                            </div>
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="term_pet4" id="term_pet4">
+                                            </div>
+
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="mile_time_IV" id="mile_time_IV" placeholder="mile time">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="Chinups_IV" id="Chinups_IV" placeholder="Chinups">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="Pushups_IV" id="Pushups_IV" placeholder="Pushups">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <select class="form-control  " name="Rope_IV" id="Rope_IV" data-placeholder="Select Grade" style="font-size: 0.8rem; height:50px;">
+                                                    <option class="form-control form-control-user" value="">Select Grade</option>
+                                                    <option class="form-control form-control-user" value="Alpha">Alpha</option>
+                                                    <option class="form-control form-control-user" value="Bravo">Bravo</option>
+                                                    <option class="form-control form-control-user" value="Charlie">Charlie</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <button type="button" class="btn btn-primary btn-user   col-md-5" id="add_btn_termIV" style="margin-left: 300px;">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary  " data-dismiss="modal">Close</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="term-V">
+        <!-- <div class="row"> -->
+        <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
+            <div class="modal-content bg-custom3" style="width:1200px;">
+                <div class="modal-header" style="width:1200px;">
+                </div>
+                <div class="card-body bg-custom3">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="card">
+                                <div class="card-header bg-custom1">
+                                    <h1 class="h4">PET-V DETAILS</h1>
+                                </div>
+
+                                <div class="card-body bg-custom3">
+                                    <form class="user" role="form" method="post" id="add_form3" action="<?= base_url(); ?>D_O/add_termV_details">
+
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h5 id="">MILE TIME</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">CHINUPS</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">PUSHUPS</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">ROPE</h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="oc_num5" id="oc_num5">
+                                            </div>
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="id5" id="id5">
+                                            </div>
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="term_pet5" id="term_pet5">
+                                            </div>
+
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="mile_time_V" id="mile_time_V" placeholder="mile time">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="Chinups_V" id="Chinups_V" placeholder="Chinups">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="Pushups_V" id="Pushups_V" placeholder="Pushups">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <select class="form-control  " name="Rope_V" id="Rope_V" data-placeholder="Select Grade" style="font-size: 0.8rem; height:50px;">
+                                                    <option class="form-control form-control-user" value="">Select Grade</option>
+                                                    <option class="form-control form-control-user" value="Alpha">Alpha</option>
+                                                    <option class="form-control form-control-user" value="Bravo">Bravo</option>
+                                                    <option class="form-control form-control-user" value="Charlie">Charlie</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <button type="button" class="btn btn-primary btn-user   col-md-5" id="add_btn_termV" style="margin-left: 300px;">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary  " data-dismiss="modal">Close</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="term-VI">
+        <!-- <div class="row"> -->
+        <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
+            <div class="modal-content bg-custom3" style="width:1200px;">
+                <div class="modal-header" style="width:1200px;">
+                </div>
+                <div class="card-body bg-custom3">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="card">
+                                <div class="card-header bg-custom1">
+                                    <h1 class="h4">PET-VI DETAILS</h1>
+                                </div>
+
+                                <div class="card-body bg-custom3">
+                                    <form class="user" role="form" method="post" id="add_form3" action="<?= base_url(); ?>D_O/add_termVI_details">
+
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h5 id="">MILE TIME</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">CHINUPS</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">PUSHUPS</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">ROPE</h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="oc_num6" id="oc_num6">
+                                            </div>
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="id6" id="id6">
+                                            </div>
+                                            <div class="col-sm-4 mb-1" style="display:none">
+                                                <input type="text" class="" name="term_pet6" id="term_pet6">
+                                            </div>
+
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="mile_time_VI" id="mile_time_VI" placeholder="mile time">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="Chinups_VI" id="Chinups_VI" placeholder="Chinups">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="text" class="form-control form-control-user" name="Pushups_VI" id="Pushups_VI" placeholder="Pushups">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <select class="form-control  " name="Rope_VI" id="Rope_VI" data-placeholder="Select Grade" style="font-size: 0.8rem; height:50px;">
+                                                    <option class="form-control form-control-user" value="">Select Grade</option>
+                                                    <option class="form-control form-control-user" value="Alpha">Alpha</option>
+                                                    <option class="form-control form-control-user" value="Bravo">Bravo</option>
+                                                    <option class="form-control form-control-user" value="Charlie">Charlie</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <button type="button" class="btn btn-primary btn-user   col-md-5" id="add_btn_termVI" style="margin-left: 300px;">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-primary  " data-dismiss="modal">Close</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="form-group row justify-content-center">
         <div class="col-lg-1">
             <img src='<?= base_url() ?>assets/img/navy_logo-new.png' style="height: 130px; width:100px;">
@@ -334,22 +659,14 @@
                                     <h5>&nbsp;<strong>1 - PST</strong></h5>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <select class="form-control rounded-pill" name="pst" id="pst" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control  " name="pst" id="pst" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">SELECT RESULT</option>
                                         <option class="form-control form-control-user" value="qualified">QUALIFIED</option>
                                         <option class="form-control form-control-user" value="disqualified">DISQUALIFIED</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <input type="number" class="form-control rounded-pill" name="pst_attempt" id="pst_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
-                                  <!--   <select class="form-control rounded-pill" name="pst_attempt" id="pst_attempt" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
-                                        <option class="form-control form-control-user" value="">Attempt</option>
-                                        <option class="form-control form-control-user" value="1">1st</option>
-                                        <option class="form-control form-control-user" value="2">2nd</option>
-                                        <option class="form-control form-control-user" value="3">3rd</option>
-                                        <option class="form-control form-control-user" value="4">4th</option>
-                                        <option class="form-control form-control-user" value="5">5th</option>
-                                    </select> -->
+                                    <input type="number" class="form-control  " name="pst_attempt" id="pst_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
                                 </div>
 
                             </div>
@@ -358,22 +675,14 @@
                                     <h5>&nbsp;<strong>2 - SST</strong></h5>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <select class="form-control rounded-pill" name="sst" id="sst" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control  " name="sst" id="sst" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">SELECT RESULT</option>
                                         <option class="form-control form-control-user" value="qualified">QUALIFIED</option>
                                         <option class="form-control form-control-user" value="disqualified">DISQUALIFIED</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                     <input type="number" class="form-control rounded-pill" name="sst_attempt" id="sst_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
-                                   <!--  <select class="form-control rounded-pill" name="sst_attempt" id="sst_attempt" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
-                                        <option class="form-control form-control-user" value="">Attempt</option>
-                                        <option class="form-control form-control-user" value="1">1st</option>
-                                        <option class="form-control form-control-user" value="2">2nd</option>
-                                        <option class="form-control form-control-user" value="3">3rd</option>
-                                        <option class="form-control form-control-user" value="4">4th</option>
-                                        <option class="form-control form-control-user" value="5">5th</option>
-                                    </select> -->
+                                     <input type="number" class="form-control  " name="sst_attempt" id="sst_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
                                 </div>
 
                             </div>
@@ -382,26 +691,17 @@
                                     <h5>&nbsp;<strong>3 - PET-I</strong></h5>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <select class="form-control rounded-pill" name="pet_I" id="pet_I" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control  " name="pet_I" id="pet_I" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">SELECT RESULT</option>
                                         <option class="form-control form-control-user" value="qualified">QUALIFIED</option>
                                         <option class="form-control form-control-user" value="disqualified">DISQUALIFIED</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                     <input type="number" class="form-control rounded-pill" name="pet_I_attempt" id="pet_I_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
-                                   <!--  <select class="form-control rounded-pill" name="pet_I_attempt" id="pet_I_attempt" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
-
-                                        <option class="form-control form-control-user" value="">Attempt</option>
-                                        <option class="form-control form-control-user" value="1">1st</option>
-                                        <option class="form-control form-control-user" value="2">2nd</option>
-                                        <option class="form-control form-control-user" value="3">3rd</option>
-                                        <option class="form-control form-control-user" value="4">4th</option>
-                                        <option class="form-control form-control-user" value="5">5th</option>
-                                    </select> -->
+                                     <input type="number" class="form-control  " name="pet_I_attempt" id="pet_I_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
                                 </div>
                                 <div class="col-sm-3 mb-1">
-                                    <button type="button" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#term-I">ADD DETAILS</button>
+                                    <button type="button" class="btn btn-primary btn-user  " data-toggle="modal" data-target="#term-I">ADD DETAILS</button>
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -409,26 +709,18 @@
                                     <h5>&nbsp;<strong>4 - PET-II</strong></h5>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <select class="form-control rounded-pill" name="pet_II" id="pet_II" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control  " name="pet_II" id="pet_II" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">SELECT RESULT</option>
                                         <option class="form-control form-control-user" value="qualified">QUALIFIED</option>
                                         <option class="form-control form-control-user" value="disqualified">DISQUALIFIED</option>
                                     </select>
                                 </div>
                                <div class="col-sm-2 mb-1">
-                                      <input type="number" class="form-control rounded-pill" name="pet_II_attempt" id="pet_II_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
-                                   <!--  <select class="form-control rounded-pill" name="pet_II_attempt" id="pet_II_attempt" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
-                                        <option class="form-control form-control-user" value="">Attempt</option>
-                                        <option class="form-control form-control-user" value="1">1st</option>
-                                        <option class="form-control form-control-user" value="2">2nd</option>
-                                        <option class="form-control form-control-user" value="3">3rd</option>
-                                        <option class="form-control form-control-user" value="4">4th</option>
-                                        <option class="form-control form-control-user" value="5">5th</option>
-                                    </select>  -->
+                                      <input type="number" class="form-control  " name="pet_II_attempt" id="pet_II_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
 
                                 </div> 
                                 <div class="col-sm-3 mb-1">
-                                    <button type="button" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#term-II">ADD DETAILS</button>
+                                    <button type="button" class="btn btn-primary btn-user  " data-toggle="modal" data-target="#term-II">ADD DETAILS</button>
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -436,17 +728,17 @@
                                     <h5>&nbsp;<strong>5 - PET-III</strong></h5>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <select class="form-control rounded-pill" name="assault" id="assault" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
-                                        <option class="form-control form-control-user" value="">Select Result</option>
-                                        <option class="form-control form-control-user" value="qualified">Qualified</option>
-                                        <option class="form-control form-control-user" value="disqualified">Disqualified</option>
+                                    <select class="form-control  " name="pet_III" id="pet_III" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                        <option class="form-control form-control-user" value="">SELECT RESULT</option>
+                                        <option class="form-control form-control-user" value="qualified">QUALIFIED</option>
+                                        <option class="form-control form-control-user" value="disqualified">DISQUALIFIED</option>
                                     </select>
                                 </div>
                                <div class="col-sm-2 mb-1">
-                                     <input type="number" class="form-control rounded-pill" name="assault_attempt" id="assault_attempt" placeholder="Attempt No" style="font-size: 0.8rem; height:50px;" >
+                                     <input type="number" class="form-control  " name="pet_III_attempt" id="pet_III_attempt" placeholder=" ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
                                 </div> 
                                 <div class="col-sm-3 mb-1">
-                                    <button type="button" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#term-I">ADD DETAILS</button>
+                                    <button type="button" class="btn btn-primary btn-user  " data-toggle="modal" data-target="#term-III">ADD DETAILS</button>
                                 </div>
                             </div> 
                             <div class="form-group row">
@@ -454,17 +746,17 @@
                                     <h5>&nbsp;<strong>6 - PET-IV</strong></h5>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <select class="form-control rounded-pill" name="saluting" id="saluting" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control  " name="pet_IV" id="pet_IV" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">SELECT RESULT</option>
                                         <option class="form-control form-control-user" value="qualified">QUALIFIED</option>
                                         <option class="form-control form-control-user" value="disqualified">DISQUALIFIED</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                     <input type="number" class="form-control rounded-pill"name="saluting_attempt" id="saluting_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
+                                     <input type="number" class="form-control  "name="pet_IV_attempt" id="pet_IV_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
                                 </div>
                                 <div class="col-sm-3 mb-1">
-                                    <button type="button" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#term-I">ADD DETAILS</button>
+                                    <button type="button" class="btn btn-primary btn-user  " data-toggle="modal" data-target="#term-IV">ADD DETAILS</button>
                                 </div>
                             </div>
                        <div class="form-group row">
@@ -472,25 +764,17 @@
                                     <h5>&nbsp;<strong>7 - PET-V</strong></h5>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <select class="form-control rounded-pill" name="plx" id="plx" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control  " name="pet_V" id="pet_V" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">SELECT RESULT</option>
                                         <option class="form-control form-control-user" value="qualified">QUALIFIED</option>
                                         <option class="form-control form-control-user" value="disqualified">DISUALIFIED</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                     <input type="number" class="form-control rounded-pill" name="plx_attempt" id="plx_attempt" placeholder="Attempt No" style="font-size: 0.8rem; height:50px;" >
-                                   <!--  <select class="form-control rounded-pill" name="plx_attempt" id="plx_attempt" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
-                                        <option class="form-control form-control-user" value="">Attempt</option>
-                                        <option class="form-control form-control-user" value="1">1st</option>
-                                        <option class="form-control form-control-user" value="2">2nd</option>
-                                        <option class="form-control form-control-user" value="3">3rd</option>
-                                        <option class="form-control form-control-user" value="4">4th</option>
-                                        <option class="form-control form-control-user" value="5">5th</option>
-                                    </select> -->
+                                     <input type="number" class="form-control  " name="pet_V_attempt" id="pet_V_attempt" placeholder=" ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
                                 </div>
                                 <div class="col-sm-3 mb-1">
-                                    <button type="button" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#term-I">ADD DETAILS</button>
+                                    <button type="button" class="btn btn-primary btn-user  " data-toggle="modal" data-target="#term-V">ADD DETAILS</button>
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -498,26 +782,17 @@
                                     <h5>&nbsp;<strong>8 - PET-VI</strong></h5>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <select class="form-control rounded-pill" name="long_cross" id="long_cross" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control  " name="pet_VI" id="pet_VI" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">SELECT RESULT</option>
                                         <option class="form-control form-control-user" value="qualified">QUALIFIED</option>
                                         <option class="form-control form-control-user" value="disqualified">DISQUALIFIED</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                  <input type="number" class="form-control rounded-pill" name="long_cross_card" id="long_cross_card" placeholder="Attempt No" style="font-size: 0.8rem; height:50px;" >
-
-                                   <!--  <select class="form-control rounded-pill" name="long_cross_card" id="long_cross_card" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
-                                        <option class="form-control form-control-user" value="">Card Number</option>
-                                        <option class="form-control form-control-user" value="1">1</option>
-                                        <option class="form-control form-control-user" value="2">2</option>
-                                        <option class="form-control form-control-user" value="3">3</option>
-                                        <option class="form-control form-control-user" value="4">4</option>
-                                        <option class="form-control form-control-user" value="5">5</option>
-                                    </select> -->
+                                  <input type="number" class="form-control  " name="pet_VI_attempt" id="pet_VI_attempt" placeholder=" ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
                                 </div>
                                 <div class="col-sm-3 mb-1">
-                                    <button type="button" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#term-I">ADD DETAILS</button>
+                                    <button type="button" class="btn btn-primary btn-user  " data-toggle="modal" data-target="#term-VI">ADD DETAILS</button>
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -525,24 +800,15 @@
                                     <h5>&nbsp;<strong>9 - PARADE TRAINING</strong></h5>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <select class="form-control rounded-pill" name="mini_cross" id="mini_cross" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control  " name="prade_training" id="prade_training" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">SELECT RESULT</option>
                                         <option class="form-control form-control-user" value="qualified">QUALIFIED</option>
                                         <option class="form-control form-control-user" value="disqualified">DISQUALIFIED</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                      <input type="number" class="form-control rounded-pill" name="mini_cross_card" id="mini_cross_card" placeholder="Attempt No" style="font-size: 0.8rem; height:50px;" >
-                                   <!--  <select class="form-control rounded-pill" name="mini_cross_card" id="mini_cross_card" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
-                                        <option class="form-control form-control-user" value="">Card Number</option>
-                                        <option class="form-control form-control-user" value="1">1</option>
-                                        <option class="form-control form-control-user" value="2">2</option>
-                                        <option class="form-control form-control-user" value="3">3</option>
-                                        <option class="form-control form-control-user" value="4">4</option>
-                                        <option class="form-control form-control-user" value="5">5</option>
-                                    </select> -->
+                                      <input type="number" class="form-control  " name="prade_attempt" id="prade_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
                                 </div>
-
                             </div>  
 
                             <div class="form-group row justify-content-center">
@@ -640,10 +906,139 @@
 
     });
 
+    $('#add_btn_termIII').on('click', function() {        
+        var validate = 0;
+
+        var p_id = $('#id3').val();
+        var oc_no = $('#oc_num3').val();
+        var mile_time = $('#mile_time_III').val();
+        var Pushups = $('#Pushups_III').val();
+        var Chinups = $('#Chinups_III').val();
+        var rope = $('#Rope_III').val();
+        var term = $('#term_pet3').val();
+
+        $.ajax({
+            url: '<?= base_url(); ?>D_O/add_termIII_details',
+            method: 'POST',
+            //  type:'json',
+            data: {
+                'p_id': p_id,
+                'oc_no': oc_no,
+                'mile_time': mile_time,
+                'Pushups': Pushups,
+                'Chinups': Chinups,
+                'rope': rope,
+                'term' : term
+            },
+            success: function(response) {
+            },
+            async: false
+        });
+
+        $('#term-III').modal('hide');
+
+    });
+
+    $('#add_btn_termIV').on('click', function() {        
+        var validate = 0;
+
+        var p_id = $('#id4').val();
+        var oc_no = $('#oc_num4').val();
+        var mile_time = $('#mile_time_IV').val();
+        var Pushups = $('#Pushups_IV').val();
+        var Chinups = $('#Chinups_IV').val();
+        var rope = $('#Rope_IV').val();
+        var term = $('#term_pet4').val();
+
+        $.ajax({
+            url: '<?= base_url(); ?>D_O/add_termIV_details',
+            method: 'POST',
+            //  type:'json',
+            data: {
+                'p_id': p_id,
+                'oc_no': oc_no,
+                'mile_time': mile_time,
+                'Pushups': Pushups,
+                'Chinups': Chinups,
+                'rope': rope,
+                'term' : term
+            },
+            success: function(response) {
+            },
+            async: false
+        });
+
+        $('#term-IV').modal('hide');
+
+    });
+
+    $('#add_btn_termV').on('click', function() {        
+        var validate = 0;
+
+        var p_id = $('#id5').val();
+        var oc_no = $('#oc_num5').val();
+        var mile_time = $('#mile_time_V').val();
+        var Pushups = $('#Pushups_V').val();
+        var Chinups = $('#Chinups_V').val();
+        var rope = $('#Rope_V').val();
+        var term = $('#term_pet5').val();
+
+        $.ajax({
+            url: '<?= base_url(); ?>D_O/add_termV_details',
+            method: 'POST',
+            //  type:'json',
+            data: {
+                'p_id': p_id,
+                'oc_no': oc_no,
+                'mile_time': mile_time,
+                'Pushups': Pushups,
+                'Chinups': Chinups,
+                'rope': rope,
+                'term' : term
+            },
+            success: function(response) {
+            },
+            async: false
+        });
+
+        $('#term-V').modal('hide');
+
+    });
+
+    $('#add_btn_termVI').on('click', function() {        
+        var validate = 0;
+
+        var p_id = $('#id6').val();
+        var oc_no = $('#oc_num6').val();
+        var mile_time = $('#mile_time_VI').val();
+        var Pushups = $('#Pushups_VI').val();
+        var Chinups = $('#Chinups_VI').val();
+        var rope = $('#Rope_VI').val();
+        var term = $('#term_pet6').val();
+
+        $.ajax({
+            url: '<?= base_url(); ?>D_O/add_termVI_details',
+            method: 'POST',
+            //  type:'json',
+            data: {
+                'p_id': p_id,
+                'oc_no': oc_no,
+                'mile_time': mile_time,
+                'Pushups': Pushups,
+                'Chinups': Chinups,
+                'rope': rope,
+                'term' : term
+            },
+            success: function(response) {
+            },
+            async: false
+        });
+
+        $('#term-VI').modal('hide');
+
+    });
+
     function seen(data) {
-        // alert('in');
-        // alert(data);
-        // var receiver_id=$(this).attr('id');
         $.ajax({
             url: '<?= base_url(); ?>ChatController/seen',
             method: 'POST',
@@ -704,6 +1099,15 @@
                         $('#id1').val(result['f_p_id']);
                         $('#oc_num2').val(result['f_oc_no']);
                         $('#id2').val(result['f_p_id']);
+                        $('#oc_num3').val(result['f_oc_no']);
+                        $('#id3').val(result['f_p_id']);
+                        $('#oc_num4').val(result['f_oc_no']);
+                        $('#id4').val(result['f_p_id']);
+                        $('#oc_num5').val(result['f_oc_no']);
+                        $('#id5').val(result['f_p_id']);
+                        $('#oc_num6').val(result['f_oc_no']);
+                        $('#id6').val(result['f_p_id']);
+
                         $('#pst').val(result['PST_result']);
                         $('#pst_attempt').val(result['PST_attempt']);
                         $('#sst').val(result['SST_result']);
@@ -712,16 +1116,18 @@
                         $('#pet_I_attempt').val(result['PET_I_attempt']);
                         $('#pet_II').val(result['PET_II_result']);
                         $('#pet_II_attempt').val(result['PET_II_attempt']);
-                        $('#assault').val(result['assault_result']);
-                        $('#assault_attempt').val(result['assault_attempt']);
-                        $('#saluting').val(result['saluting_result']);
-                        $('#saluting_attempt').val(result['saluting_attempt']);
-                        $('#plx').val(result['PLX_result']);
-                        $('#plx_attempt').val(result['PLX_attempt']);
-                        $('#long_cross').val(result['long_cross_result']);
-                        $('#long_cross_card').val(result['long_cross_card_number']);
-                        $('#mini_cross').val(result['mini_cross_result']);
-                        $('#mini_cross_card').val(result['mini_cross_card_number']);
+                        $('#pet_III').val(result['PET_III_result']);
+                        $('#pet_III_attempt').val(result['PET_III_attempt']);
+                        $('#pet_IV').val(result['PET_IV_result']);
+                        $('#pet_IV_attempt').val(result['PET_IV_attempt']);
+                        $('#pet_V').val(result['PET_V_result']);
+                        $('#pet_V_attempt').val(result['PET_V_attempt']);
+                        $('#pet_VI').val(result['PET_VI_result']);
+                        $('#pet_VI_attempt').val(result['PET_VI_attempt']);
+                        $('#prade_training').val(result['Prade_training']);
+                        $('#prade_attempt').val(result['prade_training_attempt']);
+                        
+
                         $('#milestone_id').val(result['id']);
 
                         $('#mile_time_I').val(result['mile_time']);
@@ -735,6 +1141,30 @@
                         $('#Pushups_II').val(result['pushups_II']);
                         $('#Rope_II').val(result['rope_II']);
                         $('#term_pet2').val(result['f_term']);
+
+                        $('#mile_time_III').val(result['mile_time_III']);
+                        $('#Chinups_III').val(result['chinups_III']);
+                        $('#Pushups_III').val(result['pushups_III']);
+                        $('#Rope_III').val(result['rope_III']);
+                        $('#term_pet3').val(result['f_term']);
+
+                        $('#mile_time_IV').val(result['mile_time_IV']);
+                        $('#Chinups_IV').val(result['chinups_IV']);
+                        $('#Pushups_IV').val(result['pushups_IV']);
+                        $('#Rope_IV').val(result['rope_IV']);
+                        $('#term_pet4').val(result['f_term']);
+
+                        $('#mile_time_V').val(result['mile_time_V']);
+                        $('#Chinups_V').val(result['chinups_V']);
+                        $('#Pushups_V').val(result['pushups_V']);
+                        $('#Rope_V').val(result['rope_V']);
+                        $('#term_pet5').val(result['f_term']);
+
+                        $('#mile_time_VI').val(result['mile_time_VI']);
+                        $('#Chinups_VI').val(result['chinups_VI']);
+                        $('#Pushups_VI').val(result['pushups_VI']);
+                        $('#Rope_VI').val(result['rope_VI']);
+                        $('#term_pet6').val(result['f_term']);
 
                     } else {
                         $('#no_data').show();

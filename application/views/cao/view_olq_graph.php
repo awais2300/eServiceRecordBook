@@ -257,7 +257,7 @@
             $('#show_error_new').hide();
 
             $.ajax({
-                url: '<?= base_url(); ?>CO/search_cadet',
+                url: '<?= base_url(); ?>CAO/search_cadet',
                 method: 'POST',
                 data: {
                     'oc_no': oc_no
@@ -288,7 +288,7 @@
             if ($('#officer_name').val() != '') {
                 // alert($('#id').val());
                 $.ajax({
-                    url: '<?= base_url(); ?>CO/get_olq_graph',
+                    url: '<?= base_url(); ?>CAO/get_olq_graph',
                     method: 'POST',
                     data: {
                         'p_id': $('#id').val()

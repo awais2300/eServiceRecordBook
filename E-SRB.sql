@@ -2696,16 +2696,16 @@ CREATE TABLE `physical_milestone` (
   `PET_I_attempt` varchar(200),
   `PET_II_result` varchar(200),
   `PET_II_attempt` varchar(200),
-  `assault_result` varchar(200),
-  `assault_attempt` varchar(200),
-  `saluting_result` varchar(200),
-  `saluting_attempt` varchar(200),
-  `PLX_result` varchar(200),
-  `PLX_attempt` varchar(200),
-  `long_cross_result` varchar(200),
-  `long_cross_card_number` varchar(200),
-  `mini_cross_result` varchar(200),
-  `mini_cross_card_number` varchar(200),
+  `PET_III_result` varchar(200),
+  `PET_III_attempt` varchar(200),
+  `PET_IV_result` varchar(200),
+  `PET_IV_attempt` varchar(200),
+  `PET_V_result` varchar(200),
+  `PET_V_attempt` varchar(200),
+  `PET_VI_result` varchar(200),
+  `PET_VI_attempt` varchar(200),
+  `Prade_training` varchar(200),
+  `prade_training_attempt` varchar(200),
   `date_added` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -2725,6 +2725,62 @@ CREATE TABLE `term_I_details` (
 
 -- Term_II Details  --
 CREATE TABLE `term_II_details` (
+  `id` bigint(20) NOT NULL  PRIMARY KEY AUTO_INCREMENT,
+  `p_id` int(11) NOT NULL,
+  `oc_no` int(11) NOT NULL,
+  `term` varchar(20),
+  `do_id` int(11) DEFAULT NULL,
+  `mile_time` varchar(200),
+  `pushups` varchar(200),
+  `chinups` varchar(200),
+  `rope` varchar(200),
+  `date_added` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Term_III Details  --
+CREATE TABLE `term_III_details` (
+  `id` bigint(20) NOT NULL  PRIMARY KEY AUTO_INCREMENT,
+  `p_id` int(11) NOT NULL,
+  `oc_no` int(11) NOT NULL,
+  `term` varchar(20),
+  `do_id` int(11) DEFAULT NULL,
+  `mile_time` varchar(200),
+  `pushups` varchar(200),
+  `chinups` varchar(200),
+  `rope` varchar(200),
+  `date_added` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Term_IV Details  --
+CREATE TABLE `term_IV_details` (
+  `id` bigint(20) NOT NULL  PRIMARY KEY AUTO_INCREMENT,
+  `p_id` int(11) NOT NULL,
+  `oc_no` int(11) NOT NULL,
+  `term` varchar(20),
+  `do_id` int(11) DEFAULT NULL,
+  `mile_time` varchar(200),
+  `pushups` varchar(200),
+  `chinups` varchar(200),
+  `rope` varchar(200),
+  `date_added` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Term_V Details  --
+CREATE TABLE `term_V_details` (
+  `id` bigint(20) NOT NULL  PRIMARY KEY AUTO_INCREMENT,
+  `p_id` int(11) NOT NULL,
+  `oc_no` int(11) NOT NULL,
+  `term` varchar(20),
+  `do_id` int(11) DEFAULT NULL,
+  `mile_time` varchar(200),
+  `pushups` varchar(200),
+  `chinups` varchar(200),
+  `rope` varchar(200),
+  `date_added` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Term_VI Details  --
+CREATE TABLE `term_VI_details` (
   `id` bigint(20) NOT NULL  PRIMARY KEY AUTO_INCREMENT,
   `p_id` int(11) NOT NULL,
   `oc_no` int(11) NOT NULL,
@@ -2766,5 +2822,19 @@ INSERT INTO `branch_preference_list`( `branch_name`) VALUES ('ME');
 
 alter table pn_form1s
 add COLUMN branch_id int(11) null;
+
+ALTER TABLE physical_milestone CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+ALTER TABLE term_i_details CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+ALTER TABLE term_ii_details CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+ALTER TABLE term_iii_details CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+ALTER TABLE term_iv_details CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+ALTER TABLE term_v_details CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+ALTER TABLE term_vi_details CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 COMMIT;
