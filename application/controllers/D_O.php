@@ -1657,6 +1657,21 @@ class D_O extends CI_Controller
             $this->load->view('do/add_warning');
         }
     }
+
+    public function uniform_kit_page()
+    {
+        if ($this->session->has_userdata('user_id')) {
+            $this->load->view('do/add_uniform_kit');
+        }
+    }
+
+    public function leave_page()
+    {
+        if ($this->session->has_userdata('user_id')) {
+            $this->load->view('do/add_leave');
+        }
+    }
+    
     public function add_officer_qualities()
     {
         if ($this->session->has_userdata('user_id')) {

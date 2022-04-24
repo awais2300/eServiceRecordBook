@@ -152,19 +152,27 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" aria-expanded="true">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_profesion" aria-expanded="true">
                     <i class="fas fa-ruler-combined"></i>
                     <span> PROFESSION </span>
                 </a>
+                <div id="collapse_profesion" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="<?= base_url(); ?>D_O/view_semester_result">BCT</a>
+                        <a class="collapse-item" href="<?= base_url(); ?>D_O/view_training_report">ELC</a>
+                        <a class="collapse-item" href="<?= base_url(); ?>D_O/view_training_report">NBCD</a>
+                        <a class="collapse-item" href="<?= base_url(); ?>D_O/view_training_report">WHT</a>
+                    </div>
+                </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" aria-expanded="true">
+                <a class="nav-link collapsed" href="<?php echo base_url(); ?>D_O/leave_page" aria-expanded="true">
                     <i class="fas fa-pen-fancy"></i>
                     <span> LEAVE </span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" aria-expanded="true">
+                <a class="nav-link collapsed" href="<?php echo base_url(); ?>D_O/uniform_kit_page" aria-expanded="true">
                     <i class="fas fa-tshirt"></i>
                     <span> UNIFORM & KIT </span>
                 </a>

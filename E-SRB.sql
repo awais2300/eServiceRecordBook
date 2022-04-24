@@ -2793,6 +2793,51 @@ CREATE TABLE `term_VI_details` (
   `date_added` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- Leaves  --
+CREATE TABLE `leaves` (
+  `id` bigint(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `p_id` int(11) NOT NULL,
+  `oc_no` int(11) NOT NULL,
+  `term` varchar(20),
+  `unit_id` int(11) DEFAULT NULL,
+  `year` int(11),
+  `leave_from` date,
+  `leave_to` date,
+  `approved_by` varchar(200),
+  `date_added` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Uniform & Kit  --
+CREATE TABLE `uniform_kit` (
+  `id` bigint(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `p_id` int(11) NOT NULL,
+  `oc_no` int(11) NOT NULL,
+  `term` varchar(20),
+  `unit_id` int(11) DEFAULT NULL, 
+  `items` varchar(200),
+  `issued_to_name` varchar(200),
+  `issued_to_rank` varchar(200),
+  `issued_by_name` varchar(200),
+  `issued_by_rank` varchar(200),
+  `date` date,
+  `next_due_date` date 
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Professional Courses  --
+CREATE TABLE `professional_courses` (
+  `id` bigint(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `p_id` int(11) NOT NULL,
+  `oc_no` int(11) NOT NULL,
+  `term` varchar(20),
+  `unit_id` int(11) DEFAULT NULL, 
+  `bct_file_path` varchar(200),
+  `elc_file_path` varchar(200),
+  `nbcd_file_path` varchar(200),
+  `wht_file_path` varchar(200),
+  `others_file_path` varchar(200),
+  `date` date
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 ALTER TABLE `warning_records`
   ADD `type` varchar(500);
 
