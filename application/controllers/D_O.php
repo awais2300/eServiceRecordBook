@@ -1147,6 +1147,231 @@ class D_O extends CI_Controller
         }
     }
 
+    public function save_cadet_uniform()
+    {
+        if ($this->input->post()) {
+            $postData = $this->security->xss_clean($this->input->post());
+
+            $id = $postData['id'];
+            $oc_no = $postData['oc_num'];
+            $term = $postData['term'];
+            $items = $postData['items'];
+            $issued_to_name = $postData['issued_to_name'];
+            $issued_to_rank = $postData['issued_to_rank'];
+            $issued_by_name = $postData['issued_by_name'];
+            $issued_by_rank = $postData['issued_by_rank'];
+            $date = $postData['date'];
+            $next_date = $postData['next_due_date'];
+            $name = $postData['name'];
+
+            $insert_array = array(
+                'oc_no' => $oc_no,
+                'p_id' => $id,
+                'term' => $term,
+                'unit_id' => $this->session->userdata('unit_id'),
+                'items' => $items,
+                'issued_to_name' => $issued_to_name,
+                'issued_to_rank' => $issued_to_rank,
+                'issued_by_name' => $issued_by_name,
+                'issued_by_rank' => $issued_by_rank,
+                'date' => $date,
+                'next_due_date' => $next_date
+            );
+
+            $insert = $this->db->insert('uniform_kit', $insert_array);
+
+            if (!empty($insert)) {
+
+                $insert_activity = array(
+                    'activity_module' => $this->session->userdata('acct_type'),
+                    'activity_action' => 'add',
+                    'activity_detail' => "Uniform kit has been added for UT " . $name,
+                    'activity_by' => $this->session->userdata('username'),
+                    'activity_date' => date('Y-m-d H:i:s')
+                );
+
+                $insert_act = $this->db->insert('activity_log', $insert_activity);
+                $last_id = $this->db->insert_id();
+
+                $query = $this->db->where('username !=', $this->session->userdata('username'))->get('security_info')->result_array();
+
+                for ($i = 0; $i < count($query); $i++) {
+                    $insert_activity_seen = array(
+                        'activity_id' => $last_id,
+                        'user_id' => $query[$i]['id'],
+                        'seen' => 'no'
+                    );
+                    $insert_act_seen = $this->db->insert('activity_log_seen', $insert_activity_seen);
+                }
+            }
+
+            if (!empty($insert)) {
+                $this->session->set_flashdata('success', 'Uniform Kit added successfully');
+                redirect('D_O/uniform_kit_page');
+            } else {
+                $this->session->set_flashdata('failure', 'Something went wrong, try again.');
+                redirect('D_O/uniform_kit_page');
+            }
+        }
+    }
+
+    public function save_cadet_leave()
+    {
+        if ($this->input->post()) {
+            $postData = $this->security->xss_clean($this->input->post());
+
+            $id = $postData['id'];
+            $oc_no = $postData['oc_num'];
+            $term = $postData['term'];
+            $date_from = $postData['date_from'];
+            $date_to = $postData['date_to'];
+            $approved_by = $postData['approved_by'];
+            $name = $postData['name'];
+
+            $insert_array = array(
+                'oc_no' => $oc_no,
+                'p_id' => $id,
+                'term' => $term,
+                'unit_id' => $this->session->userdata('unit_id'),
+                'year' => date('y'),
+                'leave_from' => $date_from,
+                'leave_to' => $date_to,
+                'approved_by' => $approved_by,
+                'date_added' => date('Y-m-d')
+            );
+
+            $insert = $this->db->insert('leaves', $insert_array);
+
+            if (!empty($insert)) {
+
+                $insert_activity = array(
+                    'activity_module' => $this->session->userdata('acct_type'),
+                    'activity_action' => 'add',
+                    'activity_detail' => "Leave has been added for UT " . $name,
+                    'activity_by' => $this->session->userdata('username'),
+                    'activity_date' => date('Y-m-d H:i:s')
+                );
+
+                $insert_act = $this->db->insert('activity_log', $insert_activity);
+                $last_id = $this->db->insert_id();
+
+                $query = $this->db->where('username !=', $this->session->userdata('username'))->get('security_info')->result_array();
+
+                for ($i = 0; $i < count($query); $i++) {
+                    $insert_activity_seen = array(
+                        'activity_id' => $last_id,
+                        'user_id' => $query[$i]['id'],
+                        'seen' => 'no'
+                    );
+                    $insert_act_seen = $this->db->insert('activity_log_seen', $insert_activity_seen);
+                }
+            }
+
+            if (!empty($insert)) {
+                $this->session->set_flashdata('success', 'Leave added successfully');
+                redirect('D_O/leave_page');
+            } else {
+                $this->session->set_flashdata('failure', 'Something went wrong, try again.');
+                redirect('D_O/leave_page');
+            }
+        }
+    }
+
+    public function save_cadet_professional_courses()
+    {
+        if ($this->input->post()) {
+            $postData = $this->security->xss_clean($this->input->post());
+            
+            if ($_FILES['bct_file']['name'] != NULL) {
+                $upload1 = $this->upload_professional_courses($_FILES['bct_file']);
+                $bct_files = $upload1;
+            } else {
+                $bct_files = $postData['bct_already_file_name'];
+            }
+
+            if ($_FILES['elc_file']['name'] != NULL) {
+                $upload1 = $this->upload_professional_courses($_FILES['elc_file']);
+                $elc_files = $upload1;
+            } else {
+                $elc_files = $postData['elc_already_file_name'];
+            }
+
+            if ($_FILES['nbcd_file']['name'] != NULL) {
+                $upload1 = $this->upload_professional_courses($_FILES['nbcd_file']);
+                $nbcd_files = $upload1;
+            } else {
+                $nbcd_files = $postData['nbcd_already_file_name'];
+            }
+
+            if ($_FILES['wht_file']['name'] != NULL) {
+                $upload1 = $this->upload_professional_courses($_FILES['wht_file']);
+                $wht_files = $upload1;
+            } else {
+                $wht_files = $postData['wht_already_file_name'];
+            }
+
+            $id = $postData['id'];
+            $oc_no = $postData['oc_num'];
+            $term = $postData['term'];
+
+            $insert_array = array(
+                'oc_no' => $oc_no,
+                'p_id' => $id,
+                'term' => $term,
+                'unit_id' => $this->session->userdata('unit_id'),
+                'bct_file_path' => $bct_files,
+                'elc_file_path' => $elc_files,
+                'nbcd_file_path' => $nbcd_files,
+                'wht_file_path' => $wht_files,
+                'others_file_path' => '',
+                'date' => date('Y-m-d')
+            );
+
+            $if_row_exist = $this->db->select('term')->where('oc_no', $oc_no)->where('term', $term)->get('professional_courses')->row_array(); //Dossier Continue
+
+            if ($if_row_exist['term'] == $term) {
+                $this->db->where('oc_no', $oc_no)->where('p_id', $id)->where('term', $term)->delete('professional_courses');
+            }
+
+            $insert = $this->db->insert('professional_courses', $insert_array);
+
+            if (!empty($insert)) {
+
+                $cadet_name = $this->db->select('name')->where('oc_no', $oc_no)->get('pn_form1s')->row_array();
+
+                $insert_activity = array(
+                    'activity_module' => $this->session->userdata('acct_type'),
+                    'activity_action' => 'add',
+                    'activity_detail' => "Professional Courses has been added for UT " . $cadet_name['name'],
+                    'activity_by' => $this->session->userdata('username'),
+                    'activity_date' => date('Y-m-d H:i:s')
+                );
+
+                $insert_act = $this->db->insert('activity_log', $insert_activity);
+                $last_id = $this->db->insert_id();
+
+                $query = $this->db->where('username !=', $this->session->userdata('username'))->get('security_info')->result_array();
+
+                for ($i = 0; $i < count($query); $i++) {
+                    $insert_activity_seen = array(
+                        'activity_id' => $last_id,
+                        'user_id' => $query[$i]['id'],
+                        'seen' => 'no'
+                    );
+                    $insert_act_seen = $this->db->insert('activity_log_seen', $insert_activity_seen);
+                }
+            }
+
+            if (!empty($insert)) {
+                $this->session->set_flashdata('success', 'Professional Courses added successfully');
+                redirect('D_O/professional_course_page');
+            } else {
+                $this->session->set_flashdata('failure', 'Something went wrong, try again.');
+                redirect('D_O/professional_course_page');
+            }
+        }
+    }
+
     public function save_cadet_warning()
     {
         if ($this->input->post()) {
@@ -1452,6 +1677,17 @@ class D_O extends CI_Controller
         }
     }
 
+    public function search_cadet_professional_courses()
+    {
+        if ($this->input->post()) {
+            $oc_no = $_POST['oc_no'];
+            $query['data'] = $this->db->where('oc_no', $oc_no)->where('divison_name', $this->session->userdata('division'))->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->row_array();
+            $query['detail'] = $this->db->where('oc_no', $oc_no)->where('term', $query['data']['term'])->get('professional_courses')->row_array();
+            // print_r($query); exit;
+            echo json_encode($query);
+        }
+    }
+
     public function search_all_cadets_by_term()
     {
         if ($this->input->post()) {
@@ -1671,7 +1907,14 @@ class D_O extends CI_Controller
             $this->load->view('do/add_leave');
         }
     }
-    
+
+    public function professional_course_page()
+    {
+        if ($this->session->has_userdata('user_id')) {
+            $this->load->view('do/add_professional_courses');
+        }
+    }
+
     public function add_officer_qualities()
     {
         if ($this->session->has_userdata('user_id')) {
@@ -1894,7 +2137,8 @@ class D_O extends CI_Controller
             // print_r($update_array);exit;
             // echo $p_id;exit;
             $update_array = array(
-                'term' => $next_term);
+                'term' => $next_term
+            );
 
             $this->db->where($cond);
             $update = $this->db->update('pn_form1s', $update_array);
@@ -2571,7 +2815,7 @@ class D_O extends CI_Controller
             $this->db->join('pn_form1s f', 'f.p_id = or.p_id');
             // $this->db->where('or.do_id', $this->session->userdata('user_id'));
             $this->db->where('f.divison_name', $this->session->userdata('division'));
-            $this->db->where_in('or.term', ['Term-I','Term-II','Term-III','Term-IV','Term-V','Term-VI']); //Dossier Continue
+            $this->db->where_in('or.term', ['Term-I', 'Term-II', 'Term-III', 'Term-IV', 'Term-V', 'Term-VI']); //Dossier Continue
             $data['milestone_records'] = $this->db->get()->result_array();
             // print_r( $data['milestone_records']);exit;
             $this->load->view('do/view_milestone_list', $data);
@@ -2657,9 +2901,9 @@ class D_O extends CI_Controller
     {
         if ($this->session->has_userdata('user_id')) {
             $oc_no = $_POST['oc_no'];
-            
+
             $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where('divison_name', $this->session->userdata('division'))->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->row_array();
-            
+
 
             if (!isset($oc_no)) {
                 $data['pn_personal_data'] = $this->db->where('p_id', $data['pn_data']['p_id'])->get('personal_datas')->row_array();
@@ -3154,7 +3398,7 @@ class D_O extends CI_Controller
 
     public function upload_warning($fieldname)
     {
-        $count[]='';
+        $count[] = '';
         $filesCount = count($_FILES['file']['name']);
         for ($i = 0; $i < $filesCount; $i++) {
             $_FILES['file']['name']     = $_FILES['file']['name'][$i];
@@ -3176,6 +3420,32 @@ class D_O extends CI_Controller
                 $count[$i] = $data['upload_data']['file_name'];
             }
         }
+        return $count;
+    }
+
+    public function upload_professional_courses($fieldname)
+    {
+        $count[] = '';
+        $_FILES['file']['name']     = $fieldname['name']; 
+        $_FILES['file']['type']     = $fieldname['type']; 
+        $_FILES['file']['tmp_name'] = $fieldname['tmp_name'];
+        $_FILES['file']['error']    = $fieldname['error']; 
+        $_FILES['file']['size']     = $fieldname['size']; 
+
+        $config['upload_path'] = 'uploads/courses';
+        $config['allowed_types'] = 'gif|jpg|png|doc|xls|pdf|xlsx|docx|ppt|pptx|jpeg|txt';
+
+        $this->load->library('upload', $config);
+        $this->upload->initialize($config);
+
+        if (!$this->upload->do_upload('file')) {
+            $data = array('msg' => $this->upload->display_errors());
+        } else {
+            $data = array('msg' => "success");
+            $data['upload_data'] = $this->upload->data();
+            $count = $data['upload_data']['file_name'];
+        }
+        
         return $count;
     }
 
@@ -3267,7 +3537,7 @@ class D_O extends CI_Controller
             if ($if_row_exist['term'] == $term) {
                 $this->db->where('oc_no', $oc_no)->where('p_id', $p_id)->where('term', $term)->delete('physical_milestone');
             }
-            
+
             $insert = $this->db->insert('physical_milestone', $insert_array);
 
             if (!empty($insert)) {
@@ -3517,7 +3787,7 @@ class D_O extends CI_Controller
     {
         if ($this->session->has_userdata('user_id')) {
             $p_id = $_POST['id'];
-            $term = $_POST['term']; 
+            $term = $_POST['term'];
             $data['term_i_details'] = $this->db->where('p_id', $p_id)->where('term', $term)->get('term_i_details')->row_array();
             echo json_encode($data['term_i_details']);
         }
@@ -3527,7 +3797,7 @@ class D_O extends CI_Controller
     {
         if ($this->session->has_userdata('user_id')) {
             $p_id = $_POST['id'];
-            $term = $_POST['term']; 
+            $term = $_POST['term'];
             $data['term_ii_details'] = $this->db->where('p_id', $p_id)->where('term', $term)->get('term_ii_details')->row_array();
             echo json_encode($data['term_ii_details']);
         }
@@ -3537,8 +3807,8 @@ class D_O extends CI_Controller
     {
         if ($this->session->has_userdata('user_id')) {
             $p_id = $_POST['id'];
-            $term = $_POST['term']; 
-            $data['term_iii_details'] = $this->db->where('p_id', $p_id)->where('term', $term)->get('term_iii_details')->row_array(); 
+            $term = $_POST['term'];
+            $data['term_iii_details'] = $this->db->where('p_id', $p_id)->where('term', $term)->get('term_iii_details')->row_array();
             echo json_encode($data['term_iii_details']);
         }
     }
@@ -3547,7 +3817,7 @@ class D_O extends CI_Controller
     {
         if ($this->session->has_userdata('user_id')) {
             $p_id = $_POST['id'];
-            $term = $_POST['term']; 
+            $term = $_POST['term'];
             $data['term_iv_details'] = $this->db->where('p_id', $p_id)->where('term', $term)->get('term_iv_details')->row_array();
             echo json_encode($data['term_iv_details']);
         }

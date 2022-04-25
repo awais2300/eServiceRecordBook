@@ -158,10 +158,7 @@
                 </a>
                 <div id="collapse_profesion" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?= base_url(); ?>D_O/view_semester_result">BCT</a>
-                        <a class="collapse-item" href="<?= base_url(); ?>D_O/view_training_report">ELC</a>
-                        <a class="collapse-item" href="<?= base_url(); ?>D_O/view_training_report">NBCD</a>
-                        <a class="collapse-item" href="<?= base_url(); ?>D_O/view_training_report">WHT</a>
+                        <a class="collapse-item" href="<?= base_url(); ?>D_O/professional_course_page">BCT/ELC/NBCD/WHT</a>
                     </div>
                 </div>
             </li>

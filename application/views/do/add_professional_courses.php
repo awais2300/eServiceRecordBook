@@ -48,7 +48,7 @@
             <img src='<?= base_url() ?>assets/img/navy_logo-new.png' style="height: 130px; width:100px;">
         </div>
         <div class="col-lg-11">
-            <h1 style="text-align:center; padding:40px"><strong>ADD UNIFORM & KIT</strong></h1>
+            <h1 style="text-align:center; padding:40px"><strong>ADD PROFESSIONAL COURSES</strong></h1>
         </div>
 
     </div>
@@ -97,11 +97,11 @@
 
                 <div class="card">
                     <div class="card-header bg-custom1">
-                        <h1 class="h4">UNIFORM & KIT DETAILS</h1>
+                        <h1 class="h4">UPLOAD PROFESSIONAL CERTIFICATES</h1>
                     </div>
 
                     <div class="card-body bg-custom3">
-                        <form class="user" role="form" method="post" enctype="multipart/form-data" id="save_form" action="<?= base_url(); ?>D_O/save_cadet_uniform">
+                        <form class="user" role="form" method="post" enctype="multipart/form-data" id="save_form" action="<?= base_url(); ?>D_O/save_cadet_professional_courses">
                             <div class="form-group row">
                                 <div class="col-sm-4">
                                     <h6>&nbsp;NAME:</h6>
@@ -124,6 +124,18 @@
                                 <div class="col-sm-4 mb-1" style="display:none">
                                     <input type="text" class="" name="id" id="id">
                                 </div>
+                                <div class="col-sm-4 mb-1" style="display:none">
+                                    <input type="text" class="" name="bct_already_file_name" id="bct_already_file_name">
+                                </div>
+                                <div class="col-sm-4 mb-1" style="display:none">
+                                    <input type="text" class="" name="elc_already_file_name" id="elc_already_file_name">
+                                </div>
+                                <div class="col-sm-4 mb-1" style="display:none">
+                                    <input type="text" class="" name="nbcd_already_file_name" id="nbcd_already_file_name">
+                                </div>
+                                <div class="col-sm-4 mb-1" style="display:none">
+                                    <input type="text" class="" name="wht_already_file_name" id="wht_already_file_name">
+                                </div>
 
                                 <div class="col-sm-4 mb-1">
                                     <input type="text" class="form-control form-control-user" name="name" id="name" style="font-weight: bold; font-size:large" placeholder="NAME" readonly>
@@ -139,64 +151,55 @@
 
                             <div class="form-group row">
                                 <div class="col-sm-12">
-                                    <h6>&nbsp;LIST OF ITEMS:</h6>
+                                    <h6>&nbsp;UPLOAD BCT CERTIFICATE:</h6>
                                 </div>
                             </div>
 
-                            <div class="form-group row">
+                            <div class="form-group row custom-file-upload">
                                 <div class="col-sm-12 mb-1">
-                                    <input type="text" class="form-control form-control-user" name="items" id="items" placeholder="LIST OF ITEMS">
+                                    <input type="file" style="height: 50px; padding:10px !important;" class="form-control form-control-user" placeholder="UPLOAD DOCUMENT" name="bct_file" x-model="fileName">
+                                </div>
+                                <div id="bct_file_name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <h6>&nbsp;UPLOAD ELC CERTIFICATE:</h6>
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <div class="col-sm-6">
-                                    <h6>&nbsp;ISSUED TO (NAME):</h6>
+                            <div class="form-group row custom-file-upload">
+                                <div class="col-sm-12 mb-1">
+                                    <input type="file" style="height: 50px; padding:10px !important;" class="form-control form-control-user" placeholder="UPLOAD DOCUMENT" name="elc_file" x-model="fileName">
                                 </div>
-                                <div class="col-sm-6">
-                                    <h6>&nbsp;ISSUED TO (RANK):</h6>
+                                <div id="elc_file_name">
                                 </div>
                             </div>
+                            
                             <div class="form-group row">
-                                <div class="col-sm-6 mb-1">
-                                    <input type="text" class="form-control form-control-user" name="issued_to_name" id="issued_to_name" placeholder="ISSUED TO (NAME)">
-                                </div>
-                                <div class="col-sm-6 mb-1">
-                                    <input type="text" class="form-control form-control-user" name="issued_to_rank" id="issued_to_rank" placeholder="ISSUED TO (RANK)">
+                                <div class="col-sm-12">
+                                    <h6>&nbsp;UPLOAD NBCD CERTIFICATE:</h6>
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <div class="col-sm-6">
-                                    <h6>&nbsp;ISSUED BY (NAME):</h6>
+                            <div class="form-group row custom-file-upload">
+                                <div class="col-sm-12 mb-1">
+                                    <input type="file" style="height: 50px; padding:10px !important;" class="form-control form-control-user" placeholder="UPLOAD DOCUMENT" name="nbcd_file" x-model="fileName">
                                 </div>
-                                <div class="col-sm-6">
-                                    <h6>&nbsp;ISSUED BY (RANK):</h6>
+                                <div id="nbcd_file_name">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <div class="col-sm-6 mb-1">
-                                    <input type="text" class="form-control form-control-user" name="issued_by_name" id="issued_by_name" placeholder="ISSUED BY (NAME)">
-                                </div>
-                                <div class="col-sm-6 mb-1">
-                                    <input type="text" class="form-control form-control-user" name="issued_by_rank" id="issued_by_rank" placeholder="ISSUED BY (RANK)">
+                                <div class="col-sm-12">
+                                    <h6>&nbsp;UPLOAD WHT CERTIFICATE:</h6>
                                 </div>
                             </div>
 
-                            <div class="form-group row">
-                                <div class="col-sm-6">
-                                    <h6>&nbsp;DATE:</h6>
+                            <div class="form-group row custom-file-upload">
+                                <div class="col-sm-12 mb-1">
+                                    <input type="file" style="height: 50px; padding:10px !important;" class="form-control form-control-user" placeholder="UPLOAD DOCUMENT" name="wht_file" x-model="fileName">
                                 </div>
-                                <div class="col-sm-6">
-                                    <h6>&nbsp;NEXT DUE DATE:</h6>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-6 mb-1">
-                                    <input type="date" class="form-control form-control-user" name="date" id="date">
-                                </div>
-                                <div class="col-sm-6 mb-1">
-                                    <input type="date" class="form-control form-control-user" name="next_due_date" id="next_due_date">
+                                <div id="wht_file_name">
                                 </div>
                             </div>
 
@@ -276,7 +279,7 @@
             $('#show_error_new').hide();
 
             $.ajax({
-                url: '<?= base_url(); ?>D_O/search_cadet',
+                url: '<?= base_url(); ?>D_O/search_cadet_professional_courses',
                 method: 'POST',
                 data: {
                     'oc_no': oc_no
@@ -288,11 +291,20 @@
                         $('#search_cadet').show();
                         $('#no_data').hide();
 
-                        $('#name').val(result['name']);
-                        $('#term').val(result['term']);
-                        $('#division').val(result['divison_name']);
-                        $('#oc_num').val(result['oc_no']);
-                        $('#id').val(result['p_id']);
+                        $('#name').val(result['data']['name']);
+                        $('#term').val(result['data']['term']);
+                        $('#division').val(result['data']['divison_name']);
+                        $('#oc_num').val(result['data']['oc_no']);
+                        $('#id').val(result['data']['p_id']);
+                        $('#bct_already_file_name').val(result['detail']['bct_file_path']);
+                        $('#elc_already_file_name').val(result['detail']['elc_file_path']);
+                        $('#nbcd_already_file_name').val(result['detail']['nbcd_file_path']);
+                        $('#wht_already_file_name').val(result['detail']['wht_file_path']);
+                        $('#bct_file_name').html(`<h6 style="margin-left:15px">Already Uploaded file: <a id="bct_file_label" href="<?php echo base_url() ?>uploads/courses/${result['detail']['bct_file_path']}"><strong>${result['detail']['bct_file_path']}</strong></a></h6>`);
+                        $('#elc_file_name').html(`<h6 style="margin-left:15px">Already Uploaded file: <a id="elc_file_label" href="<?php echo base_url() ?>uploads/courses/${result['detail']['elc_file_path']}"><strong>${result['detail']['elc_file_path']}</strong></a></h6>`);
+                        $('#nbcd_file_name').html(`<h6 style="margin-left:15px">Already Uploaded file: <a id="nbcd_file_label" href="<?php echo base_url() ?>uploads/courses/${result['detail']['nbcd_file_path']}"><strong>${result['detail']['nbcd_file_path']}</strong></a></h6>`);
+                        $('#wht_file_name').html(`<h6 style="margin-left:15px">Already Uploaded file: <a id="wht_file_label" href="<?php echo base_url() ?>uploads/courses/${result['detail']['wht_file_path']}"><strong>${result['detail']['wht_file_path']}</strong></a></h6>`);
+
                     } else {
                         $('#no_data').show();
                         $('#search_cadet').hide();
@@ -332,43 +344,6 @@
     $('#save_btn').on('click', function() {
         $('#save_btn').attr('disabled', true);
         var validate = 0;
-        var items = $('#items').val();
-        var issued_to_name = $('#issued_to_name').val();
-        var issued_to_rank = $('#issued_to_rank').val();
-        var issued_by_name = $('#issued_by_name').val();
-        var issued_by_rank = $('#issued_by_rank').val();
-        var date = $('#date').val();
-        var next_due_date = $('#next_due_date').val();
-
-        if (items == '') {
-            validate = 1;
-            $('#items').addClass('red-border');
-        }
-        if (issued_to_name == '') {
-            validate = 1;
-            $('#issued_to_name').addClass('red-border');
-        }
-        if (issued_to_rank == '') {
-            validate = 1;
-            $('#issued_to_rank').addClass('red-border');
-        }
-        if (issued_by_name == '') {
-            validate = 1;
-            $('#issued_by_name').addClass('red-border');
-        }
-        if (issued_by_rank == '') {
-            validate = 1;
-            $('#issued_by_rank').addClass('red-border');
-        }
-        if (date == '') {
-            validate = 1;
-            $('#date').addClass('red-border');
-        }
-        if (next_due_date == '') {
-            validate = 1;
-            $('#next_due_date').addClass('red-border');
-        }
-
         if (validate == 0) {
             $('#save_form')[0].submit();
             $('#show_error_save').hide();
