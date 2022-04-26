@@ -612,6 +612,7 @@
             </div>
         </div>
     </div>
+    
     <div class="modal fade" id="branches">
         < !-- <div class="row"> -- >
             <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
@@ -681,14 +682,13 @@
     </div>
 
     <div class="modal fade" id="edit_branches">
-        < !-- <div class="row"> -- >
+        <!-- <div class="row">  -->
             <div class="modal-dialog modal-dialog-centered " style="margin-left: 250px;" role="document">
                 <div class="modal-content bg-custom3" style="width:1200px;">
                     <div class="modal-header" style="width:1200px;">
                     </div>
                     <div class="card-body bg-custom3">
-                        < !-- Nested Row within Card Body -->
-                            <!--   <div class="row">
+                           <!-- <div class="row"> -->
                         <div class="col-lg-12">
 
                             <div class="card">
