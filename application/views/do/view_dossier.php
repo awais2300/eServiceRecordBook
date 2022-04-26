@@ -1289,9 +1289,15 @@
 
 <!-- Page Heading -->
 <div class="card-body" style="padding:10px">
-    <img src='<?= base_url() ?>assets/img/navy_logo-new.png' style="height: 130px; width:100px;">
-    <div class="card-body" style="margin-bottom:20px;float:right; padding:30px; margin-right:500px">
-        <h1 style="text-align:center"><strong>UT's DIVISIONAL ANALYTIS</strong></h1>
+    <div class="row">
+        <div class="col-lg-2">
+            <img src='<?= base_url() ?>assets/img/navy_logo-new.png' style="height: 130px; width:100px;">
+        </div>
+        <div class="col-lg-10">
+            <div class="card-body" style="text-align:center; padding:30px;margin-right:100px">
+                <h1 style="text-align:center"><strong>UT's DIVISIONAL ANALYTICS</strong></h1>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1309,7 +1315,7 @@
                 <div class="card-body bg-custom3">
                     <form class="user" role="form" method="post" id="add_form" action="">
                         <div class="form-group row">
-                            <div class="col-sm-2" style="margin-top:15px">
+                            <div class="col-sm-1" style="margin-top:15px">
                                 <h6>&nbsp;O NO:</h6>
                             </div>
 

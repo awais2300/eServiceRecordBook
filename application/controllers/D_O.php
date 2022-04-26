@@ -2849,19 +2849,7 @@ class D_O extends CI_Controller
     {
         if ($this->session->has_userdata('user_id')) {
             $oc_no = $_POST['oc_no'];
-            // $units_list = array('2', '3', '17');
-
-            // if (($this->session->userdata('unit_id')) != 1) {
-            //     $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->result_array();
-            // } else {
-            //     if ($this->session->userdata('acct_type') == 'do') {
-            //         $data['pn_data'] = $this->db->where('divison_name', $this->session->userdata('division'))->where_not_in('unit_id', $units_list)->where('oc_no', $oc_no)->get('pn_form1s')->result_array();
-            //     } else {
-            //         $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where_not_in('unit_id', $units_list)->get('pn_form1s')->result_array();
-            //     }
-            // }
-            $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where('divison_name', $this->session->userdata('division'))->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->row_array();
-
+            $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where('divison_name', $this->session->userdata('division'))->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->result_array();
             $data['oc_no_entered'] = $oc_no;
 
             if (count($data['pn_data']) > 0) {
