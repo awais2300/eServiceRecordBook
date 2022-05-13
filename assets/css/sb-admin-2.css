@@ -2525,39 +2525,39 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-    color: white;
+    color: #2C3531;
     /* background-color: #4e73df; */
-    background-color: #000154;
-    border-color: #000154;
+    background-color: #D9B08C;
+    border-color: #D9B08C;
 }
 
 .btn-primary:hover {
-    color: white;
-    background-color: #1a088f;
-    border-color: #1a088f;
+    color: #2C3531;
+    background-color: #FFCB9A;
+    border-color: #FFCB9A;
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
-    color: white;
-    background-color: rgb(0, 1, 84);
-    border-color: rgb(0, 1, 84);
+    color: #2C3531;
+    background-color: #FFCB9A;
+    border-color: #FFCB9A;
     box-shadow: 0 0 0 0.2rem rgba(228, 210, 105, 0.5);
 }
 
 .btn-primary.disabled,
 .btn-primary:disabled {
-    color: white;
-    background-color: rgb(0, 1, 84);
-    border-color: rgb(0, 1, 84);
+    color: #2C3531;
+    background-color: #FFCB9A;
+    border-color: #FFCB9A;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
-    color: white;
-    background-color: rgb(0, 1, 84);
-    border-color: rgb(0, 1, 84);
+    color: #2C3531;
+    background-color: #FFCB9A;
+    border-color: #FFCB9A;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -6757,16 +6757,16 @@ a.close.disabled {
 }
 
 .bg-custom1 {
-    background-color: #061e8d !important;
+    background-color: #2C3531 !important;
     color: white;
 }
 
 .bg-custom2 {
-    background-color: #486285 !important;
+    background-color: #D1E8E2 !important;
 }
 
 .bg-custom3 {
-    background-color: #486285 !important;
+    background-color: #116466 !important;
 }
 
 a.bg-primary:hover,
@@ -10282,7 +10282,7 @@ a:focus {
 .bg-gradient-primary {
     background-color: #061e8d;
     /* background-color: rgb(0, 1, 84) !important; */
-    background-image: linear-gradient(180deg, #061e8d 50%, #061e8d 50%);
+    background-image: linear-gradient(180deg, #2C3531 80%, #116466 20%);
     background-size: cover;
 }
 

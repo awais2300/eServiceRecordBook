@@ -60,19 +60,22 @@
   }
 </style>
 
-<body class="row bg-custom1 img-bg" style="overflow: hidden;">
-  
+<body class="row bg-custom1" style="overflow: hidden;">
+
   <div class="container">
     <div class="row justify-content-center">
-      <!-- <h1 class="h1 text-grey-900 " style="margin-top:35px; padding:0%; margin-bottom:0px;color:black; text-align:center;text-decoration:underline;font-family:'Apple Chancery';color:navy;font-size:50px"><strong> E-SERVICE RECORD BOOK </strong></h1> -->
+
       <div class="col-xl-10 col-lg-6 col-md-6">
-        <div class="card bg-custom3 o-hidden border-0 shadow-lg my-5" style="background: transparent !important;">
+        <div class="card bg-custom3 o-hidden border-0 shadow-lg my-5">
+          <!-- style="background: transparent !important;"> -->
           <div class="row">
+            
             <div class="col-lg-2"></div>
-            <div class="col-lg-7">
-              <div class="p-5" style="margin-top:225px">
-                <form class="user" role="form" id="login_form" method="post" action="<?php echo base_url(); ?>User_Login/login_process" style="margin-left:35px">  
-                <div class="form-group">
+            <div class="col-lg-8">
+            <h1 style="padding:20px; text-align:center;color:#D9B08C"><strong> E-Service Book Record</strong></h1>
+              <div class="p-5" style="margin-top:50px">
+                <form class="user" role="form" id="login_form" method="post" action="<?php echo base_url(); ?>User_Login/login_process">
+                  <div class="form-group">
                     <input type="text" class="form-control form-control-user" name="username" id="username" placeholder="ENTER USERNAME">
                   </div>
                   <div class="form-group">
@@ -89,46 +92,9 @@
                       <option value="do">DIVISIONAL OFFICER</option>
                       <option value="smo">SENIOR MEDICAL OFFICER</option>
 
-                      <!-- <option value="joto">JOTO</option>
-                      <option value="cao_sec">CAO SEC - CAO Secretary</option>
-                      <option value="dean">DEAN</option>
-                      <option value="ctmwt">Captain MWT</option>
-                      <option value="hougp">HOUGP</option> -->
-
                     </select>
                   </div>
-                  <!-- <div class="form-group row">
 
-                    <label class="custom-control radio-inline small">
-                      <input type="radio" value="PO" name="optradio">
-                      <div style="float:right; margin-left:5px;">DO</div>
-                    </label>
-
-                    <label class="custom-control radio-inline small">
-                      <input type="radio" value="SO_STORE" name="optradio">
-                      <div style="float:right; margin-left:5px;">JOTO</div>
-                    </label>
-
-                    <label class="custom-control radio-inline small">
-                      <input type="radio" value="SO_CW" name="optradio">
-                      <div style="float:right; margin-left:5px;">Captain Training</div>
-                    </label>
-
-                    <label class="custom-control radio-inline small">
-                      <input type="radio" value="SO_RECORD" name="optradio">
-                      <div style="float:right; margin-left:5px;">Commanding Officer</div>
-                    </label>
-                    <div style="float:right; margin-left:20px;"></div>
-                    <label class="custom-control radio-inline small">
-                      <input type="radio" value="admin" name="optradio">
-                      <div style="float:right; margin-left:5px;">EXO</div>
-                    </label>
-                    <label class="custom-control radio-inline small">
-                      <input type="radio" value="admin" name="optradio">
-                      <div style="float:right; margin-left:5px;">Squarden Commander</div>
-                    </label>
-
-                  </div> -->
                   <span style="color: red; display: none;font-size: 12px" id="Account_error">
                     *PLEASE SELECT ACCOUNT TYPE
                   </span>

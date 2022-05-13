@@ -45,7 +45,7 @@
     <!-- Page Heading -->
     <div class="card-body" style="padding:10px">
         <img src='<?= base_url() ?>assets/img/navy_logo-new.png' style="height: 130px; width:100px;">
-        <div class="card-body" style="margin-bottom:20px;float:right; padding:30px; margin-right:500px">
+        <div class="card-body" style="margin-bottom:20px;float:right; padding:30px; margin-right:300px">
             <h1 style="text-align:center"><strong>PERSONAL INFORMATION</strong></h1>
         </div>
     </div>
