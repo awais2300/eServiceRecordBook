@@ -196,7 +196,7 @@
             }],
             axisY: {
                 title: "GPA",
-                maximum: 100,
+                maximum: 4.0,
                 color:'blue'
             },
             data: [{

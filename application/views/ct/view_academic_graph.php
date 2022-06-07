@@ -196,7 +196,7 @@
             }],
             axisY: {
                 title: "PERCENTAGE",
-                maximum: 100,
+                maximum: 4.0,
                 color:'blue'
             },
             data: [{

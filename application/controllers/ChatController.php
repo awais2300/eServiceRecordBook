@@ -72,6 +72,7 @@ class ChatController extends CI_Controller
 			'mime_type' => $mime_type,
 			'message_date_time' => date('Y-m-d h:i:s'), //23 Jan 2:05 pm
 			'ip_address' => $this->input->ip_address(),
+			'seen' => 'no'
 		];
 
 		$query = $this->db->insert('chat', $data);

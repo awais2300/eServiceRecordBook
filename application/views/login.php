@@ -60,14 +60,14 @@
   }
 </style>
 
-<body class="row bg-custom1" style="overflow: hidden;">
+<body class="row bg-custom1 img-bg" style="overflow: hidden;">
 
   <div class="container">
     <div class="row justify-content-center">
 
       <div class="col-xl-10 col-lg-6 col-md-6">
-        <div class="card bg-custom3 o-hidden border-0 shadow-lg my-5">
-          <!-- style="background: transparent !important;"> -->
+        <div class="card bg-custom3 o-hidden border-0 shadow-lg my-5" style="background: transparent !important;">
+          <!-- > -->
           <div class="row">
             
             <div class="col-lg-2"></div>
