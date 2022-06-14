@@ -155,7 +155,7 @@
                                     <input type="date" class="form-control form-control-user" name="date" id="date">
                                 </div>
                                 <div class="col-sm-4 mb-1">
-                                    <input type="text" class="form-control form-control-user" name="issued_by" id="issued_by" placeholder="TSSUED BY">
+                                    <input type="text" class="form-control form-control-user" name="issued_by" id="issued_by" placeholder="ISSUED BY">
                                     <span id="error_end_date" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;END DATE CANNOT BE LESS THAN THE START DATE</span>
                                 </div>
                                 <div class="col-sm-4 mb-1">
@@ -282,7 +282,7 @@
                         $('#term').val(result['term']);
                         $('#division').val(result['divison_name']);
                         $('#oc_num').val(result['oc_no']);
-                        $('#id').val(result['p_id']);
+                        $('#id').val(result['p_id']); 
                     } else {
                         $('#no_data').show();
                         $('#search_cadet').hide();

@@ -25,7 +25,7 @@
         <footer class="sticky-footer bg-custom1 text-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>COPYRIGHTS &copy; PNS KARSAZ WEBSITE 2022</span>
+                    <span>COPYRIGHTS &copy; E-SRB WEBSITE 2022</span>
                 </div>
             </div>
         </footer>

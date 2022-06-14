@@ -7,7 +7,7 @@
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <div class="col-lg-4">
-            <h1 class="h3 mb-0 text-black-800"><strong>WELCOME COMMANDANT</strong></h1>
+            <h1 class="h3 mb-0 text-black-800"><strong>   </strong></h1>
         </div>
         <div class="col-lg-4">
             <?php if ($this->session->userdata('unit_id') == 1) { ?>

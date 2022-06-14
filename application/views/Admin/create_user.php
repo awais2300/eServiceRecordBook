@@ -66,7 +66,7 @@
 
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-1">
-                                        <select class="form-control" name="status" id="status" data-placeholder="Select Controller" style="font-size: 0.8rem; height:50px;">\
+                                        <select class="form-control" name="status" id="status" data-placeholder="Select Controller" style="font-size: 0.8rem; height:50px;">
                                             <option class="form-control form-control-user" value="">SELECT APPOINTMENT</option>
                                             <option value="co">COMMANDANT</option>
                                             <option value="exo">EXECUTIVE OFFICER</option>

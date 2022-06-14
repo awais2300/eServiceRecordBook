@@ -153,7 +153,7 @@
                                     <div class="col-lg-4" style="text-align:left;font-weight: bold;">
                                         <ul class="list-group">
                                             <a href="#" style="color:black" id="gen">
-                                                <li class="list-group-item bg-custom3 custom_list">GENERAL</li>
+                                                <li class="list-group-item bg-custom2 custom_list">GENERAL</li>
                                             </a>
                                             <a href="#" style="color:black" id="disp">
                                                 <li class="list-group-item bg-custom3 custom_list">DISCIPLINE</li>
@@ -163,7 +163,7 @@
                                             </a>
                                             <a href="#" style="color:black" id="phy">
                                                 <li class="list-group-item bg-custom3 custom_list">PHYSICAL EFFICIENCY</li>
-                                            </a>
+                                            </a> 
                                             <a href="#" style="color:black" id="acad">
                                                 <li class="list-group-item bg-custom3 custom_list">ACADEMIC RECORD</li>
                                             </a>
@@ -196,7 +196,7 @@
                                         </a>
                                         <a href="#" style="color:black" id="btn_personal_record">
                                             <li class="list-group-item bg-custom3 custom_list">PERSONAL INFORMATION</li>
-                                        </a>
+                                        </a> 
                                         <a href="#" style="color:black" id="btn_autobiography">
                                             <li class="list-group-item bg-custom3 custom_list">DIVISIONAL RECORD</li>
                                         </a>
@@ -229,6 +229,15 @@
                                         <a href="#" style="color:black" id="btn_punish_term3">
                                             <li class="list-group-item bg-custom3 custom_list">TERM-III</li>
                                         </a>
+										<a href="#" style="color:black" id="btn_punish_term4">
+                                            <li class="list-group-item bg-custom3 custom_list">TERM-IV</li>
+                                        </a>
+										<a href="#" style="color:black" id="btn_punish_term5">
+                                            <li class="list-group-item bg-custom3 custom_list">TERM-V</li>
+                                        </a>
+										<a href="#" style="color:black" id="btn_punish_term6">
+                                            <li class="list-group-item bg-custom3 custom_list">TERM-VI</li>
+                                        </a>
                                     </ul>
                                 </div>
                                 <div id="terms_list_obs" class="col-lg-2" style="text-align:left;font-weight: bold;display:none">
@@ -242,6 +251,15 @@
                                         <a href="#" style="color:black" id="btn_obs_term3">
                                             <li class="list-group-item bg-custom3 custom_list">TERM-III</li>
                                         </a>
+										<a href="#" style="color:black" id="btn_obs_term4">
+                                            <li class="list-group-item bg-custom3 custom_list">TERM-IV</li>
+                                        </a>
+										<a href="#" style="color:black" id="btn_obs_term5">
+                                            <li class="list-group-item bg-custom3 custom_list">TERM-V</li>
+                                        </a>
+										<a href="#" style="color:black" id="btn_obs_term6">
+                                            <li class="list-group-item bg-custom3 custom_list">TERM-VI</li>
+                                        </a>
                                     </ul>
                                 </div>
                             </div>
@@ -254,7 +272,7 @@
                                         </a>
                                         <a href="#" style="color:black" id="btn_warning_attach">
                                             <li class="list-group-item bg-custom3 custom_list">WARNINGS (INSERTED)</li>
-                                        </a>
+                                        </a> -->
                                     </ul>
                                 </div>
                             </div>
@@ -313,7 +331,7 @@
                                 <div class="col-lg-4" style="text-align:left;font-weight: bold;">
                                     <ul class="list-group">
                                         <a href="#" style="color:black" ID="btn_olq_record">
-                                            <li class="list-group-item bg-custom3 custom_list"></li>
+                                            <li class="list-group-item bg-custom3 custom_list">SELECT TERM</li>
                                         </a>
 
                                     </ul>
@@ -348,9 +366,9 @@
                                         <a href="#" style="color:black" id="btn_general_remarks">
                                             <li class="list-group-item bg-custom3 custom_list">GENERAL REMARKS</li>
                                         </a>
-                                        <a href="#" style="color:black" id="btn_progress_chart">
+                                 <!--       <a href="#" style="color:black" id="btn_progress_chart">
                                             <li class="list-group-item bg-custom3 custom_list">PROGRESS CHART</li>
-                                        </a>
+                                        </a> -->
                                         <a href="#" style="color:black" id="btn_distinction_achieved">
                                             <li class="list-group-item bg-custom3 custom_list">RECORD OF HONOURS & AWARDS ACHIEVED</li>
                                         </a>
@@ -720,7 +738,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <!--  <a onclick="location.href='<?= base_url() ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:60%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
+                 <a onclick="location.href='<?= base_url() ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:60%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> 
                 <a onclick="location.href='<?php echo base_url() ?>/D_O/punishment_records_report/<?= $pn_data['oc_no'] ?>/Term-II'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
@@ -1337,7 +1355,7 @@
                                                 <td scope="" style="height:80px"><?= ++$count; ?></td>
                                                 <td scope="">PARADE TRAINING</td>
                                                 <td scope="" style="white-space:nowrap"><?= date('Y-m-d', strtotime($data['date_added'])); ?></td>
-                                                <td scope="" style="border-right:1px solid black;"><?= $data['saluting_result']; ?> - ATTEMPT: <?= $data['saluting_attempt']; ?></td>
+                                                <td scope="" style="border-right:1px solid black;"></td>
                                             </tr>
                                         <?php } ?>
                                         <tr>
@@ -1425,10 +1443,11 @@
                                             <tr>
                                                 <td scope="" Style="width:50px">S NO</td>
                                                 <td scope="" Style="width:180px">EVENT</td>
-                                                <td scope="" colspan="4">TERM-P</td>
                                                 <td scope="" colspan="4">TERM-I</td>
                                                 <td scope="" colspan="4">TERM-II</td>
-                                                <td scope="" style="border-right:1px solid black;" colspan="4">TERM-III</td>
+                                                <td scope="" colspan="4">TERM-III</td>
+                                                <td scope="" style="border-right:1px solid black;" colspan="4">TERM-IV</td>
+										
                                             </tr>
                                         </thead>
                                         <tbody id="table_rows_cont" style="border-top:1px solid black; padding:5px;width:100% !important">
@@ -3029,7 +3048,7 @@
                     <div class="col-lg-12">
                         <div class="card">
 
-                            <div class="form-group row my-5">
+                         <!--   <div class="form-group row my-5">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2 box">
@@ -3047,7 +3066,7 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="container my-3">
                                 <div style="text-align:center">
@@ -4578,6 +4597,55 @@
                                             <td scope="" style="border-bottom:1px solid black;"></td>
                                             <td scope="" style="border-bottom:1px solid black;"></td>
                                         </tr>
+										<tr>
+                                            <td scope="" style="height:40px">TERM-IV</td>
+                                            <td scope=""><?= $pn_seniority_records['term2_marks']; ?></td>
+                                            <td scope=""><?= $pn_seniority_records['term2_percentage']; ?></td>
+                                            <td scope=""><?= $pn_seniority_records['term2_relegated']; ?></td>
+                                            <td scope=""><?= $pn_seniority_records['term2_subjects_failed']; ?></td>
+                                            <td scope="" style="border-right:1px solid black;"><?= $pn_seniority_records['term2_seniority']; ?></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                        </tr>
+										<tr>
+                                            <td scope="" style="height:40px">TERM-V</td>
+                                            <td scope=""><?= $pn_seniority_records['term2_marks']; ?></td>
+                                            <td scope=""><?= $pn_seniority_records['term2_percentage']; ?></td>
+                                            <td scope=""><?= $pn_seniority_records['term2_relegated']; ?></td>
+                                            <td scope=""><?= $pn_seniority_records['term2_subjects_failed']; ?></td>
+                                            <td scope="" style="border-right:1px solid black;"><?= $pn_seniority_records['term2_seniority']; ?></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                        </tr>
+										<tr>
+                                            <td scope="" style="height:40px">TERM-VI</td>
+                                            <td scope=""><?= $pn_seniority_records['term2_marks']; ?></td>
+                                            <td scope=""><?= $pn_seniority_records['term2_percentage']; ?></td>
+                                            <td scope=""><?= $pn_seniority_records['term2_relegated']; ?></td>
+                                            <td scope=""><?= $pn_seniority_records['term2_subjects_failed']; ?></td>
+                                            <td scope="" style="border-right:1px solid black;"><?= $pn_seniority_records['term2_seniority']; ?></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;"></td>
+                                        </tr>
+
                                     </tbody>
                                 </table>
 

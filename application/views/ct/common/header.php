@@ -22,10 +22,10 @@
 
 <style>
     .img-cheif {
-        background: url('<?= base_url() ?>assets/img/quaid_block.jpg');
-        background-position: center;
+        background: url('<?= base_url() ?>assets/img/library.jpg');
+       /* background-position: center;*/
         /* background-position: top; */
-        /* background-size: cover; */
+         background-size: cover; 
         background-repeat: no-repeat;
         max-width: 100%;
         max-height: 100%;
@@ -67,14 +67,14 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-         <!--   <li class="nav-item">
+           <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>CT/view_dossier_folder" aria-expanded="true">
                     <i class="far fa-newspaper"></i>
-                    <span> View Dossiers </span>
-                    < !-- <span>Components</span> -- >
+                    <span> VIEW DOSSIER</span>
+                    <!-- <span>Components</span> -->
                 </a>
 
-            </li> -->
+            </li> 
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
@@ -121,12 +121,12 @@
 
                 </div>
             </li> -->
-<!-- 
+ 
             <li class="nav-item">
                 <a id="general" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_discipline" aria-expanded="true">
                     <i class="fas fa-file-alt"></i>
                     <span>DISCIPLINE</span>
-                </a>
+                </a> 
                 <div id="collapse_discipline" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?php echo base_url(); ?>CT/daily_module">DAILY MODULE</a>
@@ -146,7 +146,7 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+        <!--    <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_academic" aria-expanded="true">
                     <i class="fas fa-book"></i>
                     <span> ACADEMIC RECORD</span>

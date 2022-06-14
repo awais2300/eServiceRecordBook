@@ -28,7 +28,7 @@
     <!-- <div class="row" style="background:<?= base_url(); ?>assets/img/pn_prd.jpg"> -->
     <div class="row">
         <div class="col-lg-4">
-            <h1 class="h3 mb-0 text-black-800"><strong>WELCOME SENIOR MEDICAL OFFICER</strong></h1>
+            <h1 class="h3 mb-0 text-black-800"><strong>     </strong></h1>
         </div>
         <div class="col-lg-4">
             <?php if ($this->session->userdata('unit_id') == 1) { ?>

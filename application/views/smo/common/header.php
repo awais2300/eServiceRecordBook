@@ -22,7 +22,7 @@
 
 <style>
     .img-cheif {
-        background: url('<?= base_url() ?>assets/img/compak2.jpg');
+        background: url('<?= base_url() ?>assets/img/hafeez.jpg');
         background-position: center;
         /* background-position: top; */
         /* background-size: cover; */
@@ -69,10 +69,10 @@
 
 
             <!-- Nav Item - Pages Collapse Menu -->
-           <li class="nav-item">
+          <!-- <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>SMO/view_dossier_folder" aria-expanded="true">
                     <i class="fas fa-th-list"></i>
-                    <span> VIEW DOSSIER </span>
+                    <span> VIEW DOSSIER </span> -->
                     <!-- <span>Components</span> -->
                 </a>
 
@@ -91,9 +91,9 @@
           <!--  <hr class="sidebar-divider"> -->
 
             <!-- Heading -->
-            <div class="sidebar-heading">
+           <!-- <div class="sidebar-heading">
                 PHASE II (TECHNIQAL QUALIFICATION)
-            </div>
+            </div>-->
             <li class="nav-item">
                 <a id="general" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_general" aria-expanded="true">
                     <i class="fas fa-file-alt"></i>

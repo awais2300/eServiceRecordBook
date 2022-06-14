@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin - Login</title>
+    <title>ADMIN-LOGIN</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -27,24 +27,24 @@
 </style>
 
 
-<body class="bg-custom1">
+<body class=" white">
 
-    <div class="container bg-custom1">
+    <div class="container white">
 
         <!-- Outer Row -->
         <div class="row justify-content-center">
 
             <div class="col-xl-10 col-lg-12 col-md-9">
 
-                <div class="card bg-custom3 o-hidden border-0 shadow-lg my-5">
+                <div class="card bg-custom3 o-hidden border-0 shadow-lg my-5" style="background: transparent !important;">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-3 d-none d-lg-block "></div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Admin Login Panel</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">ADMIN LOGIN PANEL</h1>
                                     </div>
                                     <form class="user" role="form" id="login_form" method="post" action="<?php echo base_url();?>Admin/login_process">
                                         <div class="form-group">
@@ -57,7 +57,7 @@
                                         <hr>
                                         <button type="button"  class="btn btn-primary btn-user btn-block" id="login_btn">
                                             <!-- <i class="fab fa-google fa-fw"></i>  -->
-                                            Login
+                                            LOGIN
                                         </button>
 
                                     </form>

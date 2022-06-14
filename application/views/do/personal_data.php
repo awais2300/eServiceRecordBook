@@ -396,7 +396,7 @@
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-12">
-                                            <h6>&nbsp;PERMENANT ADDRESS:</h6>
+                                            <h6>&nbsp;PERMANENT ADDRESS:</h6>
                                         </div>
                                     </div>
 

@@ -22,18 +22,21 @@
 
 <style>
     .img-cheif {
-        background: url('<?= base_url() ?>assets/img/quaid_block.jpg');
+        background: url('<?= base_url() ?>assets/img/best_prd.jpg');
         background-position: center;
         /* background-position: top; */
-        /* background-size: cover; */
+         background-size: cover; 
         background-repeat: no-repeat;
         max-width: 100%;
         max-height: 100%;
-        background-color: #486285;
+        background-color: white;
         /* opacity: 0.9; */
         /* display: block; */
         /* remove extra space below image */
     }
+	span {
+		color:white;
+	}
 </style>
 
 <body id="page-top">
@@ -42,14 +45,14 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-light accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <!-- <i class="fas fa-laugh-wink"></i> -->
                 </div>
-                <div class="sidebar-brand-text mx-3">E-SERVICE RECORD BOOK</div>
+                <div class="sidebar-brand-text mx-3"style="color:white">E-SERVICE RECORD BOOK</div>
             </a>
 
             <!-- Divider -->
@@ -119,7 +122,7 @@
                     </div>
                 </div>
             </li>  -->
-            <!-- <li class="nav-item">
+             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_discipline" aria-expanded="true">
                     <i class="fas fa-running"></i>
                     <span> DISCIPLINE</span>
@@ -129,9 +132,9 @@
                         <a class="collapse-item" href="<?php echo base_url(); ?>CAO/daily_module">DAILY MODULE</a>
                     </div>
                 </div>
-            </li> -->
+            </li> 
 
-            <!-- <li class="nav-item">
+             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_warning" aria-expanded="true">
                     <i class="fas fa-exclamation-circle"></i>
                     <span> WARNING</span>
@@ -141,7 +144,7 @@
                         <a class="collapse-item" href="<?php echo base_url(); ?>CAO/add_warning">ADD WARNING</a>
                     </div>
                 </div>
-            </li> -->
+            </li> 
 
          <!--   <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_academic" aria-expanded="true">

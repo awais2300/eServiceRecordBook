@@ -186,7 +186,7 @@
             theme: "light2", // "light1", "light2", "dark1", "dark2"
             colorSet: "blueShades",
             title: {
-                text: "UT Name: " + cadet_name + " Term: " + cadet_term,
+                text: "UT NAME: " + cadet_name + " TERM: " + cadet_term,
                 fontColor: 'rgb(0, 1, 84)',
                 horizontalAlign: "center"
 
@@ -195,8 +195,8 @@
                 text: "PERCENTAGE TERMWISE"
             }],
             axisY: {
-                title: "GPA",
-                maximum: 4.0,
+                title: "PERCENTAGE",
+                maximum: 100,
                 color:'blue'
             },
             data: [{

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Data Management</title>
+    <title>E-SERVICE RECORD BOOK</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?php echo base_url(); ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <!-- <i class="fas fa-laugh-wink"></i> -->
                 </div>
-                <div class="sidebar-brand-text mx-3" style="font-size:small">E-Dossier</div>
+                <div class="sidebar-brand-text mx-3" style="font-size:small">E-SRB</div>
             </a>
 
             <!-- Divider -->
@@ -51,7 +51,7 @@
                                                                         echo "D_O";
                                                                     } ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>DASHBOARD</span></a>
             </li>
 
             <!-- Divider -->

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>E-SRB</title>
+  <title>E-SERVICE RECORD BOOK</title>
 
   <!-- Custom fonts for this template-->
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -25,34 +25,12 @@
     border: 1px solid red !important;
   }
 
-  /* .img-main-login { */
-  /* background: url('<?= base_url() ?>assets/img/123.jpg'); */
-  /* background-position: center; */
-  /* background-position: top; //*/
-  /* background-size: cover; //*/
-  /* background-repeat: no-repeat; */
-  /* max-width: 100%; */
-  /* max-height: 100%; */
-  /* background-color: rgb(0, 1, 84); */
-  /* opacity: 0.9; */
-  /* display: block; //*/
-  /* remove extra space below image //*/
-  /* } */
-
-  /* .img-logo { */
-  /* background: url('<?= base_url() ?>assets/img/8.png'); */
-  /* background-position: center; //*/
-  /* background-size: cover; */
-  /* height: 170px; */
-  /* width: 133px; */
-  /* filter: blur(1px); //*/
-  /* border-radius: 25px; //*/
-  /* } */
+ 
 
   .img-bg {
-    background-image: url('<?= base_url() ?>assets/img/bg-image.jpg');
+    background-image: url('<?= base_url() ?>assets/img/img51.jpg'); 
     /* background-position: top ; */
-    /* background-size: cover; */
+    background-size: cover; 
     background-repeat: no-repeat;
     /* background-color: #303030 !important; */
     /* background-size: cover; */
@@ -60,19 +38,19 @@
   }
 </style>
 
-<body class="row bg-custom1 img-bg" style="overflow: hidden;">
+<body class="row  img-bg" style="overflow: hidden;">
 
   <div class="container">
     <div class="row justify-content-center">
 
       <div class="col-xl-10 col-lg-6 col-md-6">
         <div class="card bg-custom3 o-hidden border-0 shadow-lg my-5" style="background: transparent !important;">
-          <!-- > -->
+          
           <div class="row">
             
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-            <h1 style="padding:20px; text-align:center;color:#D9B08C"><strong> E-Service Book Record</strong></h1>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+            <h1 style="padding:15px; text-align:center;color:black"><strong> E-SERVICE RECORD BOOK</strong></h1>
               <div class="p-5" style="margin-top:50px">
                 <form class="user" role="form" id="login_form" method="post" action="<?php echo base_url(); ?>User_Login/login_process">
                   <div class="form-group">

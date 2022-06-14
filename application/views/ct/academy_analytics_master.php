@@ -66,12 +66,12 @@
         <div class="col-sm-4 mb-1">
             <a id="overall" onclick="location.href='<?php echo base_url(); ?>CT/view_academic_graph'" class="btn btn-md btn-primary shadow-md rounded-pill" style="border-radius:20px;width:100%; height:100%"><i class="fas fa-globe fa-md text-white-60"></i> ACADEMIC GRAPH</a>
         </div>
-        <div class="col-sm-4 mb-1">
+      <!--  <div class="col-sm-4 mb-1">
             <a id="termwise" onclick="location.href='<?php echo base_url(); ?>CT/view_olq_graph'" class="btn btn-md btn-primary shadow-md rounded-pill" style="border-radius:20px;width:100%;height:100%"><i class="fas fa-align-justify fa-md text-white-60"></i> PERSONALITY TRAITS GRAPH</a>
         </div>
         <div class="col-sm-4 mb-1">
             <a id="divisionwise" onclick="location.href='<?php echo base_url(); ?>CT/view_milestone_graph'" class="btn btn-md btn-primary shadow-md rounded-pill" style="border-radius:20px;width:100%;height:100%"><i class="fas fa-layer-group fa-md text-white-60"></i> PHYSICAL MILESTONES GRAPH</a>
-        </div>
+        </div> -->
 
     </div>
 

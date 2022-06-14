@@ -1329,7 +1329,7 @@
                                     SEARCH
                                 </button>
                             </div>
-                            <div class="col-sm-2 mb-1">
+                            <div class="col-sm-3 mb-1">
                                 <button type="button" class="btn btn-primary btn-user btn-block" id="show_all_btn">
                                     SHOW ALL UTs
                                 </button>
@@ -1367,15 +1367,16 @@
                             <table id="datatable" class="table table-striped" style="color:black; font-size:smaller">
                                 <thead>
                                     <tr>
-                                        <th scope="col" style='white-space: nowrap;'>ID</th>
-                                        <th scope="col" style='white-space: nowrap;'>UT's NAME</th>
+                                      <!--  <th scope="col" style='white-space: nowrap;'>ID</th> -->
                                         <th scope="col" style='white-space: nowrap;'>O NO</th>
+										<th scope="col" style='white-space: nowrap;'>UT's NAME</th>
+                                        
                                         <th scope="col" style='white-space: nowrap;'>TERM</th>
                                         <th scope="col" style="text-align:center">PHYSICAL MILESTONES</th>
                                         <th scope="col" style="text-align:center">PUNISHMENTS</th>
                                         <th scope="col" style="text-align:center">EXCUSES</th>
                                         <th scope="col" style="text-align:center">OBSERVATIONS</th>
-                                        <th scope="col" style="text-align:center">CLUBS</th>
+                                      <!--  <th scope="col" style="text-align:center">CLUBS</th> -->
 
                                         <!--<th scope="col" style="text-align:center">Branches</th>  -->
 
@@ -1388,9 +1389,10 @@
                                     foreach ($pn_data as $data) { ?>
                                         <tr>
 
-                                            <td scope="row"><?= ++$count; ?></td>
+                                       <!--     <td scope="row"><?= ++$count; ?></td> -->
+									        <td scope="row" style='white-space: nowrap;'><?= $data['oc_no']; ?></td>
                                             <td scope="row" style='white-space: nowrap;'><?= $data['name']; ?></td>
-                                            <td scope="row" style='white-space: nowrap;'><?= $data['oc_no']; ?></td>
+							
                                             <td scope="row" style='white-space: nowrap;'><?= $data['term']; ?></td>
                                             <td scope="row" style="display: none" style='white-space: nowrap;'><?= $data['p_id']; ?></td>
 
@@ -1398,7 +1400,7 @@
                                             <td scope="row" style="text-align:center"><button type="button" onclick="view_punishments(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#punishments">PUNISHMENTS</button></td>
                                             <td scope="row" style="text-align:center"><button type="button" onclick="view_excuses(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#excuses">EXCUSES</button></td>
                                             <td scope="row" style="text-align:center"><button type="button" onclick="view_observations(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#observations">OBSERVATION</button></td>
-                                            <td scope="row" style="text-align:center"><button type="button" onclick="view_club(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#clubs">CLUBS</button></td>
+                                        <!--    <td scope="row" style="text-align:center"><button type="button" onclick="view_club(<?= $data['p_id'] ?>)" class="btn btn-primary btn-user rounded-pill" data-toggle="modal" data-target="#clubs">CLUBS</button></td> -->
 
                                             <!-- <td scope="row" style="text-align:center"><button type="button" onclick="view_branches(<?= $data['p_id'] ?>)" data-toggle="modal" data-target="#branches" class="btn btn-primary btn-user rounded-pill">Branches</button></td>   -->
 
@@ -1438,11 +1440,12 @@
             method: 'POST',
             data: {
                 'id': id
+				
             },
             success: function(data) {
                 var result = jQuery.parseJSON(data);
                 var len = result.length;
-
+				
                 if (len > 0) {
                     $("#table_rows_milestone").empty();
 
@@ -1480,13 +1483,13 @@
                             value_pet2 = 'Disqualified';
                         }
 
-                        if (result[i]['assault_result'] == 'qualified') {
+                        /*if (result[i]['assault_result'] == 'qualified') {
                             color_assault = 'green';
                             value_assault = 'Qualified';
                         } else if (result[i]['assault_result'] == 'disqualified') {
                             color_assault = 'red';
                             value_assault = 'Disqualified';
-                        }
+                        }*/
 
                         if (result[i]['saluting_result'] == 'qualified') {
                             color_saluting = 'green';
@@ -1598,62 +1601,11 @@
                                             <i style="font-size:18px" type="button" class="fas fa-clipboard-list" data-toggle="modal" data-target="#PET_II"></i>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>Assault:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <h6 id="assault_result" style="color:${color_assault}">${value_assault}</h6>
-                                            </div>
-                                            <div class="col-sm-2" style="text-align:center">
-                                                <h6 id="assault_attempt">${result[i]['assault_attempt']}</h6>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>Saluting:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <h6 id="saluting_result" style="color:${color_saluting}">${value_saluting}</h6>
-                                            </div>
-                                            <div class="col-sm-2" style="text-align:center">
-                                                <h6 id="saluting_attempt">${result[i]['saluting_attempt']}</h6>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>PLX:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <h6 id="plx_result" style="color:${color_plx}">${value_plx}</h6>
-                                            </div>
-                                            <div class="col-sm-2" style="text-align:center">
-                                                <h6 id="plx_attempt">${result[i]['PLX_attempt']}</h6>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>Long Cross Country:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <h6 id="plx_result" style="color:${color_long_cross}">${value_long_cross}</h6>
-                                            </div>
-                                            <div class="col-sm-2" style="text-align:center">
-                                                <h6 id="plx_attempt">${result[i]['long_cross_card_number']}</h6>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-3">
-                                                <h6>&nbsp;<strong>Mini Cross Country:</strong></h6>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <h6 id="plx_result" style="color:${color_mini_cross}">${value_mini_cross}</h6>
-                                            </div>
-                                            <div class="col-sm-2" style="text-align:center">
-                                                <h6 id="plx_attempt">${result[i]['mini_cross_card_number']}</h6>
-                                            </div>
-                                        </div>
-
+                                        
+                                        
+                                      
+                                      
+                                   
                                     </form>`);
                     }
                 } else {
@@ -2245,32 +2197,32 @@
         var $columns = $(this).find('td');
 
         $('#cadet_name_heading').html('<strong> UT NAME: ' + $columns[1].innerHTML + '</strong>');
-        $('#cadet_oc_no').html('<strong> O NO : ' + $columns[2].innerHTML + '</strong>');
-        $('#cadet_term').html('<strong> TERM: ' + $columns[3].innerHTML + '</strong>');
+        $('#cadet_oc_no').html('<strong> O NO : ' + $columns[0].innerHTML + '</strong>');
+        $('#cadet_term').html('<strong> TERM: ' + $columns[2].innerHTML + '</strong>');
 
         $('#cadet_name_heading_ex').html('<strong> UT NAME: ' + $columns[1].innerHTML + '</strong>');
-        $('#cadet_oc_no_ex').html('<strong> O NO: ' + $columns[2].innerHTML + '</strong>');
-        $('#cadet_term_ex').html('<strong> TERM: ' + $columns[3].innerHTML + '</strong>');
+        $('#cadet_oc_no_ex').html('<strong> O NO: ' + $columns[0].innerHTML + '</strong>');
+        $('#cadet_term_ex').html('<strong> TERM: ' + $columns[2].innerHTML + '</strong>');
 
         $('#cadet_name_heading_ob').html('<strong> UT NAME: ' + $columns[1].innerHTML + '</strong>');
-        $('#cadet_oc_no_ob').html('<strong> O NO: ' + $columns[2].innerHTML + '</strong>');
-        $('#cadet_term_ob').html('<strong> TERM: ' + $columns[3].innerHTML + '</strong>');
+        $('#cadet_oc_no_ob').html('<strong> O NO: ' + $columns[0].innerHTML + '</strong>');
+        $('#cadet_term_ob').html('<strong> TERM: ' + $columns[2].innerHTML + '</strong>');
 
         $('#cadet_name_heading_ms').html('<strong> UT NAME: ' + $columns[1].innerHTML + '</strong>');
-        $('#cadet_oc_no_ms').html('<strong> O NO: ' + $columns[2].innerHTML + '</strong>');
-        $('#cadet_term_ms').html('<strong> TERM: ' + $columns[3].innerHTML + '</strong>');
+        $('#cadet_oc_no_ms').html('<strong> O NO: ' + $columns[0].innerHTML + '</strong>');
+        $('#cadet_term_ms').html('<strong> TERM: ' + $columns[2].innerHTML + '</strong>');
 
         $('#cadet_name_heading_club').html('<strong> UT NAME: ' + $columns[1].innerHTML + '</strong>');
-        $('#cadet_oc_no_club').html('<strong> O NO: ' + $columns[2].innerHTML + '</strong>');
-        $('#cadet_term_club').html('<strong> TERM: ' + $columns[3].innerHTML + '</strong>');
+        $('#cadet_oc_no_club').html('<strong> O NO: ' + $columns[0].innerHTML + '</strong>');
+        $('#cadet_term_club').html('<strong> TERM: ' + $columns[2].innerHTML + '</strong>');
 
         $('#cadet_name_heading_w').html('<strong> UT NAME: ' + $columns[1].innerHTML + '</strong>');
-        $('#cadet_oc_no_w').html('<strong> O NO: ' + $columns[2].innerHTML + '</strong>');
-        $('#cadet_term_w').html('<strong> TERM: ' + $columns[3].innerHTML + '</strong>');
+        $('#cadet_oc_no_w').html('<strong> O NO: ' + $columns[0].innerHTML + '</strong>');
+        $('#cadet_term_w').html('<strong> TERM: ' + $columns[2].innerHTML + '</strong>');
 
         $('#cadet_name_heading_b').html('<strong> UT NAME: ' + $columns[1].innerHTML + '</strong>');
-        $('#cadet_oc_no_b').html('<strong> O NO: ' + $columns[2].innerHTML + '</strong>');
-        $('#cadet_term_b').html('<strong> TERM: ' + $columns[3].innerHTML + '</strong>');
+        $('#cadet_oc_no_b').html('<strong> O NO: ' + $columns[0].innerHTML + '</strong>');
+        $('#cadet_term_b').html('<strong> TERM: ' + $columns[2].innerHTML + '</strong>');
 
         $('#punish').val($columns[5].innerHTML);
         $('#start_date').val($columns[6].innerHTML);
@@ -2278,12 +2230,13 @@
         $('#days').val((Date.parse($columns[7].innerHTML) - Date.parse($columns[6].innerHTML)) / 1000 / 60 / 60 / 24);
 
         //var id = $('#p_id').val();
-        //alert($columns[4].innerHTML);
+        //alert($columns[3].innerHTML);
         $.ajax({
             url: '<?= base_url(); ?>D_O/view_PET_I',
             method: 'POST',
             data: {
-                'id': $columns[4].innerHTML
+                'id': $columns[3].innerHTML,
+				'term' : $columns[2].innerHTML
             },
             success: function(data) {
                 var result = jQuery.parseJSON(data);
@@ -2301,7 +2254,8 @@
             url: '<?= base_url(); ?>D_O/view_PET_II',
             method: 'POST',
             data: {
-                'id': $columns[4].innerHTML
+                'id': $columns[3].innerHTML,
+				'term': $columns[2].innerHTML
             },
             success: function(data) {
                 var result = jQuery.parseJSON(data);

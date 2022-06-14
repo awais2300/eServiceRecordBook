@@ -38,7 +38,7 @@
 
     .list-group-item:hover {
         color: white !important;
-        background-color: #000154 !important;
+        background-color: #b3ffff !important;
         border-radius: 20px;
     }
 

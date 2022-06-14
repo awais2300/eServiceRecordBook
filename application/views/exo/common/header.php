@@ -22,7 +22,7 @@
 
 <style>
     .img-cheif {
-        background: url('<?= base_url() ?>assets/img/pk_prd.jpg');
+        background: url('<?= base_url() ?>assets/img/best_prd.jpg');
         background-position: center;
         /* background-position: top; */
         /* background-size: cover; */

@@ -22,11 +22,11 @@
 
 <style>
     .img-cheif {
-        background: url('<?= base_url() ?>assets/img/pk_prd.jpg');
-        background-position: center;
+        background: url('<?= base_url() ?>assets/img/images.jpg');
+       /* background-position: center; */
         /* background-position: absolute; */
-        /* background-position: top; */
-        /* background-size: cover; */
+         background-position: top; 
+         background-size: cover; 
         background-repeat: no-repeat;
         max-width: 100%;
         max-height: 120%;
@@ -90,7 +90,7 @@
 
             <li class="nav-item">
                 <!-- <a class="nav-link collapsed" href="<?php echo base_url(); ?>/D_O/PN_Form" aria-expanded="true"> -->
-                <a class="nav-link collapsed" href="<?php echo base_url(); ?>/D_O/personal_data" aria-expanded="true">
+                <a class="nav-link collapsed" href="<?php echo base_url(); ?>D_O/personal_data" aria-expanded="true">
                     <i class="fab fa-wpforms"></i>
                     <span>ADD UT</span>
                     <!-- <span>Components</span> -->
@@ -114,7 +114,7 @@
                 <div id="collapse_general" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?php echo base_url(); ?>D_O/auto_biography">DIVISIONAL RECORD</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>D_O/psychologist_report">PSYCHOLOGIST's REPORT</a>
+                       <a class="collapse-item" href="<?php echo base_url(); ?>D_O/psychologist_report">NOK RECORD</a> 
                         <a class="collapse-item" href="<?php echo base_url(); ?>D_O/Inspection_record">INSPECTION RECORD</a>
                         <a class="collapse-item" href="<?php echo base_url(); ?>D_O/view_record_div_officer">SDO/DO/ADO RECORD</a>
                         <a class="collapse-item" href="<?php echo base_url(); ?>D_O/add_club">ADD CLUB</a>
@@ -147,7 +147,7 @@
                 <div id="collapse_academic" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?= base_url(); ?>D_O/view_semester_result">RESULTS (Terms I - VI)</a>
-                        <a class="collapse-item" href="<?= base_url(); ?>D_O/view_training_report">BCT/ELC/NBCD/WHT</a>
+                      <!--  <a class="collapse-item" href="<?= base_url(); ?>D_O/view_training_report">BCT/ELC/NBCD/WHT</a> -->
                     </div>
                 </div>
             </li>

@@ -71,7 +71,7 @@
         </div>
         <div class="col-sm-4 mb-1">
             <a id="divisionwise" onclick="location.href='<?php echo base_url(); ?>CO/view_milestone_graph'" class="btn btn-md btn-primary shadow-md rounded-pill" style="border-radius:20px;width:100%;height:100%"><i class="fas fa-layer-group fa-md text-white-60"></i> PHYSICAL MILESTONES GRAPH </a>
-        </div>
+        </div> 
 
     </div>
 

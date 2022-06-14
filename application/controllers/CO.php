@@ -4168,7 +4168,7 @@ class CO extends CI_Controller
     {
         if ($this->input->post()) {
             $oc_no = $_POST['oc_no'];
-            $query = $this->db->where('oc_no', $oc_no)->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->row_array();
+            $query = $this->db->where('oc_no', $oc_no)->get('pn_form1s')->row_array();
             // print_r($query);
             echo json_encode($query);
         }

@@ -203,7 +203,7 @@
                 text: "PERCENTAGE TERMWISE"
             }],
             axisY: {
-                title: "PERSONALITY TRAITS (MID + FINAL)",
+                title: "PERSONALITY TRAITS",
                 maximum: 100,
                 color:'blue'
             },

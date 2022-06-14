@@ -22,18 +22,21 @@
 
 <style>
     .img-cheif {
-        background: url('<?= base_url() ?>assets/img/quaid_block.jpg');
+        background: url('<?= base_url() ?>assets/img/pk_prd.jpg');
         background-position: center;
         /* background-position: top; */
-        /* background-size: cover; */
+         background-size: cover; 
         background-repeat: no-repeat;
-        max-width: 100%;
-        max-height: 100%;
-        background-color: rgb(0, 1, 84);
+        max-width: 90%;
+        max-height: 90%;
+        background-color: white;
         /* opacity: 0.9; */
         /* display: block; */
         /* remove extra space below image */
     }
+	span {
+		color:white;
+	}
 </style>
 
 <body id="page-top">
@@ -42,14 +45,14 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-light accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <!-- <i class="fas fa-laugh-wink"></i> -->
                 </div>
-                <div class="sidebar-brand-text mx-3">E-SERVICE RECORD BOOK</div>
+                <div class="sidebar-brand-text mx-3"style="color:white">E-SERVICE RECORD BOOK</div>
             </a>
 
             <!-- Divider -->
@@ -58,7 +61,7 @@
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="<?php echo base_url(); ?><?php if ($this->session->userdata('acct_type') == 'do') {
-                                                                        echo "D_O";
+                                                                        echo "CO";
                                                                     } ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>DASHBOARD</span></a>
@@ -70,56 +73,56 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>CO/view_dossier_folder" aria-expanded="true">
                     <i class="far fa-newspaper"></i>
-                    <span> VIEW DOSSIERS</span>
+                    <span> VIEW DOSSIER </span>
                     <!-- <span>Components</span> -->
                 </a>
 
             </li>
 
-
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+           <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>CO/view_academy_analytics" aria-expanded="true">
                     <i class="fas fa-th-list"></i>
                     <span> ANALYTICS </span>
                 </a>
             </li>
 
-        <!--    <li class="nav-item">
+        <!--    <li class="nav-item"> 
                 <?php if ($this->session->userdata('unit_id') == '1') { ?>
                     <a class="nav-link collapsed" href="<?php echo base_url(); ?>CO/personal_data" aria-expanded="true">
                         <i class="fab fa-wpforms"></i>
-                        <span>PN Form I</span>
+                        <span>ADD UT</span> -->
+                        <!-- <span>Components</span> -->
                     </a>
                 <?php } ?>
-            </li>   -->
+            </li>   
 
             <!-- Divider -->
             <!-- <hr class="sidebar-divider"> -->
 
             <!-- Heading -->
             <!-- <div class="sidebar-heading">
-                PHASE II (TECHNICAL QUALIFICATION)
+                PHASE II(TECHNICAL QUALIFICATION)
             </div> -->
 
-         <!--   <li class="nav-item">
+        <!--    <li class="nav-item">
                 <a id="general" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_general" aria-expanded="true">
                     <i class="fas fa-file-alt"></i>
-                    <span> General</span>
+                    <span> GENERAL</span>
                     < !-- <span>Components</span> -- >
                 </a>
                 <div id="collapse_general" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/add_club">Add Club</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/Inspection_record">Inspection Record</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/auto_biography">Cadet's Auto-biography</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/psychologist_report">Psychologist's Report</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/view_record_div_officer">Divisional Officer Record</a>
+                    <a class="collapse-item" href="<?php echo base_url(); ?>CO/psychologist_report">DIVISIONAL RECORD</a>
+                    <a class="collapse-item" href="<?php echo base_url(); ?>CO/auto_biography">NOK FORM </a>
+                    <a class="collapse-item" href="<?php echo base_url(); ?>CO/Inspection_record">INSPECTION RECORD</a>
+                    <a class="collapse-item" href="<?php echo base_url(); ?>CO/view_record_div_officer">SDO/DO/ADO RECORDS
+                    <a class="collapse-item" href="<?php echo base_url(); ?>CO/add_club">ADD CLUB</a>
+                        </a>
                     </div>
                 </div>
-            </li> -->
-
-            <!-- <li class="nav-item">
+            </li>  -->
+             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_discipline" aria-expanded="true">
                     <i class="fas fa-running"></i>
                     <span> DISCIPLINE</span>
@@ -129,35 +132,35 @@
                         <a class="collapse-item" href="<?php echo base_url(); ?>CO/daily_module">DAILY MODULE</a>
                     </div>
                 </div>
-            </li>
+            </li> 
 
-            <li class="nav-item">
+             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_warning" aria-expanded="true">
                     <i class="fas fa-exclamation-circle"></i>
-                    <span> WARNINGS</span>
+                    <span> WARNING</span>
                 </a>
                 <div id="collapse_warning" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?php echo base_url(); ?>CO/add_warning">ADD WARNING</a>
                     </div>
                 </div>
-            </li> -->
+            </li> 
 
-        <!--    <li class="nav-item">
+         <!--   <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_academic" aria-expanded="true">
                     <i class="fas fa-book"></i>
-                    <span> Academic Record</span>
+                    <span> ACADEMICS RECORD</span>
                     < !-- <span>Components</span> -- >
                 </a>
                 <div id="collapse_academic" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?= base_url(); ?>CO/view_semester_result"><?php //if ($this->session->userdata('unit_id') != '1') { ?>Results (Terms VI - VIII)<?php //} else { ?> Results (Terms I - III) <?php //} ?></a>
-                        <?php //if ($this->session->userdata('unit_id') == '1') { ?>
-                            <a class="collapse-item" href="<?= base_url(); ?>CO/view_training_report">Sea Training Report Term II</a>
-                        <?php //} ?>
+                        <a class="collapse-item" href="<?= base_url(); ?>CO/view_semester_result"><?php if ($this->session->userdata('unit_id') != '1') { ?>Results (Terms VI - VIII)<?php } else { ?> Results (Terms I - III) <?php } ?></a>
+                        <?php if ($this->session->userdata('unit_id') == '1') { ?>
+                            <a class="collapse-item" href="<?= base_url(); ?>CO/view_training_report">BTC/ELC/NBCD/WHT</a>
+                        <?php } ?>
                     </div>
                 </div>
-            </li> -->
+            </li>  -->
             <!-- <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_assesment" aria-expanded="true">
                     <i class="fas fa-chart-bar"></i>
@@ -172,31 +175,30 @@
          <!--   <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>CO/add_officer_qualities" aria-expanded="true">
                     <i class="fas fa-medal"></i>
-                    <span> Officer Like Qualities</span>
+                    <span> PERSONALITY TRAITS</span>
                 </a>
 
-            </li>
-            <li class="nav-item">
+            </li>  -->
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>CO/view_promotion_screen" aria-expanded="true">
                     <i class="fas fa-award"></i>
-                    <span> Promotion/Relegation</span>
+                    <span> PROMOTION/RELEGATION</span>
                 </a>
-            </li>
+            </li> -->
 
-            <li class="nav-item">
+           <li class="nav-item">
                 <a class="nav-link collapsed" href="<?php echo base_url(); ?>CO/view_activity_log" aria-expanded="true">
                     <i class="far fa-list-alt"></i>
                     <span> VIEW ACTIVITY LOG </span>
-                </a>
-            </li>  -->
+                </a> 
+            </li> 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="<?php echo base_url(); ?>User_Login/change_password" aria-expanded="true">
                     <i class="fas fa-unlock-alt"></i>
-                    <span> CHANGE PASSWORD</span>
+                    <span> CHANGE PASSWORD </span>
                 </a>
             </li>
 
-            <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
@@ -245,10 +247,9 @@
                                     <span class="badge badge-danger badge-counter"></span>
                                 </a>
                                 <!-- Dropdown - Alerts -->
-                                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown" id="xyz">
+                              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown" id="xyz">
                                     <h6 class="dropdown-header">
-                                        NOTIFICATIONS
-                                    </h6> 
+                                        NOTIFICATIONS    </h6> 
                                     <a class="dropdown-item d-flex align-items-center" href="#">
                                         <div style="padding:10px">
                                             <b>NO NEW NOTIFICATIONS </b>
@@ -268,7 +269,7 @@
                                 <!-- Dropdown - Messages -->
                                 <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                                     <h6 class="dropdown-header">
-                                        CHATBOX
+                                        CHAT BOX
                                     </h6>
 
                                     <a class="dropdown-item d-flex align-items-center" href="#">

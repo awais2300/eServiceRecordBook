@@ -24,8 +24,8 @@
     .img-cheif {
         background: url('<?= base_url() ?>assets/img/img5.jpg');
         /* background-position: center; */
-        background-position: top;
-        /* background-size: cover; */
+       /* background-position: top; */
+         background-size: cover; 
         background-repeat: no-repeat;
         max-width: 100%;
         max-height: 100%;

@@ -43,7 +43,7 @@
     <div class="card-body" style="padding:10px">
         <div class="row my-2">
             <div class="card-body" style="margin-left:30px; <?php if (!isset($pn_data['name'])) { ?> padding: 0px; height: 40px; <?php } ?>">
-                <h2 style="text-align:center; text-decoration:underline; margin-bottom:20px"><strong>VIEW CADET'S DOSSIER FOLDER</strong></h2>
+                <h2 style="text-align:center; text-decoration:underline; margin-bottom:20px"><strong>VIEW UT'S DOSSIER FOLDER</strong></h2>
 
                 <div class="row">
                     <div class="col-lg-1">
@@ -95,7 +95,7 @@
                         <?php if (isset($pn_data['name'])) { ?>
                             <h1 class="h4">CONTENTS</h1>
                         <?php } else { ?>
-                            <h1 class="h4">Search Cadet</h1>
+                            <h1 class="h4">Search UT</h1>
                         <?php } ?>
                     </div>
 
@@ -104,12 +104,12 @@
                             <?php if (!isset($pn_data['name'])) { ?>
                                 <div class="form-group row">
                                     <div class="col-sm-1" style="margin-top:15px">
-                                        <h6>&nbsp;OC No:</h6>
+                                        <h6>&nbsp;O No:</h6>
                                     </div>
 
                                     <div class="col-sm-3 mb-1">
-                                        <input type="text" class="form-control form-control-user" name="oc_no" id="oc_no" placeholder="Enter OC No." value="<?= $oc_no_entered ?>">
-                                        <span id="error_search" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;Please enter OC No.</span>
+                                        <input type="text" class="form-control form-control-user" name="oc_no" id="oc_no" placeholder="Enter O No." value="<?= $oc_no_entered ?>">
+                                        <span id="error_search" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;Please enter O No.</span>
                                     </div>
 
                                     <div class="col-sm-2 mb-1">
@@ -126,7 +126,7 @@
                                 <div id="cadet_dossier" class="row">
                                     <div class="col-lg-4" style="text-align:left;font-weight: bold;">
                                         <ul class="list-group">
-                                            <a href="#" style="color:black" id="gen">
+                                          <!--  <a href="#" style="color:black" id="gen">
                                                 <li class="list-group-item bg-custom3 custom_list">GENERAL</li>
                                             </a>
                                             <a href="#" style="color:black" id="disp">
@@ -137,16 +137,16 @@
                                             </a>
                                             <a href="#" style="color:black" id="phy">
                                                 <li class="list-group-item bg-custom3 custom_list">PHYSICAL EFFICIENCY</li>
-                                            </a>
+                                            </a> -->
                                             <a href="#" style="color:black" id="acad">
                                                 <li class="list-group-item bg-custom3 custom_list">ACADEMIC RECORD</li>
                                             </a>
-                                            <a href="#" style="color:black" id="olq">
+                                          <!--  <a href="#" style="color:black" id="olq">
                                                 <li class="list-group-item bg-custom3 custom_list">OFFICER LIKE QUALITIES</li>
                                             </a>
                                             <a href="#" style="color:black" id="assess">
                                                 <li class="list-group-item bg-custom3 custom_list">ASSESSMENT</li>
-                                            </a>
+                                            </a> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -256,16 +256,22 @@
                                 <div class="col-lg-4" style="text-align:left;font-weight: bold;">
                                     <ul class="list-group">
                                         <a href="#" style="color:black" id="btn_result_t1">
-                                            <li class="list-group-item bg-custom3 custom_list">RESULT (TERM-I)</li>
+                                            <li class="list-group-item bg-custom3 custom_list"> TERM-I</li>
                                         </a>
                                         <a href="#" style="color:black" id="btn_sea_training_report">
-                                            <li class="list-group-item bg-custom3 custom_list">SEA TRAINING REPORT (TERM-II)</li>
+                                            <li class="list-group-item bg-custom3 custom_list"> TERM-II</li>
                                         </a>
                                         <a href="#" style="color:black" id="btn_result_t2">
-                                            <li class="list-group-item bg-custom3 custom_list">RESULT (TERM-II)</li>
+                                            <li class="list-group-item bg-custom3 custom_list">TERM-III</li>
                                         </a>
                                         <a href="#" style="color:black" id="btn_result_t3">
-                                            <li class="list-group-item bg-custom3 custom_list">RESULT (TERM III)</li>
+                                            <li class="list-group-item bg-custom3 custom_list">TERM IV</li>
+                                        </a>
+										<a href="#" style="color:black" id="btn_result_t2">
+                                            <li class="list-group-item bg-custom3 custom_list">TERM-V</li>
+                                        </a>
+                                        <a href="#" style="color:black" id="btn_result_t3">
+                                            <li class="list-group-item bg-custom3 custom_list">TERM-VI</li>
                                         </a>
                                     </ul>
                                 </div>
@@ -385,7 +391,7 @@
 
         <div id="no_data" class="row my-2" style="display:none">
             <div class="col-lg-12 my-5">
-                <h4 style="color:red">No Cadet Found. Please check the OC No.</h4>
+                <h4 style="color:red">No UT Found. Please check the O No.</h4>
             </div>
         </div>
 
@@ -400,7 +406,7 @@
                     <div class="card">
 
                         <div class="card-header bg-custom1">
-                            <h1 class="h4">Select Cadet</h1>
+                            <h1 class="h4">Select UT</h1>
                         </div>
 
                         <div class="card-body bg-custom2" style="font-size:small;text-align: justify;">
@@ -411,12 +417,12 @@
                                 <div class="col-sm-3">
                                     <select class="form-control rounded-pill" name="term_select" id="term_select" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:100%;">
                                         <option class="form-control form-control-user" value="">Select Term</option>
-                                        <option class="form-control form-control-user" value="Term-P">Term-Prep</option>
-                                        <option class="form-control form-control-user" value="Term-I">Term-I</option>
-                                        <option class="form-control form-control-user" value="Term-II">Term-II</option>
-                                        <option class="form-control form-control-user" value="Term-III">Term-III</option>
-                                        <option class="form-control form-control-user" value="Term-IV">Midshipman</option>
-                                        <option class="form-control form-control-user" value="Term-V">Sub-Lieutinant</option>
+                                        <option class="form-control form-control-user" value="Term-P">Term-I</option>
+                                        <option class="form-control form-control-user" value="Term-I">Term-II</option>
+                                        <option class="form-control form-control-user" value="Term-II">Term-III</option>
+                                        <option class="form-control form-control-user" value="Term-III">Term-IV</option>
+                                        <option class="form-control form-control-user" value="Term-IV">Term-V</option>
+                                        <option class="form-control form-control-user" value="Term-V">Term-VI</option>
                                     </select>
                                 </div>
 
@@ -457,7 +463,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header bg-custom1">
-                            <h1 class="h4">List of Cadets</h1>
+                            <h1 class="h4">List of UTs</h1>
                         </div>
                     </div>
                     <div class="card-body bg-custom2" style="font-size:small;text-align: justify;">
@@ -467,9 +473,7 @@
                                     <table id="datatable" class="table table-striped" style="color:black;">
                                         <thead>
                                             <tr>
-                                                <th style="border:none !important" scope="col">Sr. No.</th>
-                                                <th style="border:none !important" scope="col">Cadet Name</th>
-                                                <th style="border:none !important" scope="col">OC No.</th>
+                                                <th style="border:none !important" scope="col">Sr. No.</th No.</th>
                                                 <th style="border:none !important" scope="col">Term</th>
                                                 <th style="border:none !important" scope="col">Division Name</th>
                                                 <th style="border:none !important; text-align:center" scope="col">Action</th>
@@ -500,25 +504,25 @@
                     <div class="card">
 
                         <div class="card-header bg-custom1">
-                            <h1 class="h4">GENERAL INSTRUCTIONS</h1>
-                        </div>
+                            <h1 class="h4"></h1>
+                        </div> 
 
                         <div class="card-body bg-custom1" style="font-size:small;text-align: justify;">
                             <div class="form-group row">
-                                <div class="col-sm-6">
+                             <!--   <div class="col-sm-6">
                                     <p>1. PN Form-I is a phase-wise record of the performance given by an under training officer during the entire period of his training. It comprises two sections: Section-I pertaining to common training of trainees as Cadet and Section-II pertaining to branch specific training as Midshipman/Sub Lieutenant.</p>
                                     <p>2. PN Form-I is to be started for every under training officer on the day he joins the Service as a Cadet and is to be completed for each stage of his training.</p>
                                     <p>3. Name and other particulars of the officer recorded clearly in black permanent ink/marker in the specified space on the front outer cover of PN Form-I.</p>
                                     <p>4. PN Form-I is to be kept in the personal custody of the Divisional/Course Officer of the under training officers. He is to religiously complete the relevant portions of the Form and cross out and sign/stamp all pages not required to be completed, e.g. additional pages provided for completion in case of the trainees relegation etc. He is also to record the additional pages, if instead, on the relevant page(s) provided for the purpose. The Commanding Officers/Commandants are to ensure its timely completion and onward dispatch.</p>
                                     <p>5. PNA, after completion of Section-I, is to insert/add to it Section-II according to the branch allocated to each trainee and forward the same to the relevant PN ship.</p>
-                                </div>
-                                <div class="col-sm-6">
+                                </div> -->
+                              <!--  <div class="col-sm-6">
                                     <p>6. PN Form-1 is to be transferred from unit/ship to unit/ship in conformity with the transfers of the under training officer. Commanding Officers/Commandants are to ensure that the Form is sent to the Commanding Officer/Commandant of the next unit/ship within 20 days of the under training officer’s transfer.</p>
                                     <p>7. A unit/ship receiving PN Form-I is to thoroughly check all entries/signatures/remarks etc in the previous portions and, in case of any deficiency, incomplete or unsigned entries, is to return the Form to the concerned unit/ship within one week for completion/removal of deficiencies detected. Units/Ships accepting an incomplete/unsigned PN Form-I will be responsible for the deficiencies along with the ships/units sending such incomplete Form.</p>
                                     <p>8. OLQs marks will be awarded in accordance with the relevant article(s) of the PBR 697 (1)-C.</p>
                                     <p>9. Gain/loss of seniority will be calculated in accordance with the relevant article(s) of PBR 697 (1)-C.</p>
                                     <p>10. Commanding Officer PNS BAHADUR, Commandant PNS JAUHAR and Officer Incharge School of Logistics & Management are to ensure timely dispatch of the Forms in respect of GL (Ops), GL (ME) and GL (Log) officers, respectively to Naval Headquarters (Trg Dte) through HQ COMKAR within one month of completion of the training.</p>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -529,7 +533,7 @@
 
         <div id="no_data" class="row my-2" style="display:none;">
             <div class="col-lg-12">
-                <h4 style="color:red;">No Cadet Found. Please check the OC No.</h4>
+                <h4 style="color:red;">No UT Found. Please check the O No.</h4>
             </div>
         </div>
 
@@ -3637,7 +3641,7 @@
 
                         <div class="container my-3">
                             <div style="text-align:center">
-                                <h4 style="text-decoration:underline"><strong>RESULT REPORT (TERM-I)</strong></h4>
+                                <h4 style="text-decoration:underline"><strong>TERM-I RESULT</strong></h4>
                             </div>
                             <div style="text-align:center">
                                 <h5>(TO BE PASTED HERE)</h5>
@@ -3705,7 +3709,7 @@
 
                         <div class="container my-3">
                             <div style="text-align:center">
-                                <h4 style="text-decoration:underline"><strong>RESULT REPORT (TERM-II)</strong></h4>
+                                <h4 style="text-decoration:underline"><strong>TERM-II RESULT</strong></h4>
                             </div>
                             <div style="text-align:center">
                                 <h5>(TO BE PASTED HERE)</h5>
@@ -3773,7 +3777,7 @@
 
                         <div class="container my-3">
                             <div style="text-align:center">
-                                <h4 style="text-decoration:underline"><strong>RESULT REPORT (TERM-III)</strong></h4>
+                                <h4 style="text-decoration:underline"><strong>TERM-III RESULT</strong></h4>
                             </div>
                             <div style="text-align:center">
                                 <h5>(TO BE PASTED HERE)</h5>
@@ -3841,7 +3845,7 @@
 
                         <div class="container my-3">
                             <div style="text-align:center">
-                                <h4 style="text-decoration:underline"><strong>SEA TRAINING REPORT (TERM-II)</strong></h4>
+                                <h4 style="text-decoration:underline"><strong>TERM-II RESULT</strong></h4>
                             </div>
                             <div style="text-align:center">
                                 <h5>(TO BE PASTED HERE)</h5>

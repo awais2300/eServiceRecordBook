@@ -1,7 +1,7 @@
  <footer class="sticky-footer bg-custom1 text-white">
      <div class="container my-auto">
          <div class="copyright text-center my-auto">
-             <span>Copyright &copy; Your Website 2020</span>
+             <span>COPYRIGHT &copy; E-SRB WEBSITE 2022</span>
          </div>
      </div>
  </footer>
