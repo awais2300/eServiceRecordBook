@@ -483,16 +483,16 @@
     });
 
     $('#uploaded_filename').on('click', function() {
-        // alert($('#uploaded_filename').html());
+        // alert($('#uploaded_filename').val());
         $.ajax({
             url: '<?= base_url(); ?>D_O/get_excel_file_result',
             method: 'POST',
             data: {
                 'filename': "FuelRate.xlsx"
             },
-            contentType: false,
-            cache: false,
-            processData: false,
+            // contentType: false,
+            // cache: false,
+            // processData: false,
             success: function(data) {
                 $('#excel_area').html(data);
                 $('table').css('width', '100%');

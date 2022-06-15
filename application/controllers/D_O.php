@@ -5857,7 +5857,7 @@ class D_O extends CI_Controller
         // if ($this->input->post()) {
         // $filename = base_url() . 'uploads/documents/' . $_POST['filename'];
         // $_FILES["select_excel"] = base_url().'uploads/documents/'.$_POST['filename'];
-        // $filename = $_POST['filename'];
+        $filename = $_POST['filename'];
         // echo "awais";
         // echo $filename;
         // 
@@ -5891,7 +5891,7 @@ class D_O extends CI_Controller
         // (A) PHPSPREADSHEET TO LOAD EXCEL FILE
         require "vendor/autoload.php";
         $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
-        $spreadsheet = $reader->load("uploads/documents/FuelRate.xlsx");
+        $spreadsheet = $reader->load("uploads/documents/".$filename);
         $writer = IOFactory::createWriter($spreadsheet, 'Html');
         $message = $writer->save('php://output');
         echo $message;
