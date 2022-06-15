@@ -2868,6 +2868,9 @@ INSERT INTO `branch_preference_list`( `branch_name`) VALUES ('ME');
 alter table pn_form1s
 add COLUMN branch_id int(11) null;
 
+alter table pn_form1s
+add COLUMN other varchar(255) null;
+
 ALTER TABLE physical_milestone CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 ALTER TABLE term_i_details CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

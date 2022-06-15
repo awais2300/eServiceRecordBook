@@ -120,7 +120,12 @@
                                             <input type="text" class="form-control form-control-user" name="oc_no" id="oc_no" placeholder="O NO.">
                                         </div>
                                         <div class="col-sm-6 mb-1">
-                                            <input type="text" class="form-control form-control-user" name="course" id="course" placeholder="COURSE">
+                                        <select class="form-control rounded-pill" name="course" id="course" data-placeholder="Select Branch" style="font-size: 0.8rem; height:50px;">
+                                                <option class="form-control form-control-user" value="">Select Branch</option>
+                                                <?php foreach ($branches as $data) { ?>
+                                                <option class="form-control form-control-user" value="<?= $data['id']; ?>"><?= $data['branch_name']; ?></option>
+                                                <?php } ?>
+                                            </select>
                                         </div>
                                     </div>
 
@@ -478,6 +483,18 @@
                                     <div class="form-group row">
                                         <div class="col-sm-12 mb-1">
                                             <input type="text" class="form-control form-control-user" name="diploma" id="diploma" placeholder="DIPLOMA">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <h6>&nbsp;OTHERS:</h6>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="other" id="other" placeholder=" Any Other">
                                         </div>
                                     </div>
 

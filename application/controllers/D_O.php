@@ -459,6 +459,7 @@ class D_O extends CI_Controller
             $intermediate_college = $postData['college'];
             $intermediate_division = $postData['grade_intermediate'];
             $diploma = $postData['diploma'];
+            $other = $postData['other'];
 
 
             $insert_array = array(
@@ -489,6 +490,7 @@ class D_O extends CI_Controller
                 'intermediate_college' => $intermediate_college,
                 'intermediate_division' => $intermediate_division,
                 'diploma' => $diploma,
+                'other'=>$other,
                 'do_id' => $this->session->userdata('user_id'),
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
@@ -1816,6 +1818,7 @@ class D_O extends CI_Controller
         if ($this->session->has_userdata('user_id')) {
             $data['pn_data'] = $this->db->where('divison_name', $this->session->userdata('division'))->get('pn_form1s')->result_array();
             $data['divisions'] = $this->db->where('division_name', $this->session->userdata('division'))->get('divisions')->result_array();
+            $data['branches'] = $this->db->get('branch_preference_list')->result_array();
             $this->load->view('do/personal_data', $data);
         }
     }
