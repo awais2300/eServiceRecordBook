@@ -23,6 +23,7 @@
 } else if ($this->session->userdata('acct_type') == 'hougp') {
     $this->load->view('hougp/common/header');
 } ?>
+
 <style>
     .red-border {
         border: 1px solid red !important;
@@ -52,6 +53,7 @@
         </div>
 
     </div>
+
 
     <div class="card-body bg-custom3">
         <!-- Nested Row within Card Body -->
@@ -162,6 +164,11 @@
                                 </div>
                             </div>
 
+                            <span id="message"></span>
+                            <table id="table">
+                                <div id="excel_area"></div>
+                            </table>
+
                             <hr>
                             <div class="form-group row">
                                 <div class="col-sm-3">
@@ -214,7 +221,7 @@
                                 <div class="col-sm-3 mb-1">
                                     <input type="number" class="form-control form-control-user" name="gpa_t3" id="gpa_t3" placeholder="ENTER PERCENTAGE">
                                 </div>
-                             <!--   <div class="col-sm-3 mb-1">
+                                <!--   <div class="col-sm-3 mb-1">
                                     <input type="text" class="form-control form-control-user" style="color:black;font-size:large" name="term_t7" id="term_t7" value="Term-VII" readonly>
                                 </div>
                                 <div class="col-sm-3 mb-1">
@@ -228,7 +235,7 @@
                                 <div class="col-sm-3 mb-1">
                                     <input type="number" class="form-control form-control-user" name="gpa_t4" id="gpa_t4" placeholder="ENTER PERCENTAGE">
                                 </div>
-                               <!-- <div class="col-sm-3 mb-1">
+                                <!-- <div class="col-sm-3 mb-1">
                                     <input type="text" class="form-control form-control-user" style="color:black;font-size:large" name="term_t8" id="term_t8" value="Term-VIII" readonly>
                                 </div>
                                 <div class="col-sm-3 mb-1">
@@ -473,5 +480,23 @@
             $('#save_btn_progress').removeAttr('disabled');
             $('#show_error_save').show();
         }
+    });
+
+    $('#uploaded_filename').on('click', function() {
+        // alert($('#uploaded_filename').html());
+        $.ajax({
+            url: '<?= base_url(); ?>D_O/get_excel_file_result',
+            method: 'POST',
+            data: {
+                'filename': "FuelRate.xlsx"
+            },
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: function(data) {
+                $('#excel_area').html(data);
+                $('table').css('width', '100%');
+            }
+        })
     });
 </script>

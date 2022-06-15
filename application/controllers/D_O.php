@@ -1,5 +1,11 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
+include 'vendor/autoload.php';
+// require_once('vendor/autoload.php');
+// use PhpOffice\PhpSpreadsheet;
+use PhpOffice\PhpSpreadsheet\IOFactory;
+// use PhpOffice\PhpSpreadsheet\Spreadsheet;
+// use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 
@@ -490,7 +496,7 @@ class D_O extends CI_Controller
                 'intermediate_college' => $intermediate_college,
                 'intermediate_division' => $intermediate_division,
                 'diploma' => $diploma,
-                'other'=>$other,
+                'other' => $other,
                 'do_id' => $this->session->userdata('user_id'),
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
@@ -1283,7 +1289,7 @@ class D_O extends CI_Controller
     {
         if ($this->input->post()) {
             $postData = $this->security->xss_clean($this->input->post());
-            
+
             if ($_FILES['bct_file']['name'] != NULL) {
                 $upload1 = $this->upload_professional_courses($_FILES['bct_file']);
                 $bct_files = $upload1;
@@ -2754,15 +2760,15 @@ class D_O extends CI_Controller
         if ($this->session->has_userdata('user_id')) {
 
             $p_id = $_POST['id'];
-			// $term = $_POST['term'];
+            // $term = $_POST['term'];
 
             $this->db->select('or.*, f.*');
             $this->db->from('physical_milestone or');
             $this->db->join('pn_form1s f', 'f.p_id = or.p_id');
             // $this->db->where('or.do_id', $this->session->userdata('user_id'));
             //$this->db->where('f.divison_name', $this->session->userdata('division'));
-			//$this->db->where('f.term', 'or.term');
-			//$this->db->where('or.term', 'Term-VI');
+            //$this->db->where('f.term', 'or.term');
+            //$this->db->where('or.term', 'Term-VI');
             $this->db->where('f.p_id', $p_id);
             $data['milestone_records'] = $this->db->get()->result_array();
             //print_r( $data['milestone_records']);exit;
@@ -3421,11 +3427,11 @@ class D_O extends CI_Controller
     public function upload_professional_courses($fieldname)
     {
         $count[] = '';
-        $_FILES['file']['name']     = $fieldname['name']; 
-        $_FILES['file']['type']     = $fieldname['type']; 
+        $_FILES['file']['name']     = $fieldname['name'];
+        $_FILES['file']['type']     = $fieldname['type'];
         $_FILES['file']['tmp_name'] = $fieldname['tmp_name'];
-        $_FILES['file']['error']    = $fieldname['error']; 
-        $_FILES['file']['size']     = $fieldname['size']; 
+        $_FILES['file']['error']    = $fieldname['error'];
+        $_FILES['file']['size']     = $fieldname['size'];
 
         $config['upload_path'] = 'uploads/courses';
         $config['allowed_types'] = 'gif|jpg|png|doc|xls|pdf|xlsx|docx|ppt|pptx|jpeg|txt';
@@ -3440,7 +3446,7 @@ class D_O extends CI_Controller
             $data['upload_data'] = $this->upload->data();
             $count = $data['upload_data']['file_name'];
         }
-        
+
         return $count;
     }
 
@@ -5843,5 +5849,69 @@ class D_O extends CI_Controller
             $query = $this->db->where('p_id', $p_id)->get('seniority_records')->row_array();
             echo json_encode($query);
         }
+    }
+
+
+    public function get_excel_file_result()
+    {
+        // if ($this->input->post()) {
+        // $filename = base_url() . 'uploads/documents/' . $_POST['filename'];
+        // $_FILES["select_excel"] = base_url().'uploads/documents/'.$_POST['filename'];
+        // $filename = $_POST['filename'];
+        // echo "awais";
+        // echo $filename;
+        // 
+        // if ($_FILES["select_excel"]["name"] != '') {
+        // 
+        // if ($filename != '') {
+        //     $allowed_extension = array('xls', 'xlsx');
+        //     // $file_array = explode(".", $_FILES['select_excel']['name']);
+        //     $file_array = $filename;
+        //     // $file_extension = end($file_array);
+
+        //     // if (in_array($file_extension, $allowed_extension)) {
+        //     if (in_array('xlsx', $allowed_extension)) {
+        //         $reader = IOFactory::createReader('Xlsx');
+        //         // $spreadsheet = $reader->load($_FILES['select_excel']['tmp_name']);
+        //         $spreadsheet = $reader->load($filename);
+        //         $writer = IOFactory::createWriter($spreadsheet, 'Html');
+        //         $message = $writer->save('php://output');
+
+        //     } else {
+        //         $message = '<div class="alert alert-danger">Only .xls or .xlsx file allowed</div>';
+        //     }
+        // } else {
+        //     $message = '<div class="alert alert-danger">Please Select File</div>';
+        // }
+
+        // echo $message;
+        // }
+
+
+        // (A) PHPSPREADSHEET TO LOAD EXCEL FILE
+        require "vendor/autoload.php";
+        $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
+        $spreadsheet = $reader->load("uploads/documents/FuelRate.xlsx");
+        $writer = IOFactory::createWriter($spreadsheet, 'Html');
+        $message = $writer->save('php://output');
+        echo $message;
+        // (B) COUNT NUMBER OF WORKSHEETS
+        // $allsheets = $spreadsheet->getSheetCount();
+
+        // (C) LOOP THROUGH ALL WORKSHEETS
+        // for ($i = 0; $i < $allsheets; $i++) {
+        //     // (C1) GET WORKSHEET
+        //     $worksheet = $spreadsheet->getSheet($i);
+
+        //     // (C2) LOOP THROUGH ROWS OF CURRENT WORKSHEET
+        //     foreach ($worksheet->getRowIterator() as $row) {
+        //         // (C3) READ CELLS
+        //         $cellIterator = $row->getCellIterator();
+        //         $cellIterator->setIterateOnlyExistingCells(false);
+        //         foreach ($cellIterator as $cell) {
+        //             echo $cell->getValue() . "<br>";
+        //         }
+        //     }
+        // }
     }
 }
