@@ -3,7 +3,8 @@
 include 'vendor/autoload.php';
 // require_once('vendor/autoload.php');
 // use PhpOffice\PhpSpreadsheet;
-use PhpOffice\PhpSpreadsheet\IOFactory;
+// use PhpOffice\PhpSpreadsheet\IOFactory;
+// use PhpOffice\PhpWord\IOFactory;
 // use PhpOffice\PhpSpreadsheet\Spreadsheet;
 // use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
 use Dompdf\Dompdf;
@@ -5854,64 +5855,24 @@ class D_O extends CI_Controller
 
     public function get_excel_file_result()
     {
-        // if ($this->input->post()) {
-        // $filename = base_url() . 'uploads/documents/' . $_POST['filename'];
-        // $_FILES["select_excel"] = base_url().'uploads/documents/'.$_POST['filename'];
+        
         $filename = $_POST['filename'];
-        // echo "awais";
-        // echo $filename;
-        // 
-        // if ($_FILES["select_excel"]["name"] != '') {
-        // 
-        // if ($filename != '') {
-        //     $allowed_extension = array('xls', 'xlsx');
-        //     // $file_array = explode(".", $_FILES['select_excel']['name']);
-        //     $file_array = $filename;
-        //     // $file_extension = end($file_array);
-
-        //     // if (in_array($file_extension, $allowed_extension)) {
-        //     if (in_array('xlsx', $allowed_extension)) {
-        //         $reader = IOFactory::createReader('Xlsx');
-        //         // $spreadsheet = $reader->load($_FILES['select_excel']['tmp_name']);
-        //         $spreadsheet = $reader->load($filename);
-        //         $writer = IOFactory::createWriter($spreadsheet, 'Html');
-        //         $message = $writer->save('php://output');
-
-        //     } else {
-        //         $message = '<div class="alert alert-danger">Only .xls or .xlsx file allowed</div>';
-        //     }
-        // } else {
-        //     $message = '<div class="alert alert-danger">Please Select File</div>';
-        // }
-
-        // echo $message;
-        // }
-
-
-        // (A) PHPSPREADSHEET TO LOAD EXCEL FILE
         require "vendor/autoload.php";
-        $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
-        $spreadsheet = $reader->load("uploads/documents/".$filename);
-        $writer = IOFactory::createWriter($spreadsheet, 'Html');
-        $message = $writer->save('php://output');
-        echo $message;
-        // (B) COUNT NUMBER OF WORKSHEETS
-        // $allsheets = $spreadsheet->getSheetCount();
+        $ext = pathinfo($filename, PATHINFO_EXTENSION);
 
-        // (C) LOOP THROUGH ALL WORKSHEETS
-        // for ($i = 0; $i < $allsheets; $i++) {
-        //     // (C1) GET WORKSHEET
-        //     $worksheet = $spreadsheet->getSheet($i);
 
-        //     // (C2) LOOP THROUGH ROWS OF CURRENT WORKSHEET
-        //     foreach ($worksheet->getRowIterator() as $row) {
-        //         // (C3) READ CELLS
-        //         $cellIterator = $row->getCellIterator();
-        //         $cellIterator->setIterateOnlyExistingCells(false);
-        //         foreach ($cellIterator as $cell) {
-        //             echo $cell->getValue() . "<br>";
-        //         }
-        //     }
-        // }
+        if ($ext == 'xlsx' || $ext == 'xls') {
+            $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
+            $spreadsheet = $reader->load("uploads/documents/" . $filename);
+            $writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Html');
+            $message = $writer->save('php://output');
+            echo $message;
+        } else if ($ext == 'doc' || $ext == 'docx') {
+            $reader_word = new \PhpOffice\PhpWord\Reader\Word2007();
+            $worddoc = $reader_word->load("uploads/documents/" . $filename);
+            $writer = \PhpOffice\PhpWord\IOFactory::createWriter($worddoc, 'HTML');
+            $message = $writer->save('php://output');
+            echo $message;
+        }
     }
 }

@@ -54,7 +54,6 @@
 
     </div>
 
-
     <div class="card-body bg-custom3">
         <!-- Nested Row within Card Body -->
         <div class="row">
@@ -161,6 +160,7 @@
                                 </div>
                                 <div class="col-sm-8">
                                     <a id="uploaded_filename">
+                                        <input type="text" style="display:none" id="set_file_name">
                                 </div>
                             </div>
 
@@ -426,8 +426,12 @@
                         if (result != undefined) {
                             var len = result.length;
                             if (len > 0) {
+
                                 for (i = 0; i < len; i++) {
-                                    $('#uploaded_filename').append(`<h6><a href="<?= base_url(); ?>uploads/documents/${result[i]['file_name']}"><strong>${result[i]['file_name']}</strong></h6>`);
+                                    $('#uploaded_filename').append(`<h6><a href="<?= base_url(); ?>uploads/documents/${result[i]['file_name']}" target="_blank"><strong>${result[i]['file_name']}</strong></h6>`);
+                                    // $('#uploaded_filename').append(`<h6><a href="#"><strong>${result[i]['file_name']}</strong></h6>`);
+                                    $('#set_file_name').val(result[i]['file_name']);
+                                    // <iframe src="https://docs.google.com/viewer?url=uploads/documents/Test-html.docx&embedded=true" frameborder='0'></iframe>
                                 }
                             } else {
                                 $('#uploaded_filename').html(`<h6>No Files Uploaded</h6>`);
@@ -483,12 +487,13 @@
     });
 
     $('#uploaded_filename').on('click', function() {
-        // alert($('#uploaded_filename').val());
+        // alert($('#set_file_name').val());
+        var file_name = $('#set_file_name').val();
         $.ajax({
             url: '<?= base_url(); ?>D_O/get_excel_file_result',
             method: 'POST',
             data: {
-                'filename': "FuelRate.xlsx"
+                'filename': file_name
             },
             // contentType: false,
             // cache: false,
