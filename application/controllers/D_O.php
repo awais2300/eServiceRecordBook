@@ -1819,6 +1819,7 @@ class D_O extends CI_Controller
             $data['pn_data'] = $this->db->where('divison_name', $this->session->userdata('division'))->get('pn_form1s')->result_array();
             $data['divisions'] = $this->db->where('division_name', $this->session->userdata('division'))->get('divisions')->result_array();
             $data['branches'] = $this->db->get('branch_preference_list')->result_array();
+            $data['courses'] = $this->db->get('courses')->result_array();
             $this->load->view('do/personal_data', $data);
         }
     }

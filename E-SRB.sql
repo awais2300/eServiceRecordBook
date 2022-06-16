@@ -1796,6 +1796,37 @@ CREATE TABLE `divisions` (
   `status` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE `courses` (
+  `id` int(20) NOT NULL,
+  `course_name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `courses` (`id`, `course_name`) VALUES
+(1, 'DAE WEM (OC)'),
+(2, 'DAE WEM (OC)'), 
+(3, 'DAE WEM (OC)'), 
+(4, 'DAE WEM (OC)'), 
+(5, 'DAE WEM (OC)'),
+(6, 'DAE WEM (OC)'),
+(7, 'DAE WEM (FC)'),
+(8, 'DAE WEM (FC)'),
+(9, 'DAE WEM (FC)'), 
+(10, 'DAE WEM (FC)'), 
+(11, 'DAE WEM (FC)'), 
+(12, 'DAE WEM (FC)'), 
+(13, 'DAE WEM (CEW)'), 
+(14, 'DAE WEM (CEW)'), 
+(15, 'DAE WEM (CEW)'),
+(16, 'DAE WEM (CEW)'), 
+(17, 'DAE WEM (CEW)'), 
+(18, 'DAE WEM (CEW)'), 
+(19, 'DAE WEM (S)'), 
+(20, 'DAE WEM (S)'),
+(21, 'DAE WEM (S)'), 
+(22, 'DAE WEM (S)'), 
+(23, 'DAE WEM (S)'), 
+(24, 'DAE WEM (S)');
+
 --
 -- Dumping data for table `divisions`
 --
@@ -2868,7 +2899,7 @@ INSERT INTO `branch_preference_list`( `branch_name`) VALUES ('ME');
 alter table pn_form1s
 add COLUMN branch_id int(11) null;
 
-alter table pn_form1s
+alter table personal_datas
 add COLUMN other varchar(255) null;
 
 ALTER TABLE physical_milestone CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

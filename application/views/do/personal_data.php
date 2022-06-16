@@ -143,7 +143,12 @@
                                             <input type="text" class="form-control form-control-user" name="pno" id="pno" placeholder="PJO.NO.">
                                         </div>
                                         <div class="col-sm-6 mb-1">
-                                            <input type="text" class="form-control form-control-user" name="class" id="class" placeholder="COURSE">
+                                        <select class="form-control rounded-pill" name="class" id="class" data-placeholder="Select Branch" style="font-size: 0.8rem; height:50px;">
+                                                <option class="form-control form-control-user" value="">Select Course</option>
+                                                <?php foreach ($courses as $data) { ?>
+                                                <option class="form-control form-control-user" value="<?= $data['id']; ?>"><?= $data['course_name']; ?></option>
+                                                <?php } ?>
+                                            </select>
                                         </div>
                                     </div>
 
