@@ -49,7 +49,7 @@
     <!-- Page Heading -->
     <div class="card-body" style="padding:10px">
         <img src='<?= base_url() ?>assets/img/navy_logo-new.png' style="height: 130px; width:100px;">
-        <div class="card-body" style="margin-bottom:20px;float:right; padding:30px; margin-right:300px">
+        <div class="card-body" style="margin-bottom:20px;float:right; padding:30px; margin-right:450px">
             <h1 style="text-align:center"><strong>PERSONAL INFORMATION</strong></h1>
         </div>
     </div>
@@ -89,7 +89,7 @@
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-6 mb-1"> 
+                                        <div class="col-sm-6 mb-1">
                                             <input type="text" class="form-control form-control-user" name="name" id="name" placeholder="NAME">
                                         </div>
                                         <div class="col-sm-6 mb-1">
@@ -106,11 +106,23 @@
                                         <div class="col-sm-6">
                                             <h6>&nbsp;UPLOAD PICTURE:</h6>
                                         </div>
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;CNIC:</h6>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;UPLOAD CNIC (SCANNED COPY):</h6>
+                                        </div>
                                     </div>
 
                                     <div class="form-group row custom-file-upload">
-                                        <div class="col-sm-12 mb-1">
+                                        <div class="col-sm-6 mb-1">
                                             <input type="file" id="upload_pic" style="height: 50px; padding:10px !important;" multiple="multiple" class="form-control form-control-user" placeholder="UPLOAD DOCUMNENT" name="report[]" x-model="fileName">
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" class="form-control form-control-user" data-inputmask="'mask': '99999-9999999-9'" placeholder="XXXXX-XXXXXXX-X" name="cnic" required="">
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="file" id="cnic_scan" style="height: 50px; padding:10px !important;" class="form-control form-control-user" placeholder="SCAN CNIC" name="cnic_scan" x-model="fileName">
                                         </div>
                                     </div>
 
@@ -222,7 +234,6 @@
                                                 <option class="form-control form-control-user" value="Term-IV">Term-IV</option>
                                                 <option class="form-control form-control-user" value="Term-V">Term-V</option>
                                                 <option class="form-control form-control-user" value="Term-VI">Term-VI</option>
-
                                             </select>
                                         </div>
                                     </div>
@@ -363,7 +374,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group row" style="border:solid 1px lightgrey; padding:5px; border-radius:5px;" >
+                                    <div class="form-group row" style="border:solid 1px lightgrey; padding:5px; border-radius:5px;">
                                         <div class="col-sm-2 mb-1">
                                             <input type="text" style="border-radius:10px" class="form-control form-control-user" name="relative_pno" id="relative_pno" placeholder="S NO"></input>
                                         </div>
@@ -437,34 +448,55 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-12">
                                             <h6>&nbsp;SERVICE IDENTITY CARD NO:</h6>
                                         </div>
 
-                                        <div class="col-sm-6">
+                                        <!-- <div class="col-sm-6">
                                             <h6>&nbsp;CNIC:</h6>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-6 mb-1">
+                                        <div class="col-sm-12 mb-1">
                                             <input type="text" class="form-control form-control-user" name="service_no" id="service_no" placeholder="SERVICE NO">
                                         </div>
-                                        <div class="col-sm-6 mb-1">
+                                        <!-- <div class="col-sm-6 mb-1"> -->
                                             <!-- <input type="text" class="form-control form-control-user" name="cnic" id="cnic" placeholder="CNIC"> -->
-                                            <input type="text"  class="form-control form-control-user" data-inputmask="'mask': '99999-9999999-9'"  placeholder="XXXXX-XXXXXXX-X"  name="cnic" required="" >
-
-                                        </div>
+                                            <!-- <input type="text" class="form-control form-control-user" data-inputmask="'mask': '99999-9999999-9'" placeholder="XXXXX-XXXXXXX-X" name="cnic" required=""> -->
+                                        <!-- </div> -->
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-6">
                                             <h6>&nbsp;BLOOD GROUP:</h6>
                                         </div>
+                                        <div class="col-sm-6">
+                                            <h6>&nbsp;MEMBERSHIP (IF ANY):</h6>
+                                        </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-1">
-                                            <input type="text" class="form-control form-control-user" name="blood" id="blood" placeholder="BLOOD GROUP">
+                                            <!-- <input type="text" class="form-control form-control-user" name="blood" id="blood" placeholder="BLOOD GROUP"> -->
+                                            <select class="form-control " name="blood" id="blood" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                                <option class="form-control form-control-user" value="">SELECT BLOOD GROUP</option>
+                                                <option class="form-control form-control-user" value="A+">A+</option>
+                                                <option class="form-control form-control-user" value="A-">A-</option>
+                                                <option class="form-control form-control-user" value="B+">B+</option>
+                                                <option class="form-control form-control-user" value="B-">B-</option>
+                                                <option class="form-control form-control-user" value="O+">O+</option>
+                                                <option class="form-control form-control-user" value="O-">O-</option>
+                                                <option class="form-control form-control-user" value="AB+">AB+</option>
+                                                <option class="form-control form-control-user" value="AB-">AB-</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6 mb-1">
+                                            <!-- <input type="text" class="form-control form-control-user" name="blood" id="blood" placeholder="BLOOD GROUP"> -->
+                                            <select class="form-control " name="membership" id="membership" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                                <option class="form-control form-control-user" value="">SELECT MEMBERSHIP</option>
+                                                <option class="form-control form-control-user" value="Housing">HOUSING SCHEME</option>
+                                                <option class="form-control form-control-user" value="Insurance">INSURANCE</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -570,50 +602,69 @@
                                     <h4>EDUCATIONAL QUALIFICATIONS</h4>
                                     <hr>
                                     <div class="form-group row">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <h6>&nbsp;MATRIC SCHOOL:</h6>
                                         </div>
 
-                                        <div class="col-sm-6">
-                                            <h6>&nbsp;DIVISION/GRADE</h6>
+                                        <div class="col-sm-4">
+                                            <h6>&nbsp;BOARD OF EDUCATION</h6>
                                         </div>
+
+                                        <div class="col-sm-4">
+                                            <h6>&nbsp;MARKS (%)</h6>
+                                        </div>
+
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-6 mb-1">
+                                        <div class="col-sm-4 mb-1">
                                             <input type="text" class="form-control form-control-user" name="matric" id="matric" placeholder="MATRIC SCHOOL">
                                         </div>
-                                        <div class="col-sm-6 mb-1">
-                                            <input type="text" class="form-control form-control-user" name="grade_matric" id="grade_matric" placeholder="MATRIC GRADE">
+                                        <div class="col-sm-4 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="matric_board_of_edu" id="matric_board_of_edu" placeholder="MATRIC BOARD OF EDUCATION">
+                                        </div>
+                                        <div class="col-sm-4 mb-1">
+                                            <input type="number" step="0.01" class="form-control form-control-user" name="grade_matric" id="grade_matric" placeholder="MATRIC GRADE">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-4">
                                             <h6>&nbsp;INTERMEDIATE COLLEGE</h6>
                                         </div>
-
-                                        <div class="col-sm-6">
-                                            <h6>&nbsp;DIVISION/GRADE:</h6>
+                                        <div class="col-sm-4">
+                                            <h6>&nbsp;BOARD OF EDUCATION</h6>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <h6>&nbsp;MARKS (%):</h6>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-6 mb-1">
+                                        <div class="col-sm-4 mb-1">
                                             <input type="text" class="form-control form-control-user" name="college" id="college" placeholder="INTERMEDIATE COLLGE">
                                         </div>
-                                        <div class="col-sm-6 mb-1">
-                                            <input type="text" class="form-control form-control-user" name="grade_intermediate" id="grade_intermediate" placeholder="INTERMEDIATE GRADE">
+                                        <div class="col-sm-4 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="inter_board_of_edu" id="inter_board_of_edu" placeholder="INTER BOARD OF EDUCATION">
+                                        </div>
+                                        <div class="col-sm-4 mb-1">
+                                            <input type="number" step="0.01" class="form-control form-control-user" name="grade_intermediate" id="grade_intermediate" placeholder="INTERMEDIATE GRADE">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-6">
                                             <h6>&nbsp;DIPLOMA (IF ANY):</h6>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <h6>&nbsp;PROFESSIONAL COURSES:</h6>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-12 mb-1">
+                                        <div class="col-sm-6 mb-1">
                                             <input type="text" class="form-control form-control-user" name="diploma" id="diploma" placeholder="DIPLOMA">
+                                        </div>
+                                        <div class="col-sm-6 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="professional_courses" id="professional_courses" placeholder="PROFESSIONAL COURSES">
                                         </div>
                                     </div>
 
@@ -625,7 +676,7 @@
 
                                     <div class="form-group row">
                                         <div class="col-sm-12 mb-1">
-                                            <input type="text" class="form-control form-control-user" name="other" id="other" placeholder=" Any Other">
+                                            <input type="text" class="form-control form-control-user" name="other" id="other" placeholder="ANY OTHER">
                                         </div>
                                     </div>
 

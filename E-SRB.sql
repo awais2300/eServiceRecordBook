@@ -2975,6 +2975,20 @@ ADD COLUMN relative_address varchar(255);
 ALTER TABLE personal_datas
 ADD COLUMN relative_contact varchar(255);
 
+ALTER TABLE personal_datas
+ADD COLUMN matric_board_of_edu varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN inter_board_of_edu varchar(255);
+
+ALTER TABLE personal_datas
+ADD COLUMN membership varchar(255);
+
+ALTER TABLE personal_datas
+ADD COLUMN professional_courses varchar(255);
+
+ALTER TABLE personal_datas
+ADD COLUMN upload_cnic varchar(500);
+
 ALTER TABLE pn_form1s
 ADD COLUMN rank_rate varchar(255);
 

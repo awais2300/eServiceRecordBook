@@ -415,7 +415,7 @@ class D_O extends CI_Controller
             $rank_rate = $postData['rank_rate'];
 
             //Create batch Number
-            $comp_batch_no = $batch_year."-".$batch_no;
+            $comp_batch_no = $batch_year . "-" . $batch_no;
 
             $insert_array_pnform = array(
                 'oc_no' => $oc_no,
@@ -445,6 +445,11 @@ class D_O extends CI_Controller
             } else {
                 $files = $upload1[0];
             }
+
+            $upload_cnic = $this->upload_cnic($_FILES['cnic_scan']);
+            // $files = $upload_cnic;
+            // $files = '';
+
 
             $officer_id = $inserted_officer_id;
             $course = $postData['course'];
@@ -518,6 +523,12 @@ class D_O extends CI_Controller
             $relative_address = $postData['relative_address'];
             $relative_contact = $postData['relative_contact'];
 
+            //BOARD OF EDUCATION
+            $matric_board_of_edu = $postData['matric_board_of_edu'];
+            $inter_board_of_edu = $postData['inter_board_of_edu'];
+            $membership = $postData['membership'];
+            $professional_courses = $postData['professional_courses'];
+
 
             $insert_array = array(
                 'p_id' => $officer_id,
@@ -585,7 +596,12 @@ class D_O extends CI_Controller
                 'relative_relationship' => $relative_relationship,
                 'relative_unit' => $relative_unit,
                 'relative_address' => $relative_address,
-                'karachi_province' => $relative_contact
+                'karachi_province' => $relative_contact,
+                'matric_board_of_edu' => $matric_board_of_edu,
+                'inter_board_of_edu' => $inter_board_of_edu,
+                'membership' => $membership,
+                'professional_courses' => $professional_courses,
+                'upload_cnic' => $upload_cnic
             );
 
             $insert = $this->db->insert('personal_datas', $insert_array);
@@ -3482,6 +3498,30 @@ class D_O extends CI_Controller
         return $count;
     }
 
+    public function upload_cnic($fieldname)
+    {
+        $_FILES['file']['name']     = $_FILES['cnic_scan']['name'];
+        $_FILES['file']['type']     = $_FILES['cnic_scan']['type'];
+        $_FILES['file']['tmp_name'] = $_FILES['cnic_scan']['tmp_name'];
+        $_FILES['file']['error']    = $_FILES['cnic_scan']['error'];
+        $_FILES['file']['size']     = $_FILES['cnic_scan']['size'];
+
+        $config['upload_path'] = 'uploads/documents';
+        $config['allowed_types'] = 'gif|jpg|png|doc|xls|pdf|xlsx|docx|ppt|pptx|jpeg|txt';
+
+        $this->load->library('upload', $config);
+        $this->upload->initialize($config);
+        if (!$this->upload->do_upload('file')) {
+            $data = array('msg' => $this->upload->display_errors());
+        } else {
+            $data = array('msg' => "success");
+            $data = $this->upload->data();
+            $count = $data['file_name'];
+        }
+
+        return $count;
+    }
+
     public function upload_warning($fieldname)
     {
         $count[] = '';
@@ -5939,7 +5979,7 @@ class D_O extends CI_Controller
 
     public function get_excel_file_result()
     {
-        
+
         $filename = $_POST['filename'];
         require "vendor/autoload.php";
         $ext = pathinfo($filename, PATHINFO_EXTENSION);
