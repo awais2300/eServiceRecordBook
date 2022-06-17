@@ -14,19 +14,21 @@
     <!-- Custom fonts for this template-->
     <link href="<?php echo base_url(); ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
+    
     <!-- Custom styles for this template-->
     <link href="<?php echo base_url(); ?>assets/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
+
+
 <style>
     .img-cheif {
         background: url('<?= base_url() ?>assets/img/images.jpg');
-       /* background-position: center; */
+        /* background-position: center; */
         /* background-position: absolute; */
-         background-position: top; 
-         background-size: cover; 
+        background-position: top;
+        background-size: cover;
         background-repeat: no-repeat;
         max-width: 100%;
         max-height: 120%;
@@ -114,7 +116,7 @@
                 <div id="collapse_general" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?php echo base_url(); ?>D_O/auto_biography">DIVISIONAL RECORD</a>
-                       <a class="collapse-item" href="<?php echo base_url(); ?>D_O/psychologist_report">NOK RECORD</a> 
+                        <a class="collapse-item" href="<?php echo base_url(); ?>D_O/psychologist_report">NOK RECORD</a>
                         <a class="collapse-item" href="<?php echo base_url(); ?>D_O/Inspection_record">INSPECTION RECORD</a>
                         <a class="collapse-item" href="<?php echo base_url(); ?>D_O/view_record_div_officer">SDO/DO/ADO RECORD</a>
                         <a class="collapse-item" href="<?php echo base_url(); ?>D_O/add_club">ADD CLUB</a>
@@ -147,7 +149,7 @@
                 <div id="collapse_academic" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?= base_url(); ?>D_O/view_semester_result">RESULTS (Terms I - VI)</a>
-                      <!--  <a class="collapse-item" href="<?= base_url(); ?>D_O/view_training_report">BCT/ELC/NBCD/WHT</a> -->
+                        <!--  <a class="collapse-item" href="<?= base_url(); ?>D_O/view_training_report">BCT/ELC/NBCD/WHT</a> -->
                     </div>
                 </div>
             </li>

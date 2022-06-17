@@ -2902,6 +2902,83 @@ add COLUMN branch_id int(11) null;
 alter table personal_datas
 add COLUMN other varchar(255) null;
 
+ALTER TABLE personal_datas
+ADD COLUMN mobile_no varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN mobile_make varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN mobile_model varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN mobile_imei varchar(255);
+
+ALTER TABLE personal_datas
+ADD COLUMN permanent_house_no varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN permanent_block_no varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN permanent_street_no varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN permanent_tehsil varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN permanent_district varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN permanent_city varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN permanent_police_station varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN permanent_province varchar(255);
+
+ALTER TABLE personal_datas
+ADD COLUMN current_house_no varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN current_block_no varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN current_street_no varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN current_tehsil varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN current_district varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN current_city varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN current_police_station varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN current_province varchar(255);
+
+ALTER TABLE personal_datas
+ADD COLUMN karachi_house_no varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN karachi_block_no varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN karachi_street_no varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN karachi_tehsil varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN karachi_district varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN karachi_city varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN karachi_police_station varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN karachi_province varchar(255);
+
+ALTER TABLE personal_datas
+ADD COLUMN relative_pno varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN relative_rank varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN relative_relationship varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN relative_unit varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN relative_address varchar(255);
+ALTER TABLE personal_datas
+ADD COLUMN relative_contact varchar(255);
+
+ALTER TABLE pn_form1s
+ADD COLUMN rank_rate varchar(255);
+
+
 ALTER TABLE physical_milestone CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 ALTER TABLE term_i_details CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

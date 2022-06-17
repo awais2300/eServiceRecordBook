@@ -406,18 +406,23 @@ class D_O extends CI_Controller
             $p_no = $postData['pno'];
             $name = $postData['name'];
             $class = $postData['class'];
+            $batch_year = $postData['yearPicker'];
             $batch_no = $postData['batch_no'];
             $category = $postData['category'];
             $div_name = $postData['div'];
             $term = $postData['term'];
             $country = $postData['country'];
+            $rank_rate = $postData['rank_rate'];
+
+            //Create batch Number
+            $comp_batch_no = $batch_year."-".$batch_no;
 
             $insert_array_pnform = array(
                 'oc_no' => $oc_no,
                 'p_no' => $p_no,
                 'name' => $name,
                 'class' => $class,
-                'issb_batch' => $batch_no,
+                'issb_batch' => $comp_batch_no,
                 'do_id' => $this->session->userdata('user_id'),
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
@@ -426,6 +431,7 @@ class D_O extends CI_Controller
                 'term' => $term,
                 'phase' => 'Phase 1',
                 'bahadur' => $country,
+                'rank_rate' => $rank_rate,
                 'unit_id' => 1 //By default Cadet is in unit PNS Rahbar (PNA)
             );
 
@@ -450,7 +456,7 @@ class D_O extends CI_Controller
             $father_occupation = $postData['occupation'];
             $next_of_kin = $postData['next_of_kin'];
             $siblings = $postData['siblings'];
-            $near_relatives = $postData['relatives'];
+            // $near_relatives = $postData['relatives'];
             $identification_marks = $postData['mark'];
             $height = $postData['height'];
             $weight = $postData['weight'];
@@ -459,14 +465,58 @@ class D_O extends CI_Controller
             $service_id = $postData['service_no'];
             $nic = $postData['cnic'];
             $blood_group = $postData['blood'];
-            $address = $postData['address'];
-            $karachi_address = $postData['khi_address'];
+            // $address = $postData['address'];
+            // $karachi_address = $postData['khi_address'];
             $matric_school = $postData['matric'];
             $matric_division = $postData['grade_matric'];
             $intermediate_college = $postData['college'];
             $intermediate_division = $postData['grade_intermediate'];
             $diploma = $postData['diploma'];
             $other = $postData['other'];
+
+            //mobile
+            $mobile_no = $postData['mobile_no'];
+            $mobile_make = $postData['mobile_make'];
+            $mobile_model = $postData['mobile_model'];
+            $mobile_imei = $postData['mobile_imei'];
+
+            //Permanent address
+            $permanent_house_no = $postData['permanent_house_no'];
+            $permanent_block_no = $postData['permanent_block_no'];
+            $permanent_street_no = $postData['permanent_street_no'];
+            $permanent_tehsil = $postData['permanent_tehsil'];
+            $permanent_district = $postData['permanent_district'];
+            $permanent_city = $postData['permanent_city'];
+            $permanent_police_station = $postData['permanent_police_station'];
+            $permanent_province = $postData['permanent_province'];
+
+            //Current address
+            $current_house_no = $postData['current_house_no'];
+            $current_block_no = $postData['current_block_no'];
+            $current_street_no = $postData['current_street_no'];
+            $current_tehsil = $postData['current_tehsil'];
+            $current_district = $postData['current_district'];
+            $current_city = $postData['current_city'];
+            $current_police_station = $postData['current_police_station'];
+            $current_province = $postData['current_province'];
+
+            //karachi address
+            $karachi_house_no = $postData['karachi_house_no'];
+            $karachi_block_no = $postData['karachi_block_no'];
+            $karachi_street_no = $postData['karachi_street_no'];
+            $karachi_tehsil = $postData['karachi_tehsil'];
+            $karachi_district = $postData['karachi_district'];
+            $karachi_city = $postData['karachi_city'];
+            $karachi_police_station = $postData['karachi_police_station'];
+            $karachi_province = $postData['karachi_province'];
+
+            //Relative in Army
+            $relative_pno = $postData['relative_pno'];
+            $relative_rank = $postData['relative_rank'];
+            $relative_relationship = $postData['relative_relationship'];
+            $relative_unit = $postData['relative_unit'];
+            $relative_address = $postData['relative_address'];
+            $relative_contact = $postData['relative_contact'];
 
 
             $insert_array = array(
@@ -481,7 +531,7 @@ class D_O extends CI_Controller
                 'father_occupation' => $father_occupation,
                 'next_of_kin' => $next_of_kin,
                 'siblings' => $siblings,
-                'near_relatives' => $near_relatives,
+                // 'near_relatives' => $near_relatives,
                 'identification_marks' => $identification_marks,
                 'height' => $height,
                 'weight' => $weight,
@@ -490,8 +540,8 @@ class D_O extends CI_Controller
                 'service_id' => $service_id,
                 'nic' => $nic,
                 'blood_group' => $blood_group,
-                'address' => $address,
-                'karachi_address' => $karachi_address,
+                // 'address' => $address,
+                // 'karachi_address' => $karachi_address,
                 'matric_school' => $matric_school,
                 'matric_division' => $matric_division,
                 'intermediate_college' => $intermediate_college,
@@ -501,7 +551,41 @@ class D_O extends CI_Controller
                 'do_id' => $this->session->userdata('user_id'),
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
-                'upload_file' => $files
+                'upload_file' => $files,
+                'mobile_no' => $mobile_no,
+                'mobile_make' => $mobile_make,
+                'mobile_model' => $mobile_model,
+                'mobile_imei' => $mobile_imei,
+                'permanent_house_no' => $permanent_house_no,
+                'permanent_block_no' => $permanent_block_no,
+                'permanent_street_no' => $permanent_street_no,
+                'permanent_tehsil' => $permanent_tehsil,
+                'permanent_district' => $permanent_district,
+                'permanent_city' => $permanent_city,
+                'permanent_police_station' => $permanent_police_station,
+                'permanent_province' => $permanent_province,
+                'current_house_no' => $current_house_no,
+                'current_block_no' => $current_block_no,
+                'current_street_no' => $current_street_no,
+                'current_tehsil' => $current_tehsil,
+                'current_district' => $current_district,
+                'current_city' => $current_city,
+                'current_police_station' => $current_police_station,
+                'current_province' => $current_province,
+                'karachi_house_no' => $karachi_house_no,
+                'karachi_block_no' => $karachi_block_no,
+                'karachi_street_no' => $karachi_street_no,
+                'karachi_tehsil' => $karachi_tehsil,
+                'karachi_district' => $karachi_district,
+                'karachi_city' => $karachi_city,
+                'karachi_police_station' => $karachi_police_station,
+                'karachi_province' => $karachi_province,
+                'relative_pno' => $relative_pno,
+                'relative_rank' => $relative_rank,
+                'relative_relationship' => $relative_relationship,
+                'relative_unit' => $relative_unit,
+                'relative_address' => $relative_address,
+                'karachi_province' => $relative_contact
             );
 
             $insert = $this->db->insert('personal_datas', $insert_array);

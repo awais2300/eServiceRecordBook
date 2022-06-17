@@ -71,7 +71,9 @@
                     </div>
                 </div>
             </div>
-
+            <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+            
+            <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
 
             <!-- canvasjs links-->
             <script src="<?php echo base_url(); ?>assets/js/canvasjs.min.js"></script>
@@ -79,8 +81,14 @@
             <script src="<?php echo base_url(); ?>assets/js/jquery.canvasjs.min.js"></script>
             <script src="<?php echo base_url(); ?>assets/js/canvasjs.min.js"></script>
 
+          
+
             <!-- Bootstrap core JavaScript-->
             <script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
+            <script src="<?php echo base_url();?>assets/js/jquery-ui-1.13.1/jquery-ui.js"></script> <!-- Added by Awais 17 June -->
+            <link rel="stylesheet" href="<?php echo base_url();?>assets/js/jquery-ui-1.13.1/jquery-ui.css" /> <!-- Added by Awais 17 June -->
+            <!-- <link rel="stylesheet" href="<?php echo base_url();?>assets/js/jquery.inputmask.bundle.js" /> Added by Awais 17 June -->
+            <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script> <!-- Added by Awais 17 June -->
             <!-- JS link for calender -->
             <!-- <script src="<?php echo base_url(); ?>assets/fullcalendar/lib/jquery.min.js"></script> -->
             <script src="<?php echo base_url(); ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -97,6 +105,7 @@
             <!-- Page level custom scripts -->
             <script src="<?php echo base_url(); ?>assets/js/demo/chart-area-demo.js"></script>
             <script src="<?php echo base_url(); ?>assets/js/demo/chart-pie-demo.js"></script>
+
 
             <!-- Links for Canlender -->
             <!-- <link rel="stylesheet" href="<?php echo base_url(); ?>assets/fullcalendar/fullcalendar.min.css" /> -->

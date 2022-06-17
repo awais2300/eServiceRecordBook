@@ -28,7 +28,11 @@
         border: 1px solid red !important;
     }
 
-    .modal {
+    /* .ui-datepicker-calendar {
+        display: none;
+    } */
+
+    ​ .modal {
         display: none;
         position: fixed;
         padding-top: 100px;
@@ -79,17 +83,22 @@
                                         <div class="col-sm-6">
                                             <h6>&nbsp;UT's NAME:</h6>
                                         </div>
+                                        <div class="col-sm-6">
+                                            <h6>&nbsp;RANK/RATE:</h6>
+                                        </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-12 mb-1">
-                                            <!-- <select class="form-control rounded-pill" name="officer_name" id="officer_name" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
-                                                <option class="form-control form-control-user" value="">Select Officer Name</option>
-                                                <?php foreach ($pn_data as $data) { ?>
-                                                <option class="form-control form-control-user" value="<?= $data['p_id']; ?>"><?= $data['name']; ?></option>
-                                                <?php } ?>
-                                            </select> -->
+                                        <div class="col-sm-6 mb-1"> 
                                             <input type="text" class="form-control form-control-user" name="name" id="name" placeholder="NAME">
+                                        </div>
+                                        <div class="col-sm-6 mb-1">
+                                            <select class="form-control " name="rank_rate" id="rank_rate" data-placeholder="Select Rank" style="font-size: 0.8rem; height:50px;">
+                                                <option class="form-control form-control-user" value="">Select Rank</option>
+                                                <option class="form-control form-control-user" value="sublietenant">Sub-Lieutenant</option>
+                                                <option class="form-control form-control-user" value="midshipman">Midshipman</option>
+                                                <option class="form-control form-control-user" value="ut">UT Officer</option>
+                                            </select>
                                         </div>
                                     </div>
 
@@ -120,10 +129,10 @@
                                             <input type="text" class="form-control form-control-user" name="oc_no" id="oc_no" placeholder="O NO.">
                                         </div>
                                         <div class="col-sm-6 mb-1">
-                                        <select class="form-control rounded-pill" name="course" id="course" data-placeholder="Select Branch" style="font-size: 0.8rem; height:50px;">
+                                            <select class="form-control" name="course" id="course" data-placeholder="Select Branch" style="font-size: 0.8rem; height:50px;">
                                                 <option class="form-control form-control-user" value="">Select Branch</option>
                                                 <?php foreach ($branches as $data) { ?>
-                                                <option class="form-control form-control-user" value="<?= $data['id']; ?>"><?= $data['branch_name']; ?></option>
+                                                    <option class="form-control form-control-user" value="<?= $data['id']; ?>"><?= $data['branch_name']; ?></option>
                                                 <?php } ?>
                                             </select>
                                         </div>
@@ -143,10 +152,10 @@
                                             <input type="text" class="form-control form-control-user" name="pno" id="pno" placeholder="PJO.NO.">
                                         </div>
                                         <div class="col-sm-6 mb-1">
-                                        <select class="form-control rounded-pill" name="class" id="class" data-placeholder="Select Branch" style="font-size: 0.8rem; height:50px;">
+                                            <select class="form-control" name="class" id="class" data-placeholder="Select Branch" style="font-size: 0.8rem; height:50px;">
                                                 <option class="form-control form-control-user" value="">Select Course</option>
                                                 <?php foreach ($courses as $data) { ?>
-                                                <option class="form-control form-control-user" value="<?= $data['id']; ?>"><?= $data['course_name']; ?></option>
+                                                    <option class="form-control form-control-user" value="<?= $data['id']; ?>"><?= $data['course_name']; ?></option>
                                                 <?php } ?>
                                             </select>
                                         </div>
@@ -162,18 +171,27 @@
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-6 mb-1">
-                                            <input type="text" class="form-control form-control-user" name="batch_no" id="batch_no" placeholder="BATCH NO">
+                                        <div class="row col-sm-3 mx-1">
+                                            <div class="col-sm-6 my-3">
+                                                <h6>BATCH YEAR:</h6>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control form-control-user" name="yearPicker" id="yearPicker" placeholder="BATCH YEAR">
+                                            </div>
+                                        </div>
+                                        <div class=" row col-sm-3">
+                                            <input type="text" class="form-control form-control-user" name="batch_no" id="batch_no" onkeydown="return /[a-z]/i.test(event.key)" placeholder="BATCH NO">
                                         </div>
 
-                                        <div class="col-sm-6 mb-1">
-                                            <select class="form-control rounded-pill" name="category" id="category" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                        <div class="col-sm-6 mb-1 mx-2">
+                                            <select class="form-control" name="category" id="category" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                                 <option class="form-control form-control-user" value="">SELECT CATEGORY</option>
                                                 <option class="form-control form-control-user" value="PN-Cadet">DAE</option>
                                                 <option class="form-control form-control-user" value="SSC Cadet">DAE DIRECT</option>
                                                 <option class="form-control form-control-user" value="Allied Cadet">PROFESSIONAL COUSRSE</option>
                                             </select>
                                         </div>
+
 
                                     </div>
 
@@ -189,14 +207,14 @@
 
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-1">
-                                            <select class="form-control rounded-pill" name="div" id="div" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;" readonly>
+                                            <select class="form-control " name="div" id="div" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;" readonly>
                                                 <?php foreach ($divisions as $data) { ?>
                                                     <option class="form-control form-control-user" value="<?= $data['division_name'] ?>"><?= $data['division_name'] ?></option>
                                                 <?php } ?>
                                             </select>
                                         </div>
                                         <div class="col-sm-6 mb-1">
-                                            <select class="form-control rounded-pill" name="term" id="term" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                            <select class="form-control " name="term" id="term" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                                 <option class="form-control form-control-user" value="">Select Term</option>
                                                 <option class="form-control form-control-user" value="Term-I">Term-I</option>
                                                 <option class="form-control form-control-user" value="Term-II">Term-II</option>
@@ -242,20 +260,48 @@
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-6">
-                                            <h6>&nbsp;TELEPHONE:</h6>
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;LANDLINE NO:</h6>
                                         </div>
-
-                                        <div class="col-sm-6">
-                                            <h6>&nbsp;EX ARMY/NAVY/PAF:</h6>
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;MOBILE NO:</h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6>&nbsp;MOBILE MAKE:</h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6>&nbsp;MOBILE MODEL:</h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6>&nbsp;MOBILE IMEI:</h6>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-6 mb-1">
+                                        <div class="col-sm-3 mb-1">
                                             <input type="text" class="form-control form-control-user" name="telephone" id="telephone" placeholder="TELEPHONE">
                                         </div>
-                                        <div class="col-sm-6 mb-1">
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="mobile_no" id="mobile_no" placeholder="MOBILE">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="mobile_make" id="mobile_make" placeholder="MAKE">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="mobile_model" id="mobile_model" placeholder="MODEL">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="mobile_imei" id="mobile_imei" placeholder="IEMI">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <h6>&nbsp;EX ARMY/NAVY/PAF:</h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12 mb-1">
                                             <input type="text" class="form-control form-control-user" name="army" id="army" placeholder="EX-FORCES">
                                         </div>
                                     </div>
@@ -288,7 +334,7 @@
                                             <input type="text" class="form-control form-control-user" name="next_of_kin" id="next_of_kin" placeholder="NEXT OF KIN & ADDRESS">
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group row">
                                         <div class="col-sm-12">
                                             <h6>&nbsp;DETAILS OF FAMILY:</h6>
@@ -317,9 +363,24 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group row">
-                                        <div class="col-sm-12 mb-1">
-                                            <textarea type="text" style="border-radius:10px" class="form-control form-control-user" name="relatives" id="relatives" placeholder="ENTER NAME"></textarea>
+                                    <div class="form-group row" style="border:solid 1px lightgrey; padding:5px; border-radius:5px;" >
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="relative_pno" id="relative_pno" placeholder="S NO"></input>
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="relative_rank" id="relative_rank" placeholder="RANK"></input>
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="relative_relationship" id="relative_relationship" placeholder="RELATION"></input>
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="relative_unit" id="relative_unit" placeholder="UNIT"></input>
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="relative_address" id="relative_address" placeholder="ADDRESS"></input>
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="relative_contact" id="relative_contact" placeholder="CONTACT"></input>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -390,7 +451,9 @@
                                             <input type="text" class="form-control form-control-user" name="service_no" id="service_no" placeholder="SERVICE NO">
                                         </div>
                                         <div class="col-sm-6 mb-1">
-                                            <input type="text" class="form-control form-control-user" name="cnic" id="cnic" placeholder="CNIC">
+                                            <!-- <input type="text" class="form-control form-control-user" name="cnic" id="cnic" placeholder="CNIC"> -->
+                                            <input type="text"  class="form-control form-control-user" data-inputmask="'mask': '99999-9999999-9'"  placeholder="XXXXX-XXXXXXX-X"  name="cnic" required="" >
+
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -410,9 +473,30 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group row">
-                                        <div class="col-sm-12 mb-1">
-                                            <textarea type="text" style="border-radius:10px" class="form-control form-control-user" name="address" id="address" placeholder="HOUSE NO/BLOCK NO/STREET/TEHSIL/DISTRICT/CITY"></textarea>
+                                    <div class="form-group row" style="border:solid lightgrey 1px;border-radius:5px; padding:3px">
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="permanent_house_no" id="permanent_house_no" placeholder="HOUSE NO"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="permanent_block_no" id="permanent_block_no" placeholder="BLOCK NO"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="permanent_street_no" id="permanent_street_no" placeholder="STREET NO"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="permanent_tehsil" id="permanent_tehsil" placeholder="TEHSIL"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="permanent_district" id="permanent_district" placeholder="DISTRICT"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="permanent_city" id="permanent_city" placeholder="CITY"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="permanent_police_station" id="permanent_police_station" placeholder="POLICE STATION"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="permanent_province" id="permanent_province" placeholder="PROVINCE"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -421,9 +505,30 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group row">
-                                        <div class="col-sm-12 mb-1">
-                                            <textarea type="text" style="border-radius:10px" class="form-control form-control-user" name="address" id="address" placeholder="HOUSE NO/BLOCK NO/STREET/TEHSIL/DISTRICT/CITY"></textarea>
+                                    <div class="form-group row" style="border:solid lightgrey 1px;border-radius:5px; padding:3px">
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="current_house_no" id="current_house_no" placeholder="HOUSE NO"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="current_block_no" id="current_block_no" placeholder="BLOCK NO"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="current_street_no" id="current_street_no" placeholder="STREET NO"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="current_tehsil" id="current_tehsil" placeholder="TEHSIL"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="current_district" id="current_district" placeholder="DISTRICT"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="current_city" id="current_city" placeholder="CITY"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="current_police_station" id="current_police_station" placeholder="POLICE STATION"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="current_province" id="current_province" placeholder="PROVINCE"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -432,9 +537,30 @@
                                         </div>
                                     </div>
 
-                                    <div class="form-group row">
-                                        <div class="col-sm-12 mb-1">
-                                            <textarea type="text" style="border-radius:10px" class="form-control form-control-user" name="khi_address" id="khi_address" placeholder="KARACHI ADDRESS WITH TELEPHONE NO"></textarea>
+                                    <div class="form-group row" style="border:solid lightgrey 1px;border-radius:5px; padding:3px">
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="karachi_house_no" id="karachi_house_no" placeholder="HOUSE NO"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="karachi_block_no" id="karachi_block_no" placeholder="BLOCK NO"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="karachi_street_no" id="karachi_street_no" placeholder="STREET NO"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="karachi_tehsil" id="karachi_tehsil" placeholder="TEHSIL"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="karachi_district" id="karachi_district" placeholder="DISTRICT"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="karachi_city" id="karachi_city" placeholder="CITY"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="karachi_police_station" id="karachi_police_station" placeholder="POLICE STATION"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="karachi_province" id="karachi_province" placeholder="PROVINCE"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -490,7 +616,7 @@
                                             <input type="text" class="form-control form-control-user" name="diploma" id="diploma" placeholder="DIPLOMA">
                                         </div>
                                     </div>
-                                    
+
                                     <div class="form-group row">
                                         <div class="col-sm-12">
                                             <h6>&nbsp;OTHERS:</h6>
@@ -532,7 +658,7 @@
 </div>
 
 <?php $this->load->view('common/footer'); ?>
-<script>
+<script type="text/javascript">
     function seen(data) {
         // alert('in');
         // alert(data);
@@ -660,4 +786,15 @@
             $('#show_error_new').show();
         }
     });
+
+    $(document).ready(function() {
+        $("#yearPicker").datepicker({
+            dateFormat: 'yy'
+        });
+    });
+    $(".yearPicker").focus(function() {
+        $(".ui-datepicker-month").hide();
+    });
+
+    $(":input").inputmask();
 </script>
