@@ -3017,6 +3017,42 @@ ADD COLUMN  Prade_training_date datetime;
 ALTER TABLE physical_milestone
 ADD COLUMN  weapon_handling_date datetime;
 
+ALTER TABLE term_i_details
+ADD COLUMN bmi int, 
+ADD COLUMN height int,
+ADD COLUMN weight int, 
+ADD COLUMN waist_hip_ratio int;
+
+ALTER TABLE term_ii_details
+ADD COLUMN bmi int, 
+ADD COLUMN height int,
+ADD COLUMN weight int, 
+ADD COLUMN waist_hip_ratio int;
+
+ALTER TABLE term_iii_details
+ADD COLUMN bmi int, 
+ADD COLUMN height int,
+ADD COLUMN weight int, 
+ADD COLUMN waist_hip_ratio int;
+
+ALTER TABLE term_iv_details
+ADD COLUMN bmi int, 
+ADD COLUMN height int,
+ADD COLUMN weight int, 
+ADD COLUMN waist_hip_ratio int;
+
+ALTER TABLE term_v_details
+ADD COLUMN bmi int, 
+ADD COLUMN height int,
+ADD COLUMN weight int, 
+ADD COLUMN waist_hip_ratio int;
+
+ALTER TABLE term_vi_details
+ADD COLUMN bmi int, 
+ADD COLUMN height int,
+ADD COLUMN weight int, 
+ADD COLUMN waist_hip_ratio int;
+
 ALTER TABLE physical_milestone CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 ALTER TABLE term_i_details CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

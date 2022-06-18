@@ -108,6 +108,35 @@
 
                                         </div>
                                         <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h5 id="">BMI</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">HEIGHT</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">WEIGHT</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">WAIST TO HIP RATIO</h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="bmi_i" id="bmi_i" placeholder="BMI">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="height_i" id="height_i" placeholder="HEIGHT">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="weight_i" id="weight_i" placeholder="WEIGHT">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="waist_hip_ratio_i" id="waist_hip_ratio_i" placeholder="WAIST TO HIP RATIO">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
                                             <button type="button" class="btn btn-primary btn-user   col-md-5" id="add_btn_termI" style="margin-left: 300px;">Save</button>
                                         </div>
                                         <div class="card-body">
@@ -194,6 +223,34 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h5 id="">BMI</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">HEIGHT</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">WEIGHT</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">WAIST TO HIP RATIO</h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="bmi_ii" id="bmi_ii" placeholder="BMI">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="height_ii" id="height_ii" placeholder="HEIGHT">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="weight_ii" id="weight_ii" placeholder="WEIGHT">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="waist_hip_ratio_ii" id="waist_hip_ratio_ii" placeholder="WAIST TO HIP RATIO">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
                                             <button type="button" class="btn btn-primary btn-user   col-md-5" id="add_btn_termII" style="margin-left: 300px;">Save</button>
                                         </div>
                                     </form>
@@ -272,6 +329,34 @@
                                                     <option class="form-control form-control-user" value="Bravo">Bravo</option>
                                                     <option class="form-control form-control-user" value="Charlie">Charlie</option>
                                                 </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h5 id="">BMI</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">HEIGHT</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">WEIGHT</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">WAIST TO HIP RATIO</h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="bmi_iii" id="bmi_iii" placeholder="BMI">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="height_iii" id="height_iii" placeholder="HEIGHT">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="weight_iii" id="weight_iii" placeholder="WEIGHT">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="waist_hip_ratio_iii" id="waist_hip_ratio_iii" placeholder="WAIST TO HIP RATIO">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -356,6 +441,34 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h5 id="">BMI</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">HEIGHT</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">WEIGHT</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">WAIST TO HIP RATIO</h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="bmi_iv" id="bmi_iv" placeholder="BMI">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="height_iv" id="height_iv" placeholder="HEIGHT">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="weight_iv" id="weight_iv" placeholder="WEIGHT">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="waist_hip_ratio_iv" id="waist_hip_ratio_iv" placeholder="WAIST TO HIP RATIO">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
                                             <button type="button" class="btn btn-primary btn-user   col-md-5" id="add_btn_termIV" style="margin-left: 300px;">Save</button>
                                         </div>
                                     </form>
@@ -437,6 +550,34 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h5 id="">BMI</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">HEIGHT</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">WEIGHT</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">WAIST TO HIP RATIO</h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="bmi_v" id="bmi_v" placeholder="BMI">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="height_v" id="height_v" placeholder="HEIGHT">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="weight_v" id="weight_v" placeholder="WEIGHT">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="waist_hip_ratio_v" id="waist_hip_ratio_v" placeholder="WAIST TO HIP RATIO">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
                                             <button type="button" class="btn btn-primary btn-user   col-md-5" id="add_btn_termV" style="margin-left: 300px;">Save</button>
                                         </div>
                                     </form>
@@ -515,6 +656,34 @@
                                                     <option class="form-control form-control-user" value="Bravo">Bravo</option>
                                                     <option class="form-control form-control-user" value="Charlie">Charlie</option>
                                                 </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h5 id="">BMI</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">HEIGHT</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">WEIGHT</h5>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h5 id="">WAIST TO HIP RATIO</h5>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="bmi_vi" id="bmi_vi" placeholder="BMI">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="height_vi" id="height_vi" placeholder="HEIGHT">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="weight_vi" id="weight_vi" placeholder="WEIGHT">
+                                            </div>
+                                            <div class="col-sm-3 mb-1">
+                                                <input type="number" class="form-control form-control-user" name="waist_hip_ratio_vi" id="waist_hip_ratio_vi" placeholder="WAIST TO HIP RATIO">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -906,6 +1075,10 @@
         var Chinups = $('#Chinups_I').val();
         var rope = $('#Rope_I').val();
         var term = $('#term_pet1').val();
+        var bmi = $('#bmi_i').val();
+        var height = $('#height_i').val();
+        var weight = $('#weight_i').val();
+        var waist_hip_ratio = $('#waist_hip_ratio_i').val();
 
         $.ajax({
             url: '<?= base_url(); ?>D_O/add_termI_details',
@@ -918,7 +1091,11 @@
                 'Pushups': Pushups,
                 'Chinups': Chinups,
                 'rope': rope,
-                'term': term
+                'term': term,
+                'bmi' :bmi,
+                'height' : height,
+                'weight' : weight,
+                'waist_hip_ratio' : waist_hip_ratio
             },
             success: function(response) {},
             async: false
@@ -936,6 +1113,10 @@
         var Chinups = $('#Chinups_II').val();
         var rope = $('#Rope_II').val();
         var term = $('#term_pet2').val();
+        var bmi = $('#bmi_ii').val();
+        var height = $('#height_ii').val();
+        var weight = $('#weight_ii').val();
+        var waist_hip_ratio = $('#waist_hip_ratio_ii').val();
 
         $.ajax({
             url: '<?= base_url(); ?>D_O/add_termII_details',
@@ -948,7 +1129,11 @@
                 'Pushups': Pushups,
                 'Chinups': Chinups,
                 'rope': rope,
-                'term': term
+                'term': term,
+                'bmi' :bmi,
+                'height' : height,
+                'weight' : weight,
+                'waist_hip_ratio' : waist_hip_ratio
             },
             success: function(response) {},
             async: false
@@ -968,6 +1153,10 @@
         var Chinups = $('#Chinups_III').val();
         var rope = $('#Rope_III').val();
         var term = $('#term_pet3').val();
+        var bmi = $('#bmi_iii').val();
+        var height = $('#height_iii').val();
+        var weight = $('#weight_iii').val();
+        var waist_hip_ratio = $('#waist_hip_ratio_iii').val();
 
         $.ajax({
             url: '<?= base_url(); ?>D_O/add_termIII_details',
@@ -980,7 +1169,11 @@
                 'Pushups': Pushups,
                 'Chinups': Chinups,
                 'rope': rope,
-                'term': term
+                'term': term,
+                'bmi' :bmi,
+                'height' : height,
+                'weight' : weight,
+                'waist_hip_ratio' : waist_hip_ratio
             },
             success: function(response) {},
             async: false
@@ -1000,6 +1193,10 @@
         var Chinups = $('#Chinups_IV').val();
         var rope = $('#Rope_IV').val();
         var term = $('#term_pet4').val();
+        var bmi = $('#bmi_iv').val();
+        var height = $('#height_iv').val();
+        var weight = $('#weight_iv').val();
+        var waist_hip_ratio = $('#waist_hip_ratio_iv').val();
 
         $.ajax({
             url: '<?= base_url(); ?>D_O/add_termIV_details',
@@ -1012,7 +1209,11 @@
                 'Pushups': Pushups,
                 'Chinups': Chinups,
                 'rope': rope,
-                'term': term
+                'term': term,
+                'bmi' :bmi,
+                'height' : height,
+                'weight' : weight,
+                'waist_hip_ratio' : waist_hip_ratio
             },
             success: function(response) {},
             async: false
@@ -1032,6 +1233,10 @@
         var Chinups = $('#Chinups_V').val();
         var rope = $('#Rope_V').val();
         var term = $('#term_pet5').val();
+        var bmi = $('#bmi_v').val();
+        var height = $('#height_v').val();
+        var weight = $('#weight_v').val();
+        var waist_hip_ratio = $('#waist_hip_ratio_v').val();
 
         $.ajax({
             url: '<?= base_url(); ?>D_O/add_termV_details',
@@ -1044,7 +1249,11 @@
                 'Pushups': Pushups,
                 'Chinups': Chinups,
                 'rope': rope,
-                'term': term
+                'term': term,
+                'bmi' :bmi,
+                'height' : height,
+                'weight' : weight,
+                'waist_hip_ratio' : waist_hip_ratio
             },
             success: function(response) {},
             async: false
@@ -1064,6 +1273,10 @@
         var Chinups = $('#Chinups_VI').val();
         var rope = $('#Rope_VI').val();
         var term = $('#term_pet6').val();
+        var bmi = $('#bmi_vi').val();
+        var height = $('#height_vi').val();
+        var weight = $('#weight_vi').val();
+        var waist_hip_ratio = $('#waist_hip_ratio_vi').val();
 
         $.ajax({
             url: '<?= base_url(); ?>D_O/add_termVI_details',
@@ -1076,7 +1289,11 @@
                 'Pushups': Pushups,
                 'Chinups': Chinups,
                 'rope': rope,
-                'term': term
+                'term': term,
+                'bmi' :bmi,
+                'height' : height,
+                'weight' : weight,
+                'waist_hip_ratio' : waist_hip_ratio
             },
             success: function(response) {},
             async: false
@@ -1176,26 +1393,17 @@
                         $('#prade_attempt').val(result['prade_training_attempt']);
                         $('#weapon_handling').val(result['weapon_handling']);
                         $('#weapon_handling_attempt').val(result['weapon_handling_attempt']);
-
-                        const d = new Date(result['last_firing_date'].match(/\d+/)[0] * 1);
-                        const last_firing_date = d.getFullYear() + '-' + ("0" + (d.getMonth() + 1)).slice(-2) + '-' + ("0" + d.getDate()).slice(-2)
-                        const d2 = new Date(result['PST_date'].match(/\d+/)[0] * 1);
-                        const PST_date = d2.getFullYear() + '-' + ("0" + (d2.getMonth() + 1)).slice(-2) + '-' + ("0" + d2.getDate()).slice(-2)
-                        var from = result['PST_date'].split("-")
-                        var f = parseInt(from[0])+"-"+ (from[1] - 1)+"-"+from[2]; 
-                        
-                        alert((f));
-                        $('#last_firing_date').val(last_firing_date);
-                        $('#pst_date').val(f);
-                        $('#sst_date').val(result['PSS_date']);
-                        $('#PET_I_date').val(result['PET_I_date']);
-                        $('#pet_II_date').val(result['PET_II_date']);
-                        $('#pet_III_date').val(result['PET_III_date']);
-                        $('#pet_IV_date').val(result['PET_IV_date']);
-                        $('#pet_V_date').val(result['PET_V_date']);
-                        $('#pet_VI_date').val(result['PET_VI_date']);
-                        $('#prade_training_date').val(result['Prade_training_date']);
-                        $('#weapon_handling_date').val(result['weapon_handling_date']);
+                        $('#last_firing_date').val(convert_date(result['last_firing_date']));
+                        $('#pst_date').val(convert_date(result['PST_date']));
+                        $('#sst_date').val(convert_date(result['SST_date']));
+                        $('#pet_I_date').val(convert_date(result['PET_I_date']));
+                        $('#pet_II_date').val(convert_date(result['PET_II_date']));
+                        $('#pet_III_date').val(convert_date(result['PET_III_date']));
+                        $('#pet_IV_date').val(convert_date(result['PET_IV_date']));
+                        $('#pet_V_date').val(convert_date(result['PET_V_date']));
+                        $('#pet_VI_date').val(convert_date(result['PET_VI_date']));
+                        $('#prade_training_date').val(convert_date(result['Prade_training_date']));
+                        $('#weapon_handling_date').val(convert_date(result['weapon_handling_date']));
 
 
                         $('#milestone_id').val(result['id']);
@@ -1205,36 +1413,60 @@
                         $('#Pushups_I').val(result['pushups']);
                         $('#Rope_I').val(result['rope']);
                         $('#term_pet1').val(result['f_term']);
+                        $('#bmi_i').val(result['bmi']);
+                        $('#height_i').val(result['height']);
+                        $('#weight_i').val(result['weight']);
+                        $('#waist_hip_ratio_i').val(result['waist_hip_ratio']);
 
                         $('#mile_time_II').val(result['mile_time_II']);
                         $('#Chinups_II').val(result['chinups_II']);
                         $('#Pushups_II').val(result['pushups_II']);
                         $('#Rope_II').val(result['rope_II']);
                         $('#term_pet2').val(result['f_term']);
+                        $('#bmi_ii').val(result['bmi_ii']);
+                        $('#height_ii').val(result['height_ii']);
+                        $('#weight_ii').val(result['weight_ii']);
+                        $('#waist_hip_ratio_ii').val(result['waist_hip_ratio_ii']);
 
                         $('#mile_time_III').val(result['mile_time_III']);
                         $('#Chinups_III').val(result['chinups_III']);
                         $('#Pushups_III').val(result['pushups_III']);
                         $('#Rope_III').val(result['rope_III']);
                         $('#term_pet3').val(result['f_term']);
+                        $('#bmi_iii').val(result['bmi_iii']);
+                        $('#height_iii').val(result['height_iii']);
+                        $('#weight_iii').val(result['weight_iii']);
+                        $('#waist_hip_ratio_iii').val(result['waist_hip_ratio_iii']);
 
                         $('#mile_time_IV').val(result['mile_time_IV']);
                         $('#Chinups_IV').val(result['chinups_IV']);
                         $('#Pushups_IV').val(result['pushups_IV']);
                         $('#Rope_IV').val(result['rope_IV']);
                         $('#term_pet4').val(result['f_term']);
+                        $('#bmi_iv').val(result['bmi_iv']);
+                        $('#height_iv').val(result['height_iv']);
+                        $('#weight_iv').val(result['weight_iv']);
+                        $('#waist_hip_ratio_iv').val(result['waist_hip_ratio_iv']);
 
                         $('#mile_time_V').val(result['mile_time_V']);
                         $('#Chinups_V').val(result['chinups_V']);
                         $('#Pushups_V').val(result['pushups_V']);
                         $('#Rope_V').val(result['rope_V']);
                         $('#term_pet5').val(result['f_term']);
+                        $('#bmi_v').val(result['bmi_v']);
+                        $('#height_v').val(result['height_v']);
+                        $('#weight_v').val(result['weight_v']);
+                        $('#waist_hip_ratio_v').val(result['waist_hip_ratio_v']);
 
                         $('#mile_time_VI').val(result['mile_time_VI']);
                         $('#Chinups_VI').val(result['chinups_VI']);
                         $('#Pushups_VI').val(result['pushups_VI']);
                         $('#Rope_VI').val(result['rope_VI']);
                         $('#term_pet6').val(result['f_term']);
+                        $('#bmi_vi').val(result['bmi_vi']);
+                        $('#height_vi').val(result['height_vi']);
+                        $('#weight_vi').val(result['weight_vi']);
+                        $('#waist_hip_ratio_vi').val(result['waist_hip_ratio_vi']);
 
                     } else {
                         $('#no_data').show();
@@ -1255,6 +1487,13 @@
 
 
     });
+
+    function convert_date(str) {
+        var date = new Date(str),
+            mnth = ("0" + (date.getMonth() + 1)).slice(-2),
+            day = ("0" + date.getDate()).slice(-2);
+        return [date.getFullYear(), mnth, day].join("-");
+    }
 
     $('#end_date').on('focusout', function() {
         var start_date = new Date($('#start_date').val());

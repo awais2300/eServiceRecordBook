@@ -193,6 +193,25 @@
                                                 <h6 id="prade_training_attempt" style="text-align:center"></h6>
                                             </div>
                                         </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>Weapon Handling:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <h6 id="weapon_handling"></h6>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <h6 id="weapon_handling_attempt" style="text-align:center"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>Last Firing Date:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <h6 id="last_firing_date"></h6>
+                                            </div>
+                                        </div>
 
                                     </form>
                                 </div>
@@ -263,6 +282,38 @@
                                             </div>
                                             <div class="col-sm-3">
                                                 <h6 id="rope1_detail"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>BMI:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="bmi_i"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>HEIGHT:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="height_i"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>WEIGHT:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="weight_i"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>WAIST HIP RATIO:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="waist_hip_ratio_i"></h6>
                                             </div>
                                         </div>
 
@@ -336,6 +387,38 @@
                                                 <h6 id="rope2_detail"></h6>
                                             </div>
                                         </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>BMI:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="bmi_ii"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>HEIGHT:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="height_ii"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>WEIGHT:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="weight_ii"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>WAIST HIP RATIO:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="waist_hip_ratio_ii"></h6>
+                                            </div>
+                                        </div>
 
                                     </form>
                                 </div>
@@ -403,6 +486,38 @@
                                             </div>
                                             <div class="col-sm-3">
                                                 <h6 id="rope3_detail"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>BMI:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="bmi_iii"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>HEIGHT:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="height_iii"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>WEIGHT:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="weight_iii"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>WAIST HIP RATIO:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="waist_hip_ratio_iii"></h6>
                                             </div>
                                         </div>
 
@@ -474,6 +589,38 @@
                                                 <h6 id="rope4_detail"></h6>
                                             </div>
                                         </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>BMI:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="bmi_iv"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>HEIGHT:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="height_iv"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>WEIGHT:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="weight_iv"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>WAIST HIP RATIO:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="waist_hip_ratio_iv"></h6>
+                                            </div>
+                                        </div>
 
                                     </form>
                                 </div>
@@ -543,6 +690,38 @@
                                                 <h6 id="rope5_detail"></h6>
                                             </div>
                                         </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>BMI:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="bmi_v"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>HEIGHT:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="height_v"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>WEIGHT:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="weight_v"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>WAIST HIP RATIO:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="waist_hip_ratio_v"></h6>
+                                            </div>
+                                        </div>
 
                                     </form>
                                 </div>
@@ -610,6 +789,38 @@
                                             </div>
                                             <div class="col-sm-3">
                                                 <h6 id="rope6_detail"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>BMI:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="bmi_vi"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>HEIGHT:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="height_vi"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>WEIGHT:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="weight_vi"></h6>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-3">
+                                                <h6>&nbsp;<strong>WAIST HIP RATIO:</strong></h6>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <h6 id="waist_hip_ratio_vi"></h6>
                                             </div>
                                         </div>
 
@@ -698,6 +909,9 @@
                                                 <td scope="row" style="display:none"><?= $data['PET_VI_attempt']; ?></td>
                                                 <td scope="row" style="display:none"><?= $data['Prade_training']; ?></td>
                                                 <td scope="row" style="display:none"><?= $data['prade_training_attempt']; ?></td>
+                                                <td scope="row" style="display:none"><?= $data['weapon_handling']; ?></td>
+                                                <td scope="row" style="display:none"><?= $data['weapon_handling_attempt']; ?></td>
+                                                <td scope="row" style="display:none"><?= $data['last_firing_date']; ?></td>
                                                 <td scope="row"><button type="button" class="btn btn-primary btn-user" data-toggle="modal" data-target="#view_details"> View Details</button></td>
                                                 <!-- <td type="button" class="edit" scope="row"><a style="color: black" href="<?= base_url(); ?>D_O/add_physical_milestone/<?php echo "view_dossier_folder" ?>"><i style="" class="fas fa-edit"></i></a></td> -->
                                             </tr>
@@ -874,6 +1088,14 @@
         }
         $('#prade_training_attempt').html($columns[21].innerHTML);
 
+        if ($columns[22].innerHTML == 'qualified') {
+            $('#weapon_handling').html('<span style="color:green">Qualified</span>');
+        } else if ($columns[22].innerHTML == 'disqualified') {
+            $('#weapon_handling').html('<span style="color:red">Disqualified</span>');
+        }
+        $('#weapon_handling_attempt').html($columns[23].innerHTML);
+        $('#last_firing_date').html(convert_date($columns[24].innerHTML));
+
         //alert( $columns[1].innerHTML);
         $.ajax({
             url: '<?= base_url(); ?>D_O/view_PET_I',
@@ -890,6 +1112,10 @@
                 $('#pushup1_detail').html(result['pushups']);
                 $('#chinups1_detail').html(result['chinups']);
                 $('#rope1_detail').html(result['rope']);
+                $('#bmi_i').html(result['bmi']);
+                $('#height_i').html(result['height']);
+                $('#weight_i').html(result['weight']);
+                $('#waist_hip_ratio_i').html(result['waist_hip_ratio']);
             },
             async: false
         });
@@ -909,6 +1135,10 @@
                 $('#pushup2_detail').html(result['pushups']);
                 $('#chinups2_detail').html(result['chinups']);
                 $('#rope2_detail').html(result['rope']);
+                $('#bmi_ii').html(result['bmi']);
+                $('#height_ii').html(result['height']);
+                $('#weight_ii').html(result['weight']);
+                $('#waist_hip_ratio_ii').html(result['waist_hip_ratio']);
             },
             async: false
         });
@@ -928,6 +1158,10 @@
                 $('#pushup3_detail').html(result['pushups']);
                 $('#chinups3_detail').html(result['chinups']);
                 $('#rope3_detail').html(result['rope']);
+                $('#bmi_iii').html(result['bmi']);
+                $('#height_iii').html(result['height']);
+                $('#weight_iii').html(result['weight']);
+                $('#waist_hip_ratio_iii').html(result['waist_hip_ratio']);
             },
             async: false
         });
@@ -947,6 +1181,10 @@
                 $('#pushup4_detail').html(result['pushups']);
                 $('#chinups4_detail').html(result['chinups']);
                 $('#rope4_detail').html(result['rope']);
+                $('#bmi_iv').html(result['bmi']);
+                $('#height_iv').html(result['height']);
+                $('#weight_iv').html(result['weight']);
+                $('#waist_hip_ratio_iv').html(result['waist_hip_ratio']);
             },
             async: false
         });
@@ -966,6 +1204,10 @@
                 $('#pushup5_detail').html(result['pushups']);
                 $('#chinups5_detail').html(result['chinups']);
                 $('#rope5_detail').html(result['rope']);
+                $('#bmi_v').html(result['bmi']);
+                $('#height_v').html(result['height']);
+                $('#weight_v').html(result['weight']);
+                $('#waist_hip_ratio_v').html(result['waist_hip_ratio']);
             },
             async: false
         });
@@ -985,6 +1227,10 @@
                 $('#pushup6_detail').html(result['pushups']);
                 $('#chinups6_detail').html(result['chinups']);
                 $('#rope6_detail').html(result['rope']);
+                $('#bmi_vi').html(result['bmi']);
+                $('#height_vi').html(result['height']);
+                $('#weight_vi').html(result['weight']);
+                $('#waist_hip_ratio_vi').html(result['waist_hip_ratio']);
             },
             async: false
         });
@@ -1116,11 +1362,16 @@
                 $('#pushups2_detail').val(result['chinups']);
                 $('#chinups2_detail').val(result['pushups']);
                 $('#rope2_details').val(result['rope']);
-
-
                 // }
             },
             async: true
         });
+    }
+
+    function convert_date(str) {
+        var date = new Date(str),
+            mnth = ("0" + (date.getMonth() + 1)).slice(-2),
+            day = ("0" + date.getDate()).slice(-2);
+        return [date.getFullYear(), mnth, day].join("-");
     }
 </script>

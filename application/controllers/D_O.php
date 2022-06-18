@@ -1841,7 +1841,7 @@ class D_O extends CI_Controller
             $pet5_term_exist = $this->db->select('term')->where('oc_no', $oc_no)->where('term', $curr_term['term'])->get('term_v_details')->num_rows(); //Dossier Continue
             $pet6_term_exist = $this->db->select('term')->where('oc_no', $oc_no)->where('term', $curr_term['term'])->get('term_vi_details')->num_rows(); //Dossier Continue
 
-            $this->db->select('f.oc_no f_oc_no, f.p_id f_p_id, f.term f_term, f.divison_name f_divison_name, f.name f_name, or.*, term_i_details.*,term_ii_details.mile_time as mile_time_II, term_ii_details.pushups as pushups_II, term_ii_details.chinups as chinups_II, term_ii_details.rope as rope_II,term_iii_details.mile_time as mile_time_III, term_iii_details.pushups as pushups_III, term_iii_details.chinups as chinups_III, term_iii_details.rope as rope_III,term_iv_details.mile_time as mile_time_IV, term_iv_details.pushups as pushups_IV, term_iv_details.chinups as chinups_IV, term_iv_details.rope as rope_IV,term_v_details.mile_time as mile_time_V, term_v_details.pushups as pushups_V, term_v_details.chinups as chinups_V, term_v_details.rope as rope_V, term_vi_details.mile_time as mile_time_VI, term_vi_details.pushups as pushups_VI, term_vi_details.chinups as chinups_VI, term_vi_details.rope as rope_VI ');
+            $this->db->select('f.oc_no f_oc_no, f.p_id f_p_id, f.term f_term, f.divison_name f_divison_name, f.name f_name, or.*, term_i_details.*,term_ii_details.mile_time as mile_time_II, term_ii_details.pushups as pushups_II, term_ii_details.chinups as chinups_II, term_ii_details.bmi as bmi_ii, term_ii_details.height as height_ii,term_ii_details.weight as weight_ii, term_ii_details.waist_hip_ratio as waist_hip_ratio_ii , term_ii_details.rope as rope_II,term_iii_details.mile_time as mile_time_III, term_iii_details.pushups as pushups_III, term_iii_details.chinups as chinups_III, term_iii_details.rope as rope_III, term_iii_details.bmi as bmi_iii, term_iii_details.height as height_iii,term_iii_details.weight as weight_iii, term_iii_details.waist_hip_ratio as waist_hip_ratio_iii, term_iv_details.mile_time as mile_time_IV, term_iv_details.pushups as pushups_IV, term_iv_details.chinups as chinups_IV, term_iv_details.rope as rope_IV, term_iv_details.bmi as bmi_iv, term_iv_details.height as height_iv,term_iv_details.weight as weight_iv, term_iv_details.waist_hip_ratio as waist_hip_ratio_iv, term_v_details.mile_time as mile_time_V, term_v_details.pushups as pushups_V, term_v_details.chinups as chinups_V, term_v_details.rope as rope_V, term_v_details.bmi as bmi_v, term_v_details.height as height_v,term_v_details.weight as weight_v, term_v_details.waist_hip_ratio as waist_hip_ratio_v, term_vi_details.mile_time as mile_time_VI, term_vi_details.pushups as pushups_VI, term_vi_details.chinups as chinups_VI, term_vi_details.rope as rope_VI, term_vi_details.bmi as bmi_vi, term_vi_details.height as height_vi,term_vi_details.weight as weight_vi, term_vi_details.waist_hip_ratio as waist_hip_ratio_vi ');
             $this->db->from('pn_form1s f');
             $this->db->join('physical_milestone or', 'f.p_id = or.p_id AND f.term = or.term', 'left');
             $this->db->join('term_i_details', 'term_i_details.p_id = or.p_id AND AND term_i_details.term = or.term', 'left');
@@ -3760,6 +3760,10 @@ class D_O extends CI_Controller
             $pushups = $postData['Pushups'];
             $chinups = $postData['Chinups'];
             $rope = $postData['rope'];
+            $bmi = $postData['bmi'];
+            $height = $postData['height'];
+            $weight = $postData['weight'];
+            $waist_hip_ratio = $postData['waist_hip_ratio'];
             $date_added = date('Y-m-d H:i:s');
 
             $insert_array = array(
@@ -3771,6 +3775,10 @@ class D_O extends CI_Controller
                 'pushups' => $pushups,
                 'chinups' => $chinups,
                 'rope' => $rope,
+                'bmi' => $bmi,
+                'height' => $height,
+                'weight' => $weight,
+                'waist_hip_ratio' => $waist_hip_ratio,
                 'date_added' => date('Y-m-d H:i:s')
             );
 
@@ -3791,6 +3799,10 @@ class D_O extends CI_Controller
             $pushups = $postData['Pushups'];
             $chinups = $postData['Chinups'];
             $rope = $postData['rope'];
+            $bmi = $postData['bmi'];
+            $height = $postData['height'];
+            $weight = $postData['weight'];
+            $waist_hip_ratio = $postData['waist_hip_ratio'];
             $date_added = date('Y-m-d H:i:s');
 
             $insert_array = array(
@@ -3802,6 +3814,10 @@ class D_O extends CI_Controller
                 'pushups' => $pushups,
                 'chinups' => $chinups,
                 'rope' => $rope,
+                'bmi' => $bmi,
+                'height' => $height,
+                'weight' => $weight,
+                'waist_hip_ratio' => $waist_hip_ratio,
                 'date_added' => date('Y-m-d H:i:s')
             );
 
@@ -3822,6 +3838,10 @@ class D_O extends CI_Controller
             $pushups = $postData['Pushups'];
             $chinups = $postData['Chinups'];
             $rope = $postData['rope'];
+            $bmi = $postData['bmi'];
+            $height = $postData['height'];
+            $weight = $postData['weight'];
+            $waist_hip_ratio = $postData['waist_hip_ratio'];
             $date_added = date('Y-m-d H:i:s');
 
             $insert_array = array(
@@ -3833,6 +3853,10 @@ class D_O extends CI_Controller
                 'pushups' => $pushups,
                 'chinups' => $chinups,
                 'rope' => $rope,
+                'bmi' => $bmi,
+                'height' => $height,
+                'weight' => $weight,
+                'waist_hip_ratio' => $waist_hip_ratio,
                 'date_added' => date('Y-m-d H:i:s')
             );
 
@@ -3853,6 +3877,10 @@ class D_O extends CI_Controller
             $pushups = $postData['Pushups'];
             $chinups = $postData['Chinups'];
             $rope = $postData['rope'];
+            $bmi = $postData['bmi'];
+            $height = $postData['height'];
+            $weight = $postData['weight'];
+            $waist_hip_ratio = $postData['waist_hip_ratio'];
             $date_added = date('Y-m-d H:i:s');
 
             $insert_array = array(
@@ -3864,6 +3892,10 @@ class D_O extends CI_Controller
                 'pushups' => $pushups,
                 'chinups' => $chinups,
                 'rope' => $rope,
+                'bmi' => $bmi,
+                'height' => $height,
+                'weight' => $weight,
+                'waist_hip_ratio' => $waist_hip_ratio,
                 'date_added' => date('Y-m-d H:i:s')
             );
 
@@ -3884,6 +3916,10 @@ class D_O extends CI_Controller
             $pushups = $postData['Pushups'];
             $chinups = $postData['Chinups'];
             $rope = $postData['rope'];
+            $bmi = $postData['bmi'];
+            $height = $postData['height'];
+            $weight = $postData['weight'];
+            $waist_hip_ratio = $postData['waist_hip_ratio'];
             $date_added = date('Y-m-d H:i:s');
 
             $insert_array = array(
@@ -3895,6 +3931,10 @@ class D_O extends CI_Controller
                 'pushups' => $pushups,
                 'chinups' => $chinups,
                 'rope' => $rope,
+                'bmi' => $bmi,
+                'height' => $height,
+                'weight' => $weight,
+                'waist_hip_ratio' => $waist_hip_ratio,
                 'date_added' => date('Y-m-d H:i:s')
             );
 
@@ -3915,6 +3955,10 @@ class D_O extends CI_Controller
             $pushups = $postData['Pushups'];
             $chinups = $postData['Chinups'];
             $rope = $postData['rope'];
+            $bmi = $postData['bmi'];
+            $height = $postData['height'];
+            $weight = $postData['weight'];
+            $waist_hip_ratio = $postData['waist_hip_ratio'];
             $date_added = date('Y-m-d H:i:s');
 
             $insert_array = array(
@@ -3926,6 +3970,10 @@ class D_O extends CI_Controller
                 'pushups' => $pushups,
                 'chinups' => $chinups,
                 'rope' => $rope,
+                'bmi' => $bmi,
+                'height' => $height,
+                'weight' => $weight,
+                'waist_hip_ratio' => $waist_hip_ratio,
                 'date_added' => date('Y-m-d H:i:s')
             );
 
