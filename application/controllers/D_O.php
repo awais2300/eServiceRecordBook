@@ -3628,7 +3628,19 @@ class D_O extends CI_Controller
             $PET_VI_attempt = $postData['pet_VI_attempt'];
             $prade_training = $postData['prade_training'];
             $prade_attempt = $postData['prade_attempt'];
-
+            $weapon_handling = $postData['weapon_handling'];
+            $weapon_handling_attempt = $postData['weapon_handling_attempt'];
+            $last_firing_date = $postData['last_firing_date'];
+            $PST_date = $postData['pst_date'];
+            $SST_date = $postData['sst_date'];
+            $PET_I_date = $postData['pet_I_date'];
+            $PET_II_date = $postData['pet_II_date'];
+            $PET_III_date = $postData['pet_III_date'];
+            $PET_IV_date = $postData['pet_IV_date'];
+            $PET_V_date = $postData['pet_V_date'];
+            $PET_VI_date = $postData['pet_VI_date'];
+            $Prade_training_date = $postData['prade_training_date'];
+            $weapon_handling_date = $postData['weapon_handling_date'];
 
             $milestone_id = $postData['milestone_id'];
 
@@ -3655,6 +3667,19 @@ class D_O extends CI_Controller
                 'PET_VI_attempt' => $PET_VI_attempt,
                 'Prade_training' => $prade_training,
                 'prade_training_attempt' => $prade_attempt,
+                'weapon_handling' => $weapon_handling,
+                'weapon_handling_attempt' => $weapon_handling_attempt,
+                'last_firing_date' => $last_firing_date,
+                'PST_date' => $PST_date,
+                'SST_date' => $SST_date,
+                'PET_I_date' => $PET_I_date,
+                'PET_II_date' => $PET_II_date,
+                'PET_III_date' => $PET_III_date,
+                'PET_IV_date' => $PET_IV_date,
+                'PET_V_date' => $PET_V_date,
+                'PET_VI_date' => $PET_VI_date,
+                'Prade_training_date' => $Prade_training_date,
+                'weapon_handling_date' => $weapon_handling_date,
                 'date_added' => date('Y-m-d H:i:s')
             );
 

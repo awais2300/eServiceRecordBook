@@ -651,6 +651,9 @@
                                 <div class="col-sm-2">
                                     <h5 style="text-align:center">&nbsp;<strong>ATTEMPT</strong></h5>
                                 </div>
+                                <div class="col-sm-2">
+                                    <h5 style="text-align:center">&nbsp;<strong>DATE</strong></h5>
+                                </div>
 
                             </div>
                             <hr>
@@ -666,9 +669,11 @@
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <input type="number" class="form-control  " name="pst_attempt" id="pst_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
+                                    <input type="number" class="form-control  " name="pst_attempt" id="pst_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
                                 </div>
-
+                                <div class="col-sm-2 mb-1">
+                                    <input type="date" class="form-control  " name="pst_date" id="pst_date" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-3 my-2">
@@ -682,7 +687,10 @@
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                     <input type="number" class="form-control  " name="sst_attempt" id="sst_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
+                                    <input type="number" class="form-control  " name="sst_attempt" id="sst_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
+                                <div class="col-sm-2 mb-1">
+                                    <input type="date" class="form-control  " name="sst_date" id="sst_date" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
                                 </div>
 
                             </div>
@@ -698,7 +706,10 @@
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                     <input type="number" class="form-control  " name="pet_I_attempt" id="pet_I_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
+                                    <input type="number" class="form-control  " name="pet_I_attempt" id="pet_I_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
+                                <div class="col-sm-2 mb-1">
+                                    <input type="date" class="form-control  " name="pet_I_date" id="pet_I_date" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
                                 </div>
                                 <div class="col-sm-3 mb-1">
                                     <button type="button" class="btn btn-primary btn-user  " data-toggle="modal" data-target="#term-I">ADD DETAILS</button>
@@ -715,16 +726,18 @@
                                         <option class="form-control form-control-user" value="disqualified">DISQUALIFIED</option>
                                     </select>
                                 </div>
-                               <div class="col-sm-2 mb-1">
-                                      <input type="number" class="form-control  " name="pet_II_attempt" id="pet_II_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
-
-                                </div> 
+                                <div class="col-sm-2 mb-1">
+                                    <input type="number" class="form-control  " name="pet_II_attempt" id="pet_II_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
+                                <div class="col-sm-2 mb-1">
+                                    <input type="date" class="form-control  " name="pet_II_date" id="pet_II_date" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
                                 <div class="col-sm-3 mb-1">
                                     <button type="button" class="btn btn-primary btn-user  " data-toggle="modal" data-target="#term-II">ADD DETAILS</button>
                                 </div>
                             </div>
                             <div class="form-group row">
-                               <div class="col-sm-3 my-2">
+                                <div class="col-sm-3 my-2">
                                     <h5>&nbsp;<strong>5 - PET-III</strong></h5>
                                 </div>
                                 <div class="col-sm-2 mb-1">
@@ -734,13 +747,16 @@
                                         <option class="form-control form-control-user" value="disqualified">DISQUALIFIED</option>
                                     </select>
                                 </div>
-                               <div class="col-sm-2 mb-1">
-                                     <input type="number" class="form-control  " name="pet_III_attempt" id="pet_III_attempt" placeholder=" ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
-                                </div> 
+                                <div class="col-sm-2 mb-1">
+                                    <input type="number" class="form-control  " name="pet_III_attempt" id="pet_III_attempt" placeholder=" ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
+                                <div class="col-sm-2 mb-1">
+                                    <input type="date" class="form-control  " name="pet_III_date" id="pet_III_date" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
                                 <div class="col-sm-3 mb-1">
                                     <button type="button" class="btn btn-primary btn-user  " data-toggle="modal" data-target="#term-III">ADD DETAILS</button>
                                 </div>
-                            </div> 
+                            </div>
                             <div class="form-group row">
                                 <div class="col-sm-3 my-2">
                                     <h5>&nbsp;<strong>6 - PET-IV</strong></h5>
@@ -753,13 +769,16 @@
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                     <input type="number" class="form-control  "name="pet_IV_attempt" id="pet_IV_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
+                                    <input type="number" class="form-control  " name="pet_IV_attempt" id="pet_IV_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
+                                <div class="col-sm-2 mb-1">
+                                    <input type="date" class="form-control  " name="pet_IV_date" id="pet_IV_date" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
                                 </div>
                                 <div class="col-sm-3 mb-1">
                                     <button type="button" class="btn btn-primary btn-user  " data-toggle="modal" data-target="#term-IV">ADD DETAILS</button>
                                 </div>
                             </div>
-                       <div class="form-group row">
+                            <div class="form-group row">
                                 <div class="col-sm-3 my-2">
                                     <h5>&nbsp;<strong>7 - PET-V</strong></h5>
                                 </div>
@@ -771,7 +790,10 @@
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                     <input type="number" class="form-control  " name="pet_V_attempt" id="pet_V_attempt" placeholder=" ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
+                                    <input type="number" class="form-control  " name="pet_V_attempt" id="pet_V_attempt" placeholder=" ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
+                                <div class="col-sm-2 mb-1">
+                                    <input type="date" class="form-control  " name="pet_V_date" id="pet_V_date" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
                                 </div>
                                 <div class="col-sm-3 mb-1">
                                     <button type="button" class="btn btn-primary btn-user  " data-toggle="modal" data-target="#term-V">ADD DETAILS</button>
@@ -789,7 +811,10 @@
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                  <input type="number" class="form-control  " name="pet_VI_attempt" id="pet_VI_attempt" placeholder=" ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
+                                    <input type="number" class="form-control  " name="pet_VI_attempt" id="pet_VI_attempt" placeholder=" ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
+                                <div class="col-sm-2 mb-1">
+                                    <input type="date" class="form-control  " name="pet_VI_date" id="pet_VI_date" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
                                 </div>
                                 <div class="col-sm-3 mb-1">
                                     <button type="button" class="btn btn-primary btn-user  " data-toggle="modal" data-target="#term-VI">ADD DETAILS</button>
@@ -807,9 +832,38 @@
                                     </select>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                      <input type="number" class="form-control  " name="prade_attempt" id="prade_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;" >
+                                    <input type="number" class="form-control  " name="prade_attempt" id="prade_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
                                 </div>
-                            </div>  
+                                <div class="col-sm-2 mb-1">
+                                    <input type="date" class="form-control  " name="prade_training_date" id="prade_training_date" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-3 my-2">
+                                    <h5>&nbsp;<strong>10 - WEAPON HANDLING</strong></h5>
+                                </div>
+                                <div class="col-sm-2 mb-1">
+                                    <select class="form-control  " name="weapon_handling" id="weapon_handling" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                        <option class="form-control form-control-user" value="">SELECT RESULT</option>
+                                        <option class="form-control form-control-user" value="qualified">QUALIFIED</option>
+                                        <option class="form-control form-control-user" value="disqualified">DISQUALIFIED</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-2 mb-1">
+                                    <input type="number" class="form-control  " name="weapon_handling_attempt" id="weapon_handling_attempt" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
+                                <div class="col-sm-2 mb-1">
+                                    <input type="date" class="form-control  " name="weapon_handling_date" id="weapon_handling_date" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-3 my-2">
+                                    <h5>&nbsp;<strong>11 - LAST FIRING DATE</strong></h5>
+                                </div>
+                                <div class="col-sm-6 mb-1">
+                                    <input type="date" class="form-control" name="last_firing_date" id="last_firing_date" placeholder="ATTEMPT NO" style="font-size: 0.8rem; height:50px;">
+                                </div>
+                            </div>
 
                             <div class="form-group row justify-content-center">
                                 <div class="col-sm-4">
@@ -866,14 +920,13 @@
                 'rope': rope,
                 'term': term
             },
-            success: function(response) {
-            },
+            success: function(response) {},
             async: false
         });
         $('#term-I').modal('hide');
     });
 
-    $('#add_btn_termII').on('click', function() {        
+    $('#add_btn_termII').on('click', function() {
         var validate = 0;
 
         var p_id = $('#id2').val();
@@ -895,10 +948,9 @@
                 'Pushups': Pushups,
                 'Chinups': Chinups,
                 'rope': rope,
-                'term' : term
+                'term': term
             },
-            success: function(response) {
-            },
+            success: function(response) {},
             async: false
         });
 
@@ -906,7 +958,7 @@
 
     });
 
-    $('#add_btn_termIII').on('click', function() {        
+    $('#add_btn_termIII').on('click', function() {
         var validate = 0;
 
         var p_id = $('#id3').val();
@@ -928,10 +980,9 @@
                 'Pushups': Pushups,
                 'Chinups': Chinups,
                 'rope': rope,
-                'term' : term
+                'term': term
             },
-            success: function(response) {
-            },
+            success: function(response) {},
             async: false
         });
 
@@ -939,7 +990,7 @@
 
     });
 
-    $('#add_btn_termIV').on('click', function() {        
+    $('#add_btn_termIV').on('click', function() {
         var validate = 0;
 
         var p_id = $('#id4').val();
@@ -961,10 +1012,9 @@
                 'Pushups': Pushups,
                 'Chinups': Chinups,
                 'rope': rope,
-                'term' : term
+                'term': term
             },
-            success: function(response) {
-            },
+            success: function(response) {},
             async: false
         });
 
@@ -972,7 +1022,7 @@
 
     });
 
-    $('#add_btn_termV').on('click', function() {        
+    $('#add_btn_termV').on('click', function() {
         var validate = 0;
 
         var p_id = $('#id5').val();
@@ -994,10 +1044,9 @@
                 'Pushups': Pushups,
                 'Chinups': Chinups,
                 'rope': rope,
-                'term' : term
+                'term': term
             },
-            success: function(response) {
-            },
+            success: function(response) {},
             async: false
         });
 
@@ -1005,7 +1054,7 @@
 
     });
 
-    $('#add_btn_termVI').on('click', function() {        
+    $('#add_btn_termVI').on('click', function() {
         var validate = 0;
 
         var p_id = $('#id6').val();
@@ -1027,10 +1076,9 @@
                 'Pushups': Pushups,
                 'Chinups': Chinups,
                 'rope': rope,
-                'term' : term
+                'term': term
             },
-            success: function(response) {
-            },
+            success: function(response) {},
             async: false
         });
 
@@ -1126,7 +1174,29 @@
                         $('#pet_VI_attempt').val(result['PET_VI_attempt']);
                         $('#prade_training').val(result['Prade_training']);
                         $('#prade_attempt').val(result['prade_training_attempt']);
+                        $('#weapon_handling').val(result['weapon_handling']);
+                        $('#weapon_handling_attempt').val(result['weapon_handling_attempt']);
+
+                        const d = new Date(result['last_firing_date'].match(/\d+/)[0] * 1);
+                        const last_firing_date = d.getFullYear() + '-' + ("0" + (d.getMonth() + 1)).slice(-2) + '-' + ("0" + d.getDate()).slice(-2)
+                        const d2 = new Date(result['PST_date'].match(/\d+/)[0] * 1);
+                        const PST_date = d2.getFullYear() + '-' + ("0" + (d2.getMonth() + 1)).slice(-2) + '-' + ("0" + d2.getDate()).slice(-2)
+                        var from = result['PST_date'].split("-")
+                        var f = parseInt(from[0])+"-"+ (from[1] - 1)+"-"+from[2]; 
                         
+                        alert((f));
+                        $('#last_firing_date').val(last_firing_date);
+                        $('#pst_date').val(f);
+                        $('#sst_date').val(result['PSS_date']);
+                        $('#PET_I_date').val(result['PET_I_date']);
+                        $('#pet_II_date').val(result['PET_II_date']);
+                        $('#pet_III_date').val(result['PET_III_date']);
+                        $('#pet_IV_date').val(result['PET_IV_date']);
+                        $('#pet_V_date').val(result['PET_V_date']);
+                        $('#pet_VI_date').val(result['PET_VI_date']);
+                        $('#prade_training_date').val(result['Prade_training_date']);
+                        $('#weapon_handling_date').val(result['weapon_handling_date']);
+
 
                         $('#milestone_id').val(result['id']);
 

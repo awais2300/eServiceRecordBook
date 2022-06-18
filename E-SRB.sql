@@ -2982,16 +2982,40 @@ ADD COLUMN inter_board_of_edu varchar(255);
 
 ALTER TABLE personal_datas
 ADD COLUMN membership varchar(255);
-
 ALTER TABLE personal_datas
 ADD COLUMN professional_courses varchar(255);
-
 ALTER TABLE personal_datas
 ADD COLUMN upload_cnic varchar(500);
 
 ALTER TABLE pn_form1s
 ADD COLUMN rank_rate varchar(255);
 
+ALTER TABLE physical_milestone
+ADD COLUMN weapon_handling varchar(255);
+ALTER TABLE physical_milestone
+ADD COLUMN weapon_handling_attempt varchar(255);
+ALTER TABLE physical_milestone
+ADD COLUMN last_firing_date datetime;
+ALTER TABLE physical_milestone
+ADD COLUMN PST_date datetime;
+ALTER TABLE physical_milestone
+ADD COLUMN SST_date datetime;
+ALTER TABLE physical_milestone
+ADD COLUMN  PET_I_date datetime;
+ALTER TABLE physical_milestone
+ADD COLUMN  PET_II_date datetime;
+ALTER TABLE physical_milestone
+ADD COLUMN  PET_III_date datetime;
+ALTER TABLE physical_milestone
+ADD COLUMN  PET_IV_date datetime;
+ALTER TABLE physical_milestone
+ADD COLUMN  PET_V_date datetime;
+ALTER TABLE physical_milestone
+ADD COLUMN  PET_VI_date datetime;
+ALTER TABLE physical_milestone
+ADD COLUMN  Prade_training_date datetime;
+ALTER TABLE physical_milestone
+ADD COLUMN  weapon_handling_date datetime;
 
 ALTER TABLE physical_milestone CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
