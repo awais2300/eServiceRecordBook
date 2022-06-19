@@ -57,8 +57,8 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="<?php echo base_url(); ?><?php if ($this->session->userdata('acct_type') == 'do') {
-                                                                        echo "D_O";
+                <a class="nav-link" href="<?php echo base_url(); ?><?php if ($this->session->userdata('acct_type') == 'exo') {
+                                                                        echo "EXO";
                                                                     } ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>DASHBOARD</span></a>
@@ -68,7 +68,7 @@
             <hr class="sidebar-divider">
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url(); ?>CO/view_dossier_folder" aria-expanded="true">
+                <a class="nav-link" href="<?php echo base_url(); ?>EXO/view_dossier_folder" aria-expanded="true">
                     <i class="far fa-newspaper"></i>
                     <span> VIEW DOSSIERS</span>
                     <!-- <span>Components</span> -->
@@ -79,7 +79,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url(); ?>CO/view_academy_analytics" aria-expanded="true">
+                <a class="nav-link" href="<?php echo base_url(); ?>EXO/view_academy_analytics" aria-expanded="true">
                     <i class="fas fa-th-list"></i>
                     <span> ANALYTICS </span>
                 </a>
@@ -87,7 +87,7 @@
 
         <!--    <li class="nav-item">
                 <?php if ($this->session->userdata('unit_id') == '1') { ?>
-                    <a class="nav-link collapsed" href="<?php echo base_url(); ?>CO/personal_data" aria-expanded="true">
+                    <a class="nav-link collapsed" href="<?php echo base_url(); ?>EXO/personal_data" aria-expanded="true">
                         <i class="fab fa-wpforms"></i>
                         <span>PN Form I</span>
                     </a>
@@ -110,11 +110,11 @@
                 </a>
                 <div id="collapse_general" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/add_club">Add Club</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/Inspection_record">Inspection Record</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/auto_biography">Cadet's Auto-biography</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/psychologist_report">Psychologist's Report</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/view_record_div_officer">Divisional Officer Record</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>EXO/add_club">Add Club</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>EXO/Inspection_record">Inspection Record</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>EXO/auto_biography">Cadet's Auto-biography</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>EXO/psychologist_report">Psychologist's Report</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>EXO/view_record_div_officer">Divisional Officer Record</a>
                     </div>
                 </div>
             </li> -->
@@ -126,7 +126,7 @@
                 </a>
                 <div id="collapse_discipline" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/daily_module">DAILY MODULE</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>EXO/daily_module">DAILY MODULE</a>
                     </div>
                 </div>
             </li>
@@ -139,7 +139,7 @@
                 </a>
                 <div id="collapse_warning" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/add_warning">ADD WARNING</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>EXO/add_warning">ADD WARNING</a>
                     </div>
                 </div>
             </li>
@@ -152,9 +152,9 @@
                 </a>
                 <div id="collapse_academic" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?= base_url(); ?>CO/view_semester_result"><?php if ($this->session->userdata('unit_id') != '1') { ?>Results (Terms VI - VIII)<?php } else { ?> Results (Terms I - III) <?php } ?></a>
+                        <a class="collapse-item" href="<?= base_url(); ?>EXO/view_semester_result"><?php if ($this->session->userdata('unit_id') != '1') { ?>Results (Terms VI - VIII)<?php } else { ?> Results (Terms I - III) <?php } ?></a>
                         <?php if ($this->session->userdata('unit_id') == '1') { ?>
-                            <a class="collapse-item" href="<?= base_url(); ?>CO/view_training_report">Sea Training Report Term II</a>
+                            <a class="collapse-item" href="<?= base_url(); ?>EXO/view_training_report">Sea Training Report Term II</a>
                         <?php } ?>
                     </div>
                 </div>
@@ -167,32 +167,32 @@
                 </a>
                 <div id="collapse_assesment" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?= base_url(); ?>CO/view_general_remarks">GENERAL REMARKS</a>
+                        <a class="collapse-item" href="<?= base_url(); ?>EXO/view_general_remarks">GENERAL REMARKS</a>
 
-                     <!--   <a class="collapse-item" href="<?= base_url(); ?>CO/view_progress_chart">Progress Chart</a>
-                        <a class="collapse-item" href="<?= base_url(); ?>CO/view_distinction_records">Distictions</a>
-                        <a class="collapse-item" href="<?= base_url(); ?>CO/view_seniority_records">Seniority</a>
-                        <a class="collapse-item" href="<?php echo base_url(); ?>CO/add_branch_allocation">Branch Allocation</a>
+                     <!--   <a class="collapse-item" href="<?= base_url(); ?>EXO/view_progress_chart">Progress Chart</a>
+                        <a class="collapse-item" href="<?= base_url(); ?>EXO/view_distinction_records">Distictions</a>
+                        <a class="collapse-item" href="<?= base_url(); ?>EXO/view_seniority_records">Seniority</a>
+                        <a class="collapse-item" href="<?php echo base_url(); ?>EXO/add_branch_allocation">Branch Allocation</a>
                         <a class="collapse-item" href="#">Degree Complete</a>  -->
                     </div>
                 </div>
             </li>
          <!--   <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url(); ?>CO/add_officer_qualities" aria-expanded="true">
+                <a class="nav-link" href="<?php echo base_url(); ?>EXO/add_officer_qualities" aria-expanded="true">
                     <i class="fas fa-medal"></i>
                     <span> Officer Like Qualities</span>
                 </a>
 
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url(); ?>CO/view_promotion_screen" aria-expanded="true">
+                <a class="nav-link" href="<?php echo base_url(); ?>EXO/view_promotion_screen" aria-expanded="true">
                     <i class="fas fa-award"></i>
                     <span> Promotion/Relegation</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="<?php echo base_url(); ?>CO/view_activity_log" aria-expanded="true">
+                <a class="nav-link collapsed" href="<?php echo base_url(); ?>EXO/view_activity_log" aria-expanded="true">
                     <i class="far fa-list-alt"></i>
                     <span> VIEW ACTIVITY LOG </span>
                 </a>

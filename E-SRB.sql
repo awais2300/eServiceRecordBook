@@ -3056,6 +3056,9 @@ ADD COLUMN waist_hip_ratio int;
 ALTER TABLE observation_records
 ADD COLUMN observation_type varchar(255);
 
+ALTER TABLE medical_records
+ADD COLUMN medical_record_file varchar(255);
+
 ALTER TABLE physical_milestone CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 ALTER TABLE term_i_details CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

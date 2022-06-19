@@ -101,7 +101,7 @@
                     </div>
 
                     <div class="card-body bg-custom3">
-                        <form class="user" role="form" method="post" id="save_form" action="<?= base_url(); ?>D_O/save_cadet_excuse">
+                        <form class="user" role="form" method="post" id="save_form" enctype="multipart/form-data" action="<?= base_url(); ?>D_O/save_cadet_excuse">
                             <div class="form-group row">
                                 <div class="col-sm-4">
                                     <h6>&nbsp;NAME:</h6>
@@ -164,7 +164,18 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-12 mb-1">
-                                    <textarea class="form-control form-control-user" name="excuse" id="excuse" style="border-radius:10px" placeholder="Add Excuse details"></textarea>
+                                    <textarea class="form-control form-control-user"  name="excuse" id="excuse" style="border-radius:10px" placeholder="ADD MEDICAL DETAILS"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <h6>&nbsp;ATTACH MEDICAL RECORD:</h6>
+                                </div>
+                            </div>
+                            <div class="form-group row custom-file-upload">
+                                <div class="col-sm-12 mb-1">
+                                    <input type="file" class="form-control form-control-user" style="height: 50px; padding:10px !important;" name="medical_record" id="medical_record" placeholder="ADD MEDICAL DETAILS" x-model="fileName">
                                 </div>
                             </div>
 

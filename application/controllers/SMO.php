@@ -961,6 +961,8 @@ class SMO extends CI_Controller
             $end_date = $postData['end_date'];
             // $awarded_by = $this->session->userdata('username');
             $awarded_id = $this->session->userdata('user_id');
+            $upload_medical_record = $this->upload_medical_record($_FILES['medical_record']);
+
 
             $insert_array = array(
                 'oc_no' => $oc_no,
@@ -974,7 +976,8 @@ class SMO extends CI_Controller
                 'updated_at' => date('Y-m-d H:i:s'),
                 'term' => $term,
                 'start_date' => $start_date,
-                'end_date' => $end_date
+                'end_date' => $end_date,
+                'medical_record_file' => $upload_medical_record
 
             );
 
@@ -5264,5 +5267,29 @@ class SMO extends CI_Controller
             $query = $this->db->where('p_id', $p_id)->get('seniority_records')->row_array();
             echo json_encode($query);
         }
+    }
+
+    public function upload_medical_record($fieldname)
+    {
+        $_FILES['file']['name']     = $_FILES['medical_record']['name'];
+        $_FILES['file']['type']     = $_FILES['medical_record']['type'];
+        $_FILES['file']['tmp_name'] = $_FILES['medical_record']['tmp_name'];
+        $_FILES['file']['error']    = $_FILES['medical_record']['error'];
+        $_FILES['file']['size']     = $_FILES['medical_record']['size'];
+
+        $config['upload_path'] = 'uploads/medical';
+        $config['allowed_types'] = 'gif|jpg|png|doc|xls|pdf|xlsx|docx|ppt|pptx|jpeg|txt';
+
+        $this->load->library('upload', $config);
+        $this->upload->initialize($config);
+        if (!$this->upload->do_upload('file')) {
+            $data = array('msg' => $this->upload->display_errors());
+        } else {
+            $data = array('msg' => "success");
+            $data = $this->upload->data();
+            $count = $data['file_name'];
+        }
+
+        return $count;
     }
 }
