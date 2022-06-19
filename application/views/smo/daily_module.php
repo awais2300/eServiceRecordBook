@@ -62,7 +62,7 @@
 
                     <form class="user" role="form" method="post" id="add_form">
                         <div class="card-body bg-custom3">
-                            <div class="form-group row">
+                            <!-- <div class="form-group row"> -->
                                 <!-- <div class="col-sm-6">
                                     <button type="button" class="btn btn-primary btn-user btn-block" style="height:60px;  box-shadow: 5px 10px #888888;" id="btn_inventory" onclick="location.href='<?php echo base_url(); ?>SMO/add_punishment'">
                                         <span><i class="fas fa-radiation-alt" style="font-size:25px;margin:5px"></i></span>
@@ -78,23 +78,19 @@
                             </div> -->
 
                             <div class="form-group row">
-                                 <div class="col-sm-12">
+                                 <div class="col-sm-4">
                                     <button type="button" class="btn btn-primary btn-user btn-block" style="height:60px;  box-shadow: 8px 15px #888888;" id="btn_inventory" onclick="location.href='<?php echo base_url(); ?>SMO/add_excuse'">
                                         <span><i class="fas fa-hand-paper" style="font-size:25px;margin:10px"></i></span>
                                         <h4 style="font-weight: bold; display:inline-block">ADD EXCUSE</h4>
                                     </button>
                                 </div> 
-                            </div>
-                            <div>
-                                <div class="col-sm-12">
+                                <div class="col-sm-4">
                                     <button type="button" class="btn btn-primary btn-user btn-block" style="height:60px;  box-shadow: 5px 10px #888888;" id="btn_inventory" onclick="location.href='<?php echo base_url(); ?>SMO/view_excuse_list'">
                                     <span><i class="fas fa-stopwatch" style="font-size:25px;margin:5px"></i></span>
                                         <h4 style="font-weight: bold;display:inline-block">VIEW EXCUSE LIST</h4>
                                     </button>
                                 </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-12">
+                                <div class="col-sm-4">
                                     <button type="button" class="btn btn-primary btn-user btn-block" style="height:60px;  box-shadow: 5px 10px #888888;" id="btn_inventory" onclick="location.href='<?php echo base_url(); ?>SMO/add_observation'">
                                         <!-- <span><i class="fas fa-hand-paper" style="font-size:25px;margin:5px"></i></span> -->
                                         <span><i class="far fa-address-card" style="font-size:25px;margin:5px"></i></span>
@@ -102,6 +98,22 @@
                                     </button>
                                 </div>
                             </div>
+                            <!-- <div>
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-primary btn-user btn-block" style="height:60px;  box-shadow: 5px 10px #888888;" id="btn_inventory" onclick="location.href='<?php echo base_url(); ?>SMO/view_excuse_list'">
+                                    <span><i class="fas fa-stopwatch" style="font-size:25px;margin:5px"></i></span>
+                                        <h4 style="font-weight: bold;display:inline-block">VIEW EXCUSE LIST</h4>
+                                    </button>
+                                </div>
+                            </div> -->
+                            <!-- <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-primary btn-user btn-block" style="height:60px;  box-shadow: 5px 10px #888888;" id="btn_inventory" onclick="location.href='<?php echo base_url(); ?>SMO/add_observation'">
+                                        <span><i class="far fa-address-card" style="font-size:25px;margin:5px"></i></span>
+                                        <h4 style="font-weight: bold; display:inline-block">ADD OBSERVATION</h4>
+                                    </button>
+                                </div>
+                            </div> -->
                             
                              <!--   <div class="col-sm-6">
                                     <button type="button" class="btn btn-primary btn-user btn-block" style="height:60px;  box-shadow: 5px 10px #888888;" id="btn_inventory" onclick="location.href='<?php echo base_url(); ?>SMO/view_observation_list'">
@@ -123,7 +135,7 @@
                                         <h4 style="font-weight: bold;display:inline-block">View Physical Milestones List</h4>
                                     </button>
                                 </div> -->
-                            </div>
+                            <!-- </div> -->
                     </form>
                 </div>
 

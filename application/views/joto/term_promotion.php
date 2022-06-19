@@ -106,7 +106,7 @@
                                 </div>
 
                                 <div id="show_terms" class="col-sm-2 mb-1" style="display:none">
-                                    <select class="form-control rounded-pill" name="term_list" id="term_list" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control" name="term_list" id="term_list" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">Select Term</option>
                                         <?php if ($this->session->userdata('unit_id') == '1' || $this->session->userdata('unit_id') == '3' || $this->session->userdata('unit_id') == '2' || $this->session->userdata('unit_id') == '17') { ?>
                                             <!-- <option class="form-control form-control-user" value="Term-P">Term-P</option>
@@ -120,7 +120,7 @@
                                 </div>
 
                                 <div class="col-sm-2 mb-1" id="select_branch_list" style="display:none">
-                                    <select class="form-control rounded-pill" name="select_branches" id="select_branches" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control" name="select_branches" id="select_branches" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">Select Branch</option>
                                         <?php foreach ($branches as $data) { ?>
                                             <option class="form-control form-control-user" value="<?= $data['id'] ?>"><?= $data['branch_name'] ?></option>
@@ -130,7 +130,7 @@
                                 </div>
 
                                 <div id="show_semesters" class="col-sm-2 mb-1" style="display:none">
-                                    <select class="form-control rounded-pill" name="show_semester_list" id="show_semester_list" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control" name="show_semester_list" id="show_semester_list" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">Select Semester</option>
 
                                     </select>
@@ -164,7 +164,7 @@
 
                 <div class="card">
                     <div class="card-header bg-custom1">
-                        <h1 class="h4">Promote / Relegate a cadet</h1>
+                        <h1 class="h4">Promote a cadet</h1>
                     </div>
 
                     <div class="card-body bg-custom3">
@@ -210,7 +210,7 @@
                                 </div>
 
                                 <div class="col-sm-2 mb-1" id="ship_list_seperate" style="display: none">
-                                    <select class="form-control rounded-pill" name="ship_ind" id="ship_ind" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control" name="ship_ind" id="ship_ind" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">Select Ship</option>
                                         <?php foreach ($ships as $data) { ?>
                                             <option class="form-control form-control-user" value="<?= $data['id'] ?>"><?= $data['unit_name'] ?></option>
@@ -220,7 +220,7 @@
                                 </div>
 
                                 <div class="col-sm-2 mb-1" id="unit_list" style="display: none">
-                                    <select class="form-control rounded-pill" name="unit" id="unit" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control" name="unit" id="unit" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">Select Unit</option>
                                         <?php foreach ($units as $data) { ?>
                                             <option class="form-control form-control-user" value="<?= $data['id'] ?>"><?= $data['unit_name'] ?></option>
@@ -230,7 +230,7 @@
                                     <span id="show_error_select_unit_all" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;Please select unit to Proceed*</span>
                                 </div>
                                 <div class="col-sm-2 mb-1" id="branch_list" style="display: none">
-                                    <select class="form-control rounded-pill" name="branch" id="branch" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control" name="branch" id="branch" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">Select branch</option>
                                         <?php foreach ($branches as $data) { ?>
                                             <option class="form-control form-control-user" value="<?= $data['id'] ?>"><?= $data['branch_name'] ?></option>
@@ -246,9 +246,9 @@
                                     </button>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <button type="button" class="btn btn-primary btn-user btn-block" id="relegate_btn" style="background-color:red">
+                                    <!-- <button type="button" class="btn btn-primary btn-user btn-block" id="relegate_btn" style="background-color:red">
                                         <strong>Relegate</strong>
-                                    </button>
+                                    </button> -->
                                 </div>
 
                             </div>
@@ -275,7 +275,7 @@
 
                 <div class="card">
                     <div class="card-header bg-custom1">
-                        <h1 class="h4">Promote / Relegate a cadet</h1>
+                        <h1 class="h4">Promote a cadet</h1>
                     </div>
 
                     <div class="card-body bg-custom3">
@@ -300,7 +300,7 @@
                                 </div>
 
                                 <div class="col-sm-2 mb-1" id="unit_list_term3" style="display:none">
-                                    <select class="form-control rounded-pill" name="units_list" id="units_list" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control" name="units_list" id="units_list" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">Select Unit</option>
                                         <?php foreach ($units as $data) { ?>
                                             <option class="form-control form-control-user" value="<?= $data['id'] ?>"><?= $data['unit_name'] ?></option>
@@ -310,7 +310,7 @@
                                 </div>
 
                                 <div class="col-sm-2 mb-1" id="ship_list_term3" style="display:none">
-                                    <select class="form-control rounded-pill" name="ships_list" id="ships_list" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control" name="ships_list" id="ships_list" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">Select Ship</option>
                                         <?php foreach ($ships as $data) { ?>
                                             <option class="form-control form-control-user" value="<?= $data['id'] ?>"><?= $data['unit_name'] ?></option>
@@ -320,7 +320,7 @@
                                 </div>
 
                                 <div class="col-sm-2 mb-1" id="branch_list_term4" style="display:none">
-                                    <select class="form-control rounded-pill" name="branchs_list" id="branchs_list" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control" name="branchs_list" id="branchs_list" data-placeholder="Select ship" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">Select Branch</option>
                                         <?php foreach ($branches as $data) { ?>
                                             <option class="form-control form-control-user" value="<?= $data['id'] ?>"><?= $data['branch_name'] ?></option>

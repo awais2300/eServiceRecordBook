@@ -138,7 +138,28 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-12">
-                                    <h6>&nbsp;EXCUSE DETAILS:</h6>
+                                    <h6>&nbsp;DISEASE:</h6>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12 mb-1">
+                                    <!-- <textarea class="form-control form-control-user" name="disease" id="disease" style="border-radius:10px" placeholder="ADD EXCUSE DETAILS"></textarea> -->
+                                    <select class="form-control" name="disease" id="disease" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                        <option class="form-control form-control-user" value="">SELECT DISEASE</option>
+                                        <option class="form-control form-control-user" value="flu">FLU</option>
+                                        <option class="form-control form-control-user" value="fever">FEVER</option>
+                                        <option class="form-control form-control-user" value="typhoid">TYPHOID</option>
+                                        <option class="form-control form-control-user" value="gastric">GASTRIC PROBLEM</option>
+                                        <option class="form-control form-control-user" value="headache">HEADACHE</option>
+                                        <option class="form-control form-control-user" value="migrane">MIGRAINE</option>
+                                        <option class="form-control form-control-user" value="covid">COVID-19</option>
+                                        <option class="form-control form-control-user" value="accident">TRAUMA/EMERGENCY</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <h6>&nbsp;MEDICAL DESCRIPTION:</h6>
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -146,16 +167,7 @@
                                     <textarea class="form-control form-control-user" name="excuse" id="excuse" style="border-radius:10px" placeholder="ADD EXCUSE DETAILS"></textarea>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <div class="col-sm-12">
-                                    <h6>&nbsp;DISEASE:</h6>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-12 mb-1">
-                                    <textarea class="form-control form-control-user" name="disease" id="disease" style="border-radius:10px" placeholder="ADD EXCUSE DETAILS"></textarea>
-                                </div>
-                            </div>
+                            
                             <div class="form-group row">
                                 <div class="col-sm-4">
                                     <h6>&nbsp;START DATE:</h6>

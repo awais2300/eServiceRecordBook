@@ -159,8 +159,7 @@
                             </div>
 
                             <div class="form-group row custom-file-upload">
-                                <div class="col-sm-6 mb-1">
-                                    <!-- <input type="file" style="height: 50px; padding:10px !important;"  class="form-control form-control-user" placeholder="Upload Document" name="observation_slip"> -->
+                                <div class="col-sm-6 mb-1">                                    
                                     <input type="file" id="obs_slip" style="height: 50px; padding:10px !important;" class="form-control form-control-user" placeholder="SCAN CNIC" name="obs_slip" x-model="fileName">
                                 </div>
                                 <div class="col-sm-6 mb-1">

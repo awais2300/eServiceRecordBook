@@ -488,6 +488,9 @@ class CT extends CI_Controller
             $term = $postData['term'];
             $awarded_by = $this->session->userdata('username');
             $awarded_id = $this->session->userdata('user_id');
+            $observation_type = $postData['observation_type'];
+            
+            $upload_obs_slip = $this->upload_obs_slip($_FILES['obs_slip']);
 
             $insert_array = array(
                 // 'oc_no' => $oc_no,
@@ -499,11 +502,25 @@ class CT extends CI_Controller
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
                 'term' => $term,
+                'observation_type' => $observation_type,
                 'status' => 'Approved'
             );
 
             $insert = $this->db->insert('observation_records', $insert_array);
-            //$last_id = $this->db->insert_id();
+            $insert_array_slip = array(  
+                'p_id' => $id,
+                'file_name' => $_FILES['obs_slip']['name'],
+                'file_type' => $_FILES['obs_slip']['type'],
+                'file_path' => $upload_obs_slip, 
+                'file_size' => $_FILES['obs_slip']['size'],
+                'do_id' => $awarded_id,
+                'phase' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+                'created_at' => date('Y-m-d H:i:s')
+            );
+
+            $insert = $this->db->insert('observation_slips', $insert_array_slip);
+
 
             if (!empty($insert)) {
                 $this->session->set_flashdata('success', 'Observation added successfully');
@@ -4397,5 +4414,29 @@ class CT extends CI_Controller
         }
 
         echo json_encode($semster_list);
+    }
+
+    public function upload_obs_slip($fieldname)
+    {
+        $_FILES['file']['name']     = $_FILES['obs_slip']['name'];
+        $_FILES['file']['type']     = $_FILES['obs_slip']['type'];
+        $_FILES['file']['tmp_name'] = $_FILES['obs_slip']['tmp_name'];
+        $_FILES['file']['error']    = $_FILES['obs_slip']['error'];
+        $_FILES['file']['size']     = $_FILES['obs_slip']['size'];
+
+        $config['upload_path'] = 'uploads/observations';
+        $config['allowed_types'] = 'gif|jpg|png|doc|xls|pdf|xlsx|docx|ppt|pptx|jpeg|txt';
+
+        $this->load->library('upload', $config);
+        $this->upload->initialize($config);
+        if (!$this->upload->do_upload('file')) {
+            $data = array('msg' => $this->upload->display_errors());
+        } else {
+            $data = array('msg' => "success");
+            $data = $this->upload->data();
+            $count = $data['file_name'];
+        }
+
+        return $count;
     }
 }

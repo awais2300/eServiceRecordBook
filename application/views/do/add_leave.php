@@ -161,16 +161,24 @@
                                     <input type="date" class="form-control form-control-user" name="date_to" id="date_to">
                                 </div>
                                 <div class="col-sm-3 mb-1">
-                                    <input type="text" class="form-control form-control-user" name="nature" id="nature" placeholder="NATURE OF LEAVE">
+                                    <!-- <input type="text" class="form-control form-control-user" name="nature" id="nature" placeholder="NATURE OF LEAVE"> -->
+                                    <select class="form-control" name="nature" id="nature" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                        <option class="form-control form-control-user" value="">NATURE OF LEAVE</option>
+                                        <option class="form-control form-control-user" value="medical">MEDICAL</option>
+                                        <option class="form-control form-control-user" value="casual">CASUAL</option>
+                                        <option class="form-control form-control-user" value="annual">ANNUAL</option>
+                                        <option class="form-control form-control-user" value="hajj">HAJJ/UMRAH</option>
+                                        <option class="form-control form-control-user" value="compensation">COMPENSATION</option>
+                                    </select>
                                     <span id="error_end_date" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;END DATE CANNOT BE LESS THAN THE START DATE</span>
                                 </div>
                                 <div class="col-sm-3 mb-1">
                                     <input type="text" class="form-control form-control-user" name="approved_by" id="approved_by" placeholder="APPROVED BY">
                                     <span id="error_end_date" style="font-size:10px; color:red; display:none">&nbsp;&nbsp;END DATE CANNOT BE LESS THAN THE START DATE</span>
                                 </div>
-                                
+
                             </div>
-                            
+
 
                             <div class="form-group row justify-content-center">
                                 <div class="col-sm-4">

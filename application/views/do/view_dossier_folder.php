@@ -104,7 +104,7 @@
                     </div>
                     <div class="col-lg-2">
                         <?php if (isset($pn_data['name'])) { ?>
-                            <img src='<?= base_url() ?>uploads/documents/<?php echo $pn_personal_data['upload_file'] ?>' style="height:130px; width:100px; border:1px solid black;">
+                            <img src='<?= base_url() ?>uploads/documents/<?php echo $pn_personal_data['upload_file'] ?>' style="height:175px; width:145px; border:1px solid black;">
                         <?php } ?>
                     </div>
                 </div>

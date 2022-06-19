@@ -101,7 +101,7 @@
                     </div>
 
                     <div class="card-body bg-custom3">
-                        <form class="user" role="form" method="post" id="save_form" action="<?= base_url(); ?>D_O/save_cadet_observation">
+                        <form class="user" role="form" method="post" enctype="multipart/form-data" id="save_form" action="<?= base_url(); ?>CAO/save_cadet_observation">
                             <div class="form-group row">
                                 <div class="col-sm-4">
                                     <h6>&nbsp;NAME:</h6>
@@ -144,6 +144,30 @@
                             <div class="form-group row">
                                 <div class="col-sm-12 mb-1">
                                     <textarea class="form-control form-control-user" name="observation" id="observation" style="border-radius:10px" placeholder="Add Observation"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <h6>&nbsp;ATTACH OBSERVATION SLIP:</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h6>&nbsp;OBSERVATION TYPE:</h6>
+                                </div>
+                            </div>
+
+                            <div class="form-group row custom-file-upload">
+                                <div class="col-sm-6 mb-1">                                    
+                                    <input type="file" id="obs_slip" style="height: 50px; padding:10px !important;" class="form-control form-control-user" placeholder="SCAN CNIC" name="obs_slip" x-model="fileName">
+                                </div>
+                                <div class="col-sm-6 mb-1">
+                                    <select class="form-control " name="observation_type" id="observation_type" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                        <option class="form-control form-control-user" value="">SELECT TYPE</option>
+                                        <option class="form-control form-control-user" value="green">GREEN</option>
+                                        <option class="form-control form-control-user" value="orange">ORANGE</option>
+                                        <option class="form-control form-control-user" value="yellow">YELLOW</option>
+                                        <option class="form-control form-control-user" value="red">RED</option>
+                                    </select>
                                 </div>
                             </div>
 
@@ -227,7 +251,7 @@
             $('#show_error_new').hide();
 
             $.ajax({
-                url: '<?= base_url(); ?>D_O/search_cadet_for_observation',
+                url: '<?= base_url(); ?>CAO/search_cadet',
                 method: 'POST',
                 data: {
                     'oc_no': oc_no

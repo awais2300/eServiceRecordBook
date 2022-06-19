@@ -166,7 +166,7 @@
 
                 <div class="card">
                     <div class="card-header bg-custom1">
-                        <h1 class="h4">Promote / Relegate a cadet</h1>
+                        <h1 class="h4">PROMOTE A CADET</h1>
                     </div>
 
                     <div class="card-body bg-custom3">
@@ -248,9 +248,9 @@
                                     </button>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <button type="button" class="btn btn-primary btn-user btn-block" id="relegate_btn" style="background-color:red">
+                                    <!-- <button type="button" class="btn btn-primary btn-user btn-block" id="relegate_btn" style="background-color:red">
                                         <strong>Relegate</strong>
-                                    </button>
+                                    </button> -->
                                 </div>
 
                             </div>
@@ -277,7 +277,7 @@
 
                 <div class="card">
                     <div class="card-header bg-custom1">
-                        <h1 class="h4">Promote / Relegate a cadet</h1>
+                        <h1 class="h4">PROMOTE A CADET</h1>
                     </div>
 
                     <div class="card-body bg-custom3">

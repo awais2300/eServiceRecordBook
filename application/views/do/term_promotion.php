@@ -99,7 +99,7 @@
                                 </div>
 
                                 <div id="show_terms" class="col-sm-3 mb-1" style="display:none">
-                                    <select class="form-control rounded-pill" name="term_list" id="term_list" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                    <select class="form-control" name="term_list" id="term_list" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                         <option class="form-control form-control-user" value="">SELECT TERM</option>
                                         <option class="form-control form-control-user" value="Term-I">Term-I</option>
                                         <option class="form-control form-control-user" value="Term-II">Term-II</option>
@@ -130,7 +130,7 @@
 
                 <div class="card">
                     <div class="card-header bg-custom1">
-                        <h1 class="h4">PROMOTE/RELEGATE UT</h1>
+                        <h1 class="h4">PROMOTE UT</h1>
                     </div>
 
                     <div class="card-body bg-custom3">
@@ -210,9 +210,9 @@
                                     </button>
                                 </div>
                                 <div class="col-sm-2 mb-1">
-                                    <button type="button" class="btn btn-primary btn-user btn-block" id="relegate_btn" style="background-color:red">
+                                    <!-- <button type="button" class="btn btn-primary btn-user btn-block" id="relegate_btn" style="background-color:red">
                                         <strong>Relegate</strong>
-                                    </button>
+                                    </button> -->
                                 </div>
 
                             </div>
@@ -239,7 +239,7 @@
 
                 <div class="card">
                     <div class="card-header bg-custom1">
-                        <h1 class="h4">Promote / Relegate a UT</h1>
+                        <h1 class="h4">Promote a UT</h1>
                     </div>
 
                     <div class="card-body bg-custom3">
