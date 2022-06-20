@@ -3104,6 +3104,36 @@ ADD COLUMN observation_type varchar(255);
 ALTER TABLE medical_records
 ADD COLUMN medical_record_file varchar(255);
 
+CREATE TABLE `childern_records` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `p_id` int(11) NOT NULL,
+  `name` varchar(150) DEFAULT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `dob` date DEFAULT NULL,
+  `profession` varchar(150) DEFAULT NULL,
+  `address` varchar(150) DEFAULT NULL,
+  `affiliation` varchar(150) DEFAULT NULL,
+   PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `siblings_records` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `p_id` int(11) NOT NULL,
+  `name` varchar(150) DEFAULT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `nationality` varchar(10) DEFAULT NULL,
+  `religion` varchar(10) DEFAULT NULL,
+  `sect` varchar(10) DEFAULT NULL,
+  `age` varchar(10) DEFAULT NULL,
+  `dependant` varchar(10) DEFAULT NULL,
+  `address` varchar(150) DEFAULT NULL,
+  `contact_no` varchar(150) DEFAULT NULL,
+  `affiliation` varchar(150) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
 ALTER TABLE physical_milestone CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 ALTER TABLE term_i_details CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

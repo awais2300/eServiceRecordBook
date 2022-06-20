@@ -456,8 +456,8 @@ class D_O extends CI_Controller
             $ex_army = $postData['army'];
             $father_name = $postData['father_name'];
             $father_occupation = $postData['occupation'];
-            $next_of_kin = $postData['next_of_kin'];
-            $siblings = $postData['siblings'];
+            // $next_of_kin = $postData['next_of_kin'];
+            // $siblings = $postData['siblings'];
             // $near_relatives = $postData['relatives'];
             $identification_marks = $postData['mark'];
             $height = $postData['height'];
@@ -555,6 +555,8 @@ class D_O extends CI_Controller
             $date_of_marriage = $postData['date_of_marriage'];
             $wife_cnic = $postData['wife_cnic'];
 
+
+
             $insert_array = array(
                 'p_id' => $officer_id,
                 'p_no' => $p_no,
@@ -565,8 +567,8 @@ class D_O extends CI_Controller
                 'ex_army' => $ex_army,
                 'father_name' => $father_name,
                 'father_occupation' => $father_occupation,
-                'next_of_kin' => $next_of_kin,
-                'siblings' => $siblings,
+                // 'next_of_kin' => $next_of_kin,
+                // 'siblings' => $siblings,
                 // 'near_relatives' => $near_relatives,
                 'identification_marks' => $identification_marks,
                 'height' => $height,
@@ -648,6 +650,70 @@ class D_O extends CI_Controller
 
             $insert = $this->db->insert('personal_datas', $insert_array);
 
+            //$CHILDERN RECORDS
+            if (isset($postData['no_of_childs'])) {
+                $no_of_childs = $postData['no_of_childs'];
+            } else {
+                $no_of_childs = 1;
+            }
+
+            for ($i = 1; $i <= $no_of_childs; $i++) {
+                $child_name = $postData['child_name' . $i];
+                $child_gender = $postData['child_gender' . $i];
+                $child_dob = $postData['child_dob' . $i];
+                $child_profession = $postData['child_profession' . $i];
+                $child_address = $postData['child_address' . $i];
+                $child_affiliation = $postData['child_affiliation' . $i];
+
+                $insert_array_child = array(
+                    'p_id' => $officer_id,
+                    'name' => $child_name,
+                    'gender' => $child_gender,
+                    'dob' => $child_dob,
+                    'profession' => $child_profession,
+                    'address' => $child_address,
+                    'affiliation' => $child_affiliation
+                );
+
+                $insert = $this->db->insert('childern_records', $insert_array_child);
+            }
+
+            //SIBLINGS RECORD
+            if (isset($postData['no_of_siblings'])) {
+                $no_of_siblings = $postData['no_of_siblings'];
+            } else {
+                $no_of_siblings = 1;
+            }
+
+            for ($i = 1; $i <= $no_of_siblings; $i++) {
+                $sibling_name = $postData['sibling_name' . $i];
+                $sibling_gender = $postData['sibling_gender' . $i];
+                $sibling_nationality = $postData['sibling_nationality' . $i];
+                $sibling_religion = $postData['sibling_religion' . $i];
+                $sibling_sect = $postData['sibling_sect' . $i];
+                $sibling_dependant = $postData['sibling_dependant' . $i];
+                $sibling_age = $postData['sibling_age' . $i];
+                $sibling_address = $postData['sibling_address' . $i];
+                $sibling_contact = $postData['sibling_contact' . $i];
+                $sibling_affiliation = $postData['sibling_affiliation' . $i];
+
+                $insert_array_sibling = array(
+                    'p_id' => $officer_id,
+                    'name' => $sibling_name,
+                    'gender' => $sibling_gender,
+                    'nationality' => $sibling_nationality,
+                    'religion' => $sibling_religion,
+                    'sect' => $sibling_sect,
+                    'age' => $sibling_age,
+                    'dependant' => $sibling_dependant,
+                    'address' => $sibling_address,
+                    'contact_no' => $sibling_contact,
+                    'affiliation' => $sibling_affiliation
+                );
+
+                $insert = $this->db->insert('siblings_records', $insert_array_sibling);
+            }
+
             if (!empty($insert)) {
 
                 $cadet_name = $this->db->select('name')->where('p_id', $officer_id)->get('pn_form1s')->row_array();
@@ -710,7 +776,7 @@ class D_O extends CI_Controller
             $ex_army = $postData['army'];
             $father_name = $postData['father_name'];
             $father_occupation = $postData['occupation'];
-            $next_of_kin = $postData['next_of_kin'];
+            // $next_of_kin = $postData['next_of_kin'];
             $siblings = $postData['siblings'];
             $near_relatives = $postData['relatives'];
             $identification_marks = $postData['mark'];
@@ -739,7 +805,7 @@ class D_O extends CI_Controller
                 'ex_army' => $ex_army,
                 'father_name' => $father_name,
                 'father_occupation' => $father_occupation,
-                'next_of_kin' => $next_of_kin,
+                // 'next_of_kin' => $next_of_kin,
                 'siblings' => $siblings,
                 'near_relatives' => $near_relatives,
                 'identification_marks' => $identification_marks,
@@ -764,6 +830,9 @@ class D_O extends CI_Controller
             );
             $this->db->where('p_id', $officer_id);
             $insert = $this->db->update('personal_datas', $update_array);
+
+
+
 
             if (!empty($insert)) {
 
@@ -1167,7 +1236,7 @@ class D_O extends CI_Controller
             $awarded_by = $this->session->userdata('username');
             $awarded_id = $this->session->userdata('user_id');
             $observation_type = $postData['observation_type'];
-            
+
             $upload_obs_slip = $this->upload_obs_slip($_FILES['obs_slip']);
 
             $insert_array = array(
@@ -1186,7 +1255,7 @@ class D_O extends CI_Controller
 
             $insert = $this->db->insert('observation_records', $insert_array);
 
-            $insert_array_slip = array(  
+            $insert_array_slip = array(
                 'p_id' => $id,
                 'file_name' => $_FILES['obs_slip']['name'],
                 'file_type' => $_FILES['obs_slip']['type'],
@@ -3562,6 +3631,7 @@ class D_O extends CI_Controller
 
     public function upload_cnic($fieldname)
     {
+        $count = '';
         $_FILES['file']['name']     = $_FILES['cnic_scan']['name'];
         $_FILES['file']['type']     = $_FILES['cnic_scan']['type'];
         $_FILES['file']['tmp_name'] = $_FILES['cnic_scan']['tmp_name'];

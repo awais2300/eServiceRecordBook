@@ -28,9 +28,14 @@
         border: 1px solid red !important;
     }
 
-    /* .ui-datepicker-calendar {
-        display: none;
-    } */
+    .custom_heading {
+        font-size: small;
+    }
+
+    .custom_textbox {
+        font-size: small !important;
+        padding: 18px !important;
+    }
 
     ​ .modal {
         display: none;
@@ -443,11 +448,11 @@
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-11">
-                                            DETAILS OF CHILDERN
+                                        <div class="col-sm-10" style="text-decoration:underline">
+                                            <strong>DETAILS OF CHILDERN</strong>
                                         </div>
-                                        <div class="col-sm-1">
-                                            <button type="button" id="btn_child_row">ADD ROW</button>
+                                        <div class="col-sm-2">
+                                            <button type="button" id="btn_child_row" class="btn btn-primary btn-user btn-block"><i class="fas fa-plus"></i> ADD ROW</button>
                                         </div>
 
                                     </div>
@@ -478,44 +483,124 @@
 
                                     <div class="form-group row" id="child_details" style="border:solid lightgrey 1px;border-radius:5px; padding:3px">
                                         <div class="col-sm-1 mb-1">
-                                            <input type="number" style="border-radius:10px" class="form-control form-control-user" name="child_sno" id="child_sno" placeholder="S. NO." value=1>
+                                            <input type="number" style="border-radius:10px" class="form-control form-control-user" name="child_sno" id="child_sno" placeholder="S. NO." value=1 readonly>
                                         </div>
                                         <div class="col-sm-2 mb-1">
-                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_name" id="child_name" placeholder="CHILD NAME">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_name1" id="child_name1" placeholder="CHILD NAME">
                                         </div>
                                         <div class="col-sm-1 mb-1">
-                                            <select class="form-control " name="child_gender" id="child_gender" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                            <select class="form-control " name="child_gender1" id="child_gender1" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                                 <option class="form-control form-control-user" value="">SELECT GENDER</option>
                                                 <option class="form-control form-control-user" value="male">MALE</option>
                                                 <option class="form-control form-control-user" value="female">FEMALE</option>
                                             </select>
                                         </div>
                                         <div class="col-sm-2 mb-1">
-                                            <input type="date" style="border-radius:10px" class="form-control form-control-user" name="child_dob" id="child_dob" placeholder="CHILD GENDER">
+                                            <input type="date" style="border-radius:10px" class="form-control form-control-user" name="child_dob1" id="child_dob1" placeholder="CHILD GENDER">
                                         </div>
                                         <div class="col-sm-2 mb-1">
-                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_profession" id="child_profession" placeholder="CHILD PROFESSION">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_profession1" id="child_profession1" placeholder="CHILD PROFESSION">
                                         </div>
                                         <div class="col-sm-2 mb-1">
-                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_address" id="child_address" placeholder="CHILD ADDRESS">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_address1" id="child_address1" placeholder="CHILD ADDRESS">
                                         </div>
                                         <div class="col-sm-2 mb-1">
-                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_affiliation" id="child_affiliation" placeholder="CHILD AFFILIATION">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_affiliation1" id="child_affiliation1" placeholder="CHILD AFFILIATION">
                                         </div>
 
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <h6>&nbsp;NAMES OF BROTHERS AND SISTERS:</h6>
+                                        <div class="col-sm-10" style="text-decoration:underline">
+                                            <strong>DETAILS OF SIBLINGS</strong>
                                         </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" id="btn_sibling_row" class="btn btn-primary btn-user btn-block"><i class="fas fa-plus"></i> ADD ROW</button>
+                                        </div>
+
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-12 mb-1">
-                                            <textarea type="text" style="border-radius:10px" class="form-control form-control-user" name="siblings" id="siblings" placeholder="SIBLING NAME/CNIC/OCCUPATIPN/DOB"></textarea>
+                                        <div class="col-sm-1">
+                                            <h6 class="custom_heading">&nbsp;S NO.</h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6 class="custom_heading">&nbsp;NAME:</h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 class="custom_heading">&nbsp;GENDER:</h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 class="custom_heading">&nbsp;NATIONALITY:</h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 class="custom_heading">&nbsp;RELIGION:</h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 class="custom_heading">&nbsp;SECT:</h6>
+                                        </div> 
+                                        <div class="col-sm-1">
+                                            <h6 class="custom_heading">&nbsp;AGE:</h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 class="custom_heading">&nbsp;DEPENDENT:</h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 class="custom_heading">&nbsp;ADDRESS:</h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 class="custom_heading">&nbsp;CONTACT NO:</h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 class="custom_heading">&nbsp;AFFILIATION:</h6>
                                         </div>
                                     </div>
+
+                                    <div class="form-group row" id="sibling_details" style="border:solid lightgrey 1px;border-radius:5px; padding:3px">
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="number" class="form-control form-control-user custom_textbox" name="sibling_sno" id="sibling_sno" placeholder="S. NO." value=1 readonly>
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" class="form-control form-control-user custom_textbox" name="sibling_name1" id="sibling_name1" placeholder="NAME">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <select class="form-control " name="sibling_gender1" id="sibling_gender1" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:38px;">
+                                                <option class="form-control form-control-user" value="">SELECT GENDER</option>
+                                                <option class="form-control form-control-user" value="male">MALE</option>
+                                                <option class="form-control form-control-user" value="female">FEMALE</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" class="form-control form-control-user custom_textbox" name="sibling_nationality1" id="sibling_nationality1" placeholder="NATIONALITY">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" class="form-control form-control-user custom_textbox" name="sibling_religion1" id="sibling_religion1" placeholder="RELIGION">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" class="form-control form-control-user custom_textbox" name="sibling_sect1" id="sibling_sect1" placeholder="SECT">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" class="form-control form-control-user custom_textbox" name="sibling_age1" id="sibling_age1" placeholder="AGE">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <select class="form-control " name="sibling_dependant1" id="sibling_dependant1" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:38px;">
+                                                <option class="form-control form-control-user" value="">SELECT</option>
+                                                <option class="form-control form-control-user" value="yes">YES</option>
+                                                <option class="form-control form-control-user" value="no">NO</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" class="form-control form-control-user custom_textbox" name="sibling_address1" id="sibling_address1" placeholder="ADDRESS">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" class="form-control form-control-user custom_textbox" name="sibling_contact1" id="sibling_contact1" placeholder="CONTACT">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" class="form-control form-control-user custom_textbox" name="sibling_affiliation1" id="sibling_affiliation1" placeholder="AFFILIATION">
+                                        </div>
+
+                                    </div>
+
                                     <div class="form-group row">
                                         <div class="col-sm-12">
                                             <h6>&nbsp;RELATIVES IN DEFENCE SERVICES (PARENTS/BROTHERS/SISTERS/REAL UNCLES):</h6>
@@ -936,18 +1021,18 @@
     });
 
     $('#btn_child_row').on('click', function() {
-        
+
         var counter = $('#child_sno').val();
         var len = document.getElementById('child_details').childNodes.length;
-        len_counter = parseInt(len/14);
+        len_counter = parseInt(len / 14);
         $('#child_details').append(` <div class="col-sm-1 mb-1">
-                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_sno${len_counter}" id="child_sno${len_counter}" value=${++len_counter} placeholder="S. NO.">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_sno${len_counter}" id="child_sno${len_counter}" value=${++len_counter} placeholder="S. NO." readonly>
                                         </div>
                                         <div class="col-sm-2 mb-1">
                                             <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_name${len_counter}" id="child_name${len_counter}" placeholder="CHILD NAME">
                                         </div>
                                         <div class="col-sm-1 mb-1">
-                                        <select class="form-control " name="child_gender${len_counter}" id="child_gender${len_counter}" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                            <select class="form-control " name="child_gender${len_counter}" id="child_gender${len_counter}" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                                 <option class="form-control form-control-user" value="">SELECT GENDER</option>
                                                 <option class="form-control form-control-user" value="male">MALE</option>
                                                 <option class="form-control form-control-user" value="female">FEMALE</option>
@@ -965,7 +1050,73 @@
                                         <div class="col-sm-2 mb-1">
                                             <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_affiliation${len_counter}" id="child_affiliation${len_counter}" placeholder="CHILD AFFILIATION">
                                         </div>`);
-    // count = count + 1; 
+
+        var input = document.createElement("input");
+        input.setAttribute("type", "hidden");
+        input.setAttribute("name", "no_of_childs");
+        input.setAttribute("value", len_counter);
+        //append to form element that you want .
+        document.getElementById("add_form").appendChild(input);
+    });
+
+
+    $('#btn_sibling_row').on('click', function() {
+
+        var counter = $('#sibling_sno').val();
+        var len = document.getElementById('sibling_details').childNodes.length;
+        // alert(len);
+        len_counter = parseInt(len - 21);
+        $('#sibling_details').append(`<div class="form-group row" id="sibling_details">
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="number" style="margin-left:10px !important;" class="form-control form-control-user custom_textbox" name="sibling_sno" id="sibling_sno" placeholder="S. NO." value=${len_counter} readonly>
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text"   style="margin-left:8px !important;" class="form-control form-control-user custom_textbox" name="sibling_name${len_counter}" id="sibling_name${len_counter}" placeholder="NAME">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <select class="form-control " name="sibling_gender${len_counter}" id="sibling_gender${len_counter}" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:38px; margin-left:10px">
+                                                <option class="form-control form-control-user" value="">SELECT GENDER</option>
+                                                <option class="form-control form-control-user" value="male">MALE</option>
+                                                <option class="form-control form-control-user" value="female">FEMALE</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" style="margin-left:5px !important;" class="form-control form-control-user custom_textbox" name="sibling_nationality${len_counter}" id="sibling_nationality${len_counter}" placeholder="NATIONALITY">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" style="margin-left:2px !important;" class="form-control form-control-user custom_textbox" name="sibling_religion${len_counter}" id="sibling_religion${len_counter}" placeholder="RELIGION">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" class="form-control form-control-user custom_textbox" name="sibling_sect${len_counter}" id="sibling_sect${len_counter}" placeholder="SECT">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" class="form-control form-control-user custom_textbox" name="sibling_age${len_counter}" id="sibling_age${len_counter}" placeholder="AGE">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <select class="form-control" name="sibling_dependant${len_counter}" id="sibling_dependant${len_counter}" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:38px; margin-left:-2px !important">
+                                                <option class="form-control form-control-user" value="">SELECT</option>
+                                                <option class="form-control form-control-user" value="yes">YES</option>
+                                                <option class="form-control form-control-user" value="no">NO</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" style="margin-left:-6px !important" class="form-control form-control-user custom_textbox" name="sibling_address${len_counter}" id="sibling_address${len_counter}" placeholder="ADDRESS">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" style="margin-left:-7px !important" class="form-control form-control-user custom_textbox" name="sibling_contact${len_counter}" id="sibling_contact${len_counter}" placeholder="CONTACT">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="text" style="margin-left:-10px !important" class="form-control form-control-user custom_textbox" name="sibling_affiliation${len_counter}" id="sibling_affiliation${len_counter}" placeholder="AFFILIATION">
+                                        </div>
+
+                                    </div>`);
+
+        var input = document.createElement("input");
+        input.setAttribute("type", "hidden");
+        input.setAttribute("name", "no_of_siblings");
+        input.setAttribute("value", len_counter);
+        //append to form element that you want .
+        document.getElementById("add_form").appendChild(input);
     });
 
 
