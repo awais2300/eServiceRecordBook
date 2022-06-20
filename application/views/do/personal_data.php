@@ -317,46 +317,194 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-3">
                                             <h6>&nbsp;FATHER's NAME:</h6>
                                         </div>
-
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-2">
+                                            <h6>&nbsp;FATHER's CNIC:</h6>
+                                        </div>
+                                        <div class="col-sm-2">
                                             <h6>&nbsp;FATHER'S OCCUPATION:</h6>
                                         </div>
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;FATHER's PERMANENT ADDRESS:</h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6>&nbsp;FATHER's STATUS:</h6>
+                                        </div>
+
                                     </div>
 
-                                    <div class="form-group row">
-                                        <div class="col-sm-6 mb-1">
+                                    <div class="form-group row" style="border:solid lightgrey 1px;border-radius:5px; padding:3px">
+                                        <div class="col-sm-3 mb-1">
                                             <input type="text" class="form-control form-control-user" name="father_name" id="father_name" placeholder="FATHER'S NAME">
                                         </div>
-                                        <div class="col-sm-6 mb-1">
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="father_cnic" id="father_cnic" placeholder="FATHER'S CNIC">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
                                             <input type="text" class="form-control form-control-user" name="occupation" id="occupation" placeholder="FATHER'S OCCUPATION">
                                         </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="father_permanent_address" id="father_permanent_address" placeholder="FATHER'S ADDRESS">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <select class="form-control " name="father_status" id="father_status" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                                <option class="form-control form-control-user" value="">SELECT STATUS</option>
+                                                <option class="form-control form-control-user" value="alive">ALIVE</option>
+                                                <option class="form-control form-control-user" value="deceased">DECEASED</option>
+                                            </select>
+                                        </div>
                                     </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-3">
+                                            <h6>&nbsp;MOTHER's NAME:</h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6>&nbsp;MOTHERS's CNIC:</h6>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <h6>&nbsp;MOTHERS's PERMANENT ADDRESS:</h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6>&nbsp;MOTHERS's STATUS:</h6>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-group row" style="border:solid lightgrey 1px;border-radius:5px; padding:3px">
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="mother_name" id="mother_name" placeholder="MOTHERS'S NAME">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="mother_cnic" id="mother_cnic" placeholder="MOTHERS'S CNIC">
+                                        </div>
+                                        <div class="col-sm-5 mb-1">
+                                            <input type="text" class="form-control form-control-user" name="mother_permanent_address" id="mother_permanent_address" placeholder="MOTHERS'S ADDRESS">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <select class="form-control " name="mother_status" id="mother_status" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                                <option class="form-control form-control-user" value="">SELECT STATUS</option>
+                                                <option class="form-control form-control-user" value="alive">ALIVE</option>
+                                                <option class="form-control form-control-user" value="deceased">DECEASED</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
                                     <div class="form-group row">
                                         <div class="col-sm-12">
-                                            <h6>&nbsp;NEXT OF KIN & ADDRESS:</h6>
+                                            <h6>&nbsp;NEXT OF KIN (DETAILS):</h6>
                                         </div>
                                     </div>
 
-                                    <div class="form-group row">
-                                        <div class="col-sm-12 mb-1">
-                                            <input type="text" class="form-control form-control-user" name="next_of_kin" id="next_of_kin" placeholder="NEXT OF KIN & ADDRESS">
+                                    <div class="form-group row" style="border:solid lightgrey 1px;border-radius:5px; padding:3px">
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="next_of_kin_name" id="next_of_kin_name" placeholder="NAME"></textarea>
                                         </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="next_of_kin_cnic" id="next_of_kin_cnic" placeholder="CNIC"></textarea>
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="next_of_kin_relation" id="next_of_kin_relation" placeholder="RELATION"></textarea>
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="next_of_kin_contact_no" id="next_of_kin_contact_no" placeholder="CONTACT NO"></textarea>
+                                        </div>
+                                        <div class="col-sm-3 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="next_of_kin_address" id="next_of_kin_address" placeholder="ADDRESS"></textarea>
+                                        </div>
+
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <h6>&nbsp;DETAILS OF FAMILY:</h6>
+                                        <div class="col-sm-4">
+                                            <h6>&nbsp;NAME OF WIFE:</h6>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <h6>&nbsp;DATE OF MARRIGE/DIVORCE:</h6>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <h6>&nbsp;WIFE'S CNIC:</h6>
                                         </div>
                                     </div>
 
+                                    <div class="form-group row" style="border:solid lightgrey 1px;border-radius:5px; padding:3px">
+                                        <div class="col-sm-4 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="wife_name" id="wife_name" placeholder="WIFE NAME">
+                                        </div>
+                                        <div class="col-sm-4 mb-1">
+                                            <input type="date" style="border-radius:10px" class="form-control form-control-user" name="date_of_marriage" id="date_of_marriage" placeholder="CNIC">
+                                        </div>
+                                        <div class="col-sm-4 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="wife_cnic" id="wife_cnic " placeholder="WIFE CNIC">
+                                        </div>
+
+                                    </div>
+
                                     <div class="form-group row">
-                                        <div class="col-sm-12 mb-1">
-                                            <textarea type="text" style="border-radius:10px" class="form-control form-control-user" name="family_detail" id="family_detail" placeholder="DATE OF MARRIAGE/NAME OF WIFE/CNIC NO/CHILDREN(NAME/GENDER/DOB/AGE)"></textarea>
+                                        <div class="col-sm-11">
+                                            DETAILS OF CHILDERN
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <button type="button" id="btn_child_row">ADD ROW</button>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-1">
+                                            <h6>&nbsp;S NO.</h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6>&nbsp;NAME:</h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6>&nbsp;GENDER:</h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6>&nbsp;DOB:</h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6>&nbsp;PROFESSION:</h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6>&nbsp;ADDRESS:</h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6>&nbsp;AFFILIATION:</h6>
                                         </div>
                                     </div>
+
+                                    <div class="form-group row" id="child_details" style="border:solid lightgrey 1px;border-radius:5px; padding:3px">
+                                        <div class="col-sm-1 mb-1">
+                                            <input type="number" style="border-radius:10px" class="form-control form-control-user" name="child_sno" id="child_sno" placeholder="S. NO." value=1>
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_name" id="child_name" placeholder="CHILD NAME">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                            <select class="form-control " name="child_gender" id="child_gender" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                                <option class="form-control form-control-user" value="">SELECT GENDER</option>
+                                                <option class="form-control form-control-user" value="male">MALE</option>
+                                                <option class="form-control form-control-user" value="female">FEMALE</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="date" style="border-radius:10px" class="form-control form-control-user" name="child_dob" id="child_dob" placeholder="CHILD GENDER">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_profession" id="child_profession" placeholder="CHILD PROFESSION">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_address" id="child_address" placeholder="CHILD ADDRESS">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_affiliation" id="child_affiliation" placeholder="CHILD AFFILIATION">
+                                        </div>
+
+                                    </div>
+
                                     <div class="form-group row">
                                         <div class="col-sm-12">
                                             <h6>&nbsp;NAMES OF BROTHERS AND SISTERS:</h6>
@@ -448,23 +596,26 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="col-sm-12">
+                                        <div class="col-sm-6">
                                             <h6>&nbsp;SERVICE IDENTITY CARD NO:</h6>
                                         </div>
 
-                                        <!-- <div class="col-sm-6">
-                                            <h6>&nbsp;CNIC:</h6>
-                                        </div> -->
+                                        <div class="col-sm-6">
+                                            <h6>&nbsp;COVID-19 VACCINATION:</h6>
+                                        </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-12 mb-1">
+                                        <div class="col-sm-6 mb-1">
                                             <input type="text" class="form-control form-control-user" name="service_no" id="service_no" placeholder="SERVICE NO">
                                         </div>
-                                        <!-- <div class="col-sm-6 mb-1"> -->
-                                            <!-- <input type="text" class="form-control form-control-user" name="cnic" id="cnic" placeholder="CNIC"> -->
-                                            <!-- <input type="text" class="form-control form-control-user" data-inputmask="'mask': '99999-9999999-9'" placeholder="XXXXX-XXXXXXX-X" name="cnic" required=""> -->
-                                        <!-- </div> -->
+                                        <div class="col-sm-6 mb-1">
+                                            <select class="form-control " name="vaccination" id="vaccination" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                                <option class="form-control form-control-user" value="">SELECT ONE</option>
+                                                <option class="form-control form-control-user" value="yes">YES</option>
+                                                <option class="form-control form-control-user" value="no">NO</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-6">
@@ -477,7 +628,6 @@
 
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-1">
-                                            <!-- <input type="text" class="form-control form-control-user" name="blood" id="blood" placeholder="BLOOD GROUP"> -->
                                             <select class="form-control " name="blood" id="blood" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
                                                 <option class="form-control form-control-user" value="">SELECT BLOOD GROUP</option>
                                                 <option class="form-control form-control-user" value="A+">A+</option>
@@ -595,7 +745,40 @@
                                             <input type="text" style="border-radius:10px" class="form-control form-control-user" name="karachi_province" id="karachi_province" placeholder="PROVINCE"></textarea>
                                         </div>
                                     </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-6">
+                                            <h6>&nbsp;LIVING STATUS:</h6>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <h6>&nbsp;MARITIAL STATUS:</h6>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-6 mb-1">
+                                            <select class="form-control " name="living_status" id="living_status" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                                <option class="form-control form-control-user" value="">SELECT LIVING STATUS</option>
+                                                <option class="form-control form-control-user" value="in-living">IN LIVING</option>
+                                                <option class="form-control form-control-user" value="out-living">OUT LIVING</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6 mb-1">
+                                            <select class="form-control " name="living_status" id="living_status" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                                <option class="form-control form-control-user" value="">SELECT MARITIAL STATUS</option>
+                                                <option class="form-control form-control-user" value="married">MARRIED</option>
+                                                <option class="form-control form-control-user" value="single">SINGLE</option>
+                                                <option class="form-control form-control-user" value="divorsed">DIVORSED</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+
+
                                 </div>
+
+
 
                                 <div class="tab-pane fade" id="step3" role="tabpanel" aria-labelledby="nav-home-tab">
                                     <h2 style="text-align:center; margin-top:15px;margin-bottom:10px">PART III</h2>
@@ -751,6 +934,40 @@
             }
         });
     });
+
+    $('#btn_child_row').on('click', function() {
+        
+        var counter = $('#child_sno').val();
+        var len = document.getElementById('child_details').childNodes.length;
+        len_counter = parseInt(len/14);
+        $('#child_details').append(` <div class="col-sm-1 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_sno${len_counter}" id="child_sno${len_counter}" value=${++len_counter} placeholder="S. NO.">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_name${len_counter}" id="child_name${len_counter}" placeholder="CHILD NAME">
+                                        </div>
+                                        <div class="col-sm-1 mb-1">
+                                        <select class="form-control " name="child_gender${len_counter}" id="child_gender${len_counter}" data-placeholder="Select Contractor" style="font-size: 0.8rem; height:50px;">
+                                                <option class="form-control form-control-user" value="">SELECT GENDER</option>
+                                                <option class="form-control form-control-user" value="male">MALE</option>
+                                                <option class="form-control form-control-user" value="female">FEMALE</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="date" style="border-radius:10px" class="form-control form-control-user" name="child_dob${len_counter}" id="child_dob${len_counter}" placeholder="CHILD GENDER">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_profession${len_counter}" id="child_profession${len_counter}" placeholder="CHILD PROFESSION">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_address${len_counter}" id="child_address${len_counter}" placeholder="CHILD ADDRESS">
+                                        </div>
+                                        <div class="col-sm-2 mb-1">
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="child_affiliation${len_counter}" id="child_affiliation${len_counter}" placeholder="CHILD AFFILIATION">
+                                        </div>`);
+    // count = count + 1; 
+    });
+
 
     $('#add_btn').on('click', function() {
         //alert('javascript working');

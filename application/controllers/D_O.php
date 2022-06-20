@@ -526,6 +526,34 @@ class D_O extends CI_Controller
             $membership = $postData['membership'];
             $professional_courses = $postData['professional_courses'];
 
+            //VACCINATION
+            $vaccination = $postData['vaccination'];
+
+            //FATHER INFORMATION
+            $father_cnic = $postData['father_cnic'];
+            $father_permanent_address = $postData['father_permanent_address'];
+            $father_status = $postData['father_status'];
+
+            //MOTHER INFORMATION
+            $mother_name = $postData['mother_name'];
+            $mother_cnic = $postData['mother_cnic'];
+            $mother_permanent_address = $postData['mother_permanent_address'];
+            $mother_status = $postData['mother_status'];
+
+            //NEXT OF KIN INFORMATION
+            $next_of_kin_name = $postData['next_of_kin_name'];
+            $next_of_kin_cnic = $postData['next_of_kin_cnic'];
+            $next_of_kin_relation = $postData['next_of_kin_relation'];
+            $next_of_kin_contact_no = $postData['next_of_kin_contact_no'];
+            $next_of_kin_address = $postData['next_of_kin_address'];
+
+            //LIVING STATUS
+            $living_status = $postData['living_status'];
+
+            //WIFE DETAILS
+            $wife_name = $postData['wife_name'];
+            $date_of_marriage = $postData['date_of_marriage'];
+            $wife_cnic = $postData['wife_cnic'];
 
             $insert_array = array(
                 'p_id' => $officer_id,
@@ -598,7 +626,24 @@ class D_O extends CI_Controller
                 'inter_board_of_edu' => $inter_board_of_edu,
                 'membership' => $membership,
                 'professional_courses' => $professional_courses,
-                'upload_cnic' => $upload_cnic
+                'upload_cnic' => $upload_cnic,
+                'vaccination' => $vaccination,
+                'father_cnic' => $father_cnic,
+                'father_permanent_address' => $father_permanent_address,
+                'father_status' => $father_status,
+                'mother_name' => $mother_name,
+                'mother_cnic' => $mother_cnic,
+                'mother_permanent_address' => $mother_permanent_address,
+                'mother_status' => $mother_status,
+                'next_of_kin_name' => $next_of_kin_name,
+                'next_of_kin_cnic' => $next_of_kin_cnic,
+                'next_of_kin_relation' => $next_of_kin_relation,
+                'next_of_kin_contact_no' => $next_of_kin_contact_no,
+                'next_of_kin_address' => $next_of_kin_address,
+                'living_status' => $living_status,
+                'wife_name' => $wife_name,
+                'date_of_marriage' => $date_of_marriage,
+                'wife_cnic' => $wife_cnic
             );
 
             $insert = $this->db->insert('personal_datas', $insert_array);

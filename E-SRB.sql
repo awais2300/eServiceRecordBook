@@ -10,6 +10,7 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
+SET GLOBAL innodb_strict_mode=OFF;
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -1042,40 +1043,40 @@ CREATE TABLE `personal_datas` (
   `id` int(11) NOT NULL,
   `p_id` int(11) NOT NULL,
   `p_no` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `course` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `religion` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `emergency_contact` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `telephone_no` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `ex_army` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `ex_army_from` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `ex_army_to` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `father_name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `course` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `religion` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `emergency_contact` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `telephone_no` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ex_army` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ex_army_from` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ex_army_to` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `father_name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `father_occupation` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `next_of_kin` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `next_of_kin` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `siblings` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `near_relatives` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `identification_marks` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `height` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `weight` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `near_relatives` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `identification_marks` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `height` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `weight` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `navy_joining_date` date NOT NULL,
-  `entry_mode` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `service_id` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `nic` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `blood_group` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `address` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `karachi_address` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `matric_school` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `matric_division` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `matric_subjects` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `intermediate_college` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `intermediate_division` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `diploma` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `entry_mode` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `service_id` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `nic` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `blood_group` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `address` varchar(150) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `karachi_address` varchar(150) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `matric_school` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `matric_division` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `matric_subjects` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `intermediate_college` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `intermediate_division` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `diploma` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `phase` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `do_id` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `joto_id` int(11) DEFAULT NULL,
-  `upload_file` varchar(500) DEFAULT NULL
+  `upload_file` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -2900,92 +2901,136 @@ alter table pn_form1s
 add COLUMN branch_id int(11) null;
 
 alter table personal_datas
-add COLUMN other varchar(255) null;
+add COLUMN other varchar(150) null;
 
 ALTER TABLE personal_datas
-ADD COLUMN mobile_no varchar(255);
+ADD COLUMN mobile_no varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN mobile_make varchar(255);
+ADD COLUMN mobile_make varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN mobile_model varchar(255);
+ADD COLUMN mobile_model varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN mobile_imei varchar(255);
+ADD COLUMN mobile_imei varchar(50);
 
 ALTER TABLE personal_datas
-ADD COLUMN permanent_house_no varchar(255);
+ADD COLUMN permanent_house_no varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN permanent_block_no varchar(255);
+ADD COLUMN permanent_block_no varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN permanent_street_no varchar(255);
+ADD COLUMN permanent_street_no varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN permanent_tehsil varchar(255);
+ADD COLUMN permanent_tehsil varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN permanent_district varchar(255);
+ADD COLUMN permanent_district varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN permanent_city varchar(255);
+ADD COLUMN permanent_city varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN permanent_police_station varchar(255);
+ADD COLUMN permanent_police_station varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN permanent_province varchar(255);
+ADD COLUMN permanent_province varchar(50);
 
 ALTER TABLE personal_datas
-ADD COLUMN current_house_no varchar(255);
+ADD COLUMN current_house_no varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN current_block_no varchar(255);
+ADD COLUMN current_block_no varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN current_street_no varchar(255);
+ADD COLUMN current_street_no varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN current_tehsil varchar(255);
+ADD COLUMN current_tehsil varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN current_district varchar(255);
+ADD COLUMN current_district varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN current_city varchar(255);
+ADD COLUMN current_city varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN current_police_station varchar(255);
+ADD COLUMN current_police_station varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN current_province varchar(255);
+ADD COLUMN current_province varchar(50);
 
 ALTER TABLE personal_datas
-ADD COLUMN karachi_house_no varchar(255);
+ADD COLUMN karachi_house_no varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN karachi_block_no varchar(255);
+ADD COLUMN karachi_block_no varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN karachi_street_no varchar(255);
+ADD COLUMN karachi_street_no varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN karachi_tehsil varchar(255);
+ADD COLUMN karachi_tehsil varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN karachi_district varchar(255);
+ADD COLUMN karachi_district varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN karachi_city varchar(255);
+ADD COLUMN karachi_city varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN karachi_police_station varchar(255);
+ADD COLUMN karachi_police_station varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN karachi_province varchar(255);
+ADD COLUMN karachi_province varchar(50);
 
 ALTER TABLE personal_datas
-ADD COLUMN relative_pno varchar(255);
+ADD COLUMN relative_pno varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN relative_rank varchar(255);
+ADD COLUMN relative_rank varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN relative_relationship varchar(255);
+ADD COLUMN relative_relationship varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN relative_unit varchar(255);
+ADD COLUMN relative_unit varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN relative_address varchar(255);
+ADD COLUMN relative_address varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN relative_contact varchar(255);
+ADD COLUMN relative_contact varchar(50);
 
 ALTER TABLE personal_datas
-ADD COLUMN matric_board_of_edu varchar(255);
+ADD COLUMN matric_board_of_edu varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN inter_board_of_edu varchar(255);
+ADD COLUMN inter_board_of_edu varchar(50);
 
 ALTER TABLE personal_datas
-ADD COLUMN membership varchar(255);
+ADD COLUMN membership varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN professional_courses varchar(255);
+ADD COLUMN professional_courses varchar(50);
 ALTER TABLE personal_datas
-ADD COLUMN upload_cnic varchar(500);
+ADD COLUMN upload_cnic varchar(50);
+ALTER TABLE personal_datas
+ADD COLUMN vaccination varchar(50);
+ALTER TABLE personal_datas
+ADD COLUMN living_status varchar(50);
+ALTER TABLE personal_datas
+ADD COLUMN next_of_kin_name varchar(50);
+ALTER TABLE personal_datas
+ADD COLUMN next_of_kin_cnic varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN next_of_kin_relation varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN next_of_kin_contact_no varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN next_of_kin_address varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN maritial_status varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN sim_carrier varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN sim_location varchar(100);
+ALTER TABLE personal_datas
+ADD COLUMN sim_in_use_by varchar(100);
+ALTER TABLE personal_datas
+ADD COLUMN father_cnic varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN father_permanent_address varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN father_status varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN mother_name varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN mother_cnic varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN mother_permanent_address varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN mother_status varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN wife_name varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN date_of_marriage varchar(150);
+ALTER TABLE personal_datas
+ADD COLUMN wife_cnic varchar(150);
+
+
 
 ALTER TABLE pn_form1s
 ADD COLUMN rank_rate varchar(255);
