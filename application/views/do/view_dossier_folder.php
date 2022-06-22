@@ -3084,7 +3084,7 @@
                                     <h6><strong><?= $pn_personal_data['p_no'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
-                                    <h6><strong>2.&nbsp;&nbsp;CLASS:</strong></h6>
+                                    <h6><strong>2.&nbsp;&nbsp;CLASS</strong></h6>
                                 </div>
                                 <div class="col-sm-5" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['class'] ?></strong></h6>
@@ -3098,8 +3098,14 @@
                                 <div class="col-sm-2">
                                     <h6><strong>3.&nbsp;&nbsp;&nbsp;NAME IN FULL:</strong></h6>
                                 </div>
-                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-4" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['name'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                    <h6><strong>3.&nbsp;&nbsp;&nbsp;CNIC:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['nic'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>

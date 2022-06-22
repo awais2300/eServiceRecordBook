@@ -1236,6 +1236,7 @@ class D_O extends CI_Controller
             $awarded_by = $this->session->userdata('username');
             $awarded_id = $this->session->userdata('user_id');
             $observation_type = $postData['observation_type'];
+            $observed_by = $postData['observed_by'];
 
             $upload_obs_slip = $this->upload_obs_slip($_FILES['obs_slip']);
 
@@ -1250,6 +1251,7 @@ class D_O extends CI_Controller
                 'updated_at' => date('Y-m-d H:i:s'),
                 'term' => $term,
                 'observation_type' => $observation_type,
+                'observed_by' => $observed_by,
                 'status' => 'Pending'
             );
 
