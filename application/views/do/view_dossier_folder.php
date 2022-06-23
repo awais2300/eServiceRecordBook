@@ -3287,13 +3287,148 @@
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:15px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>11.&nbsp;&nbsp;&nbsp;SIBLINGS RECORD:</strong></h6>
+                                    <div class="form-group row">
+                                        <div class="col-sm-1" style="margin-bottom:10px;">
+                                            <h6 style="font-size:x-small"><strong>S. NO.</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1" style="margin-bottom:10px;">
+                                            <h6 style="font-size:x-small"><strong>NAME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>GENDER:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>NATIONALITY:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>RELIGION:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>SECT:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>AGE:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>DEPENDENT:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6 style="font-size:x-small"><strong>ADDRESS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>CONTACT NO:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>AFFILIATION:</strong></h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <?php
+                                        if (count($pn_personal_data_sibling_record) > 0) {
+                                            $count = 0;
+                                            foreach ($pn_personal_data_sibling_record as $data) { ?>
+                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                                    <h6><strong><?= ++$count; ?></strong></h6>
+                                                </div> 
+                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                                    <h6><strong><?= $data['name'] ?></strong></h6>
+                                                </div> 
+                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                                    <h6><strong><?= $data['gender'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                                    <h6><strong><?= $data['nationality'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                                    <h6><strong><?= $data['religion'] ?></strong></h6>
+                                                </div> 
+                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                                    <h6><strong><?= $data['sect'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                                    <h6><strong><?= $data['age'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                                    <h6><strong><?= $data['dependant'] ?></strong></h6>
+                                                </div> 
+                                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                                    <h6><strong><?= $data['address'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                                    <h6><strong><?= $data['contact_no'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                                    <h6><strong><?= $data['affiliation'] ?></strong></h6>
+                                                </div>
+                                            <?php }
+                                        } else { ?>
+                                            <h6> NO SIBLING RECORD ENTERD </h6>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-1">
+                                </div> -->
+                            </div>
+
+                            <!-- <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
                                 <div class="col-sm-10">
                                     <h6><strong>13.&nbsp;&nbsp;&nbsp;NEAR RELATIVES IN DEFENCE SERVICES (TO INCLUDE ONLY PARENTS/BROTHERS/SISTERS/REAL UNCLES):</strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:15px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>13.&nbsp;&nbsp;&nbsp;NEAR RELATIVES IN DEFENCE INFORMATION:</strong></h6>
+                                    <div class="form-group row">
+                                        <div class="col-sm-1" style="margin-bottom:10px;">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;NAME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['relative_pno'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;RANK:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['relative_rank'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;REALTION:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['relative_relationship'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;UNIT:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['relative_unit'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;ADDRESS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['relative_address'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;CONTACT:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['relative_contact'] ?></strong></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-1">
+                                </div> -->
+                            </div>
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
@@ -3310,7 +3445,7 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>

@@ -3413,10 +3413,25 @@ class D_O extends CI_Controller
             $this->db->select('pr.*, f.*');
             $this->db->from('personal_datas pr');
             $this->db->join('pn_form1s f', 'f.p_id = pr.p_id');
-            // $this->db->where('pr.do_id', $this->session->userdata('user_id'));
             $this->db->where('f.divison_name', $this->session->userdata('division'));
             $this->db->where('f.oc_no', $oc_no);
             $data['pn_personal_data'] = $this->db->get()->row_array();
+
+            //add new by awais
+            $this->db->select('sr.*');
+            $this->db->from('personal_datas pr');
+            $this->db->join('pn_form1s f', 'f.p_id = pr.p_id');
+            $this->db->join('siblings_records sr', 'sr.p_id = pr.p_id');
+            $this->db->where('f.oc_no', $oc_no);
+            $data['pn_personal_data_sibling_record'] = $this->db->get()->result_array();
+
+            //add new by awais
+            $this->db->select('cr.*');
+            $this->db->from('personal_datas pr');
+            $this->db->join('pn_form1s f', 'f.p_id = pr.p_id');
+            $this->db->join('childern_records cr', 'cr.p_id = pr.p_id');
+            $this->db->where('f.oc_no', $oc_no);
+            $data['pn_personal_data_childern_record'] = $this->db->get()->result_array();
 
             $this->db->select('pr.*, f.*');
             $this->db->from('divisional_officer_records pr');
