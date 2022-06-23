@@ -3102,7 +3102,7 @@
                                     <h6><strong><?= $pn_personal_data['name'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
-                                    <h6><strong>3.&nbsp;&nbsp;&nbsp;CNIC:</strong></h6>
+                                    <h6><strong>4.&nbsp;&nbsp;&nbsp;CNIC:</strong></h6>
                                 </div>
                                 <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['nic'] ?></strong></h6>
@@ -3114,10 +3114,16 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>4.&nbsp;&nbsp;&nbsp;RELIGION:</strong></h6>
+                                    <h6><strong>5.&nbsp;&nbsp;&nbsp;RELIGION:</strong></h6>
                                 </div>
-                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['religion'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>6.&nbsp;&nbsp;&nbsp;MARITIAL STATUS:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['maritial_status'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
@@ -3126,7 +3132,25 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>5.&nbsp;&nbsp;&nbsp;COUNTRY:</strong></h6>
+                                    <h6><strong>7.&nbsp;&nbsp;&nbsp;VACCINATION:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['vaccination'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>8.&nbsp;&nbsp;&nbsp;LIVING STATUS:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['living_status'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>9.&nbsp;&nbsp;&nbsp;COUNTRY:</strong></h6>
                                 </div>
                                 <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['bahadur'] ?></strong></h6>
@@ -3138,7 +3162,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>6.&nbsp;&nbsp;&nbsp;EMERGENCY CONTACT:</strong></h6>
+                                    <h6><strong>10.&nbsp;&nbsp;&nbsp;EMERGENCY CONTACT:</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['emergency_contact'] ?></strong></h6>
@@ -3150,10 +3174,64 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>7.&nbsp;&nbsp;&nbsp;TELEPHONE NO:</strong></h6>
+                                    <h6><strong>11.&nbsp;&nbsp;&nbsp;PHONE (LANDLINE):</strong></h6>
                                 </div>
-                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['telephone_no'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>12.&nbsp;&nbsp;&nbsp;PHONE (MOBILE):</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['mobile_no'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>13.&nbsp;&nbsp;&nbsp;MOBILE MAKE:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['mobile_make'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>14.&nbsp;&nbsp;&nbsp;MOBILE MODEL:</strong></h6>
+                                </div>
+                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['mobile_model'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                    <h6><strong>15.&nbsp;&nbsp;&nbsp;IMEI NO:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['mobile_imei'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>16.&nbsp;&nbsp;&nbsp;SIM CARRIER:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['sim_carrier'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>17.&nbsp;&nbsp;&nbsp;SIM LOCATION:</strong></h6>
+                                </div>
+                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['sim_location'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                    <h6><strong>18.&nbsp;&nbsp;&nbsp;USE BY:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['sim_in_use_by'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
@@ -3162,7 +3240,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>8.&nbsp;&nbsp;&nbsp;EX-ARMY NAVY OR PAF:</strong></h6>
+                                    <h6><strong>19.&nbsp;&nbsp;&nbsp;EX-ARMY NAVY OR PAF:</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['ex_army'] ?></strong></h6>
@@ -3174,7 +3252,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>&nbsp;&nbsp;&nbsp;&nbsp;SERVED FROM:</strong></h6>
+                                    <h6><strong>20.&nbsp;&nbsp;&nbsp;&nbsp;SERVED FROM:</strong></h6>
                                 </div>
                                 <div class="col-sm-4" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['ex_army_from'] ?></strong></h6>
@@ -3191,16 +3269,123 @@
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
-                                <div class="col-sm-2">
-                                    <h6><strong>9.&nbsp;&nbsp;&nbsp;FATHER'S NAME:</strong></h6>
+                                <div class="col-sm-1">
+                                    <h6 style="font-size:small"><strong>21.&nbsp;&nbsp;WIFE NAME</strong></h6>
                                 </div>
-                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                    <h6><strong><?= $pn_personal_data['father_name'] ?></strong></h6>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['wife_name'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                    <h6 style="font-size:small"><strong>22.&nbsp;&nbsp;&nbsp;WIFE CNIC:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['wife_cnic'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6 style="font-size:small"><strong>23.&nbsp;&nbsp;&nbsp;DATE OF MARRIAGE/DIVORCE:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['date_of_marriage'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
                             </div>
+                            <!-- <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>9.&nbsp;&nbsp;&nbsp;FATHER'S NAME:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['father_name'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>10.&nbsp;&nbsp;&nbsp;FATHER'S OCCUPATION:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['father_occupation'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div> -->
                             <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:15px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>24.&nbsp;&nbsp;&nbsp;FATHER'S INFORMATION:</strong></h6>
+                                    <div class="form-group row">
+                                        <div class="col-sm-1" style="margin-bottom:10px;">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;NAME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['father_name'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;CNIC:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['father_cnic'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;OCCUPATION:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['father_occupation'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;STATUS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['father_status'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:small"><strong>&nbsp;&nbsp;ADDRESS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-11" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['father_permanent_address'] ?></strong></h6>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-1">
+                                </div> -->
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:15px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>25.&nbsp;&nbsp;&nbsp;MOTHER'S INFORMATION:</strong></h6>
+                                    <div class="form-group row">
+                                        <div class="col-sm-1" style="margin-bottom:10px;">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;NAME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['mother_name'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;CNIC:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['mother_cnic'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;STATUS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['mother_status'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:small"><strong>&nbsp;&nbsp;&nbsp;ADDRESS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-11" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['mother_permanent_address'] ?></strong></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-1">
+                                </div> -->
+                            </div>
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
@@ -3211,12 +3396,78 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
+                            </div> -->
+
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:5px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>26.&nbsp;&nbsp;&nbsp;CHILDERN RECORDS:</strong></h6>
+                                    <div class="form-group row">
+                                        <div class="col-sm-1" >
+                                            <h6 style="font-size:medium"><strong>S. NO.</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" >
+                                            <h6 style="font-size:medium"><strong>NAME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:medium"><strong>GENDER:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6 style="font-size:medium"><strong>DOB:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6 style="font-size:medium"><strong>PROFESSION:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6 style="font-size:medium"><strong>ADDRESS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6 style="font-size:medium"><strong>AFFILIATION:</strong></h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <?php
+                                        if (count($pn_personal_data_childern_record) > 0) {
+                                            $count = 0;
+                                            foreach ($pn_personal_data_childern_record as $data) { ?>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:medium"><strong><?= ++$count; ?></strong></h6>
+                                                </div> 
+                                                <div class="col-sm-2">
+                                                    <h6 style="font-size:medium"><strong><?= $data['name'] ?></strong></h6>
+                                                </div> 
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:medium"><strong><?= $data['gender'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <h6 style="font-size:medium"><strong><?= $data['dob'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <h6 style="font-size:medium"><strong><?= $data['profession'] ?></strong></h6>
+                                                </div> 
+                                                <div class="col-sm-2">
+                                                    <h6 style="font-size:medium"><strong><?= $data['address'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <h6 style="font-size:medium"><strong><?= $data['affiliation'] ?></strong></h6>
+                                                </div>
+                                            <?php }
+                                        } else { ?>
+                                            <h6> NO CHILDERN RECORD ENTERD </h6>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-1">
+                                </div> -->
                             </div>
+
+
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-10" style="border:solid 1px black; padding:15px;">
-                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>11.&nbsp;&nbsp;&nbsp;NEXT OF KIN INFORMATION:</strong></h6>
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>27.&nbsp;&nbsp;&nbsp;NEXT OF KIN INFORMATION:</strong></h6>
                                     <div class="form-group row">
                                         <div class="col-sm-1" style="margin-bottom:10px;">
                                             <h6><strong>&nbsp;&nbsp;&nbsp;NAME:</strong></h6>
@@ -3272,7 +3523,7 @@
                                 </div>
                             </div> -->
 
-                            <div class="form-group row">
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-4">
@@ -3283,17 +3534,17 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
-                                <div class="col-sm-10" style="border:solid 1px black; padding:15px;">
-                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>11.&nbsp;&nbsp;&nbsp;SIBLINGS RECORD:</strong></h6>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:5px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>28.&nbsp;&nbsp;&nbsp;SIBLINGS RECORD:</strong></h6>
                                     <div class="form-group row">
-                                        <div class="col-sm-1" style="margin-bottom:10px;">
+                                        <div class="col-sm-1" >
                                             <h6 style="font-size:x-small"><strong>S. NO.</strong></h6>
                                         </div>
-                                        <div class="col-sm-1" style="margin-bottom:10px;">
+                                        <div class="col-sm-1" >
                                             <h6 style="font-size:x-small"><strong>NAME:</strong></h6>
                                         </div>
                                         <div class="col-sm-1">
@@ -3329,38 +3580,38 @@
                                         if (count($pn_personal_data_sibling_record) > 0) {
                                             $count = 0;
                                             foreach ($pn_personal_data_sibling_record as $data) { ?>
-                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                                    <h6><strong><?= ++$count; ?></strong></h6>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= ++$count; ?></strong></h6>
                                                 </div> 
-                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                                    <h6><strong><?= $data['name'] ?></strong></h6>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['name'] ?></strong></h6>
                                                 </div> 
-                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                                    <h6><strong><?= $data['gender'] ?></strong></h6>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['gender'] ?></strong></h6>
                                                 </div>
-                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                                    <h6><strong><?= $data['nationality'] ?></strong></h6>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['nationality'] ?></strong></h6>
                                                 </div>
-                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                                    <h6><strong><?= $data['religion'] ?></strong></h6>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['religion'] ?></strong></h6>
                                                 </div> 
-                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                                    <h6><strong><?= $data['sect'] ?></strong></h6>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['sect'] ?></strong></h6>
                                                 </div>
-                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                                    <h6><strong><?= $data['age'] ?></strong></h6>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['age'] ?></strong></h6>
                                                 </div>
-                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                                    <h6><strong><?= $data['dependant'] ?></strong></h6>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['dependant'] ?></strong></h6>
                                                 </div> 
-                                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                                    <h6><strong><?= $data['address'] ?></strong></h6>
+                                                <div class="col-sm-2">
+                                                    <h6 style="font-size:small"><strong><?= $data['address'] ?></strong></h6>
                                                 </div>
-                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                                    <h6><strong><?= $data['contact_no'] ?></strong></h6>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['contact_no'] ?></strong></h6>
                                                 </div>
-                                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                                    <h6><strong><?= $data['affiliation'] ?></strong></h6>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['affiliation'] ?></strong></h6>
                                                 </div>
                                             <?php }
                                         } else { ?>
@@ -3385,7 +3636,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-10" style="border:solid 1px black; padding:15px;">
-                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>13.&nbsp;&nbsp;&nbsp;NEAR RELATIVES IN DEFENCE INFORMATION:</strong></h6>
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>29.&nbsp;&nbsp;&nbsp;NEAR RELATIVES IN DEFENCE INFORMATION:</strong></h6>
                                     <div class="form-group row">
                                         <div class="col-sm-1" style="margin-bottom:10px;">
                                             <h6><strong>&nbsp;&nbsp;&nbsp;NAME:</strong></h6>
@@ -3446,7 +3697,7 @@
                                 <div class="col-sm-1">
                                 </div>
                             </div> -->
-                            <div class="form-group row">
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-10" style="border-bottom: 2px solid black; text-align:center;height: 20px;margin-left:10px">
@@ -3454,12 +3705,12 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>14.&nbsp;&nbsp;&nbsp;IDENTIFICATION MARK:</strong></h6>
+                                    <h6><strong>30.&nbsp;&nbsp;&nbsp;IDENTIFICATION MARK:</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['identification_marks']; ?></strong></h6>
@@ -3471,13 +3722,13 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>15.&nbsp;&nbsp;&nbsp;HEIGHT:</strong></h6>
+                                    <h6><strong>31.&nbsp;&nbsp;&nbsp;HEIGHT:</strong></h6>
                                 </div>
                                 <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['height'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>16.&nbsp;&nbsp;&nbsp;WEIGHT:</strong></h6>
+                                    <h6><strong>32.&nbsp;&nbsp;&nbsp;WEIGHT:</strong></h6>
                                 </div>
                                 <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['weight'] ?></strong></h6>

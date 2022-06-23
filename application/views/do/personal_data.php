@@ -609,7 +609,7 @@
 
                                     <div class="form-group row" style="border:solid 1px lightgrey; padding:5px; border-radius:5px;">
                                         <div class="col-sm-2 mb-1">
-                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="relative_pno" id="relative_pno" placeholder="S NO"></input>
+                                            <input type="text" style="border-radius:10px" class="form-control form-control-user" name="relative_pno" id="relative_pno" placeholder="NAME"></input>
                                         </div>
                                         <div class="col-sm-2 mb-1">
                                             <input type="text" style="border-radius:10px" class="form-control form-control-user" name="relative_rank" id="relative_rank" placeholder="RANK"></input>
