@@ -163,7 +163,7 @@
                                             </a>
                                             <a href="#" style="color:black" id="phy">
                                                 <li class="list-group-item bg-custom3 custom_list">PHYSICAL EFFICIENCY</li>
-                                            </a> 
+                                            </a>
                                             <a href="#" style="color:black" id="acad">
                                                 <li class="list-group-item bg-custom3 custom_list">ACADEMIC RECORD</li>
                                             </a>
@@ -196,7 +196,7 @@
                                         </a>
                                         <a href="#" style="color:black" id="btn_personal_record">
                                             <li class="list-group-item bg-custom3 custom_list">PERSONAL INFORMATION</li>
-                                        </a> 
+                                        </a>
                                         <a href="#" style="color:black" id="btn_autobiography">
                                             <li class="list-group-item bg-custom3 custom_list">DIVISIONAL RECORD</li>
                                         </a>
@@ -229,13 +229,13 @@
                                         <a href="#" style="color:black" id="btn_punish_term3">
                                             <li class="list-group-item bg-custom3 custom_list">TERM-III</li>
                                         </a>
-										<a href="#" style="color:black" id="btn_punish_term4">
+                                        <a href="#" style="color:black" id="btn_punish_term4">
                                             <li class="list-group-item bg-custom3 custom_list">TERM-IV</li>
                                         </a>
-										<a href="#" style="color:black" id="btn_punish_term5">
+                                        <a href="#" style="color:black" id="btn_punish_term5">
                                             <li class="list-group-item bg-custom3 custom_list">TERM-V</li>
                                         </a>
-										<a href="#" style="color:black" id="btn_punish_term6">
+                                        <a href="#" style="color:black" id="btn_punish_term6">
                                             <li class="list-group-item bg-custom3 custom_list">TERM-VI</li>
                                         </a>
                                     </ul>
@@ -251,13 +251,13 @@
                                         <a href="#" style="color:black" id="btn_obs_term3">
                                             <li class="list-group-item bg-custom3 custom_list">TERM-III</li>
                                         </a>
-										<a href="#" style="color:black" id="btn_obs_term4">
+                                        <a href="#" style="color:black" id="btn_obs_term4">
                                             <li class="list-group-item bg-custom3 custom_list">TERM-IV</li>
                                         </a>
-										<a href="#" style="color:black" id="btn_obs_term5">
+                                        <a href="#" style="color:black" id="btn_obs_term5">
                                             <li class="list-group-item bg-custom3 custom_list">TERM-V</li>
                                         </a>
-										<a href="#" style="color:black" id="btn_obs_term6">
+                                        <a href="#" style="color:black" id="btn_obs_term6">
                                             <li class="list-group-item bg-custom3 custom_list">TERM-VI</li>
                                         </a>
                                     </ul>
@@ -366,7 +366,7 @@
                                         <a href="#" style="color:black" id="btn_general_remarks">
                                             <li class="list-group-item bg-custom3 custom_list">GENERAL REMARKS</li>
                                         </a>
-                                 <!--       <a href="#" style="color:black" id="btn_progress_chart">
+                                        <!--       <a href="#" style="color:black" id="btn_progress_chart">
                                             <li class="list-group-item bg-custom3 custom_list">PROGRESS CHART</li>
                                         </a> -->
                                         <a href="#" style="color:black" id="btn_distinction_achieved">
@@ -738,7 +738,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                 <a onclick="location.href='<?= base_url() ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:60%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> 
+                <a onclick="location.href='<?= base_url() ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:60%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>
                 <a onclick="location.href='<?php echo base_url() ?>/D_O/punishment_records_report/<?= $pn_data['oc_no'] ?>/Term-II'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
@@ -1447,7 +1447,7 @@
                                                 <td scope="" colspan="4">TERM-II</td>
                                                 <td scope="" colspan="4">TERM-III</td>
                                                 <td scope="" style="border-right:1px solid black;" colspan="4">TERM-IV</td>
-										
+
                                             </tr>
                                         </thead>
                                         <tbody id="table_rows_cont" style="border-top:1px solid black; padding:5px;width:100% !important">
@@ -3048,7 +3048,7 @@
                     <div class="col-lg-12">
                         <div class="card">
 
-                         <!--   <div class="form-group row my-5">
+                            <!--   <div class="form-group row my-5">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2 box">
@@ -3215,15 +3215,62 @@
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
-                                <div class="col-sm-3">
-                                    <h6><strong>11.&nbsp;&nbsp;&nbsp;NEXT OF KIN AND ADDRESS:</strong></h6>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:15px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>11.&nbsp;&nbsp;&nbsp;NEXT OF KIN INFORMATION:</strong></h6>
+                                    <div class="form-group row">
+                                        <div class="col-sm-1" style="margin-bottom:10px;">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;NAME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['next_of_kin_name'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;CNIC:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['next_of_kin_cnic'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;RELATION:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-4" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['next_of_kin_relation'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;CONTACT:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['next_of_kin_contact_no'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;ADDRESS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-5" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['next_of_kin_address'] ?></strong></h6>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                    <h6><strong><?= $pn_personal_data['next_of_kin'] ?></strong></h6>
+                                <!-- <div class="col-sm-1">
+                                </div> -->
+                            </div>
+                            <!-- <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>11.&nbsp;&nbsp;&nbsp;NAME:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['next_of_kin_name'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>12.&nbsp;&nbsp;&nbsp;CNIC:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['next_of_kin_cnic'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="form-group row">
                                 <div class="col-sm-1">
@@ -4603,7 +4650,7 @@
                                             <td scope="" style="border-bottom:1px solid black;"></td>
                                             <td scope="" style="border-bottom:1px solid black;"></td>
                                         </tr>
-										<tr>
+                                        <tr>
                                             <td scope="" style="height:40px">TERM-IV</td>
                                             <td scope=""><?= $pn_seniority_records['term2_marks']; ?></td>
                                             <td scope=""><?= $pn_seniority_records['term2_percentage']; ?></td>
@@ -4619,7 +4666,7 @@
                                             <td scope="" style="border-bottom:1px solid black;"></td>
                                             <td scope="" style="border-bottom:1px solid black;"></td>
                                         </tr>
-										<tr>
+                                        <tr>
                                             <td scope="" style="height:40px">TERM-V</td>
                                             <td scope=""><?= $pn_seniority_records['term2_marks']; ?></td>
                                             <td scope=""><?= $pn_seniority_records['term2_percentage']; ?></td>
@@ -4635,7 +4682,7 @@
                                             <td scope="" style="border-bottom:1px solid black;"></td>
                                             <td scope="" style="border-bottom:1px solid black;"></td>
                                         </tr>
-										<tr>
+                                        <tr>
                                             <td scope="" style="height:40px">TERM-VI</td>
                                             <td scope=""><?= $pn_seniority_records['term2_marks']; ?></td>
                                             <td scope=""><?= $pn_seniority_records['term2_percentage']; ?></td>
