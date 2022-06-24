@@ -143,8 +143,8 @@ class CO extends CI_Controller
         }
     }
 
-  
-  
+
+
     public function get_semester_results_values()
     {
         if ($this->input->post()) {
@@ -184,7 +184,7 @@ class CO extends CI_Controller
         $data['PET_V_result_overall'] = $this->db->select('count(*) as count')->where('PET_V_result', 'qualified')->where_in('do_id', $array)->get('physical_milestone')->row_array();
         $data['PET_VI_result_overall'] = $this->db->select('count(*) as count')->where('PET_VI_result', 'qualified')->where_in('do_id', $array)->get('physical_milestone')->row_array();
         $data['Prade_training_result_overall'] = $this->db->select('count(*) as count')->where('Prade_training', 'qualified')->where_in('do_id', $array)->get('physical_milestone')->row_array();
-        
+
         $data['Total_cadet_overall'] = $this->db->select('count(*) as count')->where_in('do_id', $array)->get('physical_milestone')->row_array();
         $data['divisions'] = $this->db->get('divisions')->result_array();
         $data['division_set'] = $selected_div;
@@ -251,7 +251,7 @@ class CO extends CI_Controller
         $data['PET_V_result_t2'] = $this->db->select('count(*) as count')->where('PET_V_result', 'qualified')->where('term', 'Term-II')->get('physical_milestone')->row_array();
         $data['PET_VI_result_t2'] = $this->db->select('count(*) as count')->where('PET_VI_result', 'qualified')->where('term', 'Term-II')->get('physical_milestone')->row_array();
         $data['Prade_training_t2'] = $this->db->select('count(*) as count')->where('Prade_training', 'qualified')->where('term', 'Term-II')->get('physical_milestone')->row_array();
-        
+
         $data['PST_result_t3'] = $this->db->select('count(*) as count')->where('PST_result', 'qualified')->where('term', 'Term-III')->get('physical_milestone')->row_array();
         $data['SST_result_t3'] = $this->db->select('count(*) as count')->where('SST_result', 'qualified')->where('term', 'Term-III')->get('physical_milestone')->row_array();
         $data['PET_I_result_t3'] = $this->db->select('count(*) as count')->where('PET_I_result', 'qualified')->where('term', 'Term-III')->get('physical_milestone')->row_array();
@@ -261,7 +261,7 @@ class CO extends CI_Controller
         $data['PET_V_result_t3'] = $this->db->select('count(*) as count')->where('PET_V_result', 'qualified')->where('term', 'Term-III')->get('physical_milestone')->row_array();
         $data['PET_VI_result_t3'] = $this->db->select('count(*) as count')->where('PET_VI_result', 'qualified')->where('term', 'Term-III')->get('physical_milestone')->row_array();
         $data['Prade_training_t3'] = $this->db->select('count(*) as count')->where('Prade_training', 'qualified')->where('term', 'Term-III')->get('physical_milestone')->row_array();
-        
+
         $data['PST_result_t4'] = $this->db->select('count(*) as count')->where('PST_result', 'qualified')->where('term', 'Term-IV')->get('physical_milestone')->row_array();
         $data['SST_result_t4'] = $this->db->select('count(*) as count')->where('SST_result', 'qualified')->where('term', 'Term-IV')->get('physical_milestone')->row_array();
         $data['PET_I_result_t4'] = $this->db->select('count(*) as count')->where('PET_I_result', 'qualified')->where('term', 'Term-IV')->get('physical_milestone')->row_array();
@@ -271,7 +271,7 @@ class CO extends CI_Controller
         $data['PET_V_result_t4'] = $this->db->select('count(*) as count')->where('PET_V_result', 'qualified')->where('term', 'Term-IV')->get('physical_milestone')->row_array();
         $data['PET_VI_result_t4'] = $this->db->select('count(*) as count')->where('PET_VI_result', 'qualified')->where('term', 'Term-IV')->get('physical_milestone')->row_array();
         $data['Prade_training_t4'] = $this->db->select('count(*) as count')->where('Prade_training', 'qualified')->where('term', 'Term-IV')->get('physical_milestone')->row_array();
-        
+
         $data['PST_result_t5'] = $this->db->select('count(*) as count')->where('PST_result', 'qualified')->where('term', 'Term-V')->get('physical_milestone')->row_array();
         $data['SST_result_t5'] = $this->db->select('count(*) as count')->where('SST_result', 'qualified')->where('term', 'Term-V')->get('physical_milestone')->row_array();
         $data['PET_I_result_t5'] = $this->db->select('count(*) as count')->where('PET_I_result', 'qualified')->where('term', 'Term-V')->get('physical_milestone')->row_array();
@@ -281,7 +281,7 @@ class CO extends CI_Controller
         $data['PET_V_result_t5'] = $this->db->select('count(*) as count')->where('PET_V_result', 'qualified')->where('term', 'Term-V')->get('physical_milestone')->row_array();
         $data['PET_VI_result_t5'] = $this->db->select('count(*) as count')->where('PET_VI_result', 'qualified')->where('term', 'Term-V')->get('physical_milestone')->row_array();
         $data['Prade_training_t5'] = $this->db->select('count(*) as count')->where('Prade_training', 'qualified')->where('term', 'Term-V')->get('physical_milestone')->row_array();
-        
+
         $data['PST_result_t6'] = $this->db->select('count(*) as count')->where('PST_result', 'qualified')->where('term', 'Term-VI')->get('physical_milestone')->row_array();
         $data['SST_result_t6'] = $this->db->select('count(*) as count')->where('SST_result', 'qualified')->where('term', 'Term-VI')->get('physical_milestone')->row_array();
         $data['PET_I_result_t6'] = $this->db->select('count(*) as count')->where('PET_I_result', 'qualified')->where('term', 'Term-VI')->get('physical_milestone')->row_array();
@@ -485,7 +485,7 @@ class CO extends CI_Controller
             $observation_type = $postData['observation_type'];
             $observed_by = $postData['observed_by'];
 
-            
+
             $upload_obs_slip = $this->upload_obs_slip($_FILES['obs_slip']);
 
             $insert_array = array(
@@ -504,11 +504,11 @@ class CO extends CI_Controller
             );
 
             $insert = $this->db->insert('observation_records', $insert_array);
-            $insert_array_slip = array(  
+            $insert_array_slip = array(
                 'p_id' => $id,
                 'file_name' => $_FILES['obs_slip']['name'],
                 'file_type' => $_FILES['obs_slip']['type'],
-                'file_path' => $upload_obs_slip, 
+                'file_path' => $upload_obs_slip,
                 'file_size' => $_FILES['obs_slip']['size'],
                 'do_id' => $awarded_id,
                 'phase' => date('Y-m-d H:i:s'),
@@ -767,7 +767,7 @@ class CO extends CI_Controller
             $oc_no = $_POST['oc_no'];
             $data['pn_data'] = $this->db->where('oc_no', $oc_no)->get('pn_form1s')->row_array();
             $data['school_name'] = $this->db->select('unit_name')->where('id', $data['pn_data']['unit_id'])->get('navy_units')->row_array();
-            
+
             if (!isset($oc_no)) {
                 $data['pn_personal_data'] = $this->db->where('p_id', $data['pn_data']['p_id'])->get('personal_datas')->row_array();
             }
@@ -1045,6 +1045,22 @@ class CO extends CI_Controller
             //$this->db->where('f.divison_name', $this->session->userdata('division'));
             $this->db->where('f.oc_no', $oc_no);
             $data['pn_personal_data'] = $this->db->get()->row_array();
+
+            //add new by awais
+            $this->db->select('sr.*');
+            $this->db->from('personal_datas pr');
+            $this->db->join('pn_form1s f', 'f.p_id = pr.p_id');
+            $this->db->join('siblings_records sr', 'sr.p_id = pr.p_id');
+            $this->db->where('f.oc_no', $oc_no);
+            $data['pn_personal_data_sibling_record'] = $this->db->get()->result_array();
+
+            //add new by awais
+            $this->db->select('cr.*');
+            $this->db->from('personal_datas pr');
+            $this->db->join('pn_form1s f', 'f.p_id = pr.p_id');
+            $this->db->join('childern_records cr', 'cr.p_id = pr.p_id');
+            $this->db->where('f.oc_no', $oc_no);
+            $data['pn_personal_data_childern_record'] = $this->db->get()->result_array();
 
             $this->db->select('pr.*, f.*');
             $this->db->from('divisional_officer_records pr');

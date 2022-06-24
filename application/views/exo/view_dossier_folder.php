@@ -467,7 +467,7 @@
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
                 <!--   <a onclick="location.href='#'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:60%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/punishment_records_report/<?= $pn_data['oc_no'] ?>/Term-I'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/punishment_records_report/<?= $pn_data['oc_no'] ?>/Term-I'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -544,7 +544,7 @@
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
                 <!--  <a onclick="location.href='<?= base_url() ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:60%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/punishment_records_report/<?= $pn_data['oc_no'] ?>/Term-II'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/punishment_records_report/<?= $pn_data['oc_no'] ?>/Term-II'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -619,7 +619,7 @@
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
                 <!--     <a onclick="location.href='#'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/punishment_records_report/<?= $pn_data['oc_no'] ?>/Term-III'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/punishment_records_report/<?= $pn_data['oc_no'] ?>/Term-III'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -652,7 +652,7 @@
                                                 <td scope="" style="height:80px"><?= $data['offence']; ?></td>
                                                 <td scope=""><?= $data['punishment_awarded']; ?></td>
                                                 <td scope="" style="border-right:1px solid black;"><?= $data['awarded_by']; ?></td>
-                                                <td scope="" style="border-right:1px solid black;text-align: center;"><a href="<?= base_url() ?>D_O/view_edit_punishment/<?= $data['id'] ?>" style="color: black"><i class="fa fa-edit"></i></a></td>
+                                                <td scope="" style="border-right:1px solid black;text-align: center;"><a href="<?= base_url() ?>EXO/view_edit_punishment/<?= $data['id'] ?>" style="color: black"><i class="fa fa-edit"></i></a></td>
                                             </tr>
                                         <?php
                                             $count++;
@@ -698,8 +698,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <!--  <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_observation/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:60%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/observation_records_report/<?= $pn_data['oc_no'] ?>/Term-I'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <!--  <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_observation/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:60%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/observation_records_report/<?= $pn_data['oc_no'] ?>/Term-I'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -732,7 +732,7 @@
                                                 <td scope="" style="height:80px;text-align: center;"><?= $data['observation']; ?></td>
                                                 <td scope="" style="text-align: center;"><?= $data['observed_by']; ?></td>
                                                 <td scope="" style="border-right:1px solid black;text-align: center;"><?= $data['action_taken']; ?></td>
-                                                <td scope="" style="border-right:1px solid black;text-align: center;"><a href="<?= base_url() ?>D_O/view_edit_observation/<?= $data['id'] ?>" style="color: black"><i class="fa fa-edit"></i></a></td>
+                                                <td scope="" style="border-right:1px solid black;text-align: center;"><a href="<?= base_url() ?>EXO/view_edit_observation/<?= $data['id'] ?>" style="color: black"><i class="fa fa-edit"></i></a></td>
                                             </tr>
                                         <?php
                                             $count++;
@@ -770,8 +770,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <!--  <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_observation/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:60%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/observation_records_report/<?= $pn_data['oc_no'] ?>/Term-II'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <!--  <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_observation/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:60%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/observation_records_report/<?= $pn_data['oc_no'] ?>/Term-II'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -804,7 +804,7 @@
                                                 <td scope="" style="height:80px;text-align: center;"><?= $data['observation']; ?></td>
                                                 <td scope="" style="text-align: center;"><?= $data['observed_by']; ?></td>
                                                 <td scope="" style="border-right:1px solid black;text-align: center;"><?= $data['action_taken']; ?></td>
-                                                <td scope="" style="border-right:1px solid black;text-align: center;"><a href="<?= base_url() ?>D_O/view_edit_observation/<?= $data['id'] ?>" style="color: black"><i class="fa fa-edit"></i></a></td>
+                                                <td scope="" style="border-right:1px solid black;text-align: center;"><a href="<?= base_url() ?>EXO/view_edit_observation/<?= $data['id'] ?>" style="color: black"><i class="fa fa-edit"></i></a></td>
                                             </tr>
                                         <?php
                                             $count++;
@@ -842,8 +842,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <!--  <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_observation/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:60%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/observation_records_report/<?= $pn_data['oc_no'] ?>/Term-III'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <!--  <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_observation/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:60%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/observation_records_report/<?= $pn_data['oc_no'] ?>/Term-III'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -876,7 +876,7 @@
                                                 <td scope="" style="height:80px;text-align: center;"><?= $data['observation']; ?></td>
                                                 <td scope="" style="text-align: center;"><?= $data['observed_by']; ?></td>
                                                 <td scope="" style="border-right:1px solid black;text-align: center;"><?= $data['action_taken']; ?></td>
-                                                <td scope="" style="border-right:1px solid black;text-align: center;"><a href="<?= base_url() ?>D_O/view_edit_observation/<?= $data['id'] ?>" style="color: black"><i class="fa fa-edit"></i></a></td>
+                                                <td scope="" style="border-right:1px solid black;text-align: center;"><a href="<?= base_url() ?>EXO/view_edit_observation/<?= $data['id'] ?>" style="color: black"><i class="fa fa-edit"></i></a></td>
                                             </tr>
                                         <?php
                                             $count++;
@@ -915,8 +915,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <!-- <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_warning/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/warning_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <!-- <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_warning/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/warning_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -951,7 +951,7 @@
                                                 <td scope=""><?= $data['reasons']; ?></td>
 
                                                 <td scope="" style="border-right:1px solid black;"></td>
-                                                <td scope="" style="border-right:1px solid black;text-align: center;"><a href="<?= base_url() ?>D_O/view_edit_warning/<?= $data['id'] ?>" style="color: black"><i class="fa fa-edit"></i></a></td>
+                                                <td scope="" style="border-right:1px solid black;text-align: center;"><a href="<?= base_url() ?>EXO/view_edit_warning/<?= $data['id'] ?>" style="color: black"><i class="fa fa-edit"></i></a></td>
                                             </tr>
                                         <?php
                                             $count++;
@@ -991,8 +991,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <!-- <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_warning/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/warning_record_insert_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <!-- <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_warning/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a> -->
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/warning_record_insert_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -1061,7 +1061,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/inspection_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/inspection_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -1092,7 +1092,7 @@
                                                 <td scope="" style="text-align: center;"><?= $data['date']; ?></td>
                                                 <td scope="" style="height:80px;text-align: center;"><?= $data['remarks']; ?></td>
                                                 <td scope="" style="border-right:1px solid black; text-align: center;"><?= $data['inspecting_officer_name']; ?></td>
-                                                <td scope="" style="border-right:1px solid black;width:100px !important;text-align: center;"><a style="color: black;" href="<?php echo base_url() ?>D_O/view_edit_inspection/<?= $data['id']; ?>"><i class="fa fa-edit"></i></a></td>>
+                                                <td scope="" style="border-right:1px solid black;width:100px !important;text-align: center;"><a style="color: black;" href="<?php echo base_url() ?>EXO/view_edit_inspection/<?= $data['id']; ?>"><i class="fa fa-edit"></i></a></td>>
                                             </tr>
                                         <?php
                                             $count++;
@@ -1130,7 +1130,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/medical_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/medical_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -1210,7 +1210,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/saluting_swimming_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/saluting_swimming_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -1305,8 +1305,8 @@
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
 
-                <a onclick="location.href='<?= base_url(); ?>D_O/add_physical_milestone/<?php echo "view_dossier_folder" ?>'" style="margin-left: 65%" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-edit text-white-50"></i> Edit Record</a>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/physical_efficiency_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?= base_url(); ?>EXO/add_physical_milestone/<?php echo "view_dossier_folder" ?>'" style="margin-left: 65%" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-edit text-white-50"></i> Edit Record</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/physical_efficiency_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -1816,8 +1816,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_qualities/<?= $pn_data['p_id'] ?>/Term-I'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left: 65%"><i class="fas fa-edit text-white-50"></i> Edit Record</a>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/officer_qualities_records_report/<?= $pn_data['oc_no'] ?>/Term-I'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_qualities/<?= $pn_data['p_id'] ?>/Term-I'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left: 65%"><i class="fas fa-edit text-white-50"></i> Edit Record</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/officer_qualities_records_report/<?= $pn_data['oc_no'] ?>/Term-I'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -2185,8 +2185,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_qualities/<?= $pn_data['p_id'] ?>/Term-II'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left: 65%"><i class="fas fa-edit text-white-50"></i> Edit Record</a>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/officer_qualities_records_report/<?= $pn_data['oc_no'] ?>/Term-II'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_qualities/<?= $pn_data['p_id'] ?>/Term-II'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left: 65%"><i class="fas fa-edit text-white-50"></i> Edit Record</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/officer_qualities_records_report/<?= $pn_data['oc_no'] ?>/Term-II'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -2554,8 +2554,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_qualities/<?= $pn_data['p_id'] ?>/Term-III'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left: 65%"><i class="fas fa-edit text-white-50"></i> Edit Record</a>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/officer_qualities_records_report/<?= $pn_data['oc_no'] ?>/Term-III'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_qualities/<?= $pn_data['p_id'] ?>/Term-III'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left: 65%"><i class="fas fa-edit text-white-50"></i> Edit Record</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/officer_qualities_records_report/<?= $pn_data['oc_no'] ?>/Term-III'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -2924,15 +2924,15 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_personal_record/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/personal_data_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_personal_record/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/personal_data_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <?php if (isset($pn_personal_data['p_no'])) { ?>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
 
-                            <div class="form-group row my-5">
+                            <!--   <div class="form-group row my-5">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2 box">
@@ -2950,7 +2950,7 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="container my-3">
                                 <div style="text-align:center">
@@ -2968,7 +2968,7 @@
                                     <h6><strong><?= $pn_personal_data['p_no'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
-                                    <h6><strong>2.&nbsp;&nbsp;CLASS:</strong></h6>
+                                    <h6><strong>2.&nbsp;&nbsp;CLASS</strong></h6>
                                 </div>
                                 <div class="col-sm-5" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['class'] ?></strong></h6>
@@ -2982,21 +2982,33 @@
                                 <div class="col-sm-2">
                                     <h6><strong>3.&nbsp;&nbsp;&nbsp;NAME IN FULL:</strong></h6>
                                 </div>
-                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-4" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['name'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
+                                    <h6><strong>4.&nbsp;&nbsp;&nbsp;CNIC:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['nic'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>4.&nbsp;&nbsp;&nbsp;RELIGION:</strong></h6>
+                                    <h6><strong>5.&nbsp;&nbsp;&nbsp;RELIGION:</strong></h6>
                                 </div>
-                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['religion'] ?></strong></h6>
                                 </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>6.&nbsp;&nbsp;&nbsp;MARITIAL STATUS:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['maritial_status'] ?></strong></h6>
+                                </div>
                                 <div class="col-sm-1">
                                 </div>
                             </div>
@@ -3004,7 +3016,25 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>5.&nbsp;&nbsp;&nbsp;COUNTRY:</strong></h6>
+                                    <h6><strong>7.&nbsp;&nbsp;&nbsp;VACCINATION:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['vaccination'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>8.&nbsp;&nbsp;&nbsp;LIVING STATUS:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['living_status'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>9.&nbsp;&nbsp;&nbsp;COUNTRY:</strong></h6>
                                 </div>
                                 <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['bahadur'] ?></strong></h6>
@@ -3016,7 +3046,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>6.&nbsp;&nbsp;&nbsp;EMERGENCY CONTACT:</strong></h6>
+                                    <h6><strong>10.&nbsp;&nbsp;&nbsp;EMERGENCY CONTACT:</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['emergency_contact'] ?></strong></h6>
@@ -3028,10 +3058,64 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>7.&nbsp;&nbsp;&nbsp;TELEPHONE NO:</strong></h6>
+                                    <h6><strong>11.&nbsp;&nbsp;&nbsp;PHONE (LANDLINE):</strong></h6>
                                 </div>
-                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['telephone_no'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>12.&nbsp;&nbsp;&nbsp;PHONE (MOBILE):</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['mobile_no'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>13.&nbsp;&nbsp;&nbsp;MOBILE MAKE:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['mobile_make'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>14.&nbsp;&nbsp;&nbsp;MOBILE MODEL:</strong></h6>
+                                </div>
+                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['mobile_model'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                    <h6><strong>15.&nbsp;&nbsp;&nbsp;IMEI NO:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['mobile_imei'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>16.&nbsp;&nbsp;&nbsp;SIM CARRIER:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['sim_carrier'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>17.&nbsp;&nbsp;&nbsp;SIM LOCATION:</strong></h6>
+                                </div>
+                                <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['sim_location'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                    <h6><strong>18.&nbsp;&nbsp;&nbsp;USE BY:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['sim_in_use_by'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
@@ -3040,7 +3124,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>8.&nbsp;&nbsp;&nbsp;EX-ARMY NAVY OR PAF:</strong></h6>
+                                    <h6><strong>19.&nbsp;&nbsp;&nbsp;EX-ARMY NAVY OR PAF:</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['ex_army'] ?></strong></h6>
@@ -3052,7 +3136,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>&nbsp;&nbsp;&nbsp;&nbsp;SERVED FROM:</strong></h6>
+                                    <h6><strong>20.&nbsp;&nbsp;&nbsp;&nbsp;SERVED FROM:</strong></h6>
                                 </div>
                                 <div class="col-sm-4" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['ex_army_from'] ?></strong></h6>
@@ -3069,16 +3153,123 @@
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
-                                <div class="col-sm-2">
-                                    <h6><strong>9.&nbsp;&nbsp;&nbsp;FATHER'S NAME:</strong></h6>
+                                <div class="col-sm-1">
+                                    <h6 style="font-size:small"><strong>21.&nbsp;&nbsp;WIFE NAME</strong></h6>
                                 </div>
-                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                    <h6><strong><?= $pn_personal_data['father_name'] ?></strong></h6>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['wife_name'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                    <h6 style="font-size:small"><strong>22.&nbsp;&nbsp;&nbsp;WIFE CNIC:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['wife_cnic'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6 style="font-size:small"><strong>23.&nbsp;&nbsp;&nbsp;DATE OF MARRIAGE/DIVORCE:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['date_of_marriage'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
                             </div>
+                            <!-- <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>9.&nbsp;&nbsp;&nbsp;FATHER'S NAME:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['father_name'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>10.&nbsp;&nbsp;&nbsp;FATHER'S OCCUPATION:</strong></h6>
+                                </div>
+                                <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['father_occupation'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div> -->
                             <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:15px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>24.&nbsp;&nbsp;&nbsp;FATHER'S INFORMATION:</strong></h6>
+                                    <div class="form-group row">
+                                        <div class="col-sm-1" style="margin-bottom:10px;">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;NAME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['father_name'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;CNIC:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['father_cnic'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;OCCUPATION:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['father_occupation'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;STATUS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['father_status'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:small"><strong>&nbsp;&nbsp;ADDRESS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-11" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['father_permanent_address'] ?></strong></h6>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-1">
+                                </div> -->
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:15px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>25.&nbsp;&nbsp;&nbsp;MOTHER'S INFORMATION:</strong></h6>
+                                    <div class="form-group row">
+                                        <div class="col-sm-1" style="margin-bottom:10px;">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;NAME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['mother_name'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;CNIC:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['mother_cnic'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;STATUS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['mother_status'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:small"><strong>&nbsp;&nbsp;&nbsp;ADDRESS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-11" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['mother_permanent_address'] ?></strong></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-1">
+                                </div> -->
+                            </div>
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
@@ -3089,21 +3280,131 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
+                            </div> -->
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:5px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>26.&nbsp;&nbsp;&nbsp;CHILDERN RECORDS:</strong></h6>
+                                    <div class="form-group row">
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:medium"><strong>S. NO.</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6 style="font-size:medium"><strong>NAME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:medium"><strong>GENDER:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6 style="font-size:medium"><strong>DOB:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6 style="font-size:medium"><strong>PROFESSION:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6 style="font-size:medium"><strong>ADDRESS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6 style="font-size:medium"><strong>AFFILIATION:</strong></h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <?php
+                                        if (count($pn_personal_data_childern_record) > 0) {
+                                            $count = 0;
+                                            foreach ($pn_personal_data_childern_record as $data) { ?>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:medium"><strong><?= ++$count; ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <h6 style="font-size:medium"><strong><?= $data['name'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:medium"><strong><?= $data['gender'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <h6 style="font-size:medium"><strong><?= $data['dob'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <h6 style="font-size:medium"><strong><?= $data['profession'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <h6 style="font-size:medium"><strong><?= $data['address'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <h6 style="font-size:medium"><strong><?= $data['affiliation'] ?></strong></h6>
+                                                </div>
+                                            <?php }
+                                        } else { ?>
+                                            <h6> NO CHILDERN RECORD ENTERD </h6>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-1">
+                                </div> -->
                             </div>
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
-                                <div class="col-sm-3">
-                                    <h6><strong>11.&nbsp;&nbsp;&nbsp;NEXT OF KIN AND ADDRESS:</strong></h6>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:15px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>27.&nbsp;&nbsp;&nbsp;NEXT OF KIN INFORMATION:</strong></h6>
+                                    <div class="form-group row">
+                                        <div class="col-sm-1" style="margin-bottom:10px;">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;NAME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['next_of_kin_name'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;CNIC:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['next_of_kin_cnic'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;RELATION:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-4" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['next_of_kin_relation'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;CONTACT:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['next_of_kin_contact_no'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;ADDRESS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-5" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['next_of_kin_address'] ?></strong></h6>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
-                                    <h6><strong><?= $pn_personal_data['next_of_kin'] ?></strong></h6>
+                                <!-- <div class="col-sm-1">
+                                </div> -->
+                            </div>
+                            <!-- <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>11.&nbsp;&nbsp;&nbsp;NAME:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['next_of_kin_name'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>12.&nbsp;&nbsp;&nbsp;CNIC:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['next_of_kin_cnic'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="form-group row">
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-4">
@@ -3114,8 +3415,96 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:5px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>28.&nbsp;&nbsp;&nbsp;SIBLINGS RECORD:</strong></h6>
+                                    <div class="form-group row">
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>S. NO.</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>NAME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>GENDER:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>NATIONALITY:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>RELIGION:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>SECT:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>AGE:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>DEPENDENT:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6 style="font-size:x-small"><strong>ADDRESS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>CONTACT NO:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6 style="font-size:x-small"><strong>AFFILIATION:</strong></h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <?php
+                                        if (count($pn_personal_data_sibling_record) > 0) {
+                                            $count = 0;
+                                            foreach ($pn_personal_data_sibling_record as $data) { ?>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= ++$count; ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['name'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['gender'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['nationality'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['religion'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['sect'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['age'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['dependant'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <h6 style="font-size:small"><strong><?= $data['address'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['contact_no'] ?></strong></h6>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                    <h6 style="font-size:small"><strong><?= $data['affiliation'] ?></strong></h6>
+                                                </div>
+                                            <?php }
+                                        } else { ?>
+                                            <h6> NO SIBLING RECORD ENTERD </h6>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-1">
+                                </div> -->
+                            </div>
+
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-10">
@@ -3123,8 +3512,55 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:15px;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>29.&nbsp;&nbsp;&nbsp;NEAR RELATIVES IN DEFENCE INFORMATION:</strong></h6>
+                                    <div class="form-group row">
+                                        <div class="col-sm-1" style="margin-bottom:10px;">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;NAME:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['relative_pno'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;RANK:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['relative_rank'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;REALTION:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['relative_relationship'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;UNIT:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['relative_unit'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;ADDRESS:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-2" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['relative_address'] ?></strong></h6>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <h6><strong>&nbsp;&nbsp;&nbsp;CONTACT:</strong></h6>
+                                        </div>
+                                        <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                            <h6><strong><?= $pn_personal_data['relative_contact'] ?></strong></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-1">
+                                </div> -->
+                            </div>
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
@@ -3141,8 +3577,8 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
-                            <div class="form-group row">
+                            </div> -->
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-10" style="border-bottom: 2px solid black; text-align:center;height: 20px;margin-left:10px">
@@ -3150,12 +3586,12 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>14.&nbsp;&nbsp;&nbsp;IDENTIFICATION MARK:</strong></h6>
+                                    <h6><strong>30.&nbsp;&nbsp;&nbsp;IDENTIFICATION MARK:</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['identification_marks']; ?></strong></h6>
@@ -3166,14 +3602,14 @@
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
-                                <div class="col-sm-2">
-                                    <h6><strong>15.&nbsp;&nbsp;&nbsp;HEIGHT:</strong></h6>
+                                <div class="col-sm-1">
+                                    <h6><strong>31.&nbsp;&nbsp;&nbsp;HEIGHT:</strong></h6>
                                 </div>
-                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-4" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['height'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>16.&nbsp;&nbsp;&nbsp;WEIGHT:</strong></h6>
+                                    <h6><strong>32.&nbsp;&nbsp;&nbsp;WEIGHT:</strong></h6>
                                 </div>
                                 <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['weight'] ?></strong></h6>
@@ -3193,7 +3629,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>17.&nbsp;&nbsp;&nbsp;DATE OF JOINING NAVY:</strong></h6>
+                                    <h6><strong>33.&nbsp;&nbsp;&nbsp;DATE OF JOINING NAVY:</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['navy_joining_date'] ?></strong></h6>
@@ -3205,7 +3641,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>18.&nbsp;&nbsp;&nbsp;MODE OF ENTRY:</strong></h6>
+                                    <h6><strong>34.&nbsp;&nbsp;&nbsp;MODE OF ENTRY:</strong></h6>
                                 </div>
                                 <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['entry_mode'] ?></strong></h6>
@@ -3217,7 +3653,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>19.&nbsp;&nbsp;&nbsp;SERVICE IDENTITY CARD NO:</strong></h6>
+                                    <h6><strong>35.&nbsp;&nbsp;&nbsp;SERVICE IDENTITY CARD NO:</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['service_id'] ?></strong></h6>
@@ -3229,7 +3665,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>20.&nbsp;&nbsp;&nbsp;NATIONAL IDENTITY CARD NO:</strong></h6>
+                                    <h6><strong>36.&nbsp;&nbsp;&nbsp;NATIONAL IDENTITY CARD NO:</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['nic'] ?></strong></h6>
@@ -3241,7 +3677,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>21.&nbsp;&nbsp;&nbsp;BLOOD GROUP:</strong></h6>
+                                    <h6><strong>37.&nbsp;&nbsp;&nbsp;BLOOD GROUP:</strong></h6>
                                 </div>
                                 <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['blood_group'] ?></strong></h6>
@@ -3253,6 +3689,30 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
+                                    <h6><strong>38.&nbsp;&nbsp;&nbsp;MEMBERSHIP:</strong></h6>
+                                </div>
+                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['membership'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-3">
+                                    <h6><strong>39.&nbsp;&nbsp;&nbsp;PROFESSIONAL COURSES:</strong></h6>
+                                </div>
+                                <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['professional_courses'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div>
+                            <!-- <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-2">
                                     <h6><strong>22.&nbsp;&nbsp;&nbsp;ADDRESS:</strong></h6>
                                 </div>
                                 <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
@@ -3260,8 +3720,104 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:5px; height: 135px !important;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>40.&nbsp;&nbsp;&nbsp;CURRENT ADDRESS:</strong></h6>
+                                    <table id="datatable" class="table">
+                                        <tbody id="table_rows">
+                                            <tr>
+                                                <td scope="row" style="border:none; font-weight:bold">HOUSE NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_house_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">BLOCK NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_block_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">STREET NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_street_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">TEHSIL:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_tehsil'] ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" style="border:none; font-weight:bold">DISTRICT:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_district'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">CITY:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_city'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">POLICE STATION:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_police_station'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">PROVINCE:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_province'] ?></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:5px; height: 135px !important;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>41.&nbsp;&nbsp;&nbsp;PERMAMENT ADDRESS:</strong></h6>
+                                    <table id="datatable" class="table">
+                                        <tbody id="table_rows">
+                                            <tr>
+                                                <td scope="row" style="border:none; font-weight:bold">HOUSE NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_house_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">BLOCK NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_block_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">STREET NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_street_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">TEHSIL:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_tehsil'] ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" style="border:none; font-weight:bold">DISTRICT:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_district'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">CITY:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_city'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">POLICE STATION:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_police_station'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">PROVINCE:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_province'] ?></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:5px; height: 135px !important;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>42.&nbsp;&nbsp;&nbsp;KARACHI ADDRESS (IF ANY):</strong></h6>
+                                    <table id="datatable" class="table">
+                                        <tbody id="table_rows">
+                                            <tr>
+                                                <td scope="row" style="border:none; font-weight:bold">HOUSE NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_house_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">BLOCK NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_block_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">STREET NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_street_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">TEHSIL:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_tehsil'] ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" style="border:none; font-weight:bold">DISTRICT:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_district'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">CITY:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_city'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">POLICE STATION:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_police_station'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">PROVINCE:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_province'] ?></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-4">
@@ -3272,7 +3828,7 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="container my-3">
                                 <div style="text-align:center">
@@ -3284,10 +3840,16 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>24.&nbsp;&nbsp;&nbsp;MATRIC: SCHOOL</strong></h6>
+                                    <h6><strong>43.&nbsp;&nbsp;&nbsp;MATRIC SCHOOL:</strong></h6>
                                 </div>
-                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['matric_school'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>44.&nbsp;&nbsp;&nbsp;BOARD OF EDUCATION</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['matric_board_of_edu'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
@@ -3296,15 +3858,21 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>25.&nbsp;&nbsp;&nbsp;DIVISION/GRADE:</strong></h6>
+                                    <h6><strong>45.&nbsp;&nbsp;&nbsp;DIVISION/GRADE:</strong></h6>
                                 </div>
-                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['matric_division'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>46.&nbsp;&nbsp;&nbsp;MATRIC SUBJECTS:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['matric_subjects'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
                             </div>
-                            <div class="form-group row">
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
@@ -3315,15 +3883,21 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
-                                <div class="col-sm-3">
-                                    <h6><strong>27.&nbsp;&nbsp;&nbsp;INTERMEDIATE: COLLEGE:</strong></h6>
+                                <div class="col-sm-2">
+                                    <h6><strong>47.&nbsp;&nbsp;&nbsp;INTER COLLEGE:</strong></h6>
                                 </div>
-                                <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['intermediate_college'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>48.&nbsp;&nbsp;&nbsp;BOARD OF EDUCATION</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['inter_board_of_edu'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
@@ -3332,7 +3906,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>28.&nbsp;&nbsp;&nbsp;DIVISION/GRADE:</strong></h6>
+                                    <h6><strong>49.&nbsp;&nbsp;&nbsp;DIVISION/GRADE:</strong></h6>
                                 </div>
                                 <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['intermediate_division'] ?></strong></h6>
@@ -3344,10 +3918,22 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>29.&nbsp;&nbsp;&nbsp;HET/DIPLOMA (IF APPLICABLE):</strong></h6>
+                                    <h6><strong>50.&nbsp;&nbsp;&nbsp;HET/DIPLOMA (IF APPLICABLE):</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['diploma'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-1">
+                                    <h6><strong>51.&nbsp;&nbsp;&nbsp;OTHERS</strong></h6>
+                                </div>
+                                <div class="col-sm-9" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['other'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
@@ -3376,7 +3962,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/divisional_officer_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/divisional_officer_records_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -3417,7 +4003,7 @@
                                                 <td scope="" style="height:50px;text-align: center;"><?= $data['date_to']; ?></td>
 
                                                 <td scope="" style="border-right:1px solid black;"></td>
-                                                <td scope="" style="height:50px;text-align: center;border-right:1px solid black"><a href="<?= base_url(); ?>D_O/view_edit_officer_record/<?= $data['id'] ?>" style="color: black"><i class="fa fa-edit"></i></a></td>
+                                                <td scope="" style="height:50px;text-align: center;border-right:1px solid black"><a href="<?= base_url(); ?>EXO/view_edit_officer_record/<?= $data['id'] ?>" style="color: black"><i class="fa fa-edit"></i></a></td>
                                             </tr>
                                         <?php
                                             $count++;
@@ -3456,9 +4042,9 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_biography/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>
+                <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_biography/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>
 
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/autobiography_record_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/autobiography_record_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -3524,8 +4110,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_psychologist_report/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/psychology_record_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_psychologist_report/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/psychology_record_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -3593,8 +4179,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <!-- <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_result_report/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>  -->
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/result_record_report/<?= $pn_data['oc_no'] ?>/Term-I/Result'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <!-- <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_result_report/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>  -->
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/result_record_report/<?= $pn_data['oc_no'] ?>/Term-I/Result'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -3661,8 +4247,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <!-- <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_result_report/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>  -->
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/result_record_report/<?= $pn_data['oc_no'] ?>/Term-II/Result'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <!-- <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_result_report/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>  -->
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/result_record_report/<?= $pn_data['oc_no'] ?>/Term-II/Result'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -3729,8 +4315,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <!-- <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_ressult_report/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>  -->
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/result_record_report/<?= $pn_data['oc_no'] ?>/Term-III/Result'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <!-- <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_ressult_report/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>  -->
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/result_record_report/<?= $pn_data['oc_no'] ?>/Term-III/Result'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -3797,8 +4383,8 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <!-- <a onclick="location.href='<?php echo base_url() ?>D_O/view_edit_sea_training_report/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>  -->
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/result_record_report/<?= $pn_data['oc_no'] ?>/Term-II/SeaTraining'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <!-- <a onclick="location.href='<?php echo base_url() ?>EXO/view_edit_sea_training_report/<?= $pn_data['p_id']; ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="margin-left:65%; margin-right:1%;"><i class="far fa-edit"></i> Edit Record</a>  -->
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/result_record_report/<?= $pn_data['oc_no'] ?>/Term-II/SeaTraining'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -3866,7 +4452,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/general_remarks_report/<?= $pn_data['oc_no'] ?>/Term-I/Mid'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/general_remarks_report/<?= $pn_data['oc_no'] ?>/Term-I/Mid'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -3930,7 +4516,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/general_remarks_report/<?= $pn_data['oc_no'] ?>/Term-I/final'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/general_remarks_report/<?= $pn_data['oc_no'] ?>/Term-I/final'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -3996,7 +4582,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/general_remarks_report/<?= $pn_data['oc_no'] ?>/Term-II/Mid'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/general_remarks_report/<?= $pn_data['oc_no'] ?>/Term-II/Mid'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -4060,7 +4646,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/general_remarks_report/<?= $pn_data['oc_no'] ?>/Term-II/final'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/general_remarks_report/<?= $pn_data['oc_no'] ?>/Term-II/final'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -4127,7 +4713,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/general_remarks_report/<?= $pn_data['oc_no'] ?>/Term-III/Mid'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/general_remarks_report/<?= $pn_data['oc_no'] ?>/Term-III/Mid'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -4191,7 +4777,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/general_remarks_report/<?= $pn_data['oc_no'] ?>/Term-III/final'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/general_remarks_report/<?= $pn_data['oc_no'] ?>/Term-III/final'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -4265,7 +4851,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/progress_chart_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> PRINT PAGE</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/progress_chart_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> PRINT PAGE</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -4344,7 +4930,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/distinction_achieved_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> PRINT PAGE</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/distinction_achieved_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> PRINT PAGE</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -4408,7 +4994,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/seniority_record_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> PRINT PAGE</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/seniority_record_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> PRINT PAGE</a>
             </div>
             <div class="row">
                 <div class="col-lg-12">
@@ -4546,7 +5132,7 @@
         <?php if (isset($pn_data['name'])) { ?>
             <div class="d-sm-flex align-items-center justify-content-between mb-4 my-2">
                 <h1 class="h3 mb-0 text-black-800"><strong> DOSSIER FOLDER </strong></h1>
-                <a onclick="location.href='<?php echo base_url() ?>/D_O/branch_allocation_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
+                <a onclick="location.href='<?php echo base_url() ?>/EXO/branch_allocation_report/<?= $pn_data['oc_no'] ?>'" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-print text-white-50"></i> Print Page</a>
             </div>
           <!--  <div class="row">
                 <div class="col-lg-12">
@@ -4682,7 +5268,7 @@
             $('#error_search').hide();
 
             $.ajax({
-                url: '<?= base_url(); ?>D_O/search_cadet_for_dossier_folder',
+                url: '<?= base_url(); ?>EXO/search_cadet_for_dossier_folder',
                 method: 'POST',
                 data: {
                     'oc_no': oc_no
@@ -5104,7 +5690,7 @@
     $('#back_btn_main').on('click', function() {
         var oc_no = '0';
         $.ajax({
-            url: '<?= base_url(); ?>D_O/search_cadet_for_dossier_folder',
+            url: '<?= base_url(); ?>EXO/search_cadet_for_dossier_folder',
             method: 'POST',
             data: {
                 'oc_no': oc_no,

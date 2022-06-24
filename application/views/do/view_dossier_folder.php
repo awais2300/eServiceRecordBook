@@ -52,6 +52,7 @@
     th,
     td {
         border-left: 0.5px solid black;
+        color: black;
     }
 
     .box {
@@ -3344,7 +3345,7 @@
                                         <div class="col-sm-11" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                             <h6><strong><?= $pn_personal_data['father_permanent_address'] ?></strong></h6>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
                                 <!-- <div class="col-sm-1">
@@ -3397,17 +3398,16 @@
                                 <div class="col-sm-1">
                                 </div>
                             </div> -->
-
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-10" style="border:solid 1px black; padding:5px;">
                                     <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>26.&nbsp;&nbsp;&nbsp;CHILDERN RECORDS:</strong></h6>
                                     <div class="form-group row">
-                                        <div class="col-sm-1" >
+                                        <div class="col-sm-1">
                                             <h6 style="font-size:medium"><strong>S. NO.</strong></h6>
                                         </div>
-                                        <div class="col-sm-2" >
+                                        <div class="col-sm-2">
                                             <h6 style="font-size:medium"><strong>NAME:</strong></h6>
                                         </div>
                                         <div class="col-sm-1">
@@ -3433,10 +3433,10 @@
                                             foreach ($pn_personal_data_childern_record as $data) { ?>
                                                 <div class="col-sm-1">
                                                     <h6 style="font-size:medium"><strong><?= ++$count; ?></strong></h6>
-                                                </div> 
+                                                </div>
                                                 <div class="col-sm-2">
                                                     <h6 style="font-size:medium"><strong><?= $data['name'] ?></strong></h6>
-                                                </div> 
+                                                </div>
                                                 <div class="col-sm-1">
                                                     <h6 style="font-size:medium"><strong><?= $data['gender'] ?></strong></h6>
                                                 </div>
@@ -3445,7 +3445,7 @@
                                                 </div>
                                                 <div class="col-sm-2">
                                                     <h6 style="font-size:medium"><strong><?= $data['profession'] ?></strong></h6>
-                                                </div> 
+                                                </div>
                                                 <div class="col-sm-2">
                                                     <h6 style="font-size:medium"><strong><?= $data['address'] ?></strong></h6>
                                                 </div>
@@ -3461,8 +3461,6 @@
                                 <!-- <div class="col-sm-1">
                                 </div> -->
                             </div>
-
-
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
@@ -3541,10 +3539,10 @@
                                 <div class="col-sm-10" style="border:solid 1px black; padding:5px;">
                                     <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>28.&nbsp;&nbsp;&nbsp;SIBLINGS RECORD:</strong></h6>
                                     <div class="form-group row">
-                                        <div class="col-sm-1" >
+                                        <div class="col-sm-1">
                                             <h6 style="font-size:x-small"><strong>S. NO.</strong></h6>
                                         </div>
-                                        <div class="col-sm-1" >
+                                        <div class="col-sm-1">
                                             <h6 style="font-size:x-small"><strong>NAME:</strong></h6>
                                         </div>
                                         <div class="col-sm-1">
@@ -3582,10 +3580,10 @@
                                             foreach ($pn_personal_data_sibling_record as $data) { ?>
                                                 <div class="col-sm-1">
                                                     <h6 style="font-size:small"><strong><?= ++$count; ?></strong></h6>
-                                                </div> 
+                                                </div>
                                                 <div class="col-sm-1">
                                                     <h6 style="font-size:small"><strong><?= $data['name'] ?></strong></h6>
-                                                </div> 
+                                                </div>
                                                 <div class="col-sm-1">
                                                     <h6 style="font-size:small"><strong><?= $data['gender'] ?></strong></h6>
                                                 </div>
@@ -3594,7 +3592,7 @@
                                                 </div>
                                                 <div class="col-sm-1">
                                                     <h6 style="font-size:small"><strong><?= $data['religion'] ?></strong></h6>
-                                                </div> 
+                                                </div>
                                                 <div class="col-sm-1">
                                                     <h6 style="font-size:small"><strong><?= $data['sect'] ?></strong></h6>
                                                 </div>
@@ -3603,7 +3601,7 @@
                                                 </div>
                                                 <div class="col-sm-1">
                                                     <h6 style="font-size:small"><strong><?= $data['dependant'] ?></strong></h6>
-                                                </div> 
+                                                </div>
                                                 <div class="col-sm-2">
                                                     <h6 style="font-size:small"><strong><?= $data['address'] ?></strong></h6>
                                                 </div>
@@ -3721,10 +3719,10 @@
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-1">
                                     <h6><strong>31.&nbsp;&nbsp;&nbsp;HEIGHT:</strong></h6>
                                 </div>
-                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-4" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['height'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-2">
@@ -3748,7 +3746,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>17.&nbsp;&nbsp;&nbsp;DATE OF JOINING NAVY:</strong></h6>
+                                    <h6><strong>33.&nbsp;&nbsp;&nbsp;DATE OF JOINING NAVY:</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['navy_joining_date'] ?></strong></h6>
@@ -3760,7 +3758,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>18.&nbsp;&nbsp;&nbsp;MODE OF ENTRY:</strong></h6>
+                                    <h6><strong>34.&nbsp;&nbsp;&nbsp;MODE OF ENTRY:</strong></h6>
                                 </div>
                                 <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['entry_mode'] ?></strong></h6>
@@ -3772,7 +3770,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>19.&nbsp;&nbsp;&nbsp;SERVICE IDENTITY CARD NO:</strong></h6>
+                                    <h6><strong>35.&nbsp;&nbsp;&nbsp;SERVICE IDENTITY CARD NO:</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['service_id'] ?></strong></h6>
@@ -3784,7 +3782,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>20.&nbsp;&nbsp;&nbsp;NATIONAL IDENTITY CARD NO:</strong></h6>
+                                    <h6><strong>36.&nbsp;&nbsp;&nbsp;NATIONAL IDENTITY CARD NO:</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['nic'] ?></strong></h6>
@@ -3796,7 +3794,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>21.&nbsp;&nbsp;&nbsp;BLOOD GROUP:</strong></h6>
+                                    <h6><strong>37.&nbsp;&nbsp;&nbsp;BLOOD GROUP:</strong></h6>
                                 </div>
                                 <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['blood_group'] ?></strong></h6>
@@ -3808,6 +3806,30 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
+                                    <h6><strong>38.&nbsp;&nbsp;&nbsp;MEMBERSHIP:</strong></h6>
+                                </div>
+                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['membership'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-3">
+                                    <h6><strong>39.&nbsp;&nbsp;&nbsp;PROFESSIONAL COURSES:</strong></h6>
+                                </div>
+                                <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['professional_courses'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div>
+                            <!-- <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-2">
                                     <h6><strong>22.&nbsp;&nbsp;&nbsp;ADDRESS:</strong></h6>
                                 </div>
                                 <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
@@ -3815,8 +3837,104 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:5px; height: 135px !important;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>40.&nbsp;&nbsp;&nbsp;CURRENT ADDRESS:</strong></h6>
+                                    <table id="datatable" class="table">
+                                        <tbody id="table_rows">
+                                            <tr>
+                                                <td scope="row" style="border:none; font-weight:bold">HOUSE NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_house_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">BLOCK NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_block_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">STREET NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_street_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">TEHSIL:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_tehsil'] ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" style="border:none; font-weight:bold">DISTRICT:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_district'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">CITY:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_city'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">POLICE STATION:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_police_station'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">PROVINCE:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['current_province'] ?></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:5px; height: 135px !important;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>41.&nbsp;&nbsp;&nbsp;PERMAMENT ADDRESS:</strong></h6>
+                                    <table id="datatable" class="table">
+                                        <tbody id="table_rows">
+                                            <tr>
+                                                <td scope="row" style="border:none; font-weight:bold">HOUSE NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_house_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">BLOCK NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_block_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">STREET NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_street_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">TEHSIL:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_tehsil'] ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" style="border:none; font-weight:bold">DISTRICT:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_district'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">CITY:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_city'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">POLICE STATION:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_police_station'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">PROVINCE:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['permanent_province'] ?></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-10" style="border:solid 1px black; padding:5px; height: 135px !important;">
+                                    <h6 style="text-decoration:underline; margin-bottom:10px;"><strong>42.&nbsp;&nbsp;&nbsp;KARACHI ADDRESS (IF ANY):</strong></h6>
+                                    <table id="datatable" class="table">
+                                        <tbody id="table_rows">
+                                            <tr>
+                                                <td scope="row" style="border:none; font-weight:bold">HOUSE NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_house_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">BLOCK NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_block_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">STREET NO:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_street_no'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">TEHSIL:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_tehsil'] ?></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" style="border:none; font-weight:bold">DISTRICT:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_district'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">CITY:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_city'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">POLICE STATION:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_police_station'] ?></td>
+                                                <td scope="row" style="border:none; font-weight:bold">PROVINCE:</td>
+                                                <td scope="row" style="border:none; text-decoration:underline"><?= $pn_personal_data['karachi_province'] ?></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-4">
@@ -3827,7 +3945,7 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="container my-3">
                                 <div style="text-align:center">
@@ -3839,10 +3957,16 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>24.&nbsp;&nbsp;&nbsp;MATRIC: SCHOOL</strong></h6>
+                                    <h6><strong>43.&nbsp;&nbsp;&nbsp;MATRIC SCHOOL:</strong></h6>
                                 </div>
-                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['matric_school'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>44.&nbsp;&nbsp;&nbsp;BOARD OF EDUCATION</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['matric_board_of_edu'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
@@ -3851,15 +3975,21 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>25.&nbsp;&nbsp;&nbsp;DIVISION/GRADE:</strong></h6>
+                                    <h6><strong>45.&nbsp;&nbsp;&nbsp;DIVISION/GRADE:</strong></h6>
                                 </div>
-                                <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['matric_division'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>46.&nbsp;&nbsp;&nbsp;MATRIC SUBJECTS:</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['matric_subjects'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
                             </div>
-                            <div class="form-group row">
+                            <!-- <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
@@ -3870,15 +4000,21 @@
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="form-group row">
                                 <div class="col-sm-1">
                                 </div>
-                                <div class="col-sm-3">
-                                    <h6><strong>27.&nbsp;&nbsp;&nbsp;INTERMEDIATE: COLLEGE:</strong></h6>
+                                <div class="col-sm-2">
+                                    <h6><strong>47.&nbsp;&nbsp;&nbsp;INTER COLLEGE:</strong></h6>
                                 </div>
-                                <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['intermediate_college'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <h6><strong>48.&nbsp;&nbsp;&nbsp;BOARD OF EDUCATION</strong></h6>
+                                </div>
+                                <div class="col-sm-3" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['inter_board_of_edu'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
@@ -3887,7 +4023,7 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-2">
-                                    <h6><strong>28.&nbsp;&nbsp;&nbsp;DIVISION/GRADE:</strong></h6>
+                                    <h6><strong>49.&nbsp;&nbsp;&nbsp;DIVISION/GRADE:</strong></h6>
                                 </div>
                                 <div class="col-sm-8" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['intermediate_division'] ?></strong></h6>
@@ -3899,10 +4035,22 @@
                                 <div class="col-sm-1">
                                 </div>
                                 <div class="col-sm-3">
-                                    <h6><strong>29.&nbsp;&nbsp;&nbsp;HET/DIPLOMA (IF APPLICABLE):</strong></h6>
+                                    <h6><strong>50.&nbsp;&nbsp;&nbsp;HET/DIPLOMA (IF APPLICABLE):</strong></h6>
                                 </div>
                                 <div class="col-sm-7" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
                                     <h6><strong><?= $pn_personal_data['diploma'] ?></strong></h6>
+                                </div>
+                                <div class="col-sm-1">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-1">
+                                </div>
+                                <div class="col-sm-1">
+                                    <h6><strong>51.&nbsp;&nbsp;&nbsp;OTHERS</strong></h6>
+                                </div>
+                                <div class="col-sm-9" style="border-bottom: 2px solid black; text-align:center;height: 20px;">
+                                    <h6><strong><?= $pn_personal_data['other'] ?></strong></h6>
                                 </div>
                                 <div class="col-sm-1">
                                 </div>
@@ -4171,7 +4319,8 @@
                                         <tr>
                                             <td scope="" style="width:20%">S NO.</th>
                                             <td scope="" style="width:40%">FILENAME</th>
-                                            <td scope="" style="border-right:1px solid black;width:40%">DOWNLOAD</th>
+                                            <td scope="" style="border-right:1px solid black;width:20%">VIEW</th>
+                                            <td scope="" style="border-right:1px solid black;width:20%">DOWNLOAD</th>
                                         </tr>
                                     </thead>
                                     <tbody id="table_rows_cont" style="border-top:1px solid black; padding:5px;width:100% !important">
@@ -4180,13 +4329,18 @@
                                             <tr>
                                                 <td scope=""><?= ++$count; ?></td>
                                                 <td scope=""><?= $data['file_name'] ?></td>
+
+                                                <?php if (pathinfo($data['file_name'], PATHINFO_EXTENSION) != 'pdf') { ?>
+                                                    <td scope="" style="text-align:center"><button type="button" style="color:black;width:100%;text-align:center;hover:black;" onclick="view_file_html('<?= $data['file_name']; ?>')"><i class="fas fa-eye"></i></a></td>
+                                                <?php } else { ?>
+                                                    <td scope="" style="text-align:center"><a style="color:black;width:100%;text-align:center;hover:black;" href="<?= base_url(); ?>uploads/documents/<?= $data['file_name']; ?>" target="_blank"><i class="fas fa-eye"></i></a></td>
+                                                <?php } ?>
                                                 <td scope="" style="border-right:black 1px solid;text-align:center"><a style="color:black;width:100%;text-align:center;hover:black;" href="<?= base_url(); ?>uploads/documents/<?= $data['file_name']; ?>"><i class="fas fa-download"></i></a></td>
                                             </tr>
-                                        <?php
-                                            $count++;
-                                        } ?>
+                                        <?php } ?>
                                         <tr>
                                             <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;border-right:1px solid black"></td>
                                             <td scope="" style="border-bottom:1px solid black;border-right:1px solid black"></td>
                                             <td scope="" style="border-bottom:1px solid black;border-right:1px solid black"></td>
                                         </tr>
@@ -4195,6 +4349,12 @@
                             <?php } else { ?>
                                 <a> NO DATA AVAILABLE YET</a>
                             <?php } ?>
+
+                            <span id="message"></span>
+                            <table id="table">
+                                <div id="excel_area"></div>
+                            </table>
+
                         </div>
                     </div>
                 </div>
@@ -4239,7 +4399,8 @@
                                         <tr>
                                             <td scope="" style="width:20%">S NO.</th>
                                             <td scope="" style="width:40%">FILENAME</th>
-                                            <td scope="" style="border-right:1px solid black;width:40%">DOWNLOAD</th>
+                                            <td scope="" style="border-right:1px solid black;width:20%">VIEW</th>
+                                            <td scope="" style="border-right:1px solid black;width:20%">DOWNLOAD</th>
                                         </tr>
                                     </thead>
                                     <tbody id="table_rows_cont" style="border-top:1px solid black; padding:5px;width:100% !important">
@@ -4248,13 +4409,18 @@
                                             <tr>
                                                 <td scope=""><?= ++$count; ?></td>
                                                 <td scope=""><?= $data['file_name'] ?></td>
+
+                                                <?php if (pathinfo($data['file_name'], PATHINFO_EXTENSION) != 'pdf') { ?>
+                                                    <td scope="" style="text-align:center"><button type="button" style="color:black;width:100%;text-align:center;hover:black;" onclick="view_file_html('<?= $data['file_name']; ?>')"><i class="fas fa-eye"></i></a></td>
+                                                <?php } else { ?>
+                                                    <td scope="" style="text-align:center"><a style="color:black;width:100%;text-align:center;hover:black;" href="<?= base_url(); ?>uploads/documents/<?= $data['file_name']; ?>" target="_blank"><i class="fas fa-eye"></i></a></td>
+                                                <?php } ?>
                                                 <td scope="" style="border-right:black 1px solid;text-align:center"><a style="color:black;width:100%;text-align:center;hover:black;" href="<?= base_url(); ?>uploads/documents/<?= $data['file_name']; ?>"><i class="fas fa-download"></i></a></td>
                                             </tr>
-                                        <?php
-                                            $count++;
-                                        } ?>
+                                        <?php } ?>
                                         <tr>
                                             <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;border-right:1px solid black"></td>
                                             <td scope="" style="border-bottom:1px solid black;border-right:1px solid black"></td>
                                             <td scope="" style="border-bottom:1px solid black;border-right:1px solid black"></td>
                                         </tr>
@@ -4307,7 +4473,8 @@
                                         <tr>
                                             <td scope="" style="width:20%">S NO.</th>
                                             <td scope="" style="width:40%">FILENAME</th>
-                                            <td scope="" style="border-right:1px solid black;width:40%">DOWNLOAD</th>
+                                            <td scope="" style="border-right:1px solid black;width:20%">VIEW</th>
+                                            <td scope="" style="border-right:1px solid black;width:20%">DOWNLOAD</th>
                                         </tr>
                                     </thead>
                                     <tbody id="table_rows_cont" style="border-top:1px solid black; padding:5px;width:100% !important">
@@ -4316,13 +4483,18 @@
                                             <tr>
                                                 <td scope=""><?= ++$count; ?></td>
                                                 <td scope=""><?= $data['file_name'] ?></td>
+
+                                                <?php if (pathinfo($data['file_name'], PATHINFO_EXTENSION) != 'pdf') { ?>
+                                                    <td scope="" style="text-align:center"><button type="button" style="color:black;width:100%;text-align:center;hover:black;" onclick="view_file_html('<?= $data['file_name']; ?>')"><i class="fas fa-eye"></i></a></td>
+                                                <?php } else { ?>
+                                                    <td scope="" style="text-align:center"><a style="color:black;width:100%;text-align:center;hover:black;" href="<?= base_url(); ?>uploads/documents/<?= $data['file_name']; ?>" target="_blank"><i class="fas fa-eye"></i></a></td>
+                                                <?php } ?>
                                                 <td scope="" style="border-right:black 1px solid;text-align:center"><a style="color:black;width:100%;text-align:center;hover:black;" href="<?= base_url(); ?>uploads/documents/<?= $data['file_name']; ?>"><i class="fas fa-download"></i></a></td>
                                             </tr>
-                                        <?php
-                                            $count++;
-                                        } ?>
+                                        <?php } ?>
                                         <tr>
                                             <td scope="" style="border-bottom:1px solid black;"></td>
+                                            <td scope="" style="border-bottom:1px solid black;border-right:1px solid black"></td>
                                             <td scope="" style="border-bottom:1px solid black;border-right:1px solid black"></td>
                                             <td scope="" style="border-bottom:1px solid black;border-right:1px solid black"></td>
                                         </tr>
@@ -5727,4 +5899,20 @@
                         async: true
                     });
                 });
+
+
+                function view_file_html(filename) {
+
+                    $.ajax({
+                        url: '<?= base_url(); ?>D_O/get_excel_file_result',
+                        method: 'POST',
+                        data: {
+                            'filename': filename
+                        },
+                        success: function(data) {
+                            $('#excel_area').html(data);
+                            $('table').css('width', '100%');
+                        }
+                    })
+                };
             </script>

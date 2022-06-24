@@ -151,7 +151,9 @@
                             <div class="form-group row">
                                 <div class="col-sm-12 mb-1">
                                     <input type="file" style="height: 50px; padding:10px !important;" multiple="multiple" class="form-control form-control-user" placeholder="UPLOAD DOCS" name="file[]" id="result_file" x-model="fileName">
-
+                                </div>
+                                <div class="col-sm-12">
+                                    <h6 style="font-size:small">&nbsp;<strong>(FILENAME SHOULD BE WITHOUT SPACES)</strong></h6>
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -427,11 +429,39 @@
                             var len = result.length;
                             if (len > 0) {
 
+                                $('#uploaded_filename').html(`
+                                    <div class="form-group row">
+                                        <div class="col-sm-8" style="text-decoration:underline">
+                                            <strong>VIEW</strong>
+                                        </div>
+                                        <div class="col-sm-2" style="text-decoration:underline">
+                                            <strong>DOWNLOAD</strong>
+                                        </div>
+                                    </div>`);
                                 for (i = 0; i < len; i++) {
-                                    $('#uploaded_filename').append(`<h6><a href="<?= base_url(); ?>uploads/documents/${result[i]['file_name']}" target="_blank"><strong>${result[i]['file_name']}</strong></h6>`);
-                                    // $('#uploaded_filename').append(`<h6><a href="#"><strong>${result[i]['file_name']}</strong></h6>`);
-                                    $('#set_file_name').val(result[i]['file_name']);
-                                    // <iframe src="https://docs.google.com/viewer?url=uploads/documents/Test-html.docx&embedded=true" frameborder='0'></iframe>
+                                    // $('#uploaded_filename').append(`<h6><a href="<?= base_url(); ?>uploads/documents/${result[i]['file_name']}" target="_blank"><strong>${result[i]['file_name']}</strong></h6>`);
+                                    if (result[i]['file_name'].split('.').pop() != 'pdf') {
+                                        $('#uploaded_filename').append(`
+                                        <div class="form-group row">
+                                            <div class="col-sm-8">
+                                                <h6><button type="button" onclick="view_file_html('${result[i]['file_name']}')"><strong>${result[i]['file_name']}</strong></h6>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <h6><a href="<?= base_url(); ?>uploads/documents/${result[i]['file_name']}"><strong>${result[i]['file_name']}</strong></h6>
+                                            </div>
+                                        </div>
+                                    `);
+                                    } else {
+                                        $('#uploaded_filename').append(`
+                                        <div class="form-group row">
+                                            <div class="col-sm-8">
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <h6><a href="<?= base_url(); ?>uploads/documents/${result[i]['file_name']}" target="_blank"><strong>${result[i]['file_name']}</strong></h6>
+                                            </div>
+                                        </div>
+                                    `);
+                                    }
                                 }
                             } else {
                                 $('#uploaded_filename').html(`<h6>No Files Uploaded</h6>`);
@@ -486,22 +516,32 @@
         }
     });
 
-    $('#uploaded_filename').on('click', function() {
-        // alert($('#set_file_name').val());
-        var file_name = $('#set_file_name').val();
+    // $('#uploaded_filename').on('click', function() {
+    //     var file_name = $('#set_file_name').val();
+    //     $.ajax({
+    //         url: '<?= base_url(); ?>D_O/get_excel_file_result',
+    //         method: 'POST',
+    //         data: {
+    //             'filename': file_name
+    //         },
+    //         success: function(data) {
+    //             $('#excel_area').html(data);
+    //             $('table').css('width', '100%');
+    //         }
+    //     })
+    // });
+
+    function view_file_html(filename) {
         $.ajax({
             url: '<?= base_url(); ?>D_O/get_excel_file_result',
             method: 'POST',
             data: {
-                'filename': file_name
+                'filename': filename
             },
-            // contentType: false,
-            // cache: false,
-            // processData: false,
             success: function(data) {
                 $('#excel_area').html(data);
                 $('table').css('width', '100%');
             }
         })
-    });
+    };
 </script>

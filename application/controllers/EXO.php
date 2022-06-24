@@ -19,7 +19,7 @@ class EXO extends CI_Controller
             $this->load->view('login');
         }
     }
- public function get_semester_list()
+    public function get_semester_list()
     {
         $branch_id = $_POST['branch_id'];
         if ($branch_id == 2) {
@@ -99,7 +99,6 @@ class EXO extends CI_Controller
                     );
                     $insert_act_seen = $this->db->insert('activity_log_seen', $insert_activity_seen);
                 }
-
             }
 
             if (!empty($update) && !empty($insert)) {
@@ -938,7 +937,7 @@ class EXO extends CI_Controller
             // $this->db->where('pr.do_id', $this->session->userdata('user_id'));
             $this->db->where('f.unit_id', $this->session->userdata('unit_id'));
             $this->db->where('pr.id', $punish_id);
-           // $this->db->where('f.unit_id', $this->session->userdata('unit_id'));
+            // $this->db->where('f.unit_id', $this->session->userdata('unit_id'));
             $data['edit_record'] = $this->db->get()->row_array();
 
             echo json_encode($data['edit_record']);
@@ -1031,7 +1030,7 @@ class EXO extends CI_Controller
             $observation_type = $postData['observation_type'];
             $observed_by = $postData['observed_by'];
 
-            
+
             $upload_obs_slip = $this->upload_obs_slip($_FILES['obs_slip']);
 
             $insert_array = array(
@@ -1051,7 +1050,7 @@ class EXO extends CI_Controller
 
             $insert = $this->db->insert('observation_records', $insert_array);
 
-            $insert_array_slip = array(  
+            $insert_array_slip = array(
                 'p_id' => $id,
                 'file_name' => $_FILES['obs_slip']['name'],
                 'file_type' => $_FILES['obs_slip']['type'],
@@ -1827,7 +1826,7 @@ class EXO extends CI_Controller
             $action = $_POST['action'];
             $all = $_POST['all'];
 
-            $branch_id ='';
+            $branch_id = '';
             $next_term = '';
             $unit_id = $this->session->userdata('unit_id');
 
@@ -2069,7 +2068,7 @@ class EXO extends CI_Controller
                             'term' => $curr_term,
                             'divison_name' => $this->session->userdata('division')
                         ];
-                    }else {
+                    } else {
                         $cond  = [
                             'term' => $curr_term
                         ];
@@ -2141,7 +2140,7 @@ class EXO extends CI_Controller
 
     public function update_cadet_to_sub_lieutenant()
     {
-         if ($this->input->post()) {
+        if ($this->input->post()) {
             $postData = $this->security->xss_clean($this->input->post());
 
             $p_id = $_POST['p_id'];
@@ -2657,7 +2656,7 @@ class EXO extends CI_Controller
     {
         if ($this->session->has_userdata('user_id')) {
             $oc_no = $_POST['oc_no'];
-            
+
             $data['pn_data'] = $this->db->where('oc_no', $oc_no)->where('unit_id', $this->session->userdata('unit_id'))->get('pn_form1s')->row_array();
 
             if (!isset($oc_no)) {
@@ -2937,6 +2936,22 @@ class EXO extends CI_Controller
             $this->db->where('f.unit_id', $this->session->userdata('unit_id'));
             $this->db->where('f.oc_no', $oc_no);
             $data['pn_personal_data'] = $this->db->get()->row_array();
+
+            //add new by awais
+            $this->db->select('sr.*');
+            $this->db->from('personal_datas pr');
+            $this->db->join('pn_form1s f', 'f.p_id = pr.p_id');
+            $this->db->join('siblings_records sr', 'sr.p_id = pr.p_id');
+            $this->db->where('f.oc_no', $oc_no);
+            $data['pn_personal_data_sibling_record'] = $this->db->get()->result_array();
+
+            //add new by awais
+            $this->db->select('cr.*');
+            $this->db->from('personal_datas pr');
+            $this->db->join('pn_form1s f', 'f.p_id = pr.p_id');
+            $this->db->join('childern_records cr', 'cr.p_id = pr.p_id');
+            $this->db->where('f.oc_no', $oc_no);
+            $data['pn_personal_data_childern_record'] = $this->db->get()->result_array();
 
             $this->db->select('pr.*, f.*');
             $this->db->from('divisional_officer_records pr');
@@ -3304,7 +3319,7 @@ class EXO extends CI_Controller
                 } elseif ($postData['pagee'] == 'daily_module') {
                     $this->session->set_flashdata('success', 'Data Submitted successfully');
                     redirect('DEAN/daily_module');
-                }  else {
+                } else {
                     $this->session->set_flashdata('success', 'Data Submitted successfully');
                     redirect('EXO/add_physical_milestone');
                 }
@@ -5229,6 +5244,4 @@ class EXO extends CI_Controller
 
         return $count;
     }
-
-    
 }
